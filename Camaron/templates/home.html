@@ -11,19 +11,29 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="{% static 'css\estilo.css' %}" media="screen">
     </head>
+
     <body>
+        <img id="logo" src="{% static 'rsc\logo 2 (Personalizado).png' %}">
         <div class="navbar">
-            <div class="Inicio"><a href="">Inicio</a></div>
-            <div class="Certificaciones"><a href="">Certificaciones</a></div>
-            <div class="Productos"><a href="">Productos</a></div>
-            <div class="Acerca"><a href="">Acerca de Nosotros</a></div>
-            <div class="Multimedia"><a href="">Multimedia</a></div>
-            <div class="Contacto"><a href="">Contacto</a></div>
+            <div class="Inicio"><a style="color: #03437D; font-weight: bold;" href="">Inicio</a></div>
+            <div class="Certificaciones"><a style="color: #03437D; font-weight: bold;" href="">Certificaciones</a></div>
+            <div class="Productos"><a style="color: #03437D; font-weight: bold;" href="">Productos</a></div>
+            <div class="Acerca"><a style="color: #03437D; font-weight: bold;" href="">Acerca de Nosotros</a></div>
+            <div class="Multimedia"><a style="color: #03437D; font-weight: bold;" href="">Multimedia</a></div>
+            <div class="Contacto"><a style="color: #03437D; font-weight: bold;" href="">Contacto</a></div>
             <div class="DatosEIdioma">
-              <div class="DatosContacto"><img src="{% static 'rsc\phone (Personalizado).png' %}" >(+593-4) 162 2125<img src="{% static 'rsc\mail (Personalizado).png' %}"><a href=""> SALES@ALIMESA.COM.EC 
+              <div class="DatosContacto"><img src="{% static 'rsc\phone (Personalizado).png' %}" ><a style="padding-left: 1vw; padding-right: 2vw;">(+593-4)162 2125</a><img src="{% static 'rsc\mail (Personalizado).png' %}"><a href="mailto:sales@alimesa.com.ec" style="padding-left: 1vw; color: white;;"> SALES@ALIMESA.COM.EC 
             </a></div>
-              <div class="Idiomas"></div>
+            <div class="Idiomas">
+                <a style="color: white;" href="">Menu  |</a>
+                <a style="color: white;" href="">EN  |</a>
+                <a style="color: white;" href="">ES  |</a>
+                <a style="color: white; padding-right: 1vw;" href="">MANDARIN</a>
+            </div>
             </div>
           </div>
+
+          {% block content %}
+          {% endblock %}
     </body>
 </html>
