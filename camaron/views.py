@@ -8,4 +8,3 @@ def home(request):
         'message': message,
     }
     return render(request, template, context)
-
