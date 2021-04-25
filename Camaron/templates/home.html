@@ -12,14 +12,18 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css\estilo.css' %}" media="screen">
     </head>
     <body>
-        <div class="cuadrado"></div>
-    {% if request.GET.name %}
-        <h1> {{message}} </h1>
-    {% else %}
-        <form method="get" action="{% url 'home' %}">
-            <input name="name" value="{{request.GET.name}}">
-            <button type="submit">Submit</button>
-        </form>
-    {% endif %}
+        <div class="navbar">
+            <div class="Inicio"><a href="">Inicio</a></div>
+            <div class="Certificaciones"><a href="">Certificaciones</a></div>
+            <div class="Productos"><a href="">Productos</a></div>
+            <div class="Acerca"><a href="">Acerca de Nosotros</a></div>
+            <div class="Multimedia"><a href="">Multimedia</a></div>
+            <div class="Contacto"><a href="">Contacto</a></div>
+            <div class="DatosEIdioma">
+              <div class="DatosContacto"><img src="{% static 'rsc\phone (Personalizado).png' %}" >(+593-4) 162 2125<img src="{% static 'rsc\mail (Personalizado).png' %}"><a href=""> SALES@ALIMESA.COM.EC 
+            </a></div>
+              <div class="Idiomas"></div>
+            </div>
+          </div>
     </body>
 </html>

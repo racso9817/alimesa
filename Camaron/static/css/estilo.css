@@ -1,15 +1,94 @@
-h1 {
-    color: blueviolet;
+
+.barra {
+    display: inline-block;
+    text-decoration: none;
+    font-size: large;
+    color: #03437D;
+    padding: 10px 30px;
+    background: none;
 }
 
-.cuadrado {
-    width:25vh;
-    max-width:100px;
-    height:25vh;
-    max-height:100px;
-    position:relative;
-    background:red;
+.phone {
+    color: white;
+    text-decoration: none;
+}
+
+.koi {
+    padding-left: 600px;
+}
+
+.barra:hover {
+    text-decoration: underline;
+    color: #022341;
+    font-size: x-large;
+}
+
+.header {
+    padding: 20px;
+    background: #03437D;
+}
+
+.headerbarra {
+    text-align: center;
+    background: white;
+}
+
+.menu {
+    padding: 0px 10px;
+    color: white;
+}
+
+.menu:hover {
+    color: white;
+}
+
+.rdy {
+    color: white;
+}
+
+.rdy:hover {
+    color: white;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr 3fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "DatosEIdioma DatosEIdioma DatosEIdioma DatosEIdioma DatosEIdioma DatosEIdioma"
+      "Inicio Certificaciones Productos Acerca Multimedia Contacto";
   }
+  
+  .Inicio { grid-area: Inicio; text-align: center;}
+  
+  .Certificaciones { grid-area: Certificaciones; text-align: center;}
+  
+  .Productos { grid-area: Productos; text-align: center;}
+  
+  .Acerca { grid-area: Acerca; text-align: center;}
+  
+  .Multimedia { grid-area: Multimedia; text-align: center;}
+  
+  .Contacto { grid-area: Contacto; text-align: center;}
+  
+  .DatosEIdioma {
+    display: grid;
+    grid-template-columns: 2.5fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "DatosContacto Idiomas";
+    grid-area: DatosEIdioma;
+    background: #03437D;
+  }
+  
+  .DatosContacto { grid-area: DatosContacto; text-align: left; }
+  
+  .Idiomas { grid-area: Idiomas; text-align: right;}
+  
+
+
 
 /*MEDIA QUERIE*/
 
