@@ -1,65 +1,142 @@
+/* Ocultar la barra ayuda luego con las animaciones */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
 
 .navbar {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(3, 1fr) 0.35fr repeat(3, 1fr);
     grid-template-rows: 1fr 3fr;
     gap: 0px 0px;
     grid-template-areas:
-      "DatosEIdioma DatosEIdioma DatosEIdioma DatosEIdioma DatosEIdioma DatosEIdioma"
-      "Inicio Certificaciones Productos Acerca Multimedia Contacto";
-    max-height: 25vw;
-  }
-  
-  .Inicio { grid-area: Inicio; text-align: center;}
-  .Inicio:hover {font-size: large;}
-  
-  .Certificaciones { grid-area: Certificaciones; text-align: center;}
-  .Certificaciones:hover {font-size: large;}
-  
-  .Productos { grid-area: Productos; text-align: center;}
-  .Productos:hover {font-size: large;}
-  
-  .Acerca { grid-area: Acerca; text-align: center;}
-  .Acerca:hover {font-size: large;}
-  
-  .Multimedia { grid-area: Multimedia; text-align: center;}
-  .Multimedia:hover {font-size: large;}
-  
-  .Contacto { grid-area: Contacto; text-align: center;}
-  .Contacto:hover {font-size: large;}
-  
-  .DatosEIdioma {
+        "DatosEIdioma DatosEIdioma DatosEIdioma DatosEIdioma DatosEIdioma DatosEIdioma DatosEIdioma"
+        "Inicio Certificaciones Productos Filler Acerca Multimedia Contacto";
+    height: 10vw;
+    max-height: 10vw;
+    padding: 0%;
+    background-color: white;
+    transition: 0.1s;
+}
+
+.Content {
+    margin-top: 10vw;
+    background-color: black;
+}
+
+.Inicio a,
+.Certificaciones a,
+.Productos a,
+.Acerca a,
+.Multimedia a,
+.Contacto a {
+    text-align: center;
+    font-size: 1.75vw;
+    color: #00315A;
+    font-weight: bold;
+}
+
+.Inicio:hover,
+.Certificaciones:hover,
+.Productos:hover,
+.Acerca:hover,
+.Multimedia:hover,
+.Contacto:hover {
+    font-size: 1.85vw;
+}
+
+.Inicio {
+    grid-area: Inicio;
+    text-align: center;
+}
+
+.Certificaciones {
+    grid-area: Certificaciones;
+    text-align: center;
+}
+
+.Productos {
+    grid-area: Productos;
+    text-align: center;
+}
+
+.Acerca {
+    grid-area: Acerca;
+    text-align: center;
+}
+
+.Multimedia {
+    grid-area: Multimedia;
+    text-align: center;
+}
+
+.Contacto {
+    grid-area: Contacto;
+    text-align: center;
+}
+
+.DatosEIdioma {
     display: grid;
     grid-template-columns: 2.5fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas:
-      "DatosContacto Idiomas";
+        "DatosContacto Idiomas";
     grid-area: DatosEIdioma;
-    background: #03437D;
-    color: white;
+    background-color: #00315A;
     text-decoration: none;
-  }
-  
-  .DatosContacto { 
-      grid-area: DatosContacto; 
-      text-align: left; 
-      padding-left: 1vw;
-    }
-  
-  .Idiomas { 
-      grid-area: Idiomas; 
-      text-align: right;
-    }
+    padding-left: 1vw;
+    font-size: 0.9vw;
+    padding: 0.6327vw 0vw 0.6327vw 0vw;
+    max-height: 2.5vw;
+}
 
-    #logo {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        float: center;
-        max-width: 100%;
-        height: auto;
-    }
+.DatosContacto {
+    grid-area: DatosContacto;
+    text-align: left;
+    padding-left: 1vw;
+}
+
+.DatosContacto a {
+    color: white;
+    padding-left: 0.5vw;
+    padding-right: 1vw;
+}
+
+.DatosContacto img {
+    max-height: 1vw;
+    margin: auto;
+    padding-bottom: 0.12vw;
+}
+
+.Idiomas {
+    grid-area: Idiomas;
+    text-align: right;
+    color: white;
+}
+
+.DatosContacto a {
+    color: white;
+}
+
+#logo {
+    position: fixed;
+    top: 2.5vw;
+    left: 44.75vw;
+    margin: auto;
+    float: center;
+    max-height: 10.5vw;
+    z-index: 900;
+    transition: 0.1s;
+}
 
 /*MEDIA QUERIE*/
 

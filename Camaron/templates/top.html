@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ALIMESA</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css\estilo.css' %}" media="screen">
+</head>
+
+<body>
+    <section class="header">
+        <img id="logo" src="{% static 'rsc\img\logo 2.png' %}">
+        <div class="navbar">
+            <div class="Inicio"><a href="">INICIO</a></div>
+            <div class="Certificaciones"><a href="">CERTIFICACIONES</a></div>
+            <div class="Productos"><a href="">PRODUCTOS</a></div>
+            <div class="Acerca"><a href="">NOSOTROS</a></div>
+            <div class="Multimedia"><a href="">MULTIMEDIA</a></div>
+            <div class="Contacto"><a href="">CONTACTO</a></div>
+            <div class="DatosEIdioma">
+                <div class="DatosContacto">
+                    <img src="{% static 'rsc\img\phone.png' %}">
+                    <a href='tel:59341622125'>(+593-4) 162 2125</a>
+                    <img src="{% static 'rsc\img\mail.png' %}">
+                    <a href="mailto:sales@alimesa.com.ec">SALES@ALIMESA.COM.EC</a>
+                </div>
+                <div class="Idiomas">
+                    <a style="color: white;" href="">Menu |</a>
+                    <a style="color: white;" href="">EN |</a>
+                    <a style="color: white;" href="">ES |</a>
+                    <a style="color: white; padding-right: 1vw;" href="">官话</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="Content">
+        {% block content %}
+        {% endblock %}
+    </section>
+</body>
+
+<script src="{% static 'rsc\js\top.js' %}"></script>
+
+</html>

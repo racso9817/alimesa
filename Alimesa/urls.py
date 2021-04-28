@@ -20,8 +20,7 @@ from Camaron.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', home, name='home'),
-    path('inicio/', inicio, name='inicio'),
+    path('', inicio, name='inicio'),
 ]
 
 #if settings.DEBUG:
