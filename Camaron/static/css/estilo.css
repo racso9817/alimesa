@@ -1,12 +1,19 @@
+html {
+    scroll-behavior: smooth;
+}
+
 /* Ocultar la barra ayuda luego con las animaciones */
 body::-webkit-scrollbar {
     display: none;
 }
 
 body {
-    -ms-overflow-style: none; /* IE and Edge */
-    scrollbar-width: none; /* Firefox */
+    /* IE and Edge */
+    -ms-overflow-style: none;
+    /* Firefox */
+    scrollbar-width: none;
 }
+/* */
 
 .navbar {
     position: fixed;
@@ -29,7 +36,7 @@ body {
 
 .Content {
     margin-top: 10vw;
-    background-color: black;
+    background-color: #777777;
 }
 
 .Inicio a,
@@ -130,10 +137,10 @@ body {
 #logo {
     position: fixed;
     top: 2.5vw;
-    left: 44.75vw;
+    left: 43vw;
     margin: auto;
     float: center;
-    max-height: 10.5vw;
+    max-height: 14vw;
     z-index: 900;
     transition: 0.1s;
 }
