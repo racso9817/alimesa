@@ -30,8 +30,9 @@ body {
     height: 10vw;
     max-height: 10vw;
     padding: 0%;
-    background-color: white;
+    background-color: #F7F7F7;
     transition: 0.1s;
+    z-index: 899;
 }
 
 .Content {
@@ -48,6 +49,7 @@ body {
     font-size: 1.75vw;
     color: #00315A;
     font-weight: bold;
+    text-decoration: none;
 }
 
 .Inicio:hover,
@@ -57,6 +59,7 @@ body {
 .Multimedia:hover,
 .Contacto:hover {
     font-size: 1.85vw;
+    text-decoration: underline;
 }
 
 .Inicio {
@@ -144,7 +147,26 @@ body {
     transition: 0.1s;
 }
 
-/*MEDIA QUERIE*/
+/* Para contener el carrousel y que se elimine el espacio en blanco entre
+el carrousel y el navbar */
+#carouselExampleCaptions {
+    position: absolute;
+    top: 10vw;
+    left: 0vw;
+    width: 100%;
+    min-width: 100%;
+    max-height: 42vw;
+}
+
+/* Para estandarizar el tamaño de las imagenes */
+#carouselExampleCaptions img{
+    width: 100%;
+    min-width: 100%;
+    max-height: 42vw;
+    object-fit: cover;
+}
+
+/*MEDIA QUERY*/
 
 /*@media screen and (max-width:1040px) {
     .nuestro-equipo .titulo-seccion {
