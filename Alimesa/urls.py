@@ -15,13 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+from django.conf import settings
+from django.conf.urls.static import static
 from Camaron.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', inicio, name='inicio'),
-]
-
-#if settings.DEBUG:
- #   urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('certificaciones/', certificaciones, name='certificaciones'),
+    path('productos/', productos, name='productos'),
+    path('acerca/', acerca, name='acerca'),
+    path('multimedia/', multimedia, name='multimedia'),
+    path('contacto/', contacto, name='contacto'),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
