@@ -1,1 +1,1 @@
-web: gunicorn Alimesa.wsgi --log-file -
+web: gunicorn gunicorn Alimesa.wsgi
