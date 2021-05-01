@@ -112,12 +112,14 @@ body {
     grid-area: DatosContacto;
     text-align: left;
     padding-left: 1vw;
+    text-decoration: none;
 }
 
 .DatosContacto a {
     color: white;
     padding-left: 0.5vw;
     padding-right: 1vw;
+    text-decoration: none;
 }
 
 .DatosContacto img {
@@ -130,6 +132,11 @@ body {
     grid-area: Idiomas;
     text-align: right;
     color: white;
+    text-decoration: none;
+}
+
+.Idiomas a {
+    text-decoration: none;
 }
 
 .DatosContacto a {
@@ -165,6 +172,230 @@ el carrousel y el navbar */
     max-height: 42vw;
     object-fit: cover;
 }
+
+.carousel-caption {
+    background: #00315A;
+    border-radius: 5vw;
+}
+
+.products h1 {
+    text-align: center;
+    color: #00315A;
+    font-size: 2.5vw;
+    font-weight: bold;
+    padding-top: 3vw;
+    padding-bottom: 3vw;
+}
+ 
+.productimg {
+    display: grid;
+    grid-template-columns: 1.4fr 1.4fr 1.4fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "HOSO HLSO VALUE-ADDED";
+}
+
+.productimg p {
+    text-align: center;
+    color: #00315A;
+    font-weight: bolder;
+    font-size: 1.15vw;
+}
+
+.HOSO {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    max-height: 20vw;
+    object-fit: cover;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    padding: 0 5vw 5vw 5vw;
+    position: relative;
+}
+
+.middle {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+  }
+
+.HOSO img:hover {
+    opacity: 0.3;
+}
+
+.HOSO-char {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.4fr 1fr 0.9fr 1.9fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "sizes freezing"
+      "s1 fr1"
+      "s2 fr1"
+      "s3 fr2";
+  }
+
+  .HLSO-char {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "sizes freezing"
+      "s1 fr1"
+      "s2 fr1"
+      "s3 fr1"
+      "s4 fr1"
+      "s5 fr2"
+      "s6 fr2"
+      "s7 fr2"
+      "s8 fr2"
+      "s9 fr2";
+  }
+
+  .VA-char {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1.2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "sizes freezing"
+      "s1 fr1"
+      "s2 fr1"
+      "s3 fr1"
+      "s4 fr1"
+      "s5 fr2"
+      "s6 fr2"
+      "s7 fr2"
+      "s8 fr2";
+  }
+  
+  .sizes { 
+      grid-area: sizes;
+      font-weight: bolder;
+      text-align: center;
+    }
+  
+  .freezing { grid-area: freezing; font-weight: bolder; text-align: center;}
+  
+  .fr1 { grid-area: fr1; text-align: center; padding-top: 1vw;}
+  
+  .fr2 { grid-area: fr2; text-align: center; padding-bottom: 3vw;}
+
+  .s1 { grid-area: s1;text-align: center; }
+  .s2 { grid-area: s2; text-align: center;}
+  .s3 { grid-area: s3;text-align: center; }
+  .s4 { grid-area: s4; text-align: center;}
+  .s5 { grid-area: s5; text-align: center;}
+  .s6 { grid-area: s6; text-align: center;}
+  .s7 { grid-area: s7; text-align: center;}
+  .s8 { grid-area: s8; text-align: center;}
+  .s9 { grid-area: s9; text-align: center;}
+
+  .HOSO:hover .middle{
+      opacity: 1;
+  }
+
+  .HLSO:hover .middle{
+    opacity: 1;
+}
+ 
+.VALUE-ADDED:hover .middle{
+    opacity: 1;
+}
+
+.HLSO {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    max-height: 20vw;
+    object-fit: cover;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    padding: 0 5vw 5vw 5vw;
+}
+
+.HLSO img:hover {
+    opacity: 0.3;
+}
+
+.VALUE-ADDED {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    max-height: 20vw;
+    object-fit: cover;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    padding: 0 5vw 5vw 5vw;
+}
+
+.VALUE-ADDED img:hover {
+    opacity: 0.3;
+}
+
+.footer {
+    display: grid;
+    background: #00315A;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-height: 100vw;
+}
+
+.certificaciones {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.4fr 1.6fr;
+    grid-template-areas:
+        "titulo titulo titulo titulo"
+        "cert1 cert2 cert3 cert4";
+}
+
+.cert1 img { 
+    grid-area: cert1;
+    display: block;
+    width: 100%;
+    max-height: 20vw;
+    object-fit: cover;
+    padding: 5vw;
+}
+.cert2 img { 
+    grid-area: cert2;
+    display: block;
+    width: 100%;
+    max-height: 20vw;
+    object-fit: cover;
+    padding: 5vw;
+}
+.cert3 img { 
+    grid-area: cert3; 
+    display: block;
+    width: 100%;
+    max-height: 20vw;
+    object-fit: cover;
+    padding: 0 5vw 5vw 5vw;
+}
+.cert4 img { 
+    grid-area: cert4; 
+    display: block;
+    width: 100%;
+    max-height: 20vw;
+    object-fit: cover;
+    padding: 0 5vw 5vw 5vw;
+}
+.titulo { 
+    grid-area: titulo; 
+    text-align: center;
+    color: #00315A;
+    font-size: 2.5vw;
+    font-weight: bold;
+    padding-top: 10vw;
+}
+
 
 /*MEDIA QUERY*/
 
