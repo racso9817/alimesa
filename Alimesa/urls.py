@@ -21,7 +21,7 @@ from Camaron.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('/', inicio, name='inicio'),
+    path('', inicio, name='inicio'),
     path('certificaciones/', certificaciones, name='certificaciones'),
     path('productos/', productos, name='productos'),
     path('acerca/', acerca, name='acerca'),
