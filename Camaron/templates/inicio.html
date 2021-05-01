@@ -15,7 +15,7 @@
 <script>
   window.initializeCarousel = () => {
     $("#carouselExampleCaptions").carousel({
-      interval: 1000
+      interval: 250
     });
   }
 </script>
@@ -34,6 +34,7 @@
       <img src="{{objects.image.url}}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <h5>{{objects.title}}</h5>
+        <p>{{objects.sub_title}}</p>
       </div>
     </div>
     {% endfor %}
@@ -46,68 +47,5 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-  <div class="products">
-    <h1>NUESTROS PRODUCTOS</h1>
-    <div class="productimg">
-      <div class="HOSO">
-        <a href="{% url 'productos' %}"><img src="{% static 'rsc\img\HOSO.jpg' %}"></a>
-        <div class="middle">
-          <div class="HOSO-char">
-            <div class="sizes">Sizes</div>
-            <div class="freezing">Freezing</div>
-            <div class="fr1">Block</div>
-            <div class="fr2">Semi IQF</div>
-            <div class="s1">20/30    30/40</div>
-            <div class="s2">40/50    50/60</div>
-            <div class="s3">40/50    50/60</div>
-          </div>
-        </div>
-        <p>HOSO</p>
-      </div>
-      <div class="HLSO">
-        <a href="{% url 'productos' %}"><img src="{% static 'rsc\img\HLSO.jpg' %}"></a>
-        <div class="middle">
-          <div class="HLSO-char">
-            <div class="sizes">Sizes</div>
-            <div class="freezing">Freezing</div>
-            <div class="fr1">Block</div>
-            <div class="fr2">Semi IQF</div>
-            <div class="s1">16/20</div>
-            <div class="s2">21/25</div>
-            <div class="s3">26/30</div>
-            <div class="s4">31/35</div>
-            <div class="s5">36/40</div>
-            <div class="s6">41/50</div>
-            <div class="s7">51/60</div>
-            <div class="s8">61/70</div>
-            <div class="s9">71/790</div>
-          </div>
-        </div>
-        <p>HLSO</p>
-      </div>
-      <div class="VALUE-ADDED">
-        <a href="{% url 'productos' %}"><img src="{% static 'rsc\img\VALUE_ADDED.png' %}"></a>
-        <div class="middle">
-          <div class="VA-char">
-            <div class="sizes">Sizes</div>
-            <div class="freezing">Freezing</div>
-            <div class="fr1">Block</div>
-            <div class="fr2">IQF</div>
-            <div class="s1">16/20</div>
-            <div class="s2">21/25</div>
-            <div class="s3">26/30</div>
-            <div class="s4">31/35</div>
-            <div class="s5">36/40</div>
-            <div class="s6">41/50</div>
-            <div class="s7">51/60</div>
-            <div class="s8">61/70</div>
-          </div>
-        </div>
-        <p>VALOR AGREGADO - (P&DTOFF)</p>
-      </div>
-    </div>
-  </div>
-  <div class="footer">.</div>
 </div>
-
 {% endblock %}
