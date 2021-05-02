@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 import os
-import django_heroku
+#import django_heroku
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -27,7 +27,7 @@ SECRET_KEY = 'u)0onm*+z3vlad4izjn%duhyttt75@8lltsi=z4+r_e!ujbb&6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['alimesa.herokuapp.com']
+ALLOWED_HOSTS = ['alimesa.herokuapp.com','127.0.0.1']
 
 
 # Application definition
@@ -134,6 +134,6 @@ MEDIA_URL = '/media/'
 # DATABASES['default'].update(prod_db)
 
 # Activate Django-Heroku.
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
 
 ########################
