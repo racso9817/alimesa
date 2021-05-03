@@ -10,4 +10,3 @@ class Carausel(models.Model):
 
     def str_(self):
         return self.title
-
