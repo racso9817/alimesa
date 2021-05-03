@@ -27,7 +27,7 @@ SECRET_KEY = 'u)0onm*+z3vlad4izjn%duhyttt75@8lltsi=z4+r_e!ujbb&6'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['alimesa.herokuapp.com']
+ALLOWED_HOSTS = ['alimesa.herokuapp.com','127.0.0.1']
 
 
 # Application definition

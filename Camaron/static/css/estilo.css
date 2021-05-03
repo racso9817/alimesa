@@ -394,9 +394,145 @@ el carrousel y el navbar */
     color: #00315A;
     font-size: 2.5vw;
     font-weight: bold;
-    padding-top: 10vw;
+    padding-top: 6vw;
+    padding-bottom: 3vw;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "titulo titulo titulo titulo titulo"
+      "imgHOSO imgHOSO sz pckg free";
+  }
+  
+  .imgHOSO { 
+    grid-area: imgHOSO;
+    text-align: center;
+    }
+
+.imgHOSO img {
+    display: block;
+    width: 100%;
+    max-height: 40vw;
+    object-fit: cover;
+    padding: 5vw 5vw 0vw 5vw;
+}
+  
+  .sz {
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    grid-template-rows: 0.2fr 1.5fr;
+    gap: 2vw 0vw;
+    grid-template-areas:
+      "sztitle sztitle sztitle"
+      "szcont szcont szcont";
+    grid-area: sz;
+    text-align: center;
+  }
+  
+  .sztitle { grid-area: sztitle; font-weight: bold; background: #516482; border-radius: 2vw;}
+  
+  .szcont { grid-area: szcont; background: #516482; border-radius: 2vw;}
+  
+  .pckg {
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    grid-template-rows: 0.2fr 1.5fr;
+    gap: 2vw 0vw;
+    grid-template-areas:
+      "pckg-title pckg-title pckg-title"
+      "pckgcont pckgcont pckgcont";
+    grid-area: pckg;
+    text-align: center;
+  }
+  
+  .pckg-title { grid-area: pckg-title; font-weight: bold; background: #516482; border-radius: 2vw;}
+  
+  .pckgcont { grid-area: pckgcont; background: #516482; border-radius: 2vw; }
+  
+  .free {
+    display: grid;
+    grid-template-columns: 0.2fr 0.2fr 0.2fr;
+    grid-template-rows: 0.2fr 1.5fr;
+    gap: 2vw 0vw;
+    grid-template-areas:
+      "freetitle freetitle freetitle"
+      "freecont freecont freecont";
+    grid-area: free;
+    text-align: center;
+  }
+  
+  .freetitle { grid-area: freetitle; font-weight: bold; background: #516482; border-radius: 2vw;}
+  
+  .freecont { grid-area: freecont; background: #516482; border-radius: 2vw;}
+
+
+  .marcas {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.7fr 1.7fr 0.6fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "titulo titulo titulo"
+      "br1 br2 br3"
+      "br4 br5 br6"
+      "certs certs certs";
+  }
+  
+  .certs { grid-area: certs; text-align: center;}
+
+  .certs img {
+      max-width: 10vw;
+      max-height: 10vw;
+  }
+  
+  .br1 { grid-area: br1; text-align: center;}
+
+  .br1 img {
+      width: 100%;
+      max-height: 30vw;
+  }
+  
+  .br2 { grid-area: br2; text-align: center;}
+
+  .br2 img {
+    width: 100%;
+    max-height: 30vw;
+}
+  
+  .br3 { grid-area: br3; text-align: center;}
+
+  .br3 img {
+    width: 100%;
+    max-height: 40vw;
+}
+  
+  .br4 { grid-area: br4; text-align: center;}
+
+  .br4 img {
+    width: 100%;
+    max-height: 30vw;
+}
+  
+  .br5 { grid-area: br5; text-align: center;}
+
+  .br5 img {
+    width: 100%;
+    max-height: 30vw;
+}
+  
+  .br6 { grid-area: br6; text-align: center;}
+
+  .br6 img {
+    width: 100%;
+    max-height: 25vw;
+}
+  
+  
+  
 
 /*MEDIA QUERY*/
 
