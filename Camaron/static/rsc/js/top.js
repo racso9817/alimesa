@@ -1,8 +1,9 @@
 window.onscroll = function() {scrollFunction()};
 
-
 function scrollFunction() {
   const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+
+  // Cambiar tamaño
   if (document.body.scrollTop > vw*0.1 || document.documentElement.scrollTop > vw*0.1) {
     // Logo
     document.getElementById("logo").style.maxHeight = "6.25vw";
@@ -15,5 +16,40 @@ function scrollFunction() {
     document.getElementById("logo").style.left = "43vw";
     // Nav
     document.getElementsByClassName("navbar")[0].style.maxHeight = "10vw";
+  }
+
+  // Cambiar color
+  // MaxHeight del carouselExampleCaptions + 0.015
+  if (document.body.scrollTop > vw*0.4375 || document.documentElement.scrollTop > vw*0.4375) {
+    // Logo
+    document.getElementById("logo").src = "/static/rsc/img/1.png";
+    document.getElementById("logo").style.maxHeight = "5.5vw";
+    document.getElementById("logo").style.left = "47.25vw";
+    // Nav
+    document.getElementsByClassName("navbar")[0].style.backgroundColor = "#00315A";
+    //Titulos
+    Array.prototype.forEach.call(document.getElementsByClassName("TituloSeccion"), function(n) {
+      n.style.color = "#F7F7F7";
+    });
+    // TODO: Cambiar las imagenes del teléfono y del sobre
+    // DatosEIdioma
+    document.getElementsByClassName("DatosEIdioma")[0].style.backgroundColor = "#F7F7F7";
+    Array.prototype.forEach.call(document.getElementsByClassName("linksCEI"), function(n) {
+      n.style.color = "#00315A";
+    });
+  } else {
+    // Logo
+    document.getElementById("logo").src = "/static/rsc/img/logo triangulo.png";
+    // Nav
+    document.getElementsByClassName("navbar")[0].style.backgroundColor = "#F7F7F7";
+    //Titulos
+    Array.prototype.forEach.call(document.getElementsByClassName("TituloSeccion"), function(n) {
+      n.style.color = "#00315A";
+    });
+    // DatosEIdioma
+    document.getElementsByClassName("DatosEIdioma")[0].style.backgroundColor = "#00315A";
+    Array.prototype.forEach.call(document.getElementsByClassName("linksCEI"), function(n) {
+      n.style.color = "#F7F7F7";
+    });
   }
 }

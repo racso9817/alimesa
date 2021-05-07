@@ -1,0 +1,109 @@
+{% extends 'top.html' %}
+{% load static%}
+
+{% block headExtend %}
+<link rel="stylesheet" type="text/css" href="{% static 'css\inicio.css' %}" media="screen">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+{% endblock %}
+
+{% block content %}
+<script>
+    window.initializeCarousel = () => {
+        $("#carouselExampleCaptions").carousel({
+            interval: 1000
+        });
+    }
+</script>
+
+<!-- Carousel -->
+<!-- TODO: Texto a un lado del carousel -->
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+            aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        {% for foto in fotos %}
+        <div class="carousel-item {% if forloop.counter0 == 0 %} active {% endif %} ">
+            <img src="{% static foto.image %}" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>{{foto.title}}</h5>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- Carousel -->
+
+<!-- Productos -->
+<div class="productosSubsection">
+    <div class="tituloSubseccion">
+        <p class="tituloProductos">NUESTROS PRODUCTOS</p>
+    </div>
+    <div class="dataProductos">
+        {% for prod in prods %}
+            <div class="cartaProducto">
+                <div class="fotoProducto">
+                    <img src="{% static prod.img %}" alt="">
+                    <div class="sizesFreezing">
+                        <div class="sizesProducto">
+                            <p><b>Tallas:</b><br>{{prod.sizes|linebreaksbr}}</p>
+                        </div>
+                        <div class="freezingProducto">
+                            <p><b>Congelación:</b><br>{{prod.freezing|linebreaksbr}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="siglasProducto">
+                    <p class="siglasProductoP">{{prod.siglas}}</p>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+<!-- Productos -->
+
+<!-- Certificaciones -->
+<div class='certificacionesSubsection'>
+    <div class="tituloSubseccionCerts">
+        <p class="tituloCerts">CERTIFICACIONES INTERNACIONALES</p>
+    </div>
+    <div class="fotosCerts">
+        {% for cert in certs %}
+            <a href="{{cert.origin}}"><img src="{% static cert.img %}" alt=""></a>
+        {% endfor %}
+    </div>
+</div>
+<!-- Certificaciones -->
+
+<div class="footer">.</div>
+
+{% endblock %}
+
+
+{% block scripts %}
+<script src="{% static 'rsc\js\top.js' %}"></script>
+{% endblock %}
