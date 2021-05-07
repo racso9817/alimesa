@@ -1,5 +1,8 @@
 from django.contrib import admin
-from .models import Carausel
-# Register your models here.
+from .models import *
 
+# Register your models here.
 admin.site.register(Carausel)
+admin.site.register(Producto)
+admin.site.register(Marca)
+admin.site.register(Certificado)

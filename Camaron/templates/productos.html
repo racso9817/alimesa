@@ -1,7 +1,11 @@
 {% extends 'top.html' %}
 {% load static%}
-{% block content %}
 
+{% block headExtend %}
+<link rel="stylesheet" type="text/css" href="{% static 'css\prods.css' %}" media="screen">
+{% endblock %}
+
+{% block content %}
 <div class="grid-container">
     <div class="titulo">HEAD-ON SHELL-ON (HOSO)</div>
     <div class="imgHOSO"><img src="{% static 'rsc\img\HOSO.jpg' %}"></div>
