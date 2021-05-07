@@ -93,9 +93,9 @@
         "model": "Camaron.marca",
         "pk": 3,
         "fields": {
-            "nombre": "Alimesa Gama T�pica",
+            "nombre": "Alimesa Gama Típica",
             "img": "rsc/img/CAMARON-GRANDE.jpg",
-            "hoverText": "Camar�n Grande"
+            "hoverText": "Camarón Grande"
         }
     },
     {
