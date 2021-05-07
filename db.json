@@ -1,0 +1,163 @@
+[
+    {
+        "model": "Camaron.carausel",
+        "pk": 1,
+        "fields": {
+            "image": "rsc/img/LIMBOMAR.jpg",
+            "title": "PRODUCTOS SELECCIONADOS QUE CUMPLEN LAS EXIGENCIAS DE MERCADOS INTERNACIONALES",
+            "sub_title": "nada"
+        }
+    },
+    {
+        "model": "Camaron.carausel",
+        "pk": 2,
+        "fields": {
+            "image": "rsc/img/Panonarica.png",
+            "title": "PRODUCTOS SELECCIONADOS QUE CUMPLEN LAS EXIGENCIAS DE MERCADOS INTERNACIONALES",
+            "sub_title": "nada"
+        }
+    },
+    {
+        "model": "Camaron.carausel",
+        "pk": 3,
+        "fields": {
+            "image": "rsc/img/Imagen1.png",
+            "title": "GARANTIZAMOS LA CALIDAD, SABOR Y FRESCURA DEL CAMARON ECUATORIANO",
+            "sub_title": "nada"
+        }
+    },
+    {
+        "model": "Camaron.carausel",
+        "pk": 4,
+        "fields": {
+            "image": "rsc/img/Alimesa_186.jpg",
+            "title": "CALIFICADOS PARA BRINDAR PRODUCTOS DE PRIMERA",
+            "sub_title": "nada"
+        }
+    },
+    {
+        "model": "Camaron.producto",
+        "pk": 1,
+        "fields": {
+            "nombre": "HEAD-ON SHELL-ON",
+            "siglas": "HOSO",
+            "sizes": "20/30|30/40|40/50|50/60|60/70|70/80",
+            "packaging": "2.00 Kg|1.00 Kg|500 g|400 g",
+            "freezing": "Bloque|Semi IQF",
+            "img": "rsc/img/HOSO.jpg"
+        }
+    },
+    {
+        "model": "Camaron.producto",
+        "pk": 2,
+        "fields": {
+            "nombre": "HEAD-LESS SHELL-ON",
+            "siglas": "HLSO",
+            "sizes": "16/20|21/25|26/30|31/35|36/40|41/50|51/60|61/70|71/90",
+            "packaging": "2.00 Kg|1.00 Kg|500 g|400 g",
+            "freezing": "Bloque|Semi IQF",
+            "img": "rsc/img/HLSO.jpg"
+        }
+    },
+    {
+        "model": "Camaron.producto",
+        "pk": 3,
+        "fields": {
+            "nombre": "VALUE ADDED",
+            "siglas": "P&DTOFF",
+            "sizes": "16/20|21/25|26/30|31/40|41/50|51/60|61/70|71/90",
+            "packaging": "2.00 Kg|1.00 Kg|500 g|400 g",
+            "freezing": "Bloque|Semi IQF",
+            "img": "rsc/img/VALUE_ADDED.png"
+        }
+    },
+    {
+        "model": "Camaron.marca",
+        "pk": 1,
+        "fields": {
+            "nombre": "Alimesa Tide",
+            "img": "rsc/img/IMG_0026.jpg",
+            "hoverText": "Alimesa Tide"
+        }
+    },
+    {
+        "model": "Camaron.marca",
+        "pk": 2,
+        "fields": {
+            "nombre": "Alimesa",
+            "img": "https://alimesa.herokuapp.com/static/rsc/img/IMG_0029.jpg",
+            "hoverText": "Alimesa"
+        }
+    },
+    {
+        "model": "Camaron.marca",
+        "pk": 3,
+        "fields": {
+            "nombre": "Alimesa Gama T�pica",
+            "img": "rsc/img/CAMARON-GRANDE.jpg",
+            "hoverText": "Camar�n Grande"
+        }
+    },
+    {
+        "model": "Camaron.marca",
+        "pk": 4,
+        "fields": {
+            "nombre": "San Mateo Premium Shrimp",
+            "img": "rsc/img/IMG_1927-removebg-preview.png",
+            "hoverText": "Frozen Raw Premium White Shrimp"
+        }
+    },
+    {
+        "model": "Camaron.marca",
+        "pk": 5,
+        "fields": {
+            "nombre": "Vannagold",
+            "img": "rsc/img/IMG_1976-removebg-preview.png",
+            "hoverText": "Frozen Raw Premium White Shrimp"
+        }
+    },
+    {
+        "model": "Camaron.certificado",
+        "pk": 1,
+        "fields": {
+            "nombre": "Farmed Responsibly asc",
+            "img": "rsc/img/asc.png",
+            "hoverText": "Farmed Resposibly",
+            "origin": "https://www.asc-aqua.org/what-we-do/our-standards/farm-standards/the-shrimp-standard/",
+            "imgCert": "rsc/img/asc.png"
+        }
+    },
+    {
+        "model": "Camaron.certificado",
+        "pk": 2,
+        "fields": {
+            "nombre": "BRCGS Food Safety",
+            "img": "rsc/img/brcgs_food_logo_cmyk.jpg",
+            "hoverText": "BRCGS Food Safety",
+            "origin": "https://www.brcgs.com/our-standards/food-safety/",
+            "imgCert": "rsc/img/brcgs_food_logo_cmyk.jpg"
+        }
+    },
+    {
+        "model": "Camaron.certificado",
+        "pk": 3,
+        "fields": {
+            "nombre": "BASC Secure Commerce",
+            "img": "rsc/img/basc.png",
+            "hoverText": "BASC Secure Commerce",
+            "origin": "https://www.wbasco.org/es",
+            "imgCert": "rsc/img/basc.png"
+        }
+    },
+    {
+        "model": "Camaron.certificado",
+        "pk": 4,
+        "fields": {
+            "nombre": "HACCP",
+            "img": "rsc/img/Imagen2.jpg",
+            "hoverText": "HACCP Hazard Analysis Critical Control Point",
+            "origin": "https://www.haccp.com/",
+            "imgCert": "rsc/img/Imagen2.jpg"
+        }
+    }
+]
