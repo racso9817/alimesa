@@ -14,7 +14,7 @@
     height: 10vw;
     max-height: 10vw;
     padding: 0%;
-    background-color: #00315A;
+    background-color: var(--azul-nav);
     transition: 0.1s;
     z-index: 899;
 }
@@ -22,13 +22,13 @@
 .TituloSeccion {
     text-align: center;
     font-size: 1.75vw;
-    color: #F7F7F7;
+    color: var(--blanco-nav);
     font-weight: bold;
     text-decoration: none;
 }
 
 .TituloSeccion:hover {
-    color: #F7F7F7;
+    color: var(--blanco-nav);
     font-size: 1.85vw;
     text-decoration: underline;
 }
@@ -71,7 +71,7 @@
     grid-template-areas:
         "DatosContacto Idiomas";
     grid-area: DatosEIdioma;
-    background-color: #F7F7F7;
+    background-color: var(--blanco-nav);
     text-decoration: none;
     padding-left: 1vw;
     font-size: 0.9vw;
@@ -81,7 +81,7 @@
 }
 
 .linksCEI {
-    color: #00315a;
+    color: var(--azul-titulos);
     text-decoration: none;
 }
 
@@ -122,4 +122,176 @@
     max-height: 14vw;
     z-index: 900;
     transition: 0.1s;
+}
+
+.productosSubsection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 3.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "tituloSubseccion"
+        "dataProductos";
+    position: absolute;
+    top: 14vw;
+    left: 0vw;
+    width: 100%;
+    min-width: 100%;
+    min-height: 41.75vw;
+}
+
+.tituloSubseccion {
+    display: flex;
+    grid-area: tituloSubseccion;
+    align-items: center;
+}
+
+.tituloProductos {
+    grid-area: tituloProductos;
+    color: var(--azul-titulos);
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: 0vw;
+}
+
+.dataProductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    grid-area: dataProductos;
+    max-width: 100vw;
+    height: min-content;
+}
+
+.cartaProducto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 0.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "fotoProducto"
+        "siglasProducto";
+    max-width: 30vw;
+    margin: 0vw 1.25vw 1.25vw 1.25vw;
+    height: min-content;
+}
+
+.fotoProducto {
+    grid-area: fotoProducto;
+    min-height: 28vw;
+    max-height: 28vw;
+    min-width: 30vw;
+    max-width: 30vw;
+}
+
+.fotoProducto img {
+    width: 100%;
+    height: 28vw;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.sizesFreezing {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "sizesProducto freezingProducto";
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    top: -28vw;
+    width: 100%;
+    height: 28vw;
+    text-align: center;
+    font-size: 1.5vw;
+}
+
+.sizesFreezing b {
+    color: var(--azul-titulos);
+}
+
+.sizesProducto {
+    grid-area: sizesProducto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.freezingProducto {
+    grid-area: freezingProducto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotoProducto:hover .sizesFreezing {
+    visibility: visible;
+    background-color: var(--blanco-nav);
+    opacity: 0.8;
+}
+
+.siglasProducto {
+    grid-area: siglasProducto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.siglasProductoP {
+    width: 100%;
+    color: var(--azul-titulos);
+    font-size: 1.5vw;
+    font-weight: bold;
+    text-align: center;
+}
+
+.marcasSubsection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 3.5fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "tituloMarcas"
+        "flexMarcas";
+    position: absolute;
+    top: 55.75vw;
+    width: 100%;
+}
+
+.tituloMarcas {
+    grid-area: tituloMarcas;
+    display: flex;
+    align-items: center;
+}
+
+.tituloMarcas p{
+    color: var(--azul-titulos);
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin: 0vw;
+}
+
+.flexMarcas {
+    grid-area: flexMarcas;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgMarca {
+    width: 18vw;
+    height: 18vw;
+    margin: 0.5vw 3.5vw 0.75vw 3.5vw;
 }

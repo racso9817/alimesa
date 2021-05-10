@@ -14,7 +14,7 @@
     height: 10vw;
     max-height: 10vw;
     padding: 0%;
-    background-color: #F7F7F7;
+    background-color: var(--blanco-nav);
     transition: 0.1s;
     z-index: 899;
 }
@@ -22,13 +22,13 @@
 .TituloSeccion {
     text-align: center;
     font-size: 1.75vw;
-    color: #00315A;
+    color: var(--azul-nav);
     font-weight: bold;
     text-decoration: none;
 }
 
 .TituloSeccion:hover {
-    color: #00315A;
+    color: var(--azul-titulos);
     font-size: 1.85vw;
     text-decoration: underline;
 }
@@ -71,7 +71,7 @@
     grid-template-areas:
         "DatosContacto Idiomas";
     grid-area: DatosEIdioma;
-    background-color: #00315A;
+    background-color: var(--azul-nav);
     text-decoration: none;
     padding-left: 1vw;
     font-size: 0.9vw;
@@ -81,7 +81,7 @@
 }
 
 .linksCEI {
-    color: #f7f7f7;
+    color: var(--blanco-nav);
     text-decoration: none;
 }
 
@@ -144,7 +144,7 @@ el carrousel y el navbar */
 }
 
 .carousel-caption {
-    background: #00315A;
+    background: var(--azul-nav);
     border-radius: 5vw;
 }
 
@@ -173,7 +173,7 @@ el carrousel y el navbar */
 
 .tituloProductos {
     grid-area: tituloProductos;
-    color: #00315A;
+    color: var(--azul-titulos);
     font-size: 2vw;
     font-weight: bold;
     text-align: center;
@@ -237,7 +237,7 @@ el carrousel y el navbar */
 }
 
 .sizesFreezing b{
-    color: #00315A;
+    color: var(--azul-titulos);
 }
 
 .sizesProducto {
@@ -258,7 +258,7 @@ el carrousel y el navbar */
 
 .fotoProducto:hover .sizesFreezing {
     visibility: visible;
-    background-color: #F7F7F7;
+    background-color: var(--blanco-nav);
     opacity: 0.8;
 }
 
@@ -273,7 +273,7 @@ el carrousel y el navbar */
 
 .siglasProductoP {
     width: 100%;
-    color: #00315A;
+    color: var(--azul-titulos);
     font-size: 1.5vw;
     font-weight: bold;
     text-align: center;
@@ -303,8 +303,7 @@ el carrousel y el navbar */
 }
 
 .tituloCerts {
-    grid-area: tituloProductos;
-    color: #00315A;
+    color: var(--azul-titulos);
     font-size: 2vw;
     font-weight: bold;
     text-align: center;

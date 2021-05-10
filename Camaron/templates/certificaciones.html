@@ -6,24 +6,16 @@
 {% endblock %}
 
 {% block content %}
-<div class="certificaciones">
-    <div class="cert1">
-        <a href="https://www.asc-aqua.org/"><img src="{% static 'rsc\img\asc.png' %}"></a>
+<!-- Certificaciones -->
+<div class='certificacionesSubsection'>
+    <div class="tituloSubseccionCerts">
+        <p class="tituloCerts">CERTIFICACIONES INTERNACIONALES</p>
     </div>
-    <div class="cert2">
-        <a href="https://www.brcgs.com/"><img src="{% static 'rsc\img\brcgs_food_logo_cmyk.jpg' %}"></a>
+    <div class="fotosCerts">
+        {% for cert in certs %}
+            <a href="{{cert.origin}}"><img src="{% static cert.img %}" alt=""></a>
+        {% endfor %}
     </div>
-    <div class="cert3">
-        <a href="https://www.wbasco.org/es"><img src="{% static 'rsc\img\basc.png' %}"></a>
-    </div>
-    <div class="cert4">
-        <a href="https://www.haccp.com/"><img src="{% static 'rsc\img\Imagen2.jpg' %}"></a>
-    </div>
-    <div class="titulo">
-        <h1>CERTIFICACIONES INTERNACIONALES</h1>
-    </div>
-  </div>
-
-<div class="footer">.</div>
-
+</div>
+<!-- Certificaciones -->
 {% endblock %}
