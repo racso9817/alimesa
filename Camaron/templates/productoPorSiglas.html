@@ -1,0 +1,16 @@
+{% extends 'top.html' %}
+{% load static%}
+
+{% block headExtend %}
+<link rel="stylesheet" type="text/css" href="{% static 'css\cont.css' %}" media="screen">
+{% endblock %}
+
+{% block content %}
+
+<h1>{{prod.nombre}}</h1>
+<img src="{% static prod.img %}">
+<p>{{prod.sizes|linebreaksbr}}</p>
+<p>{{prod.packaging|linebreaksbr}}</p>
+<p>{{prod.freezing|linebreaksbr}}</p>
+
+{% endblock %}

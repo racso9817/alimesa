@@ -15,7 +15,7 @@
   <div class="dataProductos">
     {% for prod in prods %}
     <div class="cartaProducto">
-      <div class="fotoProducto">
+      <div class="fotoProducto" onclick='location.href="{{prod.siglas}}";'>
         <img src="{% static prod.img %}" alt="">
         <div class="sizesFreezing">
           <div class="sizesProducto">
@@ -42,7 +42,7 @@
   </div>
   <div class="flexMarcas">
     {% for marca in marcas %}
-      <img class="imgMarca" src="{% static marca.img %}" alt="">
+    <img class="imgMarca" src="{% static marca.img %}" alt="">
     {% endfor %}
   </div>
 </div>

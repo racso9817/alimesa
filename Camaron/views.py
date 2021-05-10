@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import Http404
 from .models import *
 
 def inicio(request):
@@ -40,6 +41,23 @@ def productos(request):
     context = {
         'prods': prods,
         'marcas': marcas,
+    }
+    return render(request, template, context)
+
+def productoPorSiglas(request, siglas=""):
+    template = "productoPorSiglas.html"
+    products = Producto.objects.all()
+    try:
+        p = products.get(siglas=siglas.upper())
+        p.sizes = "\n".join(p.sizes.split("|"))
+        p.freezing = "\n".join(p.freezing.split("|"))
+        p.packaging = "\n".join(p.packaging.split("|"))
+    except Exception as e:
+        print(e)
+        raise Http404
+
+    context = {
+        'prod': p,
     }
     return render(request, template, context)
 

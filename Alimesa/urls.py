@@ -21,10 +21,18 @@ from Camaron.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+
     path('', inicio, name='inicio'),
+
     path('certificaciones/', certificaciones, name='certificaciones'),
+
     path('productos/', productos, name='productos'),
+    path('productos/<str:siglas>', productoPorSiglas, name='vistaProductoPorSiglas'),
+
     path('acerca/', acerca, name='acerca'),
+
     path('multimedia/', multimedia, name='multimedia'),
+
     path('contacto/', contacto, name='contacto'),
+
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
