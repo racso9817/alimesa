@@ -6,138 +6,83 @@
 {% endblock %}
 
 {% block content %}
-<div class="grid-container">
-    <div class="titulo">HEAD-ON SHELL-ON (HOSO)</div>
-    <div class="imgHOSO"><img src="{% static 'rsc\img\HOSO.jpg' %}"></div>
-    <div class="sz">
-      <div class="sztitle">Sizes</div>
-      <div class="szcont">
-          <p>20/30</p>
-          <p>30/40</p>
-          <p>40/50</p>
-          <p>50/60</p>
-          <p>60/70</p>
-          <p>70/80</p>
-      </div>
-    </div>
-    <div class="pckg">
-      <div class="pckg-title">Packaging</div>
-      <div class="pckgcont">
-          <p>2.00 Kg</p>
-          <p>1.00 Kg</p>
-          <p>500 g</p>
-          <p>400 g</p>
-      </div>
-    </div>
-    <div class="free">
-      <div class="freetitle">Freezing</div>
-      <div class="freecont">
-          <p>BLOQUE</p>
-          <p>O</p>
-          <p>SEMI IQF</p>
-      </div>
-    </div>
-  </div>
 
-  <div class="grid-container">
-    <div class="titulo">HEAD-LESS SHELL-ON (HLSO)</div>
-    <div class="imgHOSO"><img src="{% static 'rsc\img\HLSO.jpg' %}"></div>
-    <div class="sz">
-      <div class="sztitle">Sizes</div>
-      <div class="szcont">
-        <p>16/20</p>
-        <p>21/25</p>
-        <p>26/30</p>
-        <p>31/35</p>
-        <p>36/40</p>
-        <p>41/50</p>
-        <p>51/60</p>
-        <p>61/70</p>
-        <p>71/90</p>
-      </div>
-    </div>
-    <div class="pckg">
-      <div class="pckg-title">Packaging</div>
-      <div class="pckgcont">
-          <p>2.00 Kg</p>
-          <p>1.00 Kg</p>
-          <p>500 g</p>
-          <p>400 g</p>
-      </div>
-    </div>
-    <div class="free">
-      <div class="freetitle">Freezing</div>
-      <div class="freecont">
-          <p>BLOQUE</p>
-          <p>O</p>
-          <p>SEMI IQF</p>
-      </div>
-    </div>
+<!-- Productos -->
+<div class="productosSubsection">
+  <div class="tituloSubseccion">
+    <p class="tituloProductos">NUESTROS PRODUCTOS</p>
   </div>
+  <div class="dataProductos">
+    {% for prod in prods %}
+    <div class="cartaProducto">
+      <div class="fotoProducto">
+        <img src="{% static prod.img %}" alt="">
+        <div class="sizesFreezing">
+          <div class="sizesProducto">
+            <p><b>Tallas:</b><br>{{prod.sizes|linebreaksbr}}</p>
+          </div>
+          <div class="freezingProducto">
+            <p><b>Congelación:</b><br>{{prod.freezing|linebreaksbr}}</p>
+          </div>
+        </div>
+      </div>
+      <div class="siglasProducto">
+        <p class="siglasProductoP">{{prod.siglas}}</p>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+<!-- Productos -->
 
-  <div class="grid-container">
-    <div class="titulo">VALUE ADDED – P&DTOFF</div>
-    <div class="imgHOSO"><img src="{% static 'rsc\img\VALUE_ADDED.png' %}"></div>
-    <div class="sz">
-      <div class="sztitle">Sizes</div>
-      <div class="szcont">
-          <p>16/20</p>
-          <p>21/25</p>
-          <p>26/30</p>
-          <p>31/40</p>
-          <p>41/50</p>
-          <p>51/60</p>
-          <p>61/70</p>
-          <p>71/90</p>
-      </div>
-    </div>
-    <div class="pckg">
-      <div class="pckg-title">Packaging</div>
-      <div class="pckgcont">
-          <p>2.00 Kg</p>
-          <p>1.00 Kg</p>
-          <p>500 g</p>
-          <p>400 g</p>
-      </div>
-    </div>
-    <div class="free">
-      <div class="freetitle">Freezing</div>
-      <div class="freecont">
-          <p>BLOQUE</p>
-          <p>O</p>
-          <p>IQF</p>
-      </div>
-    </div>
+<!-- Marcas -->
+<div class="marcasSubsection">
+  <div class="tituloMarcas">
+    <p class="tituloProductos">NUESTRAS MARCAS</p>
   </div>
+  <div class="flexMarcas">
+    {% for marca in marcas %}
+      <img class="imgMarca" src="{% static marca.img %}" alt="">
+    {% endfor %}
+  </div>
+</div>
+<!-- Marcas -->
 
-  <div class="marcas">
-    <div class="titulo">NUESTRAS MARCAS</div>
-    <div class="certs">
-        <a href="https://www.asc-aqua.org/"><img src="{% static 'rsc\img\asc.png' %}"></a>
-        <a href="https://www.brcgs.com/"><img src="{% static 'rsc\img\brcgs_food_logo_cmyk.jpg' %}"></a>
-        <a href="https://www.wbasco.org/es"><img src="{% static 'rsc\img\basc.png' %}"></a>
-        <a href="https://www.haccp.com/"><img src="{% static 'rsc\img\Imagen2.jpg' %}"></a>
-    </div>
-    <div class="br1">
-        <img src="{% static 'rsc\img\IMG_0026.jpg' %}">
-    </div>
-    <div class="br2">
-        <img src="{% static 'rsc\img\IMG_0029.jpg' %}">
-    </div>
-    <div class="br3">
-        <img src="{% static 'rsc\img\CAMARON-GRANDE.jpg' %}">
-    </div>
-    <div class="br4">
-        <img src="{% static 'rsc\img\IMG_1927-removebg-preview.png' %}">
-    </div>
-    <div class="br5">
-        <img src="{% static 'rsc\img\IMG_1976-removebg-preview.png' %}">
-    </div>
-    <div class="br6">
-        <img src="{% static 'rsc\img\CAMARON-4-LB.jpg' %}">
-    </div>
+<!--
+
+<div class="marcas">
+  <div class="titulo">NUESTRAS MARCAS</div>
+  <div class="certs">
+    <a href="https://www.asc-aqua.org/"><img src="{% static 'rsc\img\asc.png' %}"></a>
+    <a href="https://www.brcgs.com/"><img src="{% static 'rsc\img\brcgs_food_logo_cmyk.jpg' %}"></a>
+    <a href="https://www.wbasco.org/es"><img src="{% static 'rsc\img\basc.png' %}"></a>
+    <a href="https://www.haccp.com/"><img src="{% static 'rsc\img\Imagen2.jpg' %}"></a>
   </div>
+  <div class="br1">
+    <img src="{% static 'rsc\img\IMG_0026.jpg' %}">
+  </div>
+  <div class="br2">
+    <img src="{% static 'rsc\img\IMG_0029.jpg' %}">
+  </div>
+  <div class="br3">
+    <img src="{% static 'rsc\img\CAMARON-GRANDE.jpg' %}">
+  </div>
+  <div class="br4">
+    <img src="{% static 'rsc\img\IMG_1927-removebg-preview.png' %}">
+  </div>
+  <div class="br5">
+    <img src="{% static 'rsc\img\IMG_1976-removebg-preview.png' %}">
+  </div>
+  <div class="br6">
+    <img src="{% static 'rsc\img\CAMARON-4-LB.jpg' %}">
+  </div>
+</div>
+-->
 
 <div class="footer">.</div>
 
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'rsc\js\prods.js' %}"></script>
 {% endblock %}

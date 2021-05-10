@@ -85,7 +85,7 @@
         "pk": 2,
         "fields": {
             "nombre": "Alimesa",
-            "img": "https://alimesa.herokuapp.com/static/rsc/img/IMG_0029.jpg",
+            "img": "rsc/img/IMG_0029.jpg",
             "hoverText": "Alimesa"
         }
     },

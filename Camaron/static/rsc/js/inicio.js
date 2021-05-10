@@ -26,30 +26,34 @@ function scrollFunction() {
     document.getElementById("logo").style.maxHeight = "5.5vw";
     document.getElementById("logo").style.left = "47.25vw";
     // Nav
-    document.getElementsByClassName("navbar")[0].style.backgroundColor = "#00315A";
+    document.getElementsByClassName("navbar")[0].style.backgroundColor = "var(--azul-nav)";
     //Titulos
     Array.prototype.forEach.call(document.getElementsByClassName("TituloSeccion"), function(n) {
-      n.style.color = "#F7F7F7";
+      n.style.color = "var(--blanco-nav)";
     });
     // TODO: Cambiar las imagenes del teléfono y del sobre
     // DatosEIdioma
-    document.getElementsByClassName("DatosEIdioma")[0].style.backgroundColor = "#F7F7F7";
+    document.getElementsByClassName("DatosEIdioma")[0].style.backgroundColor = "var(--blanco-nav)";
     Array.prototype.forEach.call(document.getElementsByClassName("linksCEI"), function(n) {
-      n.style.color = "#00315A";
+      n.style.color = "var(--azul-titulos)";
     });
   } else {
     // Logo
     document.getElementById("logo").src = "/static/rsc/img/logo triangulo.png";
     // Nav
-    document.getElementsByClassName("navbar")[0].style.backgroundColor = "#F7F7F7";
+    document.getElementsByClassName("navbar")[0].style.backgroundColor = "var(--blanco-nav)";
     //Titulos
     Array.prototype.forEach.call(document.getElementsByClassName("TituloSeccion"), function(n) {
-      n.style.color = "#00315A";
+      n.style.color = "var(--azul-nav)";
     });
     // DatosEIdioma
-    document.getElementsByClassName("DatosEIdioma")[0].style.backgroundColor = "#00315A";
+    document.getElementsByClassName("DatosEIdioma")[0].style.backgroundColor = "var(--azul-nav)";
     Array.prototype.forEach.call(document.getElementsByClassName("linksCEI"), function(n) {
-      n.style.color = "#F7F7F7";
+      n.style.color = "var(--blanco-nav)";
     });
   }
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  scrollFunction();
+})
