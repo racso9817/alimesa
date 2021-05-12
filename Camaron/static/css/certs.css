@@ -151,7 +151,7 @@
 
 .tituloCerts {
     color: var(--azul-titulos);
-    font-size: 2vw;
+    font-size: var(--sub-title-font-size);
     font-weight: bold;
     text-align: center;
     width: 100%;
