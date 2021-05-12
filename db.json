@@ -36,6 +36,15 @@
         }
     },
     {
+        "model": "Camaron.carausel",
+        "pk": 11,
+        "fields": {
+            "image": "rsc/img/940328BB.jpg",
+            "title": "CUMPLIMOS LAS EXIGENCIAS DE  LOS MERCADOS INTERNACIONALES",
+            "sub_title": "nada"
+        }
+    },
+    {
         "model": "Camaron.producto",
         "pk": 1,
         "fields": {
@@ -117,6 +126,15 @@
         }
     },
     {
+        "model": "Camaron.marca",
+        "pk": 6,
+        "fields": {
+            "nombre": "CAMARON 4LB",
+            "img": "rsc/img/CAMARON-4-LB.jpg",
+            "hoverText": "CAMARÓN 4 LB"
+        }
+    },
+    {
         "model": "Camaron.certificado",
         "pk": 1,
         "fields": {
@@ -124,7 +142,7 @@
             "img": "rsc/img/asc.png",
             "hoverText": "Farmed Resposibly",
             "origin": "https://www.asc-aqua.org/what-we-do/our-standards/farm-standards/the-shrimp-standard/",
-            "imgCert": "rsc/img/asc.png"
+            "imgCert": "rsc/docs/ASC CERTIFICATE - EXPOTUNA.PDF"
         }
     },
     {
@@ -135,7 +153,7 @@
             "img": "rsc/img/brcgs_food_logo_cmyk.jpg",
             "hoverText": "BRCGS Food Safety",
             "origin": "https://www.brcgs.com/our-standards/food-safety/",
-            "imgCert": "rsc/img/brcgs_food_logo_cmyk.jpg"
+            "imgCert": "rsc/docs/BRC - EXPOTUNA S.A. - CU 831684.jpg"
         }
     },
     {
@@ -144,9 +162,9 @@
         "fields": {
             "nombre": "BASC Secure Commerce",
             "img": "rsc/img/basc.png",
-            "hoverText": "BASC Secure Commerce",
+            "hoverText": "BASCSecure Commerce",
             "origin": "https://www.wbasco.org/es",
-            "imgCert": "rsc/img/basc.png"
+            "imgCert": "rsc/docs/BASC.jpeg"
         }
     },
     {
@@ -157,7 +175,7 @@
             "img": "rsc/img/Imagen2.jpg",
             "hoverText": "HACCP Hazard Analysis Critical Control Point",
             "origin": "https://www.haccp.com/",
-            "imgCert": "rsc/img/Imagen2.jpg"
+            "imgCert": "rsc/docs/HACCP INGLES-EXPOTUNA-23DIC2020-signed.pdf"
         }
     }
 ]
