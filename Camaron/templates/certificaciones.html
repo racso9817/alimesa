@@ -16,6 +16,11 @@
             <a href="{{cert.origin}}"><img src="{% static cert.img %}" alt=""></a>
         {% endfor %}
     </div>
+    <div class="docCerts">
+        {% for cert in certs %}
+            <iframe src="{% static cert.imgCert %}"></iframe>
+        {% endfor %}
+    </div>
 </div>
 <!-- Certificaciones -->
 {% endblock %}

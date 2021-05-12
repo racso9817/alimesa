@@ -58,6 +58,9 @@ def productoPorSiglas(request, siglas=""):
 
     context = {
         'prod': p,
+        'sizes': p.sizes,
+        'freezing': p.freezing,
+        'packaging': p.packaging,
     }
     return render(request, template, context)
 
