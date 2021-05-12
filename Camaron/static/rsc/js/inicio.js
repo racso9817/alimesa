@@ -22,7 +22,7 @@ function scrollFunction() {
   // MaxHeight del carouselExampleCaptions + 0.015
   if (document.body.scrollTop > vw*0.4375 || document.documentElement.scrollTop > vw*0.4375) {
     // Logo
-    document.getElementById("logo").src = "/static/rsc/img/1.png";
+    document.getElementById("logo").src = "/static/rsc/img/Recurso 4.png";
     document.getElementById("logo").style.maxHeight = "5.5vw";
     document.getElementById("logo").style.left = "47.25vw";
     // Nav
@@ -39,7 +39,7 @@ function scrollFunction() {
     });
   } else {
     // Logo
-    document.getElementById("logo").src = "/static/rsc/img/logo triangulo.png";
+    document.getElementById("logo").src = "/static/rsc/img/logoAzultri.png";
     // Nav
     document.getElementsByClassName("navbar")[0].style.backgroundColor = "var(--blanco-nav)";
     //Titulos

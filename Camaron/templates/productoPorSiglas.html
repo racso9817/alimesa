@@ -8,9 +8,21 @@
 {% block content %}
 
 <h1>{{prod.nombre}}</h1>
-<img src="{% static prod.img %}">
-<p>{{prod.sizes|linebreaksbr}}</p>
-<p>{{prod.packaging|linebreaksbr}}</p>
-<p>{{prod.freezing|linebreaksbr}}</p>
 
+<div class="grid-container">
+    <div class="info">
+      <div class="sizes">Sizes</div>
+      <div class="packaging">Packaging</div>
+      <div class="freezing">Freezing</div>
+      <div class="sizeDesc"><p>{{prod.sizes|linebreaksbr}}</p></div>
+      <div class="packDesc"><p>{{prod.packaging|linebreaksbr}}</p></div>
+      <div class="freeDesc"><p>{{prod.freezing|linebreaksbr}}</p></div>
+    </div>
+    <div class="foto"><img src="{% static prod.img %}"></div>
+  </div>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'rsc\js\prods.js' %}"></script>
 {% endblock %}
