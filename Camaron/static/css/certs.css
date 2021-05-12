@@ -175,3 +175,8 @@
 .docCets {
     grid-area: docCerts;
 }
+
+iframe {
+    width: auto;
+    height: auto;
+}

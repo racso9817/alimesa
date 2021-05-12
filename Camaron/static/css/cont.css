@@ -126,18 +126,20 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 0.5fr;
     gap: 0px 0px;
     grid-template-areas:
       "foto info";
+    padding-bottom: 2vw;
+    padding-right: 2vw;
   }
   
   .info {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr 0.5fr;
-    grid-template-rows: 0.2fr 1.5fr;
-    gap: 0.1vw 0.1vw;
+    grid-template-rows: 0.2fr 1fr;
+    gap: 1vw 3vw;
     grid-template-areas:
       "sizes packaging freezing"
       "sizeDesc packDesc freeDesc";
@@ -151,6 +153,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
 }
   
   .packaging { grid-area: packaging; 
@@ -160,6 +165,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
 }
   
   .freezing { grid-area: freezing; 
@@ -169,6 +177,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: bold;
 }
   
   .sizeDesc { grid-area: sizeDesc; 
@@ -203,6 +214,7 @@
     max-height: 28vw;
     min-width: 30vw;
     max-width: 30vw;
+    text-align: center;
 }
 
   .foto img {
@@ -216,4 +228,9 @@
     padding-top: 5vw;  
     text-align: center;
     color: var(--azul-titulos);
+  }
+
+  .info p {
+      color: white;
+      font-size: 1.2vw;
   }
