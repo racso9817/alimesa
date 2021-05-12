@@ -15,7 +15,7 @@
   <div class="dataProductos">
     {% for prod in prods %}
     <div class="cartaProducto">
-      <div class="fotoProducto" onclick='location.href="{{prod.siglas}}";'>
+      <div class="fotoProducto">
         <img src="{% static prod.img %}" alt="">
         <div class="sizesFreezing">
           <div class="sizesProducto">
@@ -24,6 +24,7 @@
           <div class="freezingProducto">
             <p><b>Congelación:</b><br>{{prod.freezing|linebreaksbr}}</p>
           </div>
+          <a class="bVM" href="/productos/{{prod.siglas}}">Ver más</a>
         </div>
       </div>
       <div class="siglasProducto">

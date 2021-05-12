@@ -151,7 +151,7 @@
 .tituloProductos {
     grid-area: tituloProductos;
     color: var(--azul-titulos);
-    font-size: 2vw;
+    font-size: var(--sub-title-font-size);
     font-weight: bold;
     text-align: center;
     width: 100%;
@@ -198,6 +198,23 @@
     object-fit: cover;
 }
 
+.bVM {
+    position: relative;
+    top: -3vw;
+    left: 8vw;
+    width: 9vw;
+    height: min-content;
+    text-align: center;
+    font-size: 1.5vw;
+    border-radius: 20px;
+}
+
+.bVM, .bVM:hover, .bVM:active, .bVM:visited, .bVM:focus {
+    text-decoration:none;
+    background-color: var(--azul-nav);
+    color: var(--blanco-nav);
+}
+
 .sizesFreezing {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -212,7 +229,7 @@
     width: 100%;
     height: 30vw;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 1.4vw;
 }
 
 .sizesFreezing b{
@@ -279,7 +296,7 @@
 
 .tituloMarcas p{
     color: var(--azul-titulos);
-    font-size: 2vw;
+    font-size: var(--sub-title-font-size);
     font-weight: bold;
     text-align: center;
     width: 100%;
