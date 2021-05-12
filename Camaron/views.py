@@ -3,8 +3,7 @@ from django.http import Http404
 from .models import *
 
 def inicio(request):
-    template = "new_inicio.html"
-    #template = "inicio.html"
+    template = "inicio.html"
     # Cambiar a filter el all de fotos cuando se agregue la seccion a carousel
     fotos = Carausel.objects.all()
     prods = Producto.objects.all()
