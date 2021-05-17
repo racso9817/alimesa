@@ -10,4 +10,5 @@
     --LinksSeccionesHeight: 11.25vh;
     --transition-time: 0.2s;
     --sub-title-font-size: 1.9vw;
+    --height-prod-dv: calc(100vh - var(--LinksSeccionesHeight) - var(--CEIheight) - 5vh);
 }
