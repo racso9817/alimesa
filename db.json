@@ -5,7 +5,8 @@
         "fields": {
             "image": "rsc/img/LIMBOMAR.jpg",
             "title": "PRODUCTOS SELECCIONADOS QUE CUMPLEN LAS EXIGENCIAS DE MERCADOS INTERNACIONALES",
-            "sub_title": "nada"
+            "sub_title": "nada",
+            "section": "inicio"
         }
     },
     {
@@ -14,7 +15,8 @@
         "fields": {
             "image": "rsc/img/Panonarica.png",
             "title": "PRODUCTOS SELECCIONADOS QUE CUMPLEN LAS EXIGENCIAS DE MERCADOS INTERNACIONALES",
-            "sub_title": "nada"
+            "sub_title": "nada",
+            "section": "inicio"
         }
     },
     {
@@ -23,7 +25,8 @@
         "fields": {
             "image": "rsc/img/Imagen1.png",
             "title": "GARANTIZAMOS LA CALIDAD, SABOR Y FRESCURA DEL CAMARON ECUATORIANO",
-            "sub_title": "nada"
+            "sub_title": "nada",
+            "section": "inicio"
         }
     },
     {
@@ -32,7 +35,8 @@
         "fields": {
             "image": "rsc/img/Alimesa_186.jpg",
             "title": "CALIFICADOS PARA BRINDAR PRODUCTOS DE PRIMERA",
-            "sub_title": "nada"
+            "sub_title": "nada",
+            "section": "inicio"
         }
     },
     {
@@ -41,7 +45,38 @@
         "fields": {
             "image": "rsc/img/940328BB.jpg",
             "title": "CUMPLIMOS LAS EXIGENCIAS DE  LOS MERCADOS INTERNACIONALES",
-            "sub_title": "nada"
+            "sub_title": "nada",
+            "section": "inicio"
+        }
+    },
+    {
+        "model": "Camaron.carausel",
+        "pk": 12,
+        "fields": {
+            "image": "rsc/img/Panonarica.png",
+            "title": "Expotuna S.A. Es una procesadora y comercializadora de pescados y mariscos congelados, que inicia sus actividades en el año 2005.",
+            "sub_title": "nada",
+            "section": "acerca"
+        }
+    },
+    {
+        "model": "Camaron.carausel",
+        "pk": 13,
+        "fields": {
+            "image": "rsc/img/ALIMESA-FULL-8.jpg",
+            "title": "Localizada estratégicamente en Guayaquil ciudad que posee una gran ventaja geográfica por ubicarse a pocas horas de los dos importantes puertos del País como lo son Guayaquil y Manta,  esto permite un abastecimiento constante de productos frescos",
+            "sub_title": "nada",
+            "section": "acerca"
+        }
+    },
+    {
+        "model": "Camaron.carausel",
+        "pk": 14,
+        "fields": {
+            "image": "rsc/img/ALIMESA-FULL-5.jpg",
+            "title": "El equipo técnico de control de calidad realiza un seguimiento y análisis constante de todos y cada uno de los procesos de producción las 24 horas del día, 365 días al año para garantizar siempre la máxima calidad.",
+            "sub_title": "nada",
+            "section": "acerca"
         }
     },
     {
@@ -141,7 +176,7 @@
             "nombre": "Farmed Responsibly asc",
             "img": "rsc/img/asc.png",
             "hoverText": "Farmed Resposibly",
-            "origin": "https://www.asc-aqua.org/what-we-do/our-standards/farm-standards/the-shrimp-standard/",
+            "origin": "https: //www.asc-aqua.org/what-we-do/our-standards/farm-standards/the-shrimp-standard/",
             "imgCert": "rsc/docs/ASC CERTIFICATE - EXPOTUNA.PDF"
         }
     },
@@ -162,7 +197,7 @@
         "fields": {
             "nombre": "BASC Secure Commerce",
             "img": "rsc/img/basc.png",
-            "hoverText": "BASCSecure Commerce",
+            "hoverText": "BASC Secure Commerce",
             "origin": "https://www.wbasco.org/es",
             "imgCert": "rsc/docs/BASC.jpeg"
         }

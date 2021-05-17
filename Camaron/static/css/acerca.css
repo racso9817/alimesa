@@ -24,7 +24,7 @@
 
 .TituloSeccion {
     text-align: center;
-    font-size: 2.75vh;
+    font-size: 1.65vw;
     color: var(--blanco-nav);
     font-weight: bold;
     text-decoration: none;
@@ -32,7 +32,7 @@
 
 .TituloSeccion:hover {
     color: var(--blanco-nav);
-    font-size: 3vh;
+    font-size: 1.85vw;
     text-decoration: underline;
 }
 
@@ -124,4 +124,28 @@
     max-height: calc(var(--LinksSeccionesHeight) + 5vh);
     z-index: 900;
     transition: var(--transition-time);
+}
+
+/* Para contener el carrousel y que se elimine el espacio en blanco entre
+el carrousel y el navbar */
+#carouselExampleCaptions {
+    position: absolute;
+    top: 15vh;
+    left: 0vw;
+    width: 100%;
+    min-width: 100%;
+    max-height: 85vh;
+}
+
+/* Para estandarizar el tamaño de las imagenes */
+#carouselExampleCaptions img {
+    width: 100%;
+    min-width: 100%;
+    height: 85vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: var(--azul-nav);
+    border-radius: 5vw;
 }

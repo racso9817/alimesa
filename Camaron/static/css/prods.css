@@ -24,7 +24,7 @@
 
 .TituloSeccion {
     text-align: center;
-    font-size: 2.75vh;
+    font-size: 1.65vw;
     color: var(--blanco-nav);
     font-weight: bold;
     text-decoration: none;
@@ -32,7 +32,7 @@
 
 .TituloSeccion:hover {
     color: var(--blanco-nav);
-    font-size: 3vh;
+    font-size: 1.85vw;
     text-decoration: underline;
 }
 
@@ -118,38 +118,33 @@
 
 #logo {
     position: fixed;
-    top: 3.75vh;
+    top: var(--CEIheight);
     left: calc(50vw - ((var(--LinksSeccionesHeight) + 5vh)/2));
     margin: auto;
-    max-height: calc(var(--LinksSeccionesHeight) + 5vh);
+    height: calc(var(--LinksSeccionesHeight) + 5vh);
     z-index: 900;
     transition: var(--transition-time);
 }
 
-.productosSubsection {
+.ProdDV {
+    position: absolute;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 3.5fr;
+    grid-template-columns: 0.45fr 0.55fr;
+    grid-template-rows: 0.25fr 1.75fr;
     gap: 0px 0px;
     grid-template-areas:
-        "tituloSubseccion"
-        "dataProductos";
-    position: absolute;
-    top: 14vh;
-    left: 0vw;
-    width: 100%;
-    min-width: 100%;
-    min-height: 86vh;
+        "NomProd NomProd"
+        "FotosProd ProdData";
+    width: 100vw;
+    max-width: 100vw;
+    text-align: center;
+    /* Para los anchor */
+    padding-top: 15vh;
+    margin-top: -15vh;
 }
 
-.tituloSubseccion {
-    display: flex;
-    grid-area: tituloSubseccion;
-    align-items: flex-end;
-}
-
-.tituloProductos {
-    grid-area: tituloProductos;
+.NomProd {
+    grid-area: NomProd;
     color: var(--azul-titulos);
     font-size: var(--sub-title-font-size);
     font-weight: bold;
@@ -158,121 +153,85 @@
     margin: 0vw;
 }
 
-.dataProductos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    grid-area: dataProductos;
-    width: 100vw;
-    height: 100%;
+.FotosProd {
+    grid-area: FotosProd;
 }
 
-.cartaProducto {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 4fr 0.5fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "fotoProducto"
-        "siglasProducto";
-    width: 30vw;
-    margin: 0vw 1.25vw 0vw 1.25vw;
-    height: min-content;
-    justify-items: center;
-}
-
-.fotoProducto {
-    grid-area: fotoProducto;
-    min-height: 30vw;
-    max-height: 30vw;
-    min-width: 25vw;
-    max-width: 25vw;
-}
-
-.fotoProducto img {
-    width: 100%;
-    height: 30vw;
-    min-width: 100%;
+.FotosProd img {
+    width: 35vw;
+    height: calc(var(--height-prod-dv) * (1.75 / 2) - 10vh);
     object-fit: cover;
+    margin: 2.5vh 5vw 7.5vh 5vw;
 }
 
-.bVM {
-    position: relative;
-    top: -3vw;
-    left: 8vw;
-    width: 9vw;
-    height: min-content;
-    text-align: center;
-    font-size: 1.5vw;
-    border-radius: 20px;
-}
-
-.bVM, .bVM:hover, .bVM:active, .bVM:visited, .bVM:focus {
-    text-decoration:none;
-    background-color: var(--azul-nav);
-    color: var(--blanco-nav);
-}
-
-.sizesFreezing {
+.ProdData {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.25fr 1.5fr;
     gap: 0px 0px;
     grid-template-areas:
-        "sizesProducto freezingProducto";
-    visibility: hidden;
-    opacity: 0;
-    position: relative;
-    top: -30vw;
-    width: 100%;
-    height: 30vw;
-    text-align: center;
-    font-size: 1.4vw;
+        "TituloSizes TituloPack TituloFreezing"
+        "ValuesSizes ValuesPack ValuesFreezing";
+    grid-area: ProdData;
 }
 
-.sizesFreezing b{
-    color: var(--azul-titulos);
+.TituloSizes {
+    grid-area: TituloSizes;
 }
 
-.sizesProducto {
-    grid-area: sizesProducto;
+.TituloPack {
+    grid-area: TituloPack;
+}
+
+.TituloFreezing {
+    grid-area: TituloFreezing;
+}
+
+.TituloTabla {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
-.freezingProducto {
-    grid-area: freezingProducto;
+.TituloTabla b {
+    color: var(--blanco-nav);
+    background-color: var(--azul-titulos);
+    padding: 1.5vh 2.5vw 1.5vh 2.5vw;
+    font-size: calc(var(--sub-title-font-size) / 1.6);
+    margin: 0%;
+    border-radius: 16px;
+}
+
+.ValuesSizes {
+    grid-area: ValuesSizes;
+}
+
+.ValuesPack {
+    grid-area: ValuesPack;
+}
+
+.ValuesFreezing {
+    grid-area: ValuesFreezing;
+}
+
+.ValueCell {
     display: flex;
-    flex-wrap: wrap;
+    align-items: flex-start;
     justify-content: center;
-    align-items: center;
 }
 
-.fotoProducto:hover .sizesFreezing {
-    visibility: visible;
-    background-color: var(--blanco-nav);
-    opacity: 0.8;
-}
-
-.siglasProducto {
-    grid-area: siglasProducto;
+.DataTabla {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-    width: 100%;
-}
-
-.siglasProductoP {
-    width: 100%;
-    color: var(--azul-titulos);
-    font-size: 1.5vw;
-    font-weight: bold;
-    text-align: center;
+    justify-content: center;
+    color: var(--blanco-nav);
+    background-color: var(--azul-titulos);
+    font-size: calc(var(--sub-title-font-size) / 1.6);
+    margin: 0%;
+    border-radius: 16px;
+    width: calc((55vw / 3) / 1.6);
+    height: 50vh;
+    padding-top: 2.5vh;
 }
 
 .marcasSubsection {
@@ -284,8 +243,7 @@
         "tituloMarcas"
         "flexMarcas";
     position: absolute;
-    top: 55.75vw;
-    width: 100%;
+    width: 100vw;
 }
 
 .tituloMarcas {
@@ -294,7 +252,7 @@
     align-items: center;
 }
 
-.tituloMarcas p{
+.tituloMarcas p {
     color: var(--azul-titulos);
     font-size: var(--sub-title-font-size);
     font-weight: bold;

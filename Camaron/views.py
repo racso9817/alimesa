@@ -31,15 +31,21 @@ def certificaciones(request):
 def productos(request):
     template = "productos.html"
     prods = Producto.objects.all()
-    cont = 0
+    cont = -1
+    pad = 0
     for p in prods:
-        cont += 1
+        p.cont = max(cont, 0)
+        p.pad = int(pad > 0)
         p.sizes = "\n".join(p.sizes.split("|"))
         p.freezing = "\n".join(p.freezing.split("|"))
+        p.packaging = "\n".join(p.packaging.split("|"))
+        cont += 1
+        pad += 1
     marcas = Marca.objects.all()
     context = {
         'prods': prods,
         'marcas': marcas,
+        'cont': cont,
     }
     return render(request, template, context)
 

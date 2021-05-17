@@ -8,36 +8,39 @@
 {% block content %}
 
 <!-- Productos -->
-<div class="productosSubsection">
-  <div class="tituloSubseccion">
-    <p class="tituloProductos">NUESTROS PRODUCTOS</p>
+{% for prod in prods %}
+<div class="ProdDV" id="{{prod.siglas}}" style="top: calc((var(--CEIheight) + var(--LinksSeccionesHeight) + 5vh) 
+  + (var(--height-prod-dv) * {{prod.pad}})
+  + ((var(--height-prod-dv) + 10vh) * {{prod.cont}}));
+  min-height: calc(var(--height-prod-dv) + (10vh * {{prod.pad}}));">
+  <div class="NomProd">{{prod.nombre}} ({{prod.siglas}})</div>
+  <div class="FotosProd">
+    <img src="{% static prod.img %}" alt="">
   </div>
-  <div class="dataProductos">
-    {% for prod in prods %}
-    <div class="cartaProducto">
-      <div class="fotoProducto">
-        <img src="{% static prod.img %}" alt="">
-        <div class="sizesFreezing">
-          <div class="sizesProducto">
-            <p><b>Tallas:</b><br>{{prod.sizes|linebreaksbr}}</p>
-          </div>
-          <div class="freezingProducto">
-            <p><b>Congelación:</b><br>{{prod.freezing|linebreaksbr}}</p>
-          </div>
-          <a class="bVM" href="/productos/{{prod.siglas}}">Ver más</a>
-        </div>
-      </div>
-      <div class="siglasProducto">
-        <p class="siglasProductoP">{{prod.siglas}}</p>
-      </div>
+  <div class="ProdData">
+    <div class="TituloSizes TituloTabla"><b>SIZES</b></div>
+    <div class="TituloPack TituloTabla"><b>PACKAGING</b></div>
+    <div class="TituloFreezing TituloTabla"><b>FREEZING</b></div>
+    <div class="ValuesSizes ValueCell">
+      <p class="DataTabla">{{prod.sizes|linebreaksbr}}</p>
     </div>
-    {% endfor %}
+    <div class="ValuesPack ValueCell">
+      <p class="DataTabla">{{prod.packaging|linebreaksbr}}</p>
+    </div>
+    <div class="ValuesFreezing ValueCell">
+      <p class="DataTabla">{{prod.freezing|linebreaksbr}}</p>
+    </div>
   </div>
 </div>
+{% endfor %}
 <!-- Productos -->
 
 <!-- Marcas -->
-<div class="marcasSubsection">
+<div class="marcasSubsection"
+  style="top: calc((var(--CEIheight) + var(--LinksSeccionesHeight) + 5vh) 
+  + (var(--height-prod-dv)) 
+  + ((var(--height-prod-dv) + 10vh) * {{ cont }}));
+  min-height: calc(var(--height-prod-dv) + 10vh);">
   <div class="tituloMarcas">
     <p class="tituloProductos">NUESTRAS MARCAS</p>
   </div>
@@ -48,37 +51,6 @@
   </div>
 </div>
 <!-- Marcas -->
-
-<!--
-
-<div class="marcas">
-  <div class="titulo">NUESTRAS MARCAS</div>
-  <div class="certs">
-    <a href="https://www.asc-aqua.org/"><img src="{% static 'rsc\img\asc.png' %}"></a>
-    <a href="https://www.brcgs.com/"><img src="{% static 'rsc\img\brcgs_food_logo_cmyk.jpg' %}"></a>
-    <a href="https://www.wbasco.org/es"><img src="{% static 'rsc\img\basc.png' %}"></a>
-    <a href="https://www.haccp.com/"><img src="{% static 'rsc\img\Imagen2.jpg' %}"></a>
-  </div>
-  <div class="br1">
-    <img src="{% static 'rsc\img\IMG_0026.jpg' %}">
-  </div>
-  <div class="br2">
-    <img src="{% static 'rsc\img\IMG_0029.jpg' %}">
-  </div>
-  <div class="br3">
-    <img src="{% static 'rsc\img\CAMARON-GRANDE.jpg' %}">
-  </div>
-  <div class="br4">
-    <img src="{% static 'rsc\img\IMG_1927-removebg-preview.png' %}">
-  </div>
-  <div class="br5">
-    <img src="{% static 'rsc\img\IMG_1976-removebg-preview.png' %}">
-  </div>
-  <div class="br6">
-    <img src="{% static 'rsc\img\CAMARON-4-LB.jpg' %}">
-  </div>
-</div>
--->
 
 <div class="footer">.</div>
 

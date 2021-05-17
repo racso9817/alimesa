@@ -2,6 +2,8 @@ window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
   const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+  document.getElementById("tlf").src = "/static/rsc/img/tlfAzul.png";
+  document.getElementById("mail").src = "/static/rsc/img/mailAzul.png";
 
   // Cambiar tamaño
   if (document.body.scrollTop > vw * 0.01 || document.documentElement.scrollTop > vw * 0.01) {

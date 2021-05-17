@@ -24,7 +24,7 @@
 
 .TituloSeccion {
     text-align: center;
-    font-size: 2.75vh;
+    font-size: 1.65vw;
     color: var(--azul-nav);
     font-weight: bold;
     text-decoration: none;
@@ -32,7 +32,7 @@
 
 .TituloSeccion:hover {
     color: var(--azul-titulos);
-    font-size: 3vh;
+    font-size: 1.85vw;
     text-decoration: underline;
 }
 
@@ -312,7 +312,7 @@ el carrousel y el navbar */
     left: 0vw;
     width: 100%;
     min-width: 100%;
-    min-height: 90vh;
+    min-height: 50vh;
 }
 
 .tituloSubseccionCerts {
@@ -340,9 +340,9 @@ el carrousel y el navbar */
 }
 
 .fotosCerts img {
-    width: 18vw;
-    height: 18vw;
-    min-width: 18vw;
+    width: 16vw;
+    height: 16vw;
+    min-width: 16vw;
     object-fit: contain;
-    margin: 3.5vw;
+    margin: 4.5vw;
 }

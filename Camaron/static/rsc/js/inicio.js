@@ -33,6 +33,8 @@ function scrollFunction() {
     document.getElementById("logo").style.top = "3vh";
     // Nav
     document.getElementsByClassName("navbar")[0].style.backgroundColor = "var(--azul-nav)";
+    document.getElementById("tlf").src = "/static/rsc/img/tlfAzul.png";
+    document.getElementById("mail").src = "/static/rsc/img/mailAzul.png";
     //Titulos
     Array.prototype.forEach.call(document.getElementsByClassName("TituloSeccion"), function(n) {
       n.style.color = "var(--blanco-nav)";
@@ -48,6 +50,8 @@ function scrollFunction() {
     document.getElementById("logo").src = "/static/rsc/img/logoAzultri.png";
     // Nav
     document.getElementsByClassName("navbar")[0].style.backgroundColor = "var(--blanco-nav)";
+    document.getElementById("tlf").src = "/static/rsc/img/phone.png";
+    document.getElementById("mail").src = "/static/rsc/img/mail.png";
     //Titulos
     Array.prototype.forEach.call(document.getElementsByClassName("TituloSeccion"), function(n) {
       n.style.color = "var(--azul-nav)";

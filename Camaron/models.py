@@ -5,8 +5,9 @@ from django.db import models
 
 class Carausel(models.Model):
     image = models.CharField(max_length=150)
-    title = models.CharField(max_length=150)
+    title = models.CharField(max_length=500)
     sub_title = models.CharField(max_length=100)
+    section = models.CharField(max_length=100)
 
     def __str__(self):
         return self.title
