@@ -54,7 +54,7 @@
         "pk": 12,
         "fields": {
             "image": "rsc/img/Panonarica.png",
-            "title": "Expotuna S.A. Es una procesadora y comercializadora de pescados y mariscos congelados, que inicia sus actividades en el a�o 2005.",
+            "title": "Expotuna S.A. Es una procesadora y comercializadora de pescados y mariscos congelados, que inicia sus actividades en el año 2005.",
             "sub_title": "nada",
             "section": "acerca"
         }
@@ -64,7 +64,7 @@
         "pk": 13,
         "fields": {
             "image": "rsc/img/ALIMESA-FULL-8.jpg",
-            "title": "Localizada estrat�gicamente en Guayaquil ciudad que posee una gran ventaja geogr�fica por ubicarse a pocas horas de los dos importantes puertos del Pa�s como lo son Guayaquil y Manta,  esto permite un abastecimiento constante de productos frescos",
+            "title": "Localizada estratégicamente en Guayaquil ciudad que posee una gran ventaja geogr�fica por ubicarse a pocas horas de los dos importantes puertos del País como lo son Guayaquil y Manta,  esto permite un abastecimiento constante de productos frescos",
             "sub_title": "nada",
             "section": "acerca"
         }
@@ -74,7 +74,7 @@
         "pk": 14,
         "fields": {
             "image": "rsc/img/ALIMESA-FULL-5.jpg",
-            "title": "El equipo t�cnico de control de calidad realiza un seguimiento y an�lisis constante de todos y cada uno de los procesos de producci�n las 24 horas del d�a, 365 d�as al a�o para garantizar siempre la m�xima calidad.",
+            "title": "El equipo técnico de control de calidad realiza un seguimiento y análisis constante de todos y cada uno de los procesos de producción las 24 horas del día, 365 días al año para garantizar siempre la máxima calidad.",
             "sub_title": "nada",
             "section": "acerca"
         }
@@ -137,9 +137,9 @@
         "model": "Camaron.marca",
         "pk": 3,
         "fields": {
-            "nombre": "Alimesa Gama T�pica",
+            "nombre": "Alimesa Gama Típica",
             "img": "rsc/img/CAMARON-GRANDE.jpg",
-            "hoverText": "Camar�n Grande"
+            "hoverText": "Camarón Grande"
         }
     },
     {
@@ -166,7 +166,7 @@
         "fields": {
             "nombre": "CAMARON 4LB",
             "img": "rsc/img/CAMARON-4-LB.jpg",
-            "hoverText": "CAMAR�N 4 LB"
+            "hoverText": "CAMARON 4 LB"
         }
     },
     {
