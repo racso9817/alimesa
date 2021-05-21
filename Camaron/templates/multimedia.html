@@ -6,4 +6,31 @@
 {% endblock %}
 
 {% block content %}
+
+    <div class="TituloVideo">
+        <p class="tituloVid">MEDIDAS DE BIOSEGURIDAD</p>
+    </div>
+    <div class="VideoBioSeg">
+        <video src="{% static 'rsc\vid\medidas.mp4' %}" width="768" height="576" muted controls autoplay></video>
+    </div>
+    <div class="Archivos">
+        {% for d in documents %}
+        <div class="fileCard">
+            <div class="tituloArch">
+                <p>{{d.titulo}}</p>
+            </div>
+            <div class="thumbArch">
+                <img src="{% static d.thumbnail %}">
+            </div>
+            <div class="dwnldBtn">
+                <a href="{% static d.pathfile %}" download>DESCARGAR</a>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+<script src="{% static 'rsc\js\prods.js' %}"></script>
 {% endblock %}

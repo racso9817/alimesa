@@ -162,6 +162,8 @@
     height: calc(var(--height-prod-dv) * (1.75 / 2) - 10vh);
     object-fit: cover;
     margin: 2.5vh 5vw 7.5vh 5vw;
+    border-radius: 16px;
+    box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 20%);
 }
 
 .ProdData {
@@ -273,4 +275,6 @@
     width: 18vw;
     height: 18vw;
     margin: 0.5vw 3.5vw 0.75vw 3.5vw;
+    border-radius: 16px;
+    box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 5%);
 }

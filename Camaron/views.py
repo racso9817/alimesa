@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.http import Http404
 from .models import *
 
@@ -23,6 +23,8 @@ def inicio(request):
 def certificaciones(request):
     template = "certificaciones.html"
     certs = Certificado.objects.all()
+    for c in certs:
+        c.className = c.nombre.replace(" ","-")
     context = {
         'certs': certs
     }
@@ -75,8 +77,23 @@ def acerca(request):
 
 def multimedia(request):
     template = "multimedia.html"
-    return render(request, template)
+    documents = ArchivoMultimedia.objects.all()
+    context = {
+        'documents': documents
+    }
+    return render(request, template, context)
 
 def contacto(request):
     template = "contacto.html"
-    return render(request, template)
+    if request.method == 'POST':
+        form = ContactoForm(request.POST)
+        if form.is_valid:
+            form.save()
+            form.clean()
+            return redirect('contacto')
+    else:
+        form = ContactoForm()
+    context = {
+        'form':form,
+    }
+    return render(request, template, context)
