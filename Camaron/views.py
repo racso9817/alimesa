@@ -77,7 +77,11 @@ def acerca(request):
 
 def multimedia(request):
     template = "multimedia.html"
-    return render(request, template)
+    documents = ArchivoMultimedia.objects.all()
+    context = {
+        'documents': documents
+    }
+    return render(request, template, context)
 
 def contacto(request):
     template = "contacto.html"

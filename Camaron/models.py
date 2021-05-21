@@ -66,6 +66,20 @@ class Certificado(models.Model):
         verbose_name = "certificado"
         verbose_name_plural = "certificados"
 
+
+class ArchivoMultimedia(models.Model):
+    titulo = models.CharField(max_length=150, unique=True)
+    thumbnail = models.CharField(max_length=150)
+    filepath = models.CharField(max_length=150)
+
+    def __str__(self):
+        return self.titulo
+
+    class Meta:
+        verbose_name = "archivo multimedia"
+        verbose_name_plural = "archivos multimedia"
+
+
 class Contacto(models.Model):
     Nombre = models.CharField(max_length=200)
     Email = models.EmailField()

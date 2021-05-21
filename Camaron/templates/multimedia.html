@@ -7,32 +7,27 @@
 
 {% block content %}
 
-<div class="multimedia">
-    <div class="video">
-        <video src="{% static 'rsc\vid\medidas.mp4' %}" width="768" height="576" controls autoplay></video>
+    <div class="TituloVideo">
+        <p class="tituloVid">MEDIDAS DE BIOSEGURIDAD</p>
     </div>
-    <div class="titulovideo">
-        <p>VIDEO SOBRE MEDIDAS DE BIOSEGURIDAD</p>        
+    <div class="VideoBioSeg">
+        <video src="{% static 'rsc\vid\medidas.mp4' %}" width="768" height="576" muted controls autoplay></video>
     </div>
-    <div class="tit1">
-        <p>BROCHURE</p>
+    <div class="Archivos">
+        {% for d in documents %}
+        <div class="fileCard">
+            <div class="tituloArch">
+                <p>{{d.titulo}}</p>
+            </div>
+            <div class="thumbArch">
+                <img src="{% static d.thumbnail %}">
+            </div>
+            <div class="dwnldBtn">
+                <a href="{% static d.pathfile %}" download>DESCARGAR</a>
+            </div>
+        </div>
+        {% endfor %}
     </div>
-    <div class="tit2">
-        <p>BROCHURE FOTOS</p>
-    </div>
-    <div class="tit3">
-        <p>MARCAS 1 Y 2</p>
-    </div>
-    <div class="tit4">
-        <p>CALENDARIO AGUAJE</p>
-    </div>
-    <div class="pdf1">
-        
-    </div>
-    <div class="pdf2"></div>
-    <div class="pdf3"></div>
-    <div class="pdf4"></div>
-  </div>
 
 {% endblock %}
 

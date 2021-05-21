@@ -29,8 +29,9 @@
             }
         </script>
         {% for cert in certs %}
-        <div class="certsModal" id="modal-{{cert.className}}" onclick="hideDoc('modal-{{cert.className}}')" role="button">
-            <iframe loading="lazy" src="{% static cert.docCert %}"></iframe>
+        <div class="certsModal" id="modal-{{cert.className}}" onclick="hideDoc('modal-{{cert.className}}')"
+            role="button">
+            <embed loading=eager src="{% static cert.docCert %}">
         </div>
         <img src="{% static cert.imgCert %}" onclick="showDoc('modal-{{cert.className}}')" role="button">
         {% endfor %}
