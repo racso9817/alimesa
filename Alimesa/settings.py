@@ -40,6 +40,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'crispy_forms',
+    'django_countries',
+    'easy_maps',
 ]
 
 MIDDLEWARE = [
@@ -126,6 +129,10 @@ STATIC_URL = '/static/'
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+GOOGLE_MAPS_API_KEY = 'AIzaSyAMJdBDHkC1aAvibC08ml_Q_HKW8bx7mDs'
+EASY_MAPS_GOOGLE_KEY = 'AIzaSyAMJdBDHkC1aAvibC08ml_Q_HKW8bx7mDs'
+EASY_MAPS_CENTER = (-2.1027643,-79.9374007)
 
 ########################
 

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from django.http import Http404
 from .models import *
 
@@ -79,4 +79,15 @@ def multimedia(request):
 
 def contacto(request):
     template = "contacto.html"
-    return render(request, template)
+    if request.method == 'POST':
+        form = ContactoForm(request.POST)
+        if form.is_valid:
+            form.save()
+            form.clean()
+            return redirect('contacto')
+    else:
+        form = ContactoForm()
+    context = {
+        'form':form,
+    }
+    return render(request, template, context)

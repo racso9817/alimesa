@@ -128,7 +128,7 @@
 
 .multimedia {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
     grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
     gap: 0px 0px;
     grid-template-areas:
@@ -160,7 +160,6 @@
       font-weight: bold;
       text-align: center;
       width: 100%;
-      margin-top: 2.5vw;
     }
   
   .tit2 { 
@@ -170,7 +169,6 @@
       font-weight: bold;
       text-align: center;
       width: 100%;
-      margin-top: 2.5vw;
     }
   
   .tit3 { 
@@ -180,7 +178,6 @@
       font-weight: bold;
       text-align: center;
       width: 100%;
-      margin-top: 2.5vw;
     }
   
   .tit4 { 
@@ -190,7 +187,6 @@
       font-weight: bold;
       text-align: center;
       width: 100%;
-      margin-top: 2.5vw;
     }
   
   .pdf1 { grid-area: pdf1; }

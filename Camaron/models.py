@@ -1,4 +1,9 @@
 from django.db import models
+from django.db.models import fields
+from django.forms import ModelForm, widgets
+from django import forms
+from django.core import validators
+from django_countries.fields import CountryField
 
 # Create your models here.
 
@@ -59,3 +64,19 @@ class Certificado(models.Model):
     class Meta:
         verbose_name = "certificado"
         verbose_name_plural = "certificados"
+
+class Contacto(models.Model):
+    Nombre = models.CharField(max_length=200)
+    Email = models.EmailField()
+    Telefono = models.CharField(max_length=12)
+    Pais = CountryField()
+    Mensaje = models.TextField()
+
+    def __str__(self):
+        return self.Nombre+" "+self.Pais
+
+class ContactoForm(ModelForm):
+    class Meta:
+        model = Contacto
+        Telefono = forms.CharField(label="Telefono", max_length=12, validators=[validators.RegexValidator(r'\d\d\d\d\d\d\d\d\d\d|\d\d\d\d\d\d\d\d\d\d\d\d|\d\d\d\d\d\d\d|\d\d\d\d\d\d\d\d\d\d\d', ('Ingrese un telefono válido.'), 'invalid'),])
+        fields = '__all__'
