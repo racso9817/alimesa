@@ -1,6 +1,5 @@
 {% extends 'top.html' %}
 {% load crispy_forms_tags %}
-{% load easy_maps_tags %}
 {% load static%}
 
 {% block headExtend %}
@@ -19,7 +18,7 @@
             <br><img src="{% static 'rsc\img\direc.png' %}">Km 15 ½ via Daule, Av. Rosavin y <br>Asbestos, MZ F6 - Solar 21 y 22 Guayaquil – Ecuador</br></br>
         </div>
         <div class="mapa">
-            {% easy_map "Expotuna Via Daule" 400 400 %}
+            <iframe id="iframemap" src="https://maps.google.com/maps?q=Expotuna+Via+Daule&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="90%" height="400" frameborder="0" scrolling="no"></iframe>
         </div>
       </div>
       <div class="titinfo">Información</div>
