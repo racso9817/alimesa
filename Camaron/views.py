@@ -23,6 +23,8 @@ def inicio(request):
 def certificaciones(request):
     template = "certificaciones.html"
     certs = Certificado.objects.all()
+    for c in certs:
+        c.className = c.nombre.replace(" ","-")
     context = {
         'certs': certs
     }

@@ -213,12 +213,15 @@ el carrousel y el navbar */
     max-height: 30vw;
     min-width: 25vw;
     max-width: 25vw;
+    border-radius: 16px;
+    box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 20%);
 }
 
 .fotoProducto img {
     width: 100%;
     height: 30vw;
     min-width: 100%;
+    border-radius: 16px;
     object-fit: cover;
 }
 
@@ -254,6 +257,7 @@ el carrousel y el navbar */
     height: 30vw;
     text-align: center;
     font-size: 1.4vw;
+    border-radius: 16px;
 }
 
 .sizesFreezing b{

@@ -54,7 +54,7 @@
         "pk": 12,
         "fields": {
             "image": "rsc/img/Panonarica.png",
-            "title": "Expotuna S.A. Es una procesadora y comercializadora de pescados y mariscos congelados, que inicia sus actividades en el año 2005.",
+            "title": "Expotuna S.A. Es una procesadora y comercializadora de pescados y mariscos congelados, que inicia sus actividades en el a�o 2005.",
             "sub_title": "nada",
             "section": "acerca"
         }
@@ -64,7 +64,7 @@
         "pk": 13,
         "fields": {
             "image": "rsc/img/ALIMESA-FULL-8.jpg",
-            "title": "Localizada estratégicamente en Guayaquil ciudad que posee una gran ventaja geográfica por ubicarse a pocas horas de los dos importantes puertos del País como lo son Guayaquil y Manta,  esto permite un abastecimiento constante de productos frescos",
+            "title": "Localizada estrat�gicamente en Guayaquil ciudad que posee una gran ventaja geogr�fica por ubicarse a pocas horas de los dos importantes puertos del Pa�s como lo son Guayaquil y Manta,  esto permite un abastecimiento constante de productos frescos",
             "sub_title": "nada",
             "section": "acerca"
         }
@@ -74,7 +74,7 @@
         "pk": 14,
         "fields": {
             "image": "rsc/img/ALIMESA-FULL-5.jpg",
-            "title": "El equipo técnico de control de calidad realiza un seguimiento y análisis constante de todos y cada uno de los procesos de producción las 24 horas del día, 365 días al año para garantizar siempre la máxima calidad.",
+            "title": "El equipo t�cnico de control de calidad realiza un seguimiento y an�lisis constante de todos y cada uno de los procesos de producci�n las 24 horas del d�a, 365 d�as al a�o para garantizar siempre la m�xima calidad.",
             "sub_title": "nada",
             "section": "acerca"
         }
@@ -137,9 +137,9 @@
         "model": "Camaron.marca",
         "pk": 3,
         "fields": {
-            "nombre": "Alimesa Gama Típica",
+            "nombre": "Alimesa Gama T�pica",
             "img": "rsc/img/CAMARON-GRANDE.jpg",
-            "hoverText": "Camarón Grande"
+            "hoverText": "Camar�n Grande"
         }
     },
     {
@@ -166,7 +166,7 @@
         "fields": {
             "nombre": "CAMARON 4LB",
             "img": "rsc/img/CAMARON-4-LB.jpg",
-            "hoverText": "CAMARÓN 4 LB"
+            "hoverText": "CAMAR�N 4 LB"
         }
     },
     {
@@ -176,8 +176,9 @@
             "nombre": "Farmed Responsibly asc",
             "img": "rsc/img/asc.png",
             "hoverText": "Farmed Resposibly",
-            "origin": "https: //www.asc-aqua.org/what-we-do/our-standards/farm-standards/the-shrimp-standard/",
-            "imgCert": "rsc/docs/ASC CERTIFICATE - EXPOTUNA.PDF"
+            "origin": "https://www.asc-aqua.org/what-we-do/our-standards/farm-standards/the-shrimp-standard/",
+            "imgCert": "rsc/docs/ASC_thumb.png",
+            "docCert": "rsc/docs/ASC_doc.pdf"
         }
     },
     {
@@ -188,7 +189,8 @@
             "img": "rsc/img/brcgs_food_logo_cmyk.jpg",
             "hoverText": "BRCGS Food Safety",
             "origin": "https://www.brcgs.com/our-standards/food-safety/",
-            "imgCert": "rsc/docs/BRC - EXPOTUNA S.A. - CU 831684.jpg"
+            "imgCert": "rsc/docs/BRC - EXPOTUNA S.A. - CU 831684.jpg",
+            "docCert": "rsc/docs/BRC - EXPOTUNA S.A. - CU 831684.jpg"
         }
     },
     {
@@ -199,7 +201,8 @@
             "img": "rsc/img/basc.png",
             "hoverText": "BASC Secure Commerce",
             "origin": "https://www.wbasco.org/es",
-            "imgCert": "rsc/docs/BASC.jpeg"
+            "imgCert": "rsc/docs/BASC.jpeg",
+            "docCert": "rsc/docs/BASC.jpeg"
         }
     },
     {
@@ -207,10 +210,68 @@
         "pk": 4,
         "fields": {
             "nombre": "HACCP",
-            "img": "rsc/img/Imagen2.jpg",
+            "img": "rsc/img/logoHACCP.svg",
             "hoverText": "HACCP Hazard Analysis Critical Control Point",
             "origin": "https://www.haccp.com/",
-            "imgCert": "rsc/docs/HACCP INGLES-EXPOTUNA-23DIC2020-signed.pdf"
+            "imgCert": "rsc/docs/HACCP_thumb.png",
+            "docCert": "rsc/docs/HACCP_doc.pdf"
+        }
+    },
+    {
+        "model": "Camaron.contacto",
+        "pk": 1,
+        "fields": {
+            "Nombre": "Oscar",
+            "Email": "oscaravilaa9817@gmail.com",
+            "Telefono": "5939846",
+            "Pais": "EC",
+            "Mensaje": "jdkfnsdkddddddddddddddddd"
+        }
+    },
+    {
+        "model": "Camaron.contacto",
+        "pk": 2,
+        "fields": {
+            "Nombre": "Oscar",
+            "Email": "oscaravilaa9817@gmail.com",
+            "Telefono": "59398dcdczx",
+            "Pais": "EC",
+            "Mensaje": "zxczxcz"
+        }
+    },
+    {
+        "model": "Camaron.contacto",
+        "pk": 3,
+        "fields": {
+            "Nombre": "ok",
+            "Email": "oscaravilaa9817@gmail.com",
+            "Telefono": "2147942866",
+            "Pais": "AR",
+            "Mensaje": "l"
+        }
+    },
+    {
+        "model": "easy_maps.address",
+        "pk": 1,
+        "fields": {
+            "address": "Russia, Ekaterinburg, Mira 32",
+            "computed_address": null,
+            "latitude": null,
+            "longitude": null,
+            "exception": "Error: Your request was denied.",
+            "timestamp": "2021-05-21T04:57:23.400Z"
+        }
+    },
+    {
+        "model": "easy_maps.address",
+        "pk": 2,
+        "fields": {
+            "address": "Expotuna Via Daule",
+            "computed_address": null,
+            "latitude": null,
+            "longitude": null,
+            "exception": "Error: Your request was denied.",
+            "timestamp": "2021-05-21T05:17:17.197Z"
         }
     }
 ]

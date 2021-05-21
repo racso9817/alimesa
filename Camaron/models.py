@@ -15,7 +15,7 @@ class Carausel(models.Model):
     section = models.CharField(max_length=100)
 
     def __str__(self):
-        return self.title
+        return "Section: " + self.title
 
     class Meta:
         verbose_name = "foto carousel"
@@ -52,11 +52,12 @@ class Marca(models.Model):
 
 
 class Certificado(models.Model):
-    nombre = models.CharField(max_length=150)
+    nombre = models.CharField(max_length=150, unique=True)
     img = models.CharField(max_length=150)
     hoverText = models.CharField(max_length=150)
     origin = models.URLField()
     imgCert = models.CharField(max_length=150)
+    docCert = models.CharField(max_length=150)
 
     def __str__(self):
         return 'Certificado: ' + self.nombre
