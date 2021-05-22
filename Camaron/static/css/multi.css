@@ -126,96 +126,6 @@
     transition: var(--transition-time);
 }
 
-/*********************************************
-
-.multimedia {
-    display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
-    grid-template-rows: 0.2fr 1fr 0.2fr 1fr;
-    gap: 0px 0px;
-    grid-template-areas:
-        "titulovideo titulovideo titulovideo titulovideo"
-        "video video video video"
-        "tit1 tit2 tit3 tit4"
-        "pdf1 pdf2 pdf3 pdf4";
-}
-
-.video {
-    grid-area: video;
-    background: #4472C4;
-}
-
-.titulovideo {
-    grid-area: titulovideo;
-    color: var(--azul-titulos);
-    font-size: var(--sub-title-font-size);
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-    margin-top: 2.5vw;
-}
-
-.tit1 {
-    grid-area: tit1;
-    color: var(--azul-titulos);
-    font-size: var(--sub-title-font-size);
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-}
-
-.tit2 {
-    grid-area: tit2;
-    color: var(--azul-titulos);
-    font-size: var(--sub-title-font-size);
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-}
-
-.tit3 {
-    grid-area: tit3;
-    color: var(--azul-titulos);
-    font-size: var(--sub-title-font-size);
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-}
-
-.tit4 {
-    grid-area: tit4;
-    color: var(--azul-titulos);
-    font-size: var(--sub-title-font-size);
-    font-weight: bold;
-    text-align: center;
-    width: 100%;
-}
-
-.pdf1 {
-    grid-area: pdf1;
-}
-
-.pdf2 {
-    grid-area: pdf2;
-}
-
-.pdf3 {
-    grid-area: pdf3;
-}
-
-.pdf4 {
-    grid-area: pdf4;
-}
-
-.video video {
-    display: block;
-    margin: auto;
-}
-
-*/
-
-/*****************************************/
-
 .TituloVideo {
     margin-top: 20vh;
     display: flex;
@@ -234,7 +144,6 @@
 }
 
 .VideoBioSeg {
-    background: var(--azul-nav);
     width: 100vw;
     height: min-content;
 }

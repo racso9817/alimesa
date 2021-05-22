@@ -135,6 +135,13 @@ GOOGLE_MAPS_API_KEY = 'AIzaSyAMJdBDHkC1aAvibC08ml_Q_HKW8bx7mDs'
 EASY_MAPS_GOOGLE_KEY = 'AIzaSyAMJdBDHkC1aAvibC08ml_Q_HKW8bx7mDs'
 EASY_MAPS_CENTER = (-2.1027643,-79.9374007)
 
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'oscaravilaa9817@gmail.com'
+EMAIL_HOST_PASSWORD = 'Oscar18!'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+
 ########################
 
 # import dj_database_url

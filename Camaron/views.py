@@ -1,5 +1,7 @@
 from django.shortcuts import redirect, render
 from django.http import Http404
+from django.core.mail import send_mail
+from django.conf import settings
 from .models import *
 
 def inicio(request):
@@ -87,7 +89,18 @@ def contacto(request):
     template = "contacto.html"
     if request.method == 'POST':
         form = ContactoForm(request.POST)
+        message = request.POST['Mensaje']
+        sender = request.POST['Email']
+        cel = request.POST['Telefono']
+        pais = request.POST['Pais']
+        nombre = request.POST['Nombre']
         if form.is_valid:
+            send_mail(
+                'Mensaje de '+nombre,
+                message+'\n'+'Telefono: '+cel+'\n'+'Pais: '+pais+'\n'+'De: '+sender,
+                sender, 
+                ['oscaravilaa9817@gmail.com'], 
+                fail_silently=False)
             form.save()
             form.clean()
             return redirect('contacto')

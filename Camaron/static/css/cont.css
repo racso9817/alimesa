@@ -126,7 +126,8 @@
     transition: var(--transition-time);
 }
 
-.grid-container {
+
+  .grid-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -137,33 +138,22 @@
   
   .contacto {
     display: grid;
-    grid-template-columns: 0.5fr 0.6fr;
-    grid-template-rows: 0.1fr 1.8fr;
+    grid-template-columns: 0.6fr 1fr;
+    grid-template-rows: 0.2fr 1.8fr;
     gap: 0px 0px;
     grid-template-areas:
-      "titinfo titcontacto"
-      "infomapa formulariobtn";
+      "titinfo titform"
+      "info form";
     grid-area: contacto;
   }
   
-  .infomapa {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 0.3fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "info"
-      "mapa";
-    grid-area: infomapa;
-  }
-  
   .info { grid-area: info; }
-
   .info img {
     max-height: 4vh;
     margin: auto;
     padding-bottom: 0.1vw;
     padding-left: 2vw;
+    padding-right: 1vw;
   }
 
   .info #mail {
@@ -173,37 +163,68 @@
     padding-left: 2vw;
   }
   
-  .mapa { grid-area: mapa; }
+  .form { grid-area: form; }
   
   .titinfo { 
       grid-area: titinfo; 
       color: var(--azul-titulos);
       font-size: var(--sub-title-font-size);
       font-weight: bold;
-      text-align:left;
+      text-align: left;
       padding-left: 2vw;
     }
   
-  .titcontacto { 
-      grid-area: titcontacto; 
+  .titform { 
+      grid-area: titform; 
       color: var(--azul-titulos);
       font-size: var(--sub-title-font-size);
       font-weight: bold;
-      text-align: left;    
+      text-align: left;  
     }
   
-  .formulariobtn {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 0.6fr 0.5fr;
-    gap: 0px 0px;
-    grid-template-areas:
-      "formulario"
-      "btns";
-    grid-area: formulariobtn;
+
+
+  .controls input {
+    border-left: none;
+    border-top: none;  
+    border-right: none;
+    border-bottom: 0.2vw solid var(--azul-titulos);
   }
-  
-  .formulario { grid-area: formulario; }
-  
-  .btns { grid-area: btns; }
-  
+
+  #id_Nombre {
+      margin-right: 1vw;
+      margin-left: 1vw;
+  }
+  #id_Email {
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+  #id_Telefono {
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+  #id_Pais {
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+  #id_Mensaje {
+    margin-right: 1vw;
+    margin-left: 1vw;
+  }
+
+  .lazyselect {
+    border-left: none;
+    border-top: none;  
+    border-right: none;
+    border-bottom: 0.2vw solid var(--azul-titulos);
+    width: 13vw;
+  }
+
+  .textarea {
+    border-left: none;
+    border-top: none;  
+    border-right: none;
+    border-bottom: 0.2vw solid var(--azul-titulos);
+    width: 100%;
+    height: 10vw;
+  }
