@@ -7,7 +7,7 @@ from .models import *
 def inicio(request):
     template = "inicio.html"
     # Cambiar a filter el all de fotos cuando se agregue la seccion a carousel
-    fotos = Carausel.objects.all()
+    fotos = Carausel.objects.filter(section="inicio")
     prods = Producto.objects.all()
     cont = 0
     for p in prods:

@@ -128,7 +128,7 @@
 
 /* Para contener el carrousel y que se elimine el espacio en blanco entre
 el carrousel y el navbar */
-#carouselExampleCaptions {
+#carouselExampleInterval {
     position: absolute;
     top: 15vh;
     left: 0vw;
@@ -138,11 +138,34 @@ el carrousel y el navbar */
 }
 
 /* Para estandarizar el tamaño de las imagenes */
-#carouselExampleCaptions img {
+#carouselExampleInterval img {
     width: 100%;
     min-width: 100%;
     height: 85vh;
     object-fit: cover;
+}
+
+.carousel-indicators{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    height: 42px;
+    margin: 0 0 2vh 0;
+}
+
+#carouselExampleInterval > div.carousel-indicators > button {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+#carouselExampleInterval > div.carousel-indicators > button.active {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
 }
 
 .carousel-caption {
@@ -236,8 +259,12 @@ el carrousel y el navbar */
     border-radius: 20px;
 }
 
-.bVM, .bVM:hover, .bVM:active, .bVM:visited, .bVM:focus {
-    text-decoration:none;
+.bVM,
+.bVM:hover,
+.bVM:active,
+.bVM:visited,
+.bVM:focus {
+    text-decoration: none;
     background-color: var(--azul-nav);
     color: var(--blanco-nav);
 }
@@ -260,7 +287,7 @@ el carrousel y el navbar */
     border-radius: 16px;
 }
 
-.sizesFreezing b{
+.sizesFreezing b {
     color: var(--azul-titulos);
 }
 
