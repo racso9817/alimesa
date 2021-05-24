@@ -176,7 +176,7 @@ el carrousel y el navbar */
 .productosSubsection {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 3.5fr;
+    grid-template-rows: 0.7fr 3.5fr;
     gap: 0px 0px;
     grid-template-areas:
         "tituloSubseccion"
@@ -196,10 +196,16 @@ el carrousel y el navbar */
 }
 
 .tituloProductos {
-    grid-area: tituloProductos;
+    color: var(--gris-subtitulos);
+    font-size: calc(var(--sub-title-font-size) * 0.75);
+    text-align: center;
+    width: 100%;
+    margin: 0vw;
+}
+
+.tituloProductos b{
     color: var(--azul-titulos);
     font-size: var(--sub-title-font-size);
-    font-weight: bold;
     text-align: center;
     width: 100%;
     margin: 0vw;
@@ -260,13 +266,17 @@ el carrousel y el navbar */
 }
 
 .bVM,
-.bVM:hover,
 .bVM:active,
 .bVM:visited,
 .bVM:focus {
     text-decoration: none;
-    background-color: var(--azul-nav);
-    color: var(--blanco-nav);
+    color: var(--azul-nav);
+    background-color: var(--blanco-nav);
+}
+
+.bVM:hover {
+    text-decoration: none;
+    background-color: var(--amarillo-comp);
 }
 
 .sizesFreezing {
@@ -282,12 +292,18 @@ el carrousel y el navbar */
     top: -30vw;
     width: 100%;
     height: 30vw;
-    text-align: center;
-    font-size: 1.4vw;
     border-radius: 16px;
 }
 
+.sizesFreezing p{
+    text-align: center;
+    font-size: 1.4vw;
+    color: var(--blanco-nav);
+    opacity: 1;
+}
+
 .sizesFreezing b {
+    display: none;
     color: var(--azul-titulos);
 }
 
@@ -309,7 +325,7 @@ el carrousel y el navbar */
 
 .fotoProducto:hover .sizesFreezing {
     visibility: visible;
-    background-color: var(--blanco-nav);
+    background-color: var(--azul-nav);
     opacity: 0.8;
 }
 

@@ -14,12 +14,14 @@
     <div class="carousel-indicators">
         {% for f in fotos %}
         {% if forloop.first %}
-            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="{{ forloop.counter0 }}" class="active" aria-current="true" aria-label="Slide {{ forloop.counter }}"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="{{ forloop.counter0 }}"
+            class="active" aria-current="true" aria-label="Slide {{ forloop.counter }}"></button>
         {% else %}
-            <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="{{ forloop.counter0 }}" aria-label="Slide {{ forloop.counter }}"></button>
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="{{ forloop.counter0 }}"
+            aria-label="Slide {{ forloop.counter }}"></button>
         {% endif %}
         {% endfor %}
-      </div>
+    </div>
     <div class="carousel-inner">
         {% for f in fotos %}
         {% if forloop.first %}
@@ -48,7 +50,7 @@
 <!-- Productos -->
 <div class="productosSubsection">
     <div class="tituloSubseccion">
-        <p class="tituloProductos">NUESTROS PRODUCTOS</p>
+        <p class="tituloProductos"><b>NUESTROS PRODUCTOS</b><br>Trabajamos bajo estrictos parametros de calidad.</p>
     </div>
     <div class="dataProductos">
         {% for prod in prods %}
