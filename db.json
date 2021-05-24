@@ -3,80 +3,44 @@
         "model": "Camaron.carausel",
         "pk": 1,
         "fields": {
-            "image": "rsc/img/LIMBOMAR.jpg",
-            "title": "PRODUCTOS SELECCIONADOS QUE CUMPLEN LAS EXIGENCIAS DE MERCADOS INTERNACIONALES",
-            "sub_title": "nada",
-            "section": "inicio"
+            "imagenWeb": "rsc/img/Foto1_Web_ConTexto.png",
+            "imagenMov": "rsc/img/Foto1_Movil_ConTexto.png",
+            "title": "CUMPLIMOS LAS EXIGENCIAS DE LOS MERCADOS INTERNACIONALES",
+            "sub_title": "⠀",
+            "section": "INI"
         }
     },
     {
         "model": "Camaron.carausel",
         "pk": 2,
         "fields": {
-            "image": "rsc/img/Panonarica.png",
-            "title": "PRODUCTOS SELECCIONADOS QUE CUMPLEN LAS EXIGENCIAS DE MERCADOS INTERNACIONALES",
-            "sub_title": "nada",
-            "section": "inicio"
+            "imagenWeb": "rsc/img/Foto2_Web_ConTexto.png",
+            "imagenMov": "rsc/img/Foto2_Movil_ConTexto.png",
+            "title": "MÁS DE 40 AÑOS DE EXPERIENCIA EN LA PRODUCCIÓN DE MARISCOS CONGELADOS",
+            "sub_title": "⠀",
+            "section": "INI"
         }
     },
     {
         "model": "Camaron.carausel",
         "pk": 3,
         "fields": {
-            "image": "rsc/img/Imagen1.png",
-            "title": "GARANTIZAMOS LA CALIDAD, SABOR Y FRESCURA DEL CAMARON ECUATORIANO",
-            "sub_title": "nada",
-            "section": "inicio"
+            "imagenWeb": "rsc/img/Foto3_Web_ConTexto.png",
+            "imagenMov": "rsc/img/Foto3_Movil_ConTexto.png",
+            "title": "GARANTIZAMOS LA CALIDAD, SABOR Y FRESCURA DEL VANNAMEI ECUATORIANO",
+            "sub_title": "⠀",
+            "section": "INI"
         }
     },
     {
         "model": "Camaron.carausel",
         "pk": 4,
         "fields": {
-            "image": "rsc/img/Alimesa_186.jpg",
+            "imagenWeb": "rsc/img/Foto4_Web_ConTexto.png",
+            "imagenMov": "rsc/img/Foto4_Movil_ConTexto.png",
             "title": "CALIFICADOS PARA BRINDAR PRODUCTOS DE PRIMERA",
-            "sub_title": "nada",
-            "section": "inicio"
-        }
-    },
-    {
-        "model": "Camaron.carausel",
-        "pk": 11,
-        "fields": {
-            "image": "rsc/img/940328BB.jpg",
-            "title": "CUMPLIMOS LAS EXIGENCIAS DE  LOS MERCADOS INTERNACIONALES",
-            "sub_title": "nada",
-            "section": "inicio"
-        }
-    },
-    {
-        "model": "Camaron.carausel",
-        "pk": 12,
-        "fields": {
-            "image": "rsc/img/Panonarica.png",
-            "title": "Expotuna S.A. Es una procesadora y comercializadora de pescados y mariscos congelados, que inicia sus actividades en el a�o 2005.",
-            "sub_title": "nada",
-            "section": "acerca"
-        }
-    },
-    {
-        "model": "Camaron.carausel",
-        "pk": 13,
-        "fields": {
-            "image": "rsc/img/ALIMESA-FULL-8.jpg",
-            "title": "Localizada estrat�gicamente en Guayaquil ciudad que posee una gran ventaja geogr�fica por ubicarse a pocas horas de los dos importantes puertos del Pa�s como lo son Guayaquil y Manta,  esto permite un abastecimiento constante de productos frescos",
-            "sub_title": "nada",
-            "section": "acerca"
-        }
-    },
-    {
-        "model": "Camaron.carausel",
-        "pk": 14,
-        "fields": {
-            "image": "rsc/img/ALIMESA-FULL-5.jpg",
-            "title": "El equipo t�cnico de control de calidad realiza un seguimiento y an�lisis constante de todos y cada uno de los procesos de producci�n las 24 horas del d�a, 365 d�as al a�o para garantizar siempre la m�xima calidad.",
-            "sub_title": "nada",
-            "section": "acerca"
+            "sub_title": "⠀",
+            "section": "INI"
         }
     },
     {
@@ -137,9 +101,9 @@
         "model": "Camaron.marca",
         "pk": 3,
         "fields": {
-            "nombre": "Alimesa Gama T�pica",
+            "nombre": "Alimesa Gama Típica",
             "img": "rsc/img/CAMARON-GRANDE.jpg",
-            "hoverText": "Camar�n Grande"
+            "hoverText": "Camarón Grande"
         }
     },
     {
@@ -166,7 +130,7 @@
         "fields": {
             "nombre": "CAMARON 4LB",
             "img": "rsc/img/CAMARON-4-LB.jpg",
-            "hoverText": "CAMAR�N 4 LB"
+            "hoverText": "CAMARÓN 4 LB"
         }
     },
     {
@@ -266,6 +230,105 @@
             "Telefono": "2147942866",
             "Pais": "AR",
             "Mensaje": "l"
+        }
+    },
+    {
+        "model": "Camaron.contacto",
+        "pk": 4,
+        "fields": {
+            "Nombre": "Oscar",
+            "Email": "oscaravilaa9817@gmail.com",
+            "Telefono": "593984633803",
+            "Pais": "EC",
+            "Mensaje": "Hola mucho gusto"
+        }
+    },
+    {
+        "model": "Camaron.contacto",
+        "pk": 5,
+        "fields": {
+            "Nombre": "Oscar",
+            "Email": "oscaravilaa9817@gmail.com",
+            "Telefono": "2147942866",
+            "Pais": "US",
+            "Mensaje": "kdf lwkefmlwekfw"
+        }
+    },
+    {
+        "model": "Camaron.contacto",
+        "pk": 6,
+        "fields": {
+            "Nombre": "Oscar",
+            "Email": "avila.oscar98@hotmail.com",
+            "Telefono": "2147942866",
+            "Pais": "US",
+            "Mensaje": "jnakdnakjsdkasda"
+        }
+    },
+    {
+        "model": "Camaron.contacto",
+        "pk": 7,
+        "fields": {
+            "Nombre": "Oscar",
+            "Email": "oscaravilaa9817@gmail.com",
+            "Telefono": "2147942866",
+            "Pais": "US",
+            "Mensaje": "puta madre"
+        }
+    },
+    {
+        "model": "Camaron.contacto",
+        "pk": 8,
+        "fields": {
+            "Nombre": "Oscar",
+            "Email": "oscaravilaa9817@gmail.com",
+            "Telefono": "2147942866",
+            "Pais": "US",
+            "Mensaje": "prueba de su puta madre"
+        }
+    },
+    {
+        "model": "Camaron.contacto",
+        "pk": 9,
+        "fields": {
+            "Nombre": "Oscar",
+            "Email": "oscaravilaa9817@gmail.com",
+            "Telefono": "2147942866",
+            "Pais": "EC",
+            "Mensaje": "kjbajafj"
+        }
+    },
+    {
+        "model": "Camaron.contacto",
+        "pk": 10,
+        "fields": {
+            "Nombre": "Oscar",
+            "Email": "oscaravilaa9817@gmail.com",
+            "Telefono": "2147942866",
+            "Pais": "AG",
+            "Mensaje": "km djkd"
+        }
+    },
+    {
+        "model": "Camaron.contacto",
+        "pk": 11,
+        "fields": {
+            "Nombre": "Oscar",
+            "Email": "oscaravilaa9817@gmail.com",
+            "Telefono": "2147942866",
+            "Pais": "US",
+            "Mensaje": "laknsdasnddafadbfvdfvfvdvd"
+        }
+    },
+    {
+        "model": "Camaron.contacto",
+        "pk": 12,
+        "fields": {
+            "Nombre": "Oscar",
+            "Email": "avila.oscar98@hotmail.com",
+            "Telefono": "593984633803",
+            "Pais": "EG",
+            "Mensaje": "tu putisima madre"
         }
     },
     {

@@ -139,13 +139,14 @@ el carrousel y el navbar */
 
 /* Para estandarizar el tamaño de las imagenes */
 #carouselExampleInterval img {
-    width: 100%;
-    min-width: 100%;
+    width: 100vw;
+    min-width: 100vw;
     height: 85vh;
     object-fit: cover;
+    object-position: left;
 }
 
-.carousel-indicators{
+.carousel-indicators {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -156,13 +157,13 @@ el carrousel y el navbar */
     margin: 0 0 2vh 0;
 }
 
-#carouselExampleInterval > div.carousel-indicators > button {
+#carouselExampleInterval>div.carousel-indicators>button {
     width: 18px;
     height: 18px;
     border-radius: 50%;
 }
 
-#carouselExampleInterval > div.carousel-indicators > button.active {
+#carouselExampleInterval>div.carousel-indicators>button.active {
     width: 20px;
     height: 20px;
     border-radius: 50%;
@@ -203,7 +204,7 @@ el carrousel y el navbar */
     margin: 0vw;
 }
 
-.tituloProductos b{
+.tituloProductos b {
     color: var(--azul-titulos);
     font-size: var(--sub-title-font-size);
     text-align: center;
@@ -295,7 +296,7 @@ el carrousel y el navbar */
     border-radius: 16px;
 }
 
-.sizesFreezing p{
+.sizesFreezing p {
     text-align: center;
     font-size: 1.4vw;
     color: var(--blanco-nav);
@@ -392,4 +393,49 @@ el carrousel y el navbar */
     min-width: 16vw;
     object-fit: contain;
     margin: 4.5vw;
+}
+
+@media screen and (max-width:770px) {
+    /* Para contener el carrousel y que se elimine el espacio en blanco entre
+    el carrousel y el navbar */
+    #carouselExampleInterval {
+        position: absolute;
+        top: 15vh;
+        left: 0vw;
+        width: 100%;
+        min-width: 100%;
+        max-height: 100vw;
+    }
+
+    /* Para estandarizar el tamaño de las imagenes */
+    #carouselExampleInterval img {
+        width: 100vw;
+        min-width: 100vw;
+        height: 100vw;
+        object-fit: cover;
+        object-position: left;
+    }
+
+    .carousel-indicators {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        width: 100%;
+        height: 40px;
+        margin: 0 0 1vh 0;
+    }
+
+    #carouselExampleInterval>div.carousel-indicators>button {
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+    }
+
+    #carouselExampleInterval>div.carousel-indicators>button.active {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+    }
 }

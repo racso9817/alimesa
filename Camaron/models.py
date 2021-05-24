@@ -3,19 +3,26 @@ from django.db.models import fields
 from django.forms import ModelForm, widgets
 from django import forms
 from django.core import validators
+from django.utils.translation import gettext_lazy as _
 from django_countries.fields import CountryField
 
 # Create your models here.
 
 
 class Carausel(models.Model):
-    image = models.CharField(max_length=150)
-    title = models.CharField(max_length=500)
-    sub_title = models.CharField(max_length=100)
-    section = models.CharField(max_length=100)
+    imagenWeb = models.CharField(max_length=150)
+    imagenMov = models.CharField(max_length=150, default="")
+    title = models.CharField(max_length=500, default="")
+    sub_title = models.CharField(max_length=100, default="")
+
+    SECTION_CHOICES = [
+        ('INI', 'inicio'),
+        ('NOS', 'nosotros')
+    ]
+    section = models.CharField(max_length=3, choices=SECTION_CHOICES, default='INI')
 
     def __str__(self):
-        return "Section: " + self.title
+        return "Section: " + self.section + " | " + self.title
 
     class Meta:
         verbose_name = "foto carousel"

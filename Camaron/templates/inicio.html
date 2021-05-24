@@ -26,11 +26,19 @@
         {% for f in fotos %}
         {% if forloop.first %}
         <div class="carousel-item active" data-bs-interval="5000">
-            <img src="{% static f.image %}" class="d-block w-100" alt="...">
+            <picture>
+                <source media="(min-width: 770px)" srcset="{% static f.imagenWeb %}" class="d-block w-100" alt="...">
+                <source media="(min-width: 210px)" srcset="{% static f.imagenMov %}" class="d-block w-100" alt="...">
+                <img src="{% static f.imagenWeb %}" class="d-block w-100" alt="...">
+            </picture>
         </div>
         {% else %}
         <div class="carousel-item" data-bs-interval="5000">
-            <img src="{% static f.image %}" class="d-block w-100" alt="...">
+            <picture>
+                <source media="(min-width: 770px)" srcset="{% static f.imagenWeb %}" class="d-block w-100" alt="...">
+                <source media="(min-width: 210px)" srcset="{% static f.imagenMov %}" class="d-block w-100" alt="...">
+                <img src="{% static f.imagenWeb %}" class="d-block w-100" alt="...">
+            </picture>
         </div>
         {% endif %}
         {% endfor %}
