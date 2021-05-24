@@ -84,7 +84,7 @@
         "pk": 1,
         "fields": {
             "nombre": "Alimesa Tide",
-            "img": "rsc/img/IMG_0026.jpg",
+            "img": "rsc/img/Caja1.png",
             "hoverText": "Alimesa Tide"
         }
     },
@@ -93,7 +93,7 @@
         "pk": 2,
         "fields": {
             "nombre": "Alimesa",
-            "img": "rsc/img/IMG_0029.jpg",
+            "img": "rsc/img/Caja2.png",
             "hoverText": "Alimesa"
         }
     },
@@ -101,17 +101,17 @@
         "model": "Camaron.marca",
         "pk": 3,
         "fields": {
-            "nombre": "Alimesa Gama Típica",
-            "img": "rsc/img/CAMARON-GRANDE.jpg",
-            "hoverText": "Camarón Grande"
+            "nombre": "San Mateo Premium Shrimp",
+            "img": "rsc/img/CajaPrem1.png",
+            "hoverText": "Frozen Raw Premium White Shrimp"
         }
     },
     {
         "model": "Camaron.marca",
         "pk": 4,
         "fields": {
-            "nombre": "San Mateo Premium Shrimp",
-            "img": "rsc/img/IMG_1927-removebg-preview.png",
+            "nombre": "Vannagold",
+            "img": "rsc/img/CajaPrem2.png",
             "hoverText": "Frozen Raw Premium White Shrimp"
         }
     },
@@ -119,9 +119,9 @@
         "model": "Camaron.marca",
         "pk": 5,
         "fields": {
-            "nombre": "Vannagold",
-            "img": "rsc/img/IMG_1976-removebg-preview.png",
-            "hoverText": "Frozen Raw Premium White Shrimp"
+            "nombre": "Alimesa Gama Típica",
+            "img": "rsc/img/Funda1.png",
+            "hoverText": "Camarón Grande"
         }
     },
     {
@@ -129,7 +129,7 @@
         "pk": 6,
         "fields": {
             "nombre": "CAMARON 4LB",
-            "img": "rsc/img/CAMARON-4-LB.jpg",
+            "img": "rsc/img/Funda2.png",
             "hoverText": "CAMARÓN 4 LB"
         }
     },
