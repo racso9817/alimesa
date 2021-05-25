@@ -8,27 +8,32 @@
 {% block content %}
 
 <!-- Productos -->
+<div class="tituloProductos">
+  <p class="textoTituloProductos"><b>NUESTROS PRODUCTOS</b><br>Trabajamos bajo estrictos parametros de calidad.</p>
+</div>
 {% for prod in prods %}
-<div class="ProdDV" id="{{prod.siglas}}" style="top: calc((var(--CEIheight) + var(--LinksSeccionesHeight) + 5vh) 
+<div class="ProdDV" id="{{prod.siglas}}" 
+  style="top: calc((var(--CEIheight) + var(--LinksSeccionesHeight) + 5vh) 
   + (var(--height-prod-dv) * {{prod.pad}})
-  + ((var(--height-prod-dv) + 10vh) * {{prod.cont}}));
+  + ((var(--height-prod-dv)) * {{prod.cont}})
+  + 12vh);
   min-height: calc(var(--height-prod-dv) + (10vh * {{prod.pad}}));">
   <div class="NomProd">{{prod.nombre}} ({{prod.siglas}})</div>
   <div class="FotosProd">
     <img src="{% static prod.img %}" alt="">
   </div>
   <div class="ProdData">
-    <div class="TituloSizes TituloTabla"><b>SIZES</b></div>
-    <div class="TituloPack TituloTabla"><b>PACKAGING</b></div>
-    <div class="TituloFreezing TituloTabla"><b>FREEZING</b></div>
+    <div class="TituloSizes TituloTabla"><img src="{% static 'rsc/img/SizesWTIco.png' %}"></div>
+    <div class="TituloPack TituloTabla"><img src="{% static 'rsc/img/PackWTIco.png' %}"></div>
+    <div class="TituloFreezing TituloTabla"><img src="{% static 'rsc/img/FreezingWTIco.png' %}"></div>
     <div class="ValuesSizes ValueCell">
-      <p class="DataTabla">{{prod.sizes|linebreaksbr}}</p>
+      <p class="DataTabla" style="background-color: var(--azul-sizes);">{{prod.sizes|linebreaksbr}}</p>
     </div>
     <div class="ValuesPack ValueCell">
-      <p class="DataTabla">{{prod.packaging|linebreaksbr}}</p>
+      <p class="DataTabla" style="background-color: var(--azul-pack);">{{prod.packaging|linebreaksbr}}</p>
     </div>
     <div class="ValuesFreezing ValueCell">
-      <p class="DataTabla">{{prod.freezing|linebreaksbr}}</p>
+      <p class="DataTabla" style="background-color: var(--azul-freezing);">{{prod.freezing|linebreaksbr}}</p>
     </div>
   </div>
 </div>
@@ -36,13 +41,13 @@
 <!-- Productos -->
 
 <!-- Marcas -->
-<div class="marcasSubsection"
-  style="top: calc((var(--CEIheight) + var(--LinksSeccionesHeight) + 5vh) 
+<div class="marcasSubsection" style="top: calc((var(--CEIheight) + var(--LinksSeccionesHeight) + 5vh) 
   + (var(--height-prod-dv)) 
-  + ((var(--height-prod-dv) + 10vh) * {{ cont }}));
+  + ((var(--height-prod-dv) + 10vh) * {{ cont }})
+  + 10vh);
   min-height: calc(var(--height-prod-dv) + 10vh);">
   <div class="tituloMarcas">
-    <p class="tituloProductos">NUESTRAS MARCAS</p>
+    <p>NUESTRAS MARCAS</p>
   </div>
   <div class="flexMarcas">
     {% for marca in marcas %}
