@@ -192,7 +192,7 @@
     border-bottom: 0.2vw solid var(--barra-form);
   }
 
-  label[for="id_Nombre"], label[for="id_Email"],label[for="id_Telefono"],label[for="id_Pais"],label[for="id_Mensaje"] {
+  label[for="id_Nombre"], label[for="id_Email"],label[for="id_Telefono"],label[for="id_Mensaje"] {
       display: none;
   }
 
