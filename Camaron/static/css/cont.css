@@ -134,6 +134,7 @@
     gap: 0px 0px;
     grid-template-areas:
       "contacto";
+    padding-top: 5vw;
   }
   
   .contacto {
@@ -166,57 +167,48 @@
   .form { grid-area: form; }
   
   .titinfo { 
-      grid-area: titinfo; 
-      color: var(--azul-titulos);
-      font-size: var(--sub-title-font-size);
-      font-weight: bold;
-      text-align: left;
-      padding-left: 2vw;
+    grid-area: titinfo; 
+    color: var(--azul-titulos);
+    font-size: var(--sub-title-font-size);
+    text-align: left;
+    padding-left: 2vw;
+    width: 100%;
+    margin: 0vw;
     }
   
   .titform { 
       grid-area: titform; 
       color: var(--azul-titulos);
-      font-size: var(--sub-title-font-size);
-      font-weight: bold;
-      text-align: left;  
+    font-size: var(--sub-title-font-size);
+    text-align: left;
+    width: 100%;
+    margin: 0vw;
     }
   
-
-
   .controls input {
     border-left: none;
     border-top: none;  
     border-right: none;
-    border-bottom: 0.2vw solid var(--azul-titulos);
+    border-bottom: 0.2vw solid var(--barra-form);
   }
 
-  #id_Nombre {
-      margin-right: 1vw;
-      margin-left: 1vw;
+  label[for="id_Nombre"], label[for="id_Email"],label[for="id_Telefono"],label[for="id_Pais"],label[for="id_Mensaje"] {
+      display: none;
   }
-  #id_Email {
-    margin-right: 1vw;
-    margin-left: 1vw;
-  }
-  #id_Telefono {
-    margin-right: 1vw;
-    margin-left: 1vw;
-  }
-  #id_Pais {
-    margin-right: 1vw;
-    margin-left: 1vw;
-  }
+
   #id_Mensaje {
-    margin-right: 1vw;
-    margin-left: 1vw;
+    width: 60%;
+  }
+
+  .control-label.requiredField label {
+      font-size: 1vw;
   }
 
   .lazyselect {
     border-left: none;
     border-top: none;  
     border-right: none;
-    border-bottom: 0.2vw solid var(--azul-titulos);
+    border-bottom: 0.2vw solid var(--barra-form);
     width: 13vw;
   }
 
@@ -224,7 +216,7 @@
     border-left: none;
     border-top: none;  
     border-right: none;
-    border-bottom: 0.2vw solid var(--azul-titulos);
+    border-bottom: 0.2vw solid var(--barra-form);
     width: 100%;
     height: 10vw;
   }

@@ -100,5 +100,11 @@ class Contacto(models.Model):
 class ContactoForm(ModelForm):
     class Meta:
         model = Contacto
-        Telefono = forms.CharField(label="Telefono", max_length=12, validators=[validators.RegexValidator(r'\d\d\d\d\d\d\d\d\d\d|\d\d\d\d\d\d\d\d\d\d\d\d|\d\d\d\d\d\d\d|\d\d\d\d\d\d\d\d\d\d\d', ('Ingrese un telefono válido.'), 'invalid'),])
         fields = '__all__'
+
+        widgets = {
+            'Email': forms.EmailInput(attrs={'placeholder':'Email',}),
+            'Nombre': forms.TextInput(attrs={'placeholder':'Nombre',}),
+            'Telefono': forms.TextInput(attrs={'placeholder':'Telefono',}),
+            'Mensaje': forms.Textarea(attrs={'placeholder':'Mensaje',}),
+        }
