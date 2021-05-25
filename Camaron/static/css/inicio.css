@@ -383,8 +383,8 @@ img.ProdIcon {
     width: 100vw;
     min-width: 100vw;
     min-height: 45vh;
-    background: rgb(96, 109, 120);
-    background: linear-gradient(180deg, rgba(96, 109, 120, 0.60) 5%, rgba(96, 109, 120, 0.40) 16%, rgba(96, 109, 120, 0.20) 27%, rgba(255, 255, 255, 0.01) 40%);
+    background: rgb(96,109,120);
+background: linear-gradient(180deg, rgba(96,109,120,0.3) 5%, rgba(96,109,120,0.2) 16%, rgba(96,109,120,0.1) 27%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 100%);
 }
 
 .tituloSubseccionCerts {
@@ -427,6 +427,11 @@ div.certificacionesSubsection>picture {
     min-width: 12vw;
     object-fit: contain;
     margin: 2.5vw 3.5vw 2.5vw 3.5vw;
+    transition: transform .15s;
+}
+
+.fotosCerts img:hover {
+    transform: scale(1.1);
 }
 
 @media screen and (max-width:770px) {

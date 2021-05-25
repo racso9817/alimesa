@@ -306,9 +306,14 @@
 }
 
 .imgMarca {
-    width: 18vw;
-    height: 18vw;
-    margin: 0.5vw 3.5vw 0.75vw 3.5vw;
+    width: 17vw;
+    height: 17vw;
+    margin: 0.5vw 4vw 0.75vw 4vw;
     border-radius: 16px;
-    box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 5%);
+    /* box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 5%); */
+    transition: transform .15s;
+}
+
+.imgMarca:hover {
+    transform: scale(1.1);
 }
