@@ -67,9 +67,11 @@
                 <img src="{% static prod.img %}" alt="">
                 <div class="sizesFreezing">
                     <div class="sizesProducto">
+                        <img class='ProdIcon' src="{% static  'rsc\img\SizesIco.png' %}">
                         <p><b>Tallas:</b><br>{{prod.sizes|linebreaksbr}}</p>
                     </div>
                     <div class="freezingProducto">
+                        <img class='ProdIcon' src="{% static  'rsc\img\FreezingIco.png' %}">
                         <p><b>Congelación:</b><br>{{prod.freezing|linebreaksbr}}</p>
                     </div>
                     <a class="bVM" href="/productos#{{prod.siglas}}">Ver más</a>
