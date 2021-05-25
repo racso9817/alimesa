@@ -262,7 +262,8 @@
     align-items: center;
     justify-content: center;
     color: var(--blanco-nav);
-    font-size: calc(var(--sub-title-font-size) / 1.6);
+    font-size: calc(var(--sub-title-font-size) / 1.4);
+    font-weight: 600;
     margin: 0%;
     border-radius: 16px;
     width: calc((55vw / 3) / 1.6);
