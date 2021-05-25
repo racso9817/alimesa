@@ -154,7 +154,7 @@ el carrousel y el navbar */
     align-content: center;
     width: 100%;
     height: 42px;
-    margin: 0 0 2vh 0;
+    margin: 0 0 6vh 0;
 }
 
 #carouselExampleInterval>div.carousel-indicators>button {
@@ -172,6 +172,16 @@ el carrousel y el navbar */
 .carousel-caption {
     background: var(--azul-nav);
     border-radius: 5vw;
+}
+
+#carouselExampleInterval>div.carousel-inner>picture,
+#carouselExampleInterval>div.carousel-inner>picture>.Franja {
+    position: relative;
+    width: 100vw;
+    height: 5.6vh;
+    top: 40vh;
+    z-index: 898;
+    object-fit: cover;
 }
 
 .productosSubsection {
@@ -314,7 +324,7 @@ el carrousel y el navbar */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -323,7 +333,7 @@ el carrousel y el navbar */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -361,17 +371,19 @@ img.ProdIcon {
 .certificacionesSubsection {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 3.5fr;
+    grid-template-rows: 2fr 3fr;
     gap: 0px 0px;
     grid-template-areas:
         "tituloSubseccionCerts"
         "fotosCerts";
-    position: absolute;
-    top: 200vh;
+    position: relative;
+    top: 175vh;
     left: 0vw;
-    width: 100%;
-    min-width: 100%;
-    min-height: 50vh;
+    width: 100vw;
+    min-width: 100vw;
+    min-height: 45vh;
+    background: rgb(96, 109, 120);
+    background: linear-gradient(180deg, rgba(96, 109, 120, 1) 5%, rgba(96, 109, 120, 0.66) 16%, rgba(96, 109, 120, 0.33) 27%, rgba(255, 255, 255, 0) 40%);
 }
 
 .tituloSubseccionCerts {
@@ -380,12 +392,22 @@ img.ProdIcon {
     align-items: flex-end;
 }
 
+div.certificacionesSubsection>picture {
+    transform: scaleY(-1);
+    width: 100vw;
+    height: 5.6vh;
+    position: absolute;
+    top: -1px;
+    z-index: 897;
+    object-fit: cover;
+}
+
 .tituloCerts {
     color: var(--azul-titulos);
     font-size: var(--sub-title-font-size);
     font-weight: bold;
     text-align: center;
-    width: 100%;
+    width: 100vw;
     margin: 0vw;
 }
 
@@ -399,14 +421,15 @@ img.ProdIcon {
 }
 
 .fotosCerts img {
-    width: 16vw;
-    height: 16vw;
-    min-width: 16vw;
+    width: 12vw;
+    height: 12vw;
+    min-width: 12vw;
     object-fit: contain;
-    margin: 4.5vw;
+    margin: 2.5vw 3.5vw 2.5vw 3.5vw;
 }
 
 @media screen and (max-width:770px) {
+
     /* Para contener el carrousel y que se elimine el espacio en blanco entre
     el carrousel y el navbar */
     #carouselExampleInterval {
@@ -435,7 +458,7 @@ img.ProdIcon {
         align-content: center;
         width: 100%;
         height: 40px;
-        margin: 0 0 1vh 0;
+        margin: 0 0 7.4vw 0;
     }
 
     #carouselExampleInterval>div.carousel-indicators>button {
@@ -448,5 +471,15 @@ img.ProdIcon {
         width: 15px;
         height: 15px;
         border-radius: 50%;
+    }
+
+    #carouselExampleInterval>div.carousel-inner>picture,
+    #carouselExampleInterval>div.carousel-inner>picture>.Franja {
+        position: relative;
+        width: 100vw;
+        height: 6.4vw;
+        top: 46.9vw;
+        z-index: 898;
+        object-fit: cover;
     }
 }

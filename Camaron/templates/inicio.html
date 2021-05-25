@@ -42,6 +42,11 @@
         </div>
         {% endif %}
         {% endfor %}
+        <picture>
+            <source media="(min-width: 770px)" srcset="{% static 'rsc\img\Franja_Web.png' %}" class="Franja" alt="...">
+            <source media="(min-width: 210px)" srcset="{% static 'rsc\img\Franja_Movil.png' %}" class="Franja" alt="...">
+            <img src="{% static 'rsc\img\Franja_Web.png' %}" class="Franja" alt="...">
+        </picture>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -88,6 +93,11 @@
 
 <!-- Certificaciones -->
 <div class='certificacionesSubsection'>
+    <picture>
+        <source media="(min-width: 770px)" srcset="{% static 'rsc\img\Franja_Web.png' %}" class="Franja" alt="...">
+        <source media="(min-width: 210px)" srcset="{% static 'rsc\img\Franja_Movil.png' %}" class="Franja" alt="...">
+        <img src="{% static 'rsc\img\Franja_Web.png' %}" class="Franja" alt="...">
+    </picture>
     <div class="tituloSubseccionCerts">
         <p class="tituloCerts">CERTIFICACIONES INTERNACIONALES</p>
     </div>
