@@ -200,10 +200,6 @@
     width: 60%;
   }
 
-  .control-label.requiredField label {
-      font-size: 1vw;
-  }
-
   .lazyselect {
     border-left: none;
     border-top: none;  
