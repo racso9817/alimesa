@@ -142,7 +142,10 @@
     margin-top: auto;
   }
   
-  .info { grid-area: info; }
+  .info { 
+      grid-area: info;
+     }
+
   .info img {
     max-height: 4vh;
     margin: auto;
@@ -226,6 +229,20 @@
       align-items: center;
   }
 
+  .boton {
+      border: var(--azul-nav);
+      background-color: var(--azul-nav);
+      color: white;
+      border-radius: .5rem;
+  }
+
+  .boton:hover {
+      background-color: var(--amarillo-btn);
+      font-weight: 500;
+      color: var(--azul-titulos)
+  }
+
+
   /* Add responsiveness - display the form controls vertically instead of horizontally 
   on screens that are less than 800px wide */
 @media (max-width: 800px) {
@@ -236,5 +253,33 @@
     .form-inline {
       flex-direction: column;
       align-items: stretch;
+    }
+
+    .info {
+        font-size: 50%;
+    }
+    .info img {
+        max-height: 1vh;
+    }
+    .info #mail {
+        max-height: .5vh;
+    }
+
+    #id_Nombre, #id_Email, #id_Telefono, #id_Pais, #id_Mensaje {
+        width: 30vw;
+    }
+
+    .grid-container {
+        padding-top: 15vh;
+    }
+
+    .titinfo {
+        font-size: 3.5vw;
+    }
+    .titform {
+        font-size: 3.5vw;
+    }
+    .contacto {
+        grid-template-columns: 0.6fr 0.3fr;
     }
   }
