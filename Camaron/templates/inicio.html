@@ -104,7 +104,7 @@
     <div class="fotosCerts">
         {% for cert in certs %}
         <!-- <a href="{{cert.origin}}"><img src="{% static cert.img %}" alt=""></a> -->
-        <img src="{% static cert.img %}" alt="">
+        <a href="{% url 'certificaciones' %}"><img src="{% static cert.img %}" alt=""></a>
         {% endfor %}
     </div>
 </div>
