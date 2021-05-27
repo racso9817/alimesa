@@ -23,17 +23,11 @@
 }
 
 .TituloSeccion {
-  text-align: center;
-  font-size: 1.65vw;
   color: var(--blanco-nav);
-  font-weight: bold;
-  text-decoration: none;
 }
 
 .TituloSeccion:hover {
   color: var(--blanco-nav);
-  font-size: 1.85vw;
-  text-decoration: underline;
 }
 
 .Inicio {

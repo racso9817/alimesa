@@ -20,6 +20,21 @@ body {
     margin-top: 10vw;
 }
 
+.TituloSeccion {
+    text-align: center;
+    font-size: 1.65vw;
+    color: var(--azul-nav);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.TituloSeccion:hover {
+    color: var(--azul-titulos);
+    font-size: 1.85vw;
+    font-weight: 650;
+    text-decoration: none;
+}
+
 /*MEDIA QUERY*/
 
 /*@media screen and (max-width:1040px) {
