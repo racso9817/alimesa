@@ -66,11 +66,11 @@
         Franja no se necesita aca -->
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"><-</span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"><img src="{% static 'rsc\img\ICONOS ALIMESA-24.png' %}"></span>
         <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true">-></span>
+        <span class="carousel-control-next-icon" aria-hidden="true"><img src="{% static 'rsc\img\ICONOS ALIMESA-24.png' %}"></span>
         <span class="visually-hidden">Next</span>
     </button>
 </div>
@@ -86,6 +86,7 @@
         <div class="CartaIconoCdV">
             <div class="IconoCartaCdV">
                 <img src="{% static 'rsc\img\harvest.png' %}">
+                <img id="flecha" src="{% static 'rsc\img\FLECHA_CADENA_DE_VALOR.png' %}">         
             </div>
             <div class="TxtCartaCdV">
                 <p>Cosecha/Pesca</p>
@@ -94,6 +95,7 @@
         <div class="CartaIconoCdV">
             <div class="IconoCartaCdV">
                 <img src="{% static 'rsc\img\TruckIco.png' %}">
+                <img id="flecha" src="{% static 'rsc\img\FLECHA_CADENA_DE_VALOR.png' %}">
             </div>
             <div class="TxtCartaCdV">
                 <p>Logística</p>
@@ -102,6 +104,7 @@
         <div class="CartaIconoCdV">
             <div class="IconoCartaCdV">
                 <img src="{% static 'rsc\img\quality.png' %}">
+                <img id="flecha" src="{% static 'rsc\img\FLECHA_CADENA_DE_VALOR.png' %}">
             </div>
             <div class="TxtCartaCdV">
                 <p>Recepción y<br>control de calidad</p>
@@ -110,6 +113,7 @@
         <div class="CartaIconoCdV">
             <div class="IconoCartaCdV">
                 <img src="{% static 'rsc\img\PlantaIco.png' %}">
+                <img id="flecha" src="{% static 'rsc\img\FLECHA_CADENA_DE_VALOR.png' %}">
             </div>
             <div class="TxtCartaCdV">
                 <p>Clasificación<br>y empaque</p>
@@ -118,6 +122,7 @@
         <div class="CartaIconoCdV">
             <div class="IconoCartaCdV">
                 <img src="{% static 'rsc\img\ContainerIco.png' %}">
+                <img id="flecha" src="{% static 'rsc\img\FLECHA_CADENA_DE_VALOR.png' %}">
             </div>
             <div class="TxtCartaCdV">
                 <p>Logística</p>
@@ -126,6 +131,7 @@
         <div class="CartaIconoCdV">
             <div class="IconoCartaCdV">
                 <img src="{% static 'rsc\img\BuqueIco.png' %}">
+                <img id="flecha" src="{% static 'rsc\img\FLECHA_CADENA_DE_VALOR.png' %}">
             </div>
             <div class="TxtCartaCdV">
                 <p>Exportación</p>
@@ -133,7 +139,7 @@
         </div>
         <div class="CartaIconoCdV">
             <div class="IconoCartaCdV">
-                <img src="{% static 'rsc\img\costumer.png' %}">
+                <img src="{% static 'rsc\img\costumer.png' %}">                
             </div>
             <div class="TxtCartaCdV">
                 <p>Destino</p>
@@ -152,19 +158,19 @@
                 <b>AMÉRICA</b>
             </div>
             <div class="paisesMercado" id="paises_America">
-                <b>TORONTO</b>
-                <b>CHICAGO</b>
-                <b>DULUTH</b>
-                <b>HOUSTON</b>
-                <b>LOS ÁNGELES</b>
-                <b>MIAMI</b>
-                <b>NEW YORK</b>
-                <b>NEW JERSEY</b>
-                <b>NORFOLK</b>
-                <b>NEWARK</b>
-                <b>OAKLAND</b>
-                <b>SAVANNAH</b>
-                <b>VERNON</b>
+                <p>TORONTO</p>
+                <p>CHICAGO</p>
+                <p>DULUTH</p>
+                <p>HOUSTON</p>
+                <p>LOS ÁNGELES</p>
+                <p>MIAMI</p>
+                <p>NEW YORK</p>
+                <p>NEW JERSEY</p>
+                <p>NORFOLK</p>
+                <p>NEWARK</p>
+                <p>OAKLAND</p>
+                <p>SAVANNAH</p>
+                <p>VERNON</p>
             </div>
         </div>
         <div class="cardMercado">
@@ -172,24 +178,24 @@
                 <b>EUROPA</b>
             </div>
             <div class="paisesMercado" id="paises_Europa">
-                <b>DURRES</b>
-                <b>ALGECIRAS</b>
-                <b>BILBAO</b>
-                <b>CANARIAS</b>
-                <b>LAS PALMAS</b>
-                <b>VALENCIA</b>
-                <b>VIGO</b>
-                <b>MARSEILLE</b>
-                <b>LE HAVRE</b>
-                <b>PIRAEUS</b>
-                <b>THESSALONIKI</b>
-                <b>GENOVA</b>
-                <b>VENEZIA</b>
-                <b>SALERNO</b>
-                <b>ODESSA</b>
-                <b>FELIXTOWE</b>
-                <b>LONDON</b>
-                <b>SOUTHAMPTON</b>
+                <p>DURRES</p>
+                <p>ALGECIRAS</p>
+                <p>BILBAO</p>
+                <p>CANARIAS</p>
+                <p>LAS PALMAS</p>
+                <p>VALENCIA</p>
+                <p>VIGO</p>
+                <p>MARSEILLE</p>
+                <p>LE HAVRE</p>
+                <p>PIRAEUS</p>
+                <p>THESSALONIKI</p>
+                <p>GENOVA</p>
+                <p>VENEZIA</p>
+                <p>SALERNO</p>
+                <p>ODESSA</p>
+                <p>FELIXTOWE</p>
+                <p>LONDON</p>
+                <p>SOUTHAMPTON</p>
             </div>
         </div>
         <div class="cardMercado">
@@ -197,19 +203,19 @@
                 <b>ÁSIA</b>
             </div>
             <div class="paisesMercado" id="paises_Asia">
-                <b>BUSAN</b>
-                <b>DALIAN</b>
-                <b>NINGBO</b>
-                <b>QINGDAO</b>
-                <b>SHANGHAI</b>
-                <b>TIANJING</b>
-                <b>XINGANG</b>
-                <b>YINGKOU</b>
-                <b>ZHANJIANG</b>
-                <b>BEIRUT</b>
-                <b>KAOHSIUNG</b>
-                <b>JEBEL</b>
-                <b>SHARJAH</b>
+                <p>BUSAN</p>
+                <p>DALIAN</p>
+                <p>NINGBO</p>
+                <p>QINGDAO</p>
+                <p>SHANGHAI</p>
+                <p>TIANJING</p>
+                <p>XINGANG</p>
+                <p>YINGKOU</p>
+                <p>ZHANJIANG</p>
+                <p>BEIRUT</p>
+                <p>KAOHSIUNG</p>
+                <p>JEBEL</p>
+                <p>SHARJAH</p>
             </div>
         </div>
         <div class="cardMercado">
@@ -217,8 +223,8 @@
                 <b>ÁFRICA</b>
             </div>
             <div class="paisesMercado" id="paises_Africa">
-                <b>PORT SAID</b>
-                <b>CAPETOWN</b>
+                <p>PORT SAID</p>
+                <p>CAPETOWN</p>
             </div>
         </div>
     </div>

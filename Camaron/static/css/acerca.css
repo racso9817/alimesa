@@ -178,7 +178,7 @@ el carrousel y el navbar */
     padding: 0%;
     text-align: center;
     font-size: 1.5vw;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 button.carousel-control-prev {
@@ -203,6 +203,12 @@ button>.carousel-control-prev-icon {
     position: relative;
     top: 24vh;
     left: 23vw;
+}
+
+button > .carousel-control-prev-icon img {
+    transform: rotate(180deg);
+    width: 2vw;
+    height: 2vw;
 }
 
 button>.carousel-control-prev-icon:active,
@@ -235,6 +241,11 @@ button>.carousel-control-next-icon {
     position: relative;
     top: 24vh;
     left: -23vw;
+}
+
+button > .carousel-control-next-icon img {
+    width: 2vw;
+    height: 2vw;
 }
 
 button>.carousel-control-next-icon:active,
@@ -289,6 +300,7 @@ button>.carousel-control-next-icon:hover {
     background: linear-gradient(180deg, rgba(0, 57, 132, 1) 0%, rgba(0, 79, 156, 1) 50%, rgba(0, 96, 180, 1) 100%);
 }
 
+
 .CartaIconoCdV {
     display: grid;
     grid-template-columns: 1fr;
@@ -319,7 +331,7 @@ button>.carousel-control-next-icon:hover {
 .TxtCartaCdV {
     grid-area: TxtCartaCdV;
     display: flex;
-    align-items: center;
+    align-items:flex-start;
     justify-content: center;
     height: 6.36vh;
     width: 11vw;

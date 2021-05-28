@@ -161,11 +161,13 @@ el carrousel y el navbar */
     border-radius: 50%;
 }
 
-#carouselExampleInterval>div.carousel-indicators>button.active {
-    width: 20px;
-    height: 20px;
+#carouselExampleInterval>div.carousel-indicators>button {
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
 }
+
+
 
 .carousel-caption {
     background: var(--azul-nav);
