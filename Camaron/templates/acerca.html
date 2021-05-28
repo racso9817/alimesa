@@ -18,37 +18,58 @@
 {% block content %}
 
 <!-- Carousel -->
-<!-- TODO: Texto a un lado del carousel -->
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-        {% for foto in fotos %}
-        {% if foto.section == 'acerca' %}
-        <div class="carousel-item {% if forloop.counter0 == 0 %} active {% endif %} ">
-            <img src="{% static foto.image %}" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-                <h5>{{foto.title}}</h5>
-            </div>
-        </div>
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators visually-hidden">
+        {% for f in fotos %}
+        {% if forloop.first %}
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="{{ forloop.counter0 }}"
+            class="active" aria-current="true" aria-label="Slide {{ forloop.counter }}"></button>
+        {% else %}
+        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="{{ forloop.counter0 }}"
+            aria-label="Slide {{ forloop.counter }}"></button>
         {% endif %}
         {% endfor %}
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <div class="carousel-inner">
+        {% for f in fotos %}
+        {% if forloop.first %}
+        <div class="carousel-item container-fluid active" data-bs-interval="5000">
+            <p class="TextCarNos d-block w-50">{{ f.title }}</p>
+            <picture>
+                <source media="(min-width: 770px)" srcset="{% static f.imagenWeb %}" class="d-block w-50" alt="...">
+                <source media="(min-width: 210px)" srcset="{% static f.imagenMov %}" class="d-block w-50" alt="...">
+                <img src="{% static f.imagenWeb %}" class="d-block w-50" alt="...">
+            </picture>
+        </div>
+        {% else %}
+        <div class="carousel-item container-fluid" data-bs-interval="5000">
+            <p class="TextCarNos d-block w-50">{{ f.title }}</p>
+            <picture>
+                <source media="(min-width: 770px)" srcset="{% static f.imagenWeb %}" class="d-block w-50" alt="...">
+                <source media="(min-width: 210px)" srcset="{% static f.imagenMov %}" class="d-block w-50" alt="...">
+                <img src="{% static f.imagenWeb %}" class="d-block w-50" alt="...">
+            </picture>
+        </div>
+        {% endif %}
+        {% endfor %}
+        <!-- Franja no se necesita aca
+        <picture>
+            <source media="(min-width: 770px)" srcset="{% static 'rsc\img\Franja_Web.png' %}" class="Franja" alt="...">
+            <source media="(min-width: 210px)" srcset="{% static 'rsc\img\Franja_Movil.png' %}" class="Franja" alt="...">
+            <img src="{% static 'rsc\img\Franja_Web.png' %}" class="Franja" alt="...">
+        </picture>
+        Franja no se necesita aca -->
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
 </div>
+
 <!-- Carousel -->
 
 {% endblock %}

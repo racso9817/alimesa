@@ -44,6 +44,50 @@
         }
     },
     {
+        "model": "Camaron.carausel",
+        "pk": 5,
+        "fields": {
+            "imagenWeb": "rsc/img/Foto1_Web_ConTexto.png",
+            "imagenMov": "rsc/img/Foto1_Movil_ConTexto.png",
+            "title": "CUMPLIMOS LAS EXIGENCIAS DE LOS MERCADOS INTERNACIONALES",
+            "sub_title": "⠀",
+            "section": "NOS"
+        }
+    },
+    {
+        "model": "Camaron.carausel",
+        "pk": 6,
+        "fields": {
+            "imagenWeb": "rsc/img/Foto2_Web_ConTexto.png",
+            "imagenMov": "rsc/img/Foto2_Movil_ConTexto.png",
+            "title": "MÁS DE 40 AÑOS DE EXPERIENCIA EN LA PRODUCCIÓN DE MARISCOS CONGELADOS",
+            "sub_title": "⠀",
+            "section": "NOS"
+        }
+    },
+    {
+        "model": "Camaron.carausel",
+        "pk": 7,
+        "fields": {
+            "imagenWeb": "rsc/img/Foto3_Web_ConTexto.png",
+            "imagenMov": "rsc/img/Foto3_Movil_ConTexto.png",
+            "title": "GARANTIZAMOS LA CALIDAD, SABOR Y FRESCURA DEL VANNAMEI ECUATORIANO",
+            "sub_title": "⠀",
+            "section": "NOS"
+        }
+    },
+    {
+        "model": "Camaron.carausel",
+        "pk": 8,
+        "fields": {
+            "imagenWeb": "rsc/img/Foto4_Web_ConTexto.png",
+            "imagenMov": "rsc/img/Foto4_Movil_ConTexto.png",
+            "title": "CALIFICADOS PARA BRINDAR PRODUCTOS DE PRIMERA",
+            "sub_title": "⠀",
+            "section": "NOS"
+        }
+    },
+    {
         "model": "Camaron.producto",
         "pk": 1,
         "fields": {
