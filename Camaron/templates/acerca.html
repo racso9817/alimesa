@@ -17,6 +17,8 @@
 
 {% block content %}
 
+<h1>SOBRE NOSOTROS</h1>
+
 <!-- Carousel -->
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators visually-hidden">
@@ -33,22 +35,26 @@
     <div class="carousel-inner">
         {% for f in fotos %}
         {% if forloop.first %}
-        <div class="carousel-item container-fluid active" data-bs-interval="5000">
-            <p class="TextCarNos d-block w-50">{{ f.title }}</p>
-            <picture>
-                <source media="(min-width: 770px)" srcset="{% static f.imagenWeb %}" class="d-block w-50" alt="...">
-                <source media="(min-width: 210px)" srcset="{% static f.imagenMov %}" class="d-block w-50" alt="...">
-                <img src="{% static f.imagenWeb %}" class="d-block w-50" alt="...">
-            </picture>
+        <div class="carousel-item active" data-bs-interval="5000">
+            <div class="wrapperItem">
+                <p class="TextCarNos">{{ f.title }}</p>
+                <picture>
+                    <source media="(min-width: 770px)" srcset="{% static f.imagenWeb %}" alt="...">
+                    <source media="(min-width: 210px)" srcset="{% static f.imagenMov %}" alt="...">
+                    <img src="{% static f.imagenWeb %}" alt="...">
+                </picture>
+            </div>
         </div>
         {% else %}
-        <div class="carousel-item container-fluid" data-bs-interval="5000">
-            <p class="TextCarNos d-block w-50">{{ f.title }}</p>
-            <picture>
-                <source media="(min-width: 770px)" srcset="{% static f.imagenWeb %}" class="d-block w-50" alt="...">
-                <source media="(min-width: 210px)" srcset="{% static f.imagenMov %}" class="d-block w-50" alt="...">
-                <img src="{% static f.imagenWeb %}" class="d-block w-50" alt="...">
-            </picture>
+        <div class="carousel-item" data-bs-interval="5000">
+            <div class="wrapperItem">
+                <p class="TextCarNos">{{ f.title }}</p>
+                <picture>
+                    <source media="(min-width: 770px)" srcset="{% static f.imagenWeb %}" alt="...">
+                    <source media="(min-width: 210px)" srcset="{% static f.imagenMov %}" alt="...">
+                    <img src="{% static f.imagenWeb %}" alt="...">
+                </picture>
+            </div>
         </div>
         {% endif %}
         {% endfor %}
