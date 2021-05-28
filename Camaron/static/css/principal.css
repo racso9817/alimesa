@@ -25,6 +25,7 @@
   max-height: 2vh;
   margin: 0 0.5vw 0 0.5vw;
   padding: 0.2vh 0 0.2vh 0;
+  padding-left: 1.5vw;
 }
 
 .idioma {
@@ -42,13 +43,14 @@
 .linksCEI {
   color: var(--blanco-nav);
   text-decoration: none;
+  padding-left: .5vw;
 }
 
 .linksCEI:hover {
   text-decoration: none;
   color: white;
   transition: .1s;
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .fotosPrin {
