@@ -3,16 +3,9 @@
 
 {% block headExtend %}
 <link rel="stylesheet" type="text/css" href="{% static 'css\acerca.css' %}" media="screen">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
 </script>
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
-    integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous">
-</script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
-    integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous">
-</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 {% endblock %}
 
 {% block content %}
@@ -39,7 +32,9 @@
         {% if forloop.first %}
         <div class="carousel-item active" data-bs-interval="5000">
             <div class="wrapperItem">
-                <p class="TextCarNos">{{ f.title }}</p>
+                <div class="WrapperTextCarNos">
+                    <p class="TextCarNos">{{ f.title|linebreaksbr }}</p>
+                </div>
                 <picture>
                     <source media="(min-width: 770px)" srcset="{% static f.imagenWeb %}" alt="...">
                     <source media="(min-width: 210px)" srcset="{% static f.imagenMov %}" alt="...">
@@ -50,7 +45,9 @@
         {% else %}
         <div class="carousel-item" data-bs-interval="5000">
             <div class="wrapperItem">
-                <p class="TextCarNos">{{ f.title }}</p>
+                <div class="WrapperTextCarNos">
+                    <p class="TextCarNos">{{ f.title|linebreaksbr }}</p>
+                </div>
                 <picture>
                     <source media="(min-width: 770px)" srcset="{% static f.imagenWeb %}" alt="...">
                     <source media="(min-width: 210px)" srcset="{% static f.imagenMov %}" alt="...">
@@ -79,6 +76,71 @@
 </div>
 
 <!-- Carousel -->
+
+<div class="CadenaValorSubsection">
+    <div class="TituloCdV">
+        <p class="TextTituloCdV"><b>CADENA DE VALOR</b><br>Seguimos un riguroso proceso para asegurar nuestra excelente
+            calidad</p>
+    </div>
+    <div class="IconosCdV">
+        <div class="CartaIconoCdV">
+            <div class="IconoCartaCdV">
+                <img src="{% static 'rsc\img\harvest.png' %}">
+            </div>
+            <div class="TxtCartaCdV">
+                <p>Cosecha/Pesca</p>
+            </div>
+        </div>
+        <div class="CartaIconoCdV">
+            <div class="IconoCartaCdV">
+                <img src="{% static 'rsc\img\TruckIco.png' %}">
+            </div>
+            <div class="TxtCartaCdV">
+                <p>Logística</p>
+            </div>
+        </div>
+        <div class="CartaIconoCdV">
+            <div class="IconoCartaCdV">
+                <img src="{% static 'rsc\img\quality.png' %}">
+            </div>
+            <div class="TxtCartaCdV">
+                <p>Recepción y<br>control de calidad</p>
+            </div>
+        </div>
+        <div class="CartaIconoCdV">
+            <div class="IconoCartaCdV">
+                <img src="{% static 'rsc\img\PlantaIco.png' %}">
+            </div>
+            <div class="TxtCartaCdV">
+                <p>Clasificación<br>y empaque</p>
+            </div>
+        </div>
+        <div class="CartaIconoCdV">
+            <div class="IconoCartaCdV">
+                <img src="{% static 'rsc\img\ContainerIco.png' %}">
+            </div>
+            <div class="TxtCartaCdV">
+                <p>Logística</p>
+            </div>
+        </div>
+        <div class="CartaIconoCdV">
+            <div class="IconoCartaCdV">
+                <img src="{% static 'rsc\img\BuqueIco.png' %}">
+            </div>
+            <div class="TxtCartaCdV">
+                <p>Exportación</p>
+            </div>
+        </div>
+        <div class="CartaIconoCdV">
+            <div class="IconoCartaCdV">
+                <img src="{% static 'rsc\img\costumer.png' %}">
+            </div>
+            <div class="TxtCartaCdV">
+                <p>Destino</p>
+            </div>
+        </div>
+    </div>
+</div>
 
 {% endblock %}
 

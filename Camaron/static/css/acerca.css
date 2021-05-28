@@ -132,9 +132,10 @@
 .TituloNosotros>h1 {
     font-size: var(--sub-title-font-size);
     color: var(--azul-titulos);
+    font-weight: 700;
 }
 
-body > footer {
+body>footer {
     display: block;
 }
 
@@ -143,7 +144,7 @@ el carrousel y el navbar */
 #carouselExampleInterval {
     width: 100vw;
     min-width: 100vw;
-    max-height: 42.5vh;
+    max-height: 56vh;
     margin: 2.5vh 0 2.5vh 0;
 }
 
@@ -155,14 +156,179 @@ el carrousel y el navbar */
 
 .carousel-item>.wrapperItem>picture,
 .carousel-item>.wrapperItem>picture>img {
-    object-fit: contain;
-    width: 50vw;
+    object-fit: cover;
+    width: 66vw;
+    height: 56vh;
+    max-height: 56vh;
+    margin: 0;
+    padding: 0%;
+}
+
+.WrapperTextCarNos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 34vw;
     margin: 0;
     padding: 0%;
 }
 
 .TextCarNos {
-    width: 50vw;
     margin: 0;
     padding: 0%;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+
+button.carousel-control-prev {
+    width: 50vw;
+    opacity: 1;
+}
+
+button.carousel-control-prev:hover {
+    opacity: 1;
+}
+
+button>.carousel-control-prev-icon {
+    background-color: var(--azul-nav);
+    background-position: center;
+    background-size: cover;
+    background-image: none;
+    width: 2vw;
+    height: 2vw;
+    opacity: 1;
+    border-radius: 50%;
+    transition: 0.1s;
+    position: relative;
+    top: 24vh;
+    left: 23vw;
+}
+
+button>.carousel-control-prev-icon:active,
+button>.carousel-control-prev-icon:hover {
+    background-color: var(--amarillo-btn);
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+button.carousel-control-next {
+    width: 50vw;
+    opacity: 1;
+}
+
+button>.carousel-control-next:active,
+button.carousel-control-next:hover {
+    opacity: 1;
+}
+
+button>.carousel-control-next-icon {
+    background-color: var(--azul-nav);
+    background-position: center;
+    background-size: cover;
+    background-image: none;
+    width: 2vw;
+    height: 2vw;
+    opacity: 1;
+    border-radius: 50%;
+    transition: 0.1s;
+    position: relative;
+    top: 24vh;
+    left: -23vw;
+}
+
+button>.carousel-control-next-icon:active,
+button>.carousel-control-next-icon:hover {
+    background-color: var(--amarillo-btn);
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.CadenaValorSubsection {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2.5fr 7fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "TituloCdV"
+        "IconosCdV";
+    height: 55vh;
+    width: 100vw;
+    margin: 5vh 0 2.5vh 0;
+}
+
+.TituloCdV {
+    grid-area: TituloCdV;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.TextTituloCdV {
+    color: var(--gris-subtitulos);
+    font-size: calc(var(--sub-title-font-size) * 0.75);
+    text-align: center;
+    width: 100%;
+    margin: 0vw;
+}
+
+.TextTituloCdV b {
+    color: var(--azul-titulos);
+    font-size: var(--sub-title-font-size);
+    text-align: center;
+    width: 100%;
+    margin: 0vw;
+}
+
+.IconosCdV {
+    grid-area: IconosCdV;
+    background-color: var(--azul-nav);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0,57,132);
+    background: linear-gradient(180deg, rgba(0,57,132,1) 0%, rgba(0,79,156,1) 50%, rgba(0,96,180,1) 100%);
+}
+
+.CartaIconoCdV {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 27fr 11fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "IconoCartaCdV"
+        "TxtCartaCdV";
+    height: 22vh;
+    width: 11vw;
+}
+
+.IconoCartaCdV {
+    grid-area: IconoCartaCdV;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 11vw;
+    height: 15.63vh;
+}
+
+.IconoCartaCdV img {
+    width: 11vw;
+    height: 11.5vh;
+    object-fit: contain;
+}
+
+.TxtCartaCdV {
+    grid-area: TxtCartaCdV;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.36vh;
+    width: 11vw;
+}
+
+.TxtCartaCdV p {
+    color: var(--blanco-nav);
+    font-weight: 600;
+    font-size: 1vw;
+    text-align: center;
 }
