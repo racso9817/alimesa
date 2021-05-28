@@ -146,6 +146,11 @@
       grid-area: info;
      }
 
+     .lct span {
+         display: block;
+         padding-left: 4.75vw;
+     }
+
   .info img {
     max-height: 4vh;
     margin: auto;
@@ -256,17 +261,17 @@
     }
 
     .info {
-        font-size: 50%;
+        font-size: 70%;
     }
     .info img {
-        max-height: 1vh;
+        max-height: 2vh;
     }
     .info #mail {
-        max-height: .5vh;
+        max-height: 1vh;
     }
 
-    #id_Nombre, #id_Email, #id_Telefono, #id_Pais, #id_Mensaje {
-        width: 30vw;
+    #id_Nombre, #id_Email, #id_Telefono, #id_Pais {
+        width: 100%vw;
     }
 
     .grid-container {
@@ -280,6 +285,14 @@
         font-size: 3.5vw;
     }
     .contacto {
-        grid-template-columns: 0.6fr 0.3fr;
+        grid-template-columns: 0.8fr 0.3fr;
+    }
+
+    #id_Nombre:placeholder-shown, #id_Email:placeholder-shown, #id_Telefono:placeholder-shown, #id_Mensaje:placeholder-shown {
+        font-size: 2.5vw;
+    }
+
+    .lct span {
+        padding-left: 6.75vw;
     }
   }
