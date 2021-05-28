@@ -488,7 +488,7 @@ div.certificacionesSubsection>picture {
     }
 
     .fotoProducto img {
-        width: 100%;
+        width: 90vw;
         height: 30vw;
         min-width: 100%;
         border-radius: 16px;
@@ -497,10 +497,10 @@ div.certificacionesSubsection>picture {
 
     .fotoProducto {
         grid-area: fotoProducto;
-        min-height: 90vw;
-        max-height: 90vw;
-        min-width: 25vw;
-        max-width: 25vw;
+        min-height: 30vw;
+        max-height: 30vw;
+        min-width: 90vw;
+        max-width: 90vw;
         border-radius: 16px;
         box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 20%);
     }
@@ -515,10 +515,10 @@ div.certificacionesSubsection>picture {
         visibility: hidden;
         opacity: 0;
         position: relative;
-        top: -90vw;
-        width: 100%;
-        height: 90vw;
-        max-height: 90vw;
+        top: -30vw;
+        width: 90vw;
+        height: 30vw;
+        max-height: 30vw;
         border-radius: 16px;
     }
 
