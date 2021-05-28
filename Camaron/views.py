@@ -115,6 +115,3 @@ def contacto(request):
     }
     return render(request, template, context)
 
-def top(request):
-    template = "top.html"
-    return render(request, template)
