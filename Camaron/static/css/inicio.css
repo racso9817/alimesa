@@ -486,4 +486,40 @@ div.certificacionesSubsection>picture {
         z-index: 898;
         object-fit: cover;
     }
+
+    .fotoProducto img {
+        width: 100%;
+        height: 30vw;
+        min-width: 100%;
+        border-radius: 16px;
+        object-fit: cover;
+    }
+
+    .fotoProducto {
+        grid-area: fotoProducto;
+        min-height: 90vw;
+        max-height: 90vw;
+        min-width: 25vw;
+        max-width: 25vw;
+        border-radius: 16px;
+        box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 20%);
+    }
+
+    .sizesFreezing {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "sizesProducto freezingProducto";
+        visibility: hidden;
+        opacity: 0;
+        position: relative;
+        top: -90vw;
+        width: 100%;
+        height: 90vw;
+        max-height: 90vw;
+        border-radius: 16px;
+    }
+
 }
