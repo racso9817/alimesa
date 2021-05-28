@@ -282,12 +282,11 @@ button>.carousel-control-next-icon:hover {
 
 .IconosCdV {
     grid-area: IconosCdV;
-    background-color: var(--azul-nav);
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(0,57,132);
-    background: linear-gradient(180deg, rgba(0,57,132,1) 0%, rgba(0,79,156,1) 50%, rgba(0,96,180,1) 100%);
+    background: rgb(0, 57, 132);
+    background: linear-gradient(180deg, rgba(0, 57, 132, 1) 0%, rgba(0, 79, 156, 1) 50%, rgba(0, 96, 180, 1) 100%);
 }
 
 .CartaIconoCdV {
@@ -331,4 +330,78 @@ button>.carousel-control-next-icon:hover {
     font-weight: 600;
     font-size: 1vw;
     text-align: center;
+}
+
+.MercadosSubsection {
+    display: grid;
+    grid-template-columns: 9.5fr 22fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "ContinentesWrapper MapasWrapper";
+    width: 100vw;
+}
+
+.ContinentesWrapper {
+    grid-area: ContinentesWrapper;
+}
+
+.MapasWrapper {
+    grid-area: MapasWrapper;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.TituloMercados {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: min-content;
+}
+
+.TextTituloMercados {
+    color: var(--azul-titulos);
+    font-size: var(--sub-title-font-size);
+    text-align: center;
+    width: 100%;
+    margin: 0vw;
+}
+
+.cardMercado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.headerMercado {
+    height: 5vh;
+    width: 80%;
+    margin: 1vh 10% 1vh 10%;
+    background: rgb(0, 57, 132);
+    background: linear-gradient(90deg, rgba(0, 57, 132, 1) 0%, rgba(0, 79, 156, 0.5) 66%, rgba(0, 96, 180, 0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    border-radius: 10px;
+}
+
+.headerMercado b {
+    font-size: 1.4vw;
+    color: var(--blanco-nav);
+    margin: 0vh 10% 0vh 10%;
+}
+
+.paisesMercado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 0.7vh;
 }
