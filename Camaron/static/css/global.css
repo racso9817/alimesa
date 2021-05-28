@@ -33,6 +33,16 @@ body {
     text-decoration: none;
 }
 
+body > footer {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: var(--azul-nav);
+}
+
 /*MEDIA QUERY*/
 
 /*@media screen and (max-width:1040px) {

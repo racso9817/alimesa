@@ -263,7 +263,7 @@ label[for="id_Pais"] {
 
 .boton:hover {
     background-color: var(--amarillo-btn);
-    font-weight: 500;
+    font-weight: 800;
     color: var(--azul-titulos)
 }
 

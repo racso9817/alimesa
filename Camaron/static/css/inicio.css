@@ -120,6 +120,10 @@
     transition: var(--transition-time);
 }
 
+body > footer {
+    top: 270vh;
+}
+
 /* Para contener el carrousel y que se elimine el espacio en blanco entre
 el carrousel y el navbar */
 #carouselExampleInterval {
