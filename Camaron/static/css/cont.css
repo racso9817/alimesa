@@ -121,7 +121,7 @@
 }
 
 body > footer {
-    top: 153vh;
+    top: 200vh;
 }
 
 
@@ -300,8 +300,10 @@ label[for="id_Pais"] {
     #id_Email,
     #id_Telefono,
     #id_Pais {
-        width: 100%vw;
+        width: 30vw;
     }
+
+    
 
     .grid-container {
         padding-top: 15vh;
