@@ -22,7 +22,7 @@ from Camaron.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('', inicio, name='inicio'),
+    path('inicio/', inicio, name='inicio'),
 
     path('certificaciones/', certificaciones, name='certificaciones'),
 
@@ -35,6 +35,6 @@ urlpatterns = [
 
     path('contacto/', contacto, name='contacto'),
 
-
+    path('', principal, name='principal'),
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

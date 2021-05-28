@@ -120,6 +120,10 @@
     transition: var(--transition-time);
 }
 
+body > footer {
+    top: 300vh;
+}
+
 .tituloProductos {
     display: flex;
     align-items: flex-end;
@@ -271,17 +275,32 @@
     grid-template-areas:
         "tituloMarcas"
         "flexMarcas";
-    position: absolute;
+    position: relative;
     width: 100vw;
+    background: rgb(96,109,120);
+    background: linear-gradient(180deg, rgba(96,109,120,0.3) 5%, rgba(96,109,120,0.2) 16%, rgba(96,109,120,0.1) 27%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 100%);
+}
+
+div.marcasSubsection>picture {
+    transform: scaleY(-1) scaleX(-1);
+    width: 100vw;
+    height: 5.6vh;
+    position: absolute;
+    top: -1px;
+    z-index: 897;
+    object-fit: cover;
 }
 
 .tituloMarcas {
     grid-area: tituloMarcas;
-    display: flex;
-    align-items: center;
+    color: var(--gris-subtitulos);
+    font-size: calc(var(--sub-title-font-size) * 0.75);
+    text-align: center;
+    width: 100%;
+    margin: 5vh 0 0 0;
 }
 
-.tituloMarcas p {
+.tituloMarcas b {
     color: var(--azul-titulos);
     font-size: var(--sub-title-font-size);
     font-weight: bold;
@@ -296,12 +315,14 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    width: 50vw;
+    margin: 5vh 25vw 0 25vw;
 }
 
 .imgMarca {
-    width: 17vw;
-    height: 17vw;
-    margin: 0.5vw 4vw 0.75vw 4vw;
+    width: 10vw;
+    height: 10vw;
+    margin: 2vh 3.33vw 2vh 3.33vw;
     border-radius: 16px;
     /* box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 5%); */
     transition: transform .15s;

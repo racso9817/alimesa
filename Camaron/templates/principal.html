@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ALIMESA</title>
+    <link rel="shortcut icon" type="image/png" href="{% static 'rsc\img\logoAzul.ico' %}" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css\variables.css' %}" media="screen">
+    <link rel="stylesheet" type="text/css" href="{% static 'css\principal.css' %}" media="screen">
+</head>
+
+<body>
+    <div class="barraPrin">
+        <div class="contain"></div>
+        <div class="contact">
+            <img id="tlf" src="{% static 'rsc\img\phone.png' %}">
+            <a class="linksCEI" href='tel:59341622125'>(+593-4) 162 2125</a>
+            <img id="mail" src="{% static 'rsc\img\mail.png' %}">
+            <a class="linksCEI" href="mailto:sales@alimesa.com.ec">SALES@ALIMESA.COM.EC</a>
+        </div>
+        <div class="idioma">
+            <a class="linksCEI" href="">Menu |</a>
+            <a class="linksCEI" href="">EN |</a>
+            <a class="linksCEI" href="">ES |</a>
+            <a class="linksCEI" style="padding-right: 1vw;" href="">官话</a>
+        </div>
+      </div>
+</body>        
+</html>

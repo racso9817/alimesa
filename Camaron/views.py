@@ -115,3 +115,6 @@ def contacto(request):
     }
     return render(request, template, context)
 
+def principal(request):
+    template = 'principal.html'
+    return render(request, template)

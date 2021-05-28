@@ -120,6 +120,10 @@
     transition: var(--transition-time);
 }
 
+body > footer {
+    top: 153vh;
+}
+
 
 .grid-container {
     display: grid;

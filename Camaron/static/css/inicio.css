@@ -382,7 +382,7 @@ img.ProdIcon {
     min-width: 100vw;
     min-height: 45vh;
     background: rgb(96,109,120);
-background: linear-gradient(180deg, rgba(96,109,120,0.3) 5%, rgba(96,109,120,0.2) 16%, rgba(96,109,120,0.1) 27%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(96,109,120,0.3) 5%, rgba(96,109,120,0.2) 16%, rgba(96,109,120,0.1) 27%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 100%);
 }
 
 .tituloSubseccionCerts {

@@ -44,10 +44,15 @@ style="top: calc((var(--CEIheight) + var(--LinksSeccionesHeight) + 5vh)
 <div class="marcasSubsection" style="top: calc((var(--CEIheight) + var(--LinksSeccionesHeight) + 5vh) 
   + (var(--height-prod-dv)*0.6) 
   + (((var(--height-prod-dv) + 10vh)*0.6) * {{ cont }})
-  + 10vh);
+  + 0vh);
   min-height: calc((var(--height-prod-dv)*0.6) + 10vh);">
+  <picture>
+    <source media="(min-width: 770px)" srcset="{% static 'rsc\img\Franja_Web.png' %}" class="Franja" alt="...">
+    <source media="(min-width: 210px)" srcset="{% static 'rsc\img\Franja_Movil.png' %}" class="Franja" alt="...">
+    <img src="{% static 'rsc\img\Franja_Web.png' %}" class="Franja" alt="...">
+</picture>
   <div class="tituloMarcas">
-    <p>NUESTRAS MARCAS</p>
+    <p><b>NUESTRAS MARCAS</b><br>Empaques diseñados según las necesidades de nuestros clientes</br></p>
   </div>
   <div class="flexMarcas">
     {% for marca in marcas %}

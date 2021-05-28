@@ -1,0 +1,27 @@
+.barraPrin {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    background-color: var(--azul-nav);
+  }
+  
+  .contain { 
+      grid-area: 1 / 1 / 2 / 2;     
+    }
+  
+  .contact { grid-area: 1 / 1 / 2 / 2; }
+  
+  .idioma { 
+      grid-area: 1 / 2 / 2 / 3; 
+    text-align: right;
+    }
+  
+    .linksCEI {
+        color: var(--blanco-nav);
+        text-decoration: none;
+    }
+    
+    .linksCEI:hover {
+        text-decoration: none;
+    }
