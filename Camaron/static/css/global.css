@@ -43,6 +43,13 @@ body > footer {
     background: var(--azul-nav);
 }
 
+body > footer > img {
+    width: 5.6vw;
+    width: 10vh;
+    object-fit: contain;
+    margin: 2.5vh 1vw 2.5vh 3vw;
+}
+
 /*MEDIA QUERY*/
 
 /*@media screen and (max-width:1040px) {
