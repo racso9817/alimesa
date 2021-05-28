@@ -47,9 +47,9 @@
         "model": "Camaron.carausel",
         "pk": 5,
         "fields": {
-            "imagenWeb": "rsc/img/Foto1_Web_ConTexto.png",
-            "imagenMov": "rsc/img/Foto1_Movil_ConTexto.png",
-            "title": "CUMPLIMOS LAS EXIGENCIAS DE LOS MERCADOS INTERNACIONALES",
+            "imagenWeb": "rsc/img/Foto1_Web.png",
+            "imagenMov": "rsc/img/Foto1_Movil.png",
+            "title": "Expotuna S.A. es una procesadora\ny comercializadora de pescados\ny mariscos congelados, que inició\nsus actividades en el año 2015.",
             "sub_title": "⠀",
             "section": "NOS"
         }
@@ -58,9 +58,9 @@
         "model": "Camaron.carausel",
         "pk": 6,
         "fields": {
-            "imagenWeb": "rsc/img/Foto2_Web_ConTexto.png",
-            "imagenMov": "rsc/img/Foto2_Movil_ConTexto.png",
-            "title": "MÁS DE 40 AÑOS DE EXPERIENCIA EN LA PRODUCCIÓN DE MARISCOS CONGELADOS",
+            "imagenWeb": "rsc/img/Foto2_Web.png",
+            "imagenMov": "rsc/img/Foto2_Movil.png",
+            "title": "Localizada estratégicamente en/nGuayaquil, ciudad que posee una\ngran ventaja geográfica por\nubicarse a pocas horas de dos\nimportantes puertos del País\ncomo lo son Guayaquil y Manta,\nesto permite un abastecimiento\nconstante de productos frescos.",
             "sub_title": "⠀",
             "section": "NOS"
         }
@@ -69,20 +69,9 @@
         "model": "Camaron.carausel",
         "pk": 7,
         "fields": {
-            "imagenWeb": "rsc/img/Foto3_Web_ConTexto.png",
-            "imagenMov": "rsc/img/Foto3_Movil_ConTexto.png",
-            "title": "GARANTIZAMOS LA CALIDAD, SABOR Y FRESCURA DEL VANNAMEI ECUATORIANO",
-            "sub_title": "⠀",
-            "section": "NOS"
-        }
-    },
-    {
-        "model": "Camaron.carausel",
-        "pk": 8,
-        "fields": {
-            "imagenWeb": "rsc/img/Foto4_Web_ConTexto.png",
-            "imagenMov": "rsc/img/Foto4_Movil_ConTexto.png",
-            "title": "CALIFICADOS PARA BRINDAR PRODUCTOS DE PRIMERA",
+            "imagenWeb": "rsc/img/Foto3_Web.png",
+            "imagenMov": "rsc/img/Foto3_Movil.png",
+            "title": "El equipo técnico de control de\ncalidad realiza un seguimiento\ny análisis constante de todos y\ncada uno de los procesos de\nproducción las 24 horas del día,\n365 días al año para garantizar\nsiempre la máxima calidad.",
             "sub_title": "⠀",
             "section": "NOS"
         }
