@@ -3,18 +3,41 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
     gap: 0px 0px;
-    background-color: var(--azul-nav);
+    background: rgb(0,99,181);
+    background: linear-gradient(180deg, rgba(0,99,181,1) 0%, rgba(0,79,157,1) 50%, rgba(0,55,130,1) 100%);
+    position: absolute;
+    top: 0;
+    height: 5vh;
+    width: 100vw;
   }
   
   .contain { 
       grid-area: 1 / 1 / 2 / 2;     
     }
   
-  .contact { grid-area: 1 / 1 / 2 / 2; }
+  .contact { 
+      grid-area: 1 / 1 / 2 / 2; 
+      text-decoration: none;
+      padding-left: 0.5vw;
+    padding-right: 1vw;
+    }
+
+  .contact img {
+    max-height: 2vh;
+    margin: auto;
+    padding-bottom: 0.1vw;
+    padding-left: 1vw;
+  }
   
   .idioma { 
       grid-area: 1 / 2 / 2 / 3; 
     text-align: right;
+    text-decoration: none;
+    padding-right: 1vw;
+    }
+
+    .idioma > a {
+        padding-right: 1vw;
     }
   
     .linksCEI {
@@ -24,4 +47,62 @@
     
     .linksCEI:hover {
         text-decoration: none;
+        color: white;
+        transition: .1s;
+        transform: scale(1.1);
     }
+
+    .fotosPrin {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "camaron pescado";
+        position: absolute;
+        top: 5vh;
+        height: 90vh;
+        width: 100vw;      
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;  
+      }
+      
+      .camaron { 
+          grid-area: camaron; 
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 90vh;
+        }
+
+      .camaron > a > img {
+        width: 20vw;
+        height: 35vh;
+        object-fit: contain;
+      }
+
+      .camaron > a:hover {
+          transition: .1s;
+          transform: scale(1.1);
+      }
+      
+      .pescado { 
+          grid-area: pescado; 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        }
+
+      .pescado > a > img {
+        width: 20vw;
+        height: 35vh;
+        object-fit: contain;
+      }
+
+      .pescado > a:hover {
+        transition: .1s;
+        transform: scale(1.1);
+    }
+      
