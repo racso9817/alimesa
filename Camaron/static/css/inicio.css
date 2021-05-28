@@ -436,7 +436,7 @@ div.certificacionesSubsection>picture {
     background: var(--azul-nav);
 }
 
-@media screen and (max-width:770px) {
+@media screen and (max-width:961px) {
 
     /* Para contener el carrousel y que se elimine el espacio en blanco entre
     el carrousel y el navbar */
