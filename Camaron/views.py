@@ -75,7 +75,11 @@ def productoPorSiglas(request, siglas=""):
 
 def acerca(request):
     template = "acerca.html"
-    return render(request, template)
+    fotos = Carausel.objects.filter(section="NOS")
+    context = {
+        'fotos': fotos,
+    }
+    return render(request, template, context)
 
 def multimedia(request):
     template = "multimedia.html"
