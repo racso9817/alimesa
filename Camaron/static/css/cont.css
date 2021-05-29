@@ -136,7 +136,7 @@ body > footer {
 
 .contacto {
     display: grid;
-    grid-template-columns: 0.46fr 0.5fr;
+    grid-template-columns: 1fr 0.8fr;
     grid-template-rows: 0.2fr 1.2fr;
     gap: 0px 0px;
     grid-template-areas:
@@ -144,7 +144,7 @@ body > footer {
         "info form";
     grid-area: contacto;
     margin-top: auto;
-    padding-left: 15vw;
+    padding-left: 6vw;
 }
 
 .info {
@@ -216,7 +216,7 @@ label[for="id_Pais"] {
 }
 
 #id_Mensaje {
-    width: 100%;
+    width: 128%;
 }
 
 #id_Email {
@@ -225,6 +225,13 @@ label[for="id_Pais"] {
 
 #id_Pais {
     margin-left: 1vw;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
 
 .lct img {
@@ -262,6 +269,8 @@ label[for="id_Pais"] {
 .boton {
     border: var(--azul-nav);
     background-color: var(--azul-nav);
+    position: absolute;
+    transform: translate(25vw, 25vh);
     color: white;
     border-radius: .5rem;
 }
@@ -278,6 +287,11 @@ select  { color: #757575; }
 /* Add responsiveness - display the form controls vertically instead of horizontally 
   on screens that are less than 800px wide */
 @media (max-width: 961px) {
+    
+    body > footer {
+        top: 110vh;
+    }
+
     .form-inline input {
         margin: 10px 0;
     }
@@ -289,14 +303,22 @@ select  { color: #757575; }
 
     .info {
         font-size: 70%;
+        margin-top: -5vw;
+    }
+
+    .form {
+        font-size: 70%;
+        margin-top: -5vw;
     }
 
     .info img {
         max-height: 2vh;
+        padding-left: 5vw;
     }
 
     .info #mail {
         max-height: 1.3vh;
+        padding-left: 5vw;
     }
 
     #id_Nombre,
@@ -306,7 +328,18 @@ select  { color: #757575; }
         width: 30vw;
     }
 
-    
+    #id_Mensaje {
+        width: 100%;
+    }
+
+    .boton {
+        border: var(--azul-nav);
+        background-color: var(--azul-nav);
+        position: absolute;
+        transform: translate(22vw, 25vh);
+        color: white;
+        border-radius: .5rem;
+    }
 
     .grid-container {
         padding-top: 15vh;
@@ -314,6 +347,7 @@ select  { color: #757575; }
 
     .titinfo {
         font-size: 3.5vw;
+        padding-left: 5vw;
     }
 
     .titform {
@@ -321,7 +355,7 @@ select  { color: #757575; }
     }
 
     .contacto {
-        grid-template-columns: 0.8fr 0.3fr;
+        grid-template-columns: 0.9fr 0.3fr;
         padding-left: 0;
     }
 
@@ -335,9 +369,9 @@ select  { color: #757575; }
 
     .lct img {
         max-height: 2vh;
-        margin: 0;
+        margin-left: -7vw;
         padding-bottom: 0.1vw;
         padding-left: 2vw;
-        padding-right: 1vw;
+        padding-right: 2vw;
     }
 }
