@@ -136,7 +136,7 @@ body > footer {
 
 .contacto {
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-columns: 0.46fr 0.5fr;
     grid-template-rows: 0.2fr 1.2fr;
     gap: 0px 0px;
     grid-template-areas:
@@ -164,7 +164,7 @@ body > footer {
     max-height: 4vh;
     margin: auto;
     padding-bottom: 0.1vw;
-    padding-left: 2vw;
+    padding-left: 12vw;
     padding-right: 1vw;
 }
 
@@ -172,7 +172,7 @@ body > footer {
     max-height: 2.5vh;
     margin: auto;
     padding-bottom: 0.1vw;
-    padding-left: 2vw;
+    padding-left: 12vw;
 }
 
 .form {
@@ -185,7 +185,7 @@ body > footer {
     color: var(--azul-titulos);
     font-size: var(--sub-title-font-size);
     text-align: left;
-    padding-left: 2vw;
+    padding-left: 12vw;
     width: 100%;
     margin: 0vw;
 }
