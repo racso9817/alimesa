@@ -136,7 +136,7 @@ body > footer {
 
 .contacto {
     display: grid;
-    grid-template-columns: 0.4fr 0.3fr;
+    grid-template-columns: 0.5fr 0.5fr;
     grid-template-rows: 0.2fr 1.2fr;
     gap: 0px 0px;
     grid-template-areas:
@@ -144,6 +144,7 @@ body > footer {
         "info form";
     grid-area: contacto;
     margin-top: auto;
+    padding-left: 15vw;
 }
 
 .info {
@@ -267,9 +268,11 @@ label[for="id_Pais"] {
 
 .boton:hover {
     background-color: var(--amarillo-btn);
-    font-weight: 800;
+    font-weight: 700;
     color: var(--azul-titulos)
 }
+
+select  { color: #757575; }
 
 
 /* Add responsiveness - display the form controls vertically instead of horizontally 
@@ -293,7 +296,7 @@ label[for="id_Pais"] {
     }
 
     .info #mail {
-        max-height: 1vh;
+        max-height: 1.3vh;
     }
 
     #id_Nombre,
@@ -319,12 +322,14 @@ label[for="id_Pais"] {
 
     .contacto {
         grid-template-columns: 0.8fr 0.3fr;
+        padding-left: 0;
     }
 
     #id_Nombre:placeholder-shown,
     #id_Email:placeholder-shown,
     #id_Telefono:placeholder-shown,
-    #id_Mensaje:placeholder-shown {
+    #id_Mensaje:placeholder-shown,
+    #id_Pais {
         font-size: 2.5vw;
     }
 

@@ -91,7 +91,7 @@ class Contacto(models.Model):
     Nombre = models.CharField(max_length=200)
     Email = models.EmailField()
     Telefono = models.CharField(max_length=12)
-    Pais = CountryField()
+    Pais = CountryField(blank_label='País')
     Mensaje = models.TextField()
 
     def __str__(self):

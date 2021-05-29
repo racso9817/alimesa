@@ -98,10 +98,11 @@ def contacto(request):
         cel = request.POST['Telefono']
         pais = request.POST['Pais']
         nombre = request.POST['Nombre']
+        ct = Contacto(Nombre=nombre,Email=sender,Telefono=cel,Pais=pais,Mensaje=message)
         if form.is_valid:
             send_mail(
                 'Mensaje de '+nombre,
-                message+'\n'+'Telefono: '+cel+'\n'+'Pais: '+pais+'\n'+'De: '+sender,
+                message+'\n'+'Telefono: '+cel+'\n'+'Pais: '+ct.Pais.name+'\n'+'De: '+sender,
                 sender, 
                 ['oscaravilaa9817@gmail.com'], 
                 fail_silently=False)
