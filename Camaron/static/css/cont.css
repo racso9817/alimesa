@@ -270,7 +270,7 @@ button:focus {
     border: var(--azul-nav);
     background-color: var(--azul-nav);
     position: absolute;
-    transform: translate(25vw, 25vh);
+    transform: translate(24.5vw, 25vh);
     color: white;
     border-radius: .5rem;
 }
