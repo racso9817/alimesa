@@ -39,21 +39,18 @@ body > footer {
     flex-wrap: wrap;
     width: 100vw;
     justify-content: center;
-    align-items: center;
-    background: var(--azul-nav);
+    align-items:center;
+    background: rgb(0, 99, 181);
+    background: linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%);
 }
 
-body > footer > img {
+body > footer > a > img {
     width: 7vw;
     height: 15vh;
     object-fit: contain;
-    margin: 2.5vh 1vw 2.5vh 3vw;
+    margin: 2.5vh 1vw 2.5vh 0vw;
 }
 
-body > footer > img:hover {
-    transition: .1s;
-    transform: scale(1.08);
-}
 
 .info-contacto-footer {
   display: grid;
@@ -64,6 +61,7 @@ body > footer > img:hover {
     "correo"
     "tel1"
     "tel2";
+    
 }
 
 .correo { grid-area: correo; }
@@ -90,7 +88,6 @@ body > footer > img:hover {
 .textFooter:focus {
     text-decoration: none;
     color: white;
-    font-weight: bold;
 }
 
 .dirFooter > img {
@@ -109,7 +106,6 @@ body > footer > img:hover {
 .dirFooter:hover > a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
 }
 
 .icoMsj {
@@ -120,6 +116,7 @@ body > footer > img:hover {
     grid-template-areas:
       "wsp wcht";
     width: min-content;
+    margin-left: 20vw;
   }
   
   .wsp { grid-area: wsp; }
@@ -132,22 +129,12 @@ body > footer > img:hover {
     object-fit: contain;
     margin: 2.5vh 0vw 2.5vh 5vw;
   }
-
-  .wsp > img:hover {
-    transition: .1s;
-    transform: scale(1.08);
-}
   
   .wcht > img {
     width: 5.6vw;
     height: 10vh;
     object-fit: contain;
     margin: 2.5vh 0vw 2.5vh 0vw;
-  }
-
-  .wcht > img:hover {
-      transition: .1s;
-      transform: scale(1.08);
   }
 
 

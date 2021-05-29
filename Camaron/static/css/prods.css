@@ -278,7 +278,7 @@ body > footer {
     position: relative;
     width: 100vw;
     background: rgb(96,109,120);
-    background: linear-gradient(180deg, rgba(96,109,120,0.3) 5%, rgba(96,109,120,0.2) 16%, rgba(96,109,120,0.1) 27%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(180deg, rgba(96,109,120,0.3) 3%, rgba(96,109,120,0.1) 16%, rgba(96,109,120,0) 27%, rgba(255,255,255,0) 40%, rgba(255,255,255,0) 100%);
 }
 
 div.marcasSubsection>picture {
@@ -288,7 +288,7 @@ div.marcasSubsection>picture {
     position: absolute;
     top: -1px;
     z-index: 897;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .tituloMarcas {
@@ -300,14 +300,15 @@ div.marcasSubsection>picture {
     margin: 7.5vh 0 0 0;
 }
 
-.tituloMarcas b {
+.tituloMarcas  b {
     color: var(--azul-titulos);
     font-size: var(--sub-title-font-size);
     font-weight: bold;
     text-align: center;
     width: 100%;
-    margin: 0vw;
+    margin-top: 25vh;
 }
+
 
 .flexMarcas {
     grid-area: flexMarcas;

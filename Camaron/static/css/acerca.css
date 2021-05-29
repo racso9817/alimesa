@@ -205,10 +205,10 @@ button>.carousel-control-prev-icon {
     left: 23vw;
 }
 
-button > .carousel-control-prev-icon img {
+button>.carousel-control-prev-icon>img {
     transform: rotate(180deg);
-    width: 2vw;
     height: 2vw;
+    width: 2vw;
 }
 
 button>.carousel-control-prev-icon:active,
@@ -216,6 +216,8 @@ button>.carousel-control-prev-icon:hover {
     background-color: var(--amarillo-btn);
     transform: scale(1.05);
     opacity: 1;
+    color: var(--azul-titulos);
+    font-weight: 1000;
 }
 
 button.carousel-control-next {
@@ -243,9 +245,9 @@ button>.carousel-control-next-icon {
     left: -23vw;
 }
 
-button > .carousel-control-next-icon img {
-    width: 2vw;
+button>.carousel-control-next-icon>img {
     height: 2vw;
+    width: 2vw;
 }
 
 button>.carousel-control-next-icon:active,
@@ -253,6 +255,8 @@ button>.carousel-control-next-icon:hover {
     background-color: var(--amarillo-btn);
     transform: scale(1.05);
     opacity: 1;
+    color: var(--azul-titulos);
+    font-weight: 1000;
 }
 
 .CadenaValorSubsection {
