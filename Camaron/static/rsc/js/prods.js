@@ -1,7 +1,7 @@
 // Logo
 document.getElementById("logo").src = "/static/rsc/img/LogoCamaronBlanco.png";
-document.getElementById("logo").style.height = "16vh";
-document.getElementById("logo").style.width = "8vw";
+document.getElementById("logo").style.height = "12vh";
+document.getElementById("logo").style.width = "6vw";
 // Nav
 document.getElementsByClassName("nav-container")[0].style.background = "linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%)";
 document.getElementsByClassName("contactosEidioma-nav")[0].style.background = "rgb(255, 255, 255)";
