@@ -169,6 +169,10 @@
   	padding-right: 2vw;
 }
 
+.activa {
+    color: #0063B5;
+}
+
 body > footer {
     top: 300vh;
 }

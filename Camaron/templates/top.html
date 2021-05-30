@@ -11,12 +11,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'css\variables.css' %}" media="screen">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     {% block headExtend %}
     {% endblock %}
     <link rel="stylesheet" type="text/css" href="{% static 'css\global.css' %}" media="screen">
 </head>
 
 <body>
+    <script  type="text/javascript">
+       $('.menu-nav').on('click', function(){
+        $('div.activa').removeClass('activa');
+        $(this).addClass('activa');
+        });
+    </script>
+
     <section class="header">
         <div class="nav-container">
             <div class="navbar">
@@ -39,7 +47,7 @@
                 </div>
                 <div class="menu-nav">
                   <div class="inicio">
-                      <a class="opcionMenu" href="{% url 'inicio' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">INICIO</a>
+                      <a class="activa opcionMenu" href="{% url 'inicio' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">INICIO</a>
                   </div>
                   <div class="nosotros">
                       <a class="opcionMenu" href="{% url 'acerca' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)" >NOSOTROS</a>

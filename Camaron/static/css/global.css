@@ -168,18 +168,18 @@ body > footer > b {
         width: 20vw;
         height: 60vh;
         object-fit: contain;
-        margin: 8vh 0vw 2.5vh -10vw;
+        margin: 0vh 0vw 2.5vh -10vw;
         position: absolute;
-        transform: translate(-16vw, -56vh);
+        transform: translate(-16vw, -48vh);
     }
     
     body > footer > img {
         width: 15vw;
         height: 45vh;
         object-fit: contain;
-        margin: 13vh 1vw 2.5vh 0vw;  
+        margin: 0vh 1vw 2.5vh 0vw;  
         position: absolute;
-        transform: translate(13vw, -23vh); 
+        transform: translate(13vw, -17vh); 
     }
     
     body > footer > b {
@@ -278,7 +278,8 @@ body > footer > b {
         height: 20vh;
         object-fit:contain;
         position: absolute;
-        transform: translate(-15vw, 6vh);
+        transform: translate(-15vw, 15vh);
+        height: 5vh;
       }
       
       .wcht > img {
@@ -286,7 +287,8 @@ body > footer > b {
         height: 20vh;
         object-fit: contain;
         position: absolute;
-        transform: translate(0vw, 6vh);
+        transform: translate(0vw, 15vh);
+        height: 5vh;
       }
         
 }

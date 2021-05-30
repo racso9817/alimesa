@@ -169,6 +169,10 @@
   	padding-right: 2vw;
 }
 
+.activa {
+    color: #0063B5;
+}
+
 body > footer {
     top: 170vh;
 }
@@ -185,7 +189,7 @@ body > footer {
 
 .contacto {
     display: grid;
-    grid-template-columns: 1fr 0.8fr;
+    grid-template-columns: .5fr 0.3fr;
     grid-template-rows: 0.2fr 1.2fr;
     gap: 0px 0px;
     grid-template-areas:
@@ -193,7 +197,7 @@ body > footer {
         "info form";
     grid-area: contacto;
     margin-top: auto;
-    padding-left: 6vw;
+    padding-left: 2vw;
 }
 
 .info {
@@ -274,6 +278,7 @@ label[for="id_Pais"] {
 
 #id_Pais {
     margin-left: 1vw;
+    width: 55%;
 }
 
 input:focus,
@@ -319,7 +324,7 @@ button:focus {
     border: var(--azul-nav);
     background-color: var(--azul-nav);
     position: absolute;
-    transform: translate(24.5vw, 25vh);
+    transform: translate(18vw, 25vh);
     color: white;
     border-radius: .5rem;
 }

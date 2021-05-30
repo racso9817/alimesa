@@ -169,6 +169,10 @@
   	padding-right: 2vw;
 }
 
+.activa {
+    color: #0063B5;
+}
+
 .TituloVideo {
     margin-top: 20vh;
     display: flex;
