@@ -38,7 +38,7 @@ body > footer > a > img {
     object-fit: contain;
     margin: 2.5vh 0vw 2.5vh -10vw;
     position: absolute;
-    transform: translate(-15vw, -9.8vh);
+    transform: translate(-18vw, -9.8vh);
 }
 
 body > footer > img {
@@ -144,6 +144,42 @@ body > footer > b {
     margin: 2.5vh 0vw 2.5vh 0vw;
     position: absolute;
     transform: translate(17.5vw, -8vh);
+  }
+
+  .float {
+      position: fixed;
+      width: 16vw;
+      height: 4vh;
+      bottom: 25vh;
+      right: 8vw;
+      background-color: white;
+      color: black;
+      border-radius: 5vw;
+      text-align: center;
+      font-size: 1vw;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+      font-size: 1vw;
+      text-decoration: none;
+  }
+
+  .float > a:hover {
+      text-decoration: none;
+      color: black;
+  }
+
+  .my-float {
+    position: absolute;
+    transform: translate(1vw, -4.1vh);
+    padding-top: 1.5vh;
+    width: 5.5vw;
+    height: 11vh;
+    border-radius: 4vw;
+    font-size: 4vw;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+    background-color: #25d366;
+    color: white;
   }
 
 
