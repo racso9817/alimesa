@@ -1,4 +1,8 @@
 
+body {
+    margin: 0;
+}
+
 .nav-container {
     position: fixed;
     top: 0%;
@@ -13,7 +17,6 @@
   grid-template-areas:
     "navbar";
   background-color: white;
-  margin-top: -.8vh;
 }
 
 .navbar {
@@ -24,7 +27,8 @@
   grid-template-areas:
     "logo-nav options-nav";
   grid-area: navbar;
-  height: 18vh;
+  height: 15vh;
+  margin-top: -4.8vh;
 }
 
 .logo-nav { 
@@ -32,12 +36,12 @@
 	display: flex;
 	align-content: center;
 	justify-content: center;
+    padding-top: 1vh;
 }
 
-.logo-nav img {
-	margin-top: 1vh;
-	width: 6vw;
-	height: 15vh;
+.logo-nav >a>img {
+	width: 5vw;
+	height: 18vh;
 }
 
 .options-nav {
@@ -49,7 +53,6 @@
     "contactosEidioma-nav"
     "menu-nav";
   grid-area: options-nav;
-  height: 18vh;
 }
 
 .contactosEidioma-nav {
@@ -63,22 +66,27 @@
   background: rgb(0, 99, 181);
   background: linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%);
   border-radius: 0 0 0 5vw;
+  height: var(--CEIheight);
 }
 
 .contacto-nav { 
 	grid-area: contacto-nav; 
 	padding-left: 8vw;
     padding-top: 1vh;
+    display: flex;
+    align-content: flex-start;
+    justify-content: flex-start;
 }
 
 .contacto-nav > img {
-	max-height: 2vh;    
+	max-height: 1.5vh;    
 }
 
 .contacto-nav > a {
     text-decoration: none;
     color: white;
-    margin-top: 2vh;
+    font-size: 1vw;
+    padding-bottom: 1vh;
     padding-left: 0.5vw;
     padding-right: 2vw;
 }
@@ -89,14 +97,17 @@
 
 .idioma-nav { 
 	grid-area: idioma-nav; 
-	text-align: right;
+	text-align: center;
 	padding-right: 6vw;
-	padding-top: 1vh;
+    display: flex;
+    align-content: flex-end;
+    justify-content: flex-end;
 }
 
 .idioma-nav > a {
 	text-decoration: none;
 	color: white;
+    font-size: 1vw;
 	padding-right: 1vw;	
 }
 
@@ -113,7 +124,7 @@
   grid-template-areas:
     "inicio nosotros productos certs multi cont";
   grid-area: menu-nav;
-  padding-top: 5vh;
+  padding-top: 3vh;
   font-size: 1vw;
 }
 

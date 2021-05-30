@@ -38,7 +38,7 @@ body > footer > a > img {
     object-fit: contain;
     margin: 2.5vh 0vw 2.5vh -10vw;
     position: absolute;
-    transform: translate(-18vw, -9.8vh);
+    transform: translate(-16vw, -9.8vh);
 }
 
 body > footer > img {
@@ -150,7 +150,7 @@ body > footer > b {
       position: fixed;
       width: 16vw;
       height: 4vh;
-      bottom: 25vh;
+      bottom: 20vh;
       right: 8vw;
       background-color: white;
       color: black;

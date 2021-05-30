@@ -27,7 +27,7 @@ body {
     "logo-nav options-nav";
   grid-area: navbar;
   height: 15vh;
-  margin-top: -2.4vh;
+  margin-top: -2.85vh;
 }
 
 .logo-nav { 
