@@ -20,19 +20,6 @@ body {
     margin-top: 10vw;
 }
 
-.TituloSeccion {
-    text-align: center;
-    font-size: 1.65vw;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.TituloSeccion:hover {
-    font-size: 1.85vw;
-    font-weight: 650;
-    text-decoration: none;
-}
-
 body > footer {
     position: absolute;
     display: flex;
