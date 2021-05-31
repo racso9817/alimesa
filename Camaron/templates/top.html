@@ -48,6 +48,9 @@
                 </div>
                 <div class="menu-nav">
                   <div class="inicio">
+                      {% if 'inicio' in request.path %}
+                      <a class="activa opcionMenu" href="{% url 'inicio' %}" style="color: #0063B5;" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">INICIO</a>
+                      {% endif %}
                       <a class="activa opcionMenu" href="{% url 'inicio' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">INICIO</a>
                   </div>
                   <div class="nosotros">
