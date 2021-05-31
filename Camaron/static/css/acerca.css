@@ -202,7 +202,7 @@ body {
 
 body>footer {
     display: block;
-    margin: 5vh 0 0 0;
+    margin: 2.5vh 0 0 0;
 }
 
 /* Para contener el carrousel y que se elimine el espacio en blanco entre
@@ -489,12 +489,9 @@ button>.carousel-control-next-icon:hover {
 
 .paisesMercado {
     display: none;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    gap: 0.7vh;
     font-size: 1.6vh;
+    margin: 0 0 0 15%;
+    width: 85%;
 }
 
 .shownMap {

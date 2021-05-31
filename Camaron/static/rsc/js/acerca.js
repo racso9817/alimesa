@@ -12,7 +12,7 @@ function mostrarMapaPorContinente(selectedContinentId) {
         if (!compareSameContinent(selectedContinentId, x.id)) {
             x.style.display = 'none';
         } else {
-            x.style.display = 'flex';
+            x.style.display = 'block';
         }
     })
 
