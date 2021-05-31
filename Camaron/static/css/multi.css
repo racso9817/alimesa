@@ -19,7 +19,7 @@ background-color: white;
 }
 
 .navbar {
-display: grid;
+  display: grid;
 grid-template-columns: 0.4fr 2fr;
 grid-template-rows: 1fr;
 gap: 0px 0px;
@@ -27,7 +27,6 @@ grid-template-areas:
   "logo-nav options-nav";
 grid-area: navbar;
 height: 15vh;
-margin-top: -2.85vh;
 }
 
 .logo-nav { 
@@ -35,12 +34,10 @@ grid-area: logo-nav;
 display: flex;
 align-content: center;
 justify-content: center;
-  padding-top: 1vh;
 }
 
 .logo-nav >a>img {
-width: 6vw;
-height: 15vh;
+object-fit: contain;
 }
 
 .options-nav {
@@ -78,16 +75,18 @@ padding-left: 8vw;
 }
 
 .contacto-nav > img {
-max-height: 1.5vh;    
+max-height: 1.5vh;
+  padding-right: .5vw;
+  padding-bottom: .1vw;   
 }
 
 .contacto-nav > a {
   text-decoration: none;
   color: white;
-  font-size: 1vw;
-  padding-bottom: 1vh;
+  font-size: .9vw;
   padding-left: 0.5vw;
   padding-right: 2vw;
+  transform: translate(0vw, -.4vw);
 }
 
 .contacto-nav > a:hover {
@@ -181,9 +180,6 @@ display: flex;
   padding-right: 2vw;
 }
 
-.activa {
-  color: #0063B5;
-}
 
 .TituloVideo {
     margin-top: 20vh;
