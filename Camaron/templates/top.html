@@ -48,25 +48,64 @@
                 </div>
                 <div class="menu-nav">
                   <div class="inicio">
-                      {% if 'inicio' in request.path %}
-                      <a class="activa opcionMenu" href="{% url 'inicio' %}" style="color: #0063B5;" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">INICIO</a>
+                      {% if 'inicio' in request.path %}                      
+                      <style>
+                          #inicio-nav {
+                              font-weight: bolder;
+                          }
+                      </style>
                       {% endif %}
-                      <a class="activa opcionMenu" href="{% url 'inicio' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">INICIO</a>
+                      <a class="opcionMenu" id="inicio-nav" href="{% url 'inicio' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">INICIO</a>
                   </div>
                   <div class="nosotros">
-                      <a class="opcionMenu" href="{% url 'acerca' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)" >NOSOTROS</a>
+                    {% if 'acerca' in request.path %}                      
+                    <style>
+                        #nosotros-nav {
+                            font-weight: bolder;
+                        }
+                    </style>
+                    {% endif %}
+                      <a class="opcionMenu" id="nosotros-nav" href="{% url 'acerca' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)" >NOSOTROS</a>
                   </div>
                   <div class="productos">
-                      <a class="opcionMenu" href="{% url 'productos' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">PRODUCTOS</a>
+                    {% if 'productos' in request.path %}                      
+                    <style>
+                        #prods-nav {
+                            font-weight: bolder;
+                        }
+                    </style>
+                    {% endif %}
+                      <a class="opcionMenu" id="prods-nav" href="{% url 'productos' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">PRODUCTOS</a>
                   </div>
                   <div class="certs">
-                      <a class="opcionMenu" href="{% url 'certificaciones' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">CERTIFICACIONES</a>
+                    {% if 'certificaciones' in request.path %}                      
+                    <style>
+                        #certs-nav {
+                            font-weight: bolder;
+                        }
+                    </style>
+                    {% endif %}
+                      <a class="opcionMenu" id="certs-nav" href="{% url 'certificaciones' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">CERTIFICACIONES</a>
                   </div>
                   <div class="multi">
-                      <a class="opcionMenu" href="{% url 'multimedia' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">MULTIMEDIA</a>
+                    {% if 'multimedia' in request.path %}                      
+                    <style>
+                        #multi-nav {
+                            font-weight: bolder;
+                        }
+                    </style>
+                    {% endif %}
+                      <a class="opcionMenu" id="multi-nav" href="{% url 'multimedia' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">MULTIMEDIA</a>
                   </div>
                   <div class="cont">
-                      <a class="opcionMenu" href="{% url 'contacto' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">CONTACTO</a>
+                    {% if 'contacto' in request.path %}                      
+                    <style>
+                        #cont-nav {
+                            font-weight: bolder;
+                        }
+                    </style>
+                    {% endif %}
+                      <a class="opcionMenu" id="cont-nav" href="{% url 'contacto' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">CONTACTO</a>
                   </div>
                 </div>
               </div>
