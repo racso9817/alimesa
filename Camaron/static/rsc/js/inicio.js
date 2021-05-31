@@ -11,9 +11,9 @@ function scrollFunction() {
   if (document.body.scrollTop > vh*0.8 || document.documentElement.scrollTop > vh*0.8) {
     // Logo
     document.getElementById("logo").src = "/static/rsc/img/LogoCamaronBlanco.png";
-    document.getElementById("logo").style.height = "6vw";
-    document.getElementById("logo").style.width = "5vw";
-    document.getElementsByClassName("logo-nav")[0].style.paddingTop = ".5vw"; 
+    document.getElementById("logo").style.height = "8vw";
+    document.getElementById("logo").style.width = "7vw";
+    document.getElementsByClassName("logo-nav")[0].style.paddingTop = "2vw"; 
     // Nav
     document.getElementsByClassName("nav-container")[0].style.background = "linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%)";
     document.getElementsByClassName("contactosEidioma-nav")[0].style.background = "rgb(255, 255, 255)";
@@ -28,14 +28,14 @@ function scrollFunction() {
       n.style.color = "#00509A";
     });
     //Contacto E Idioma
-    document.getElementsByClassName("navbar")[0].style.marginTop = "-1.6vw";
+    document.getElementsByClassName("navbar")[0].style.marginTop = "-3.3vw";
   } else {
     document.getElementById("logo").src = "/static/rsc/img/logoAzul.png";
-    document.getElementById("logo").style.height = "5vw";
-    document.getElementById("logo").style.width = "3.5vw";
-    document.getElementsByClassName("logo-nav")[0].style.paddingTop = "1.2vw";
+    document.getElementById("logo").style.height = "6vw";
+    document.getElementById("logo").style.width = "7.9vw";
+    document.getElementsByClassName("logo-nav")[0].style.paddingTop = "1.8vw";
     //Contacto E Idioma
-    document.getElementsByClassName("navbar")[0].style.marginTop = "-1.5vw";
+    document.getElementsByClassName("navbar")[0].style.marginTop = "-2.75vw";
     // Nav
     document.getElementsByClassName("nav-container")[0].style.background = "rgb(255, 255, 255)";
     document.getElementById("tlf").src = "/static/rsc/img/phone.png";

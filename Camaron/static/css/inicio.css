@@ -27,7 +27,7 @@ body {
   grid-template-areas:
     "logo-nav options-nav";
   grid-area: navbar;
-  height: 15vh;
+  height: 22vh;
 }
 
 .logo-nav { 
@@ -181,9 +181,6 @@ body {
   	padding-right: 2vw;
 }
 
-.activa {
-    color: #0063B5;
-}
 
 body > footer {
     top: 270vh;
@@ -193,7 +190,7 @@ body > footer {
 el carrousel y el navbar */
 #carouselExampleInterval {
     position: absolute;
-    top: 10vh;
+    top: 17vh;
     left: 0vw;
     width: 100%;
     min-width: 100%;

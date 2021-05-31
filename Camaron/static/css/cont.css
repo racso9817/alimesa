@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
 }
@@ -26,7 +27,7 @@ body {
   grid-template-areas:
     "logo-nav options-nav";
   grid-area: navbar;
-  height: 15vh;
+  height: 22vh;
 }
 
 .logo-nav { 

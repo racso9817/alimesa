@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
 }
@@ -26,7 +27,7 @@ gap: 0px 0px;
 grid-template-areas:
   "logo-nav options-nav";
 grid-area: navbar;
-height: 15vh;
+height: 22vh;
 }
 
 .logo-nav { 
@@ -179,7 +180,6 @@ display: flex;
   justify-content: flex-end;
   padding-right: 2vw;
 }
-
 
 .TituloVideo {
     margin-top: 20vh;
