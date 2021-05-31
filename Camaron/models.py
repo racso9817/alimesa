@@ -90,7 +90,7 @@ class ArchivoMultimedia(models.Model):
 class Contacto(models.Model):
     Nombre = models.CharField(max_length=200)
     Email = models.EmailField()
-    Telefono = models.CharField(max_length=12)
+    Telefono = models.CharField(max_length=13)
     Pais = CountryField(blank_label='País')
     Mensaje = models.TextField()
 
