@@ -20,7 +20,7 @@ body {
 }
 
 .navbar {
-  display: grid;
+    display: grid;
   grid-template-columns: 0.4fr 2fr;
   grid-template-rows: 1fr;
   gap: 0px 0px;
@@ -28,7 +28,6 @@ body {
     "logo-nav options-nav";
   grid-area: navbar;
   height: 15vh;
-  margin-top: -4.8vh;
 }
 
 .logo-nav { 
@@ -36,12 +35,10 @@ body {
 	display: flex;
 	align-content: center;
 	justify-content: center;
-    padding-top: 1vh;
 }
 
 .logo-nav >a>img {
-	width: 5vw;
-	height: 18vh;
+	object-fit: contain;
 }
 
 .options-nav {
@@ -79,16 +76,18 @@ body {
 }
 
 .contacto-nav > img {
-	max-height: 1.5vh;    
+	max-height: 1.5vh;
+    padding-right: .5vw;
+    padding-bottom: .1vw;   
 }
 
 .contacto-nav > a {
     text-decoration: none;
     color: white;
-    font-size: 1vw;
-    padding-bottom: 1vh;
+    font-size: .9vw;
     padding-left: 0.5vw;
     padding-right: 2vw;
+    transform: translate(0vw, -.4vw);
 }
 
 .contacto-nav > a:hover {
@@ -194,7 +193,7 @@ body > footer {
 el carrousel y el navbar */
 #carouselExampleInterval {
     position: absolute;
-    top: 20vh;
+    top: 10vh;
     left: 0vw;
     width: 100%;
     min-width: 100%;

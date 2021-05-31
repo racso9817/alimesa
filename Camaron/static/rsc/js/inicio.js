@@ -8,11 +8,12 @@ function scrollFunction() {
   const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
   // Cambiar color
   // MaxHeight del carouselExampleCaptions + 0.015
-  if (document.body.scrollTop > vh*0.9 || document.documentElement.scrollTop > vh*0.9) {
+  if (document.body.scrollTop > vh*0.8 || document.documentElement.scrollTop > vh*0.8) {
     // Logo
     document.getElementById("logo").src = "/static/rsc/img/LogoCamaronBlanco.png";
-    document.getElementById("logo").style.height = "16vh";
-    document.getElementById("logo").style.width = "8vw";
+    document.getElementById("logo").style.height = "6vw";
+    document.getElementById("logo").style.width = "5vw";
+    document.getElementsByClassName("logo-nav")[0].style.paddingTop = ".5vw";
     // Nav
     document.getElementsByClassName("nav-container")[0].style.background = "linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%)";
     document.getElementsByClassName("contactosEidioma-nav")[0].style.background = "rgb(255, 255, 255)";
@@ -26,10 +27,15 @@ function scrollFunction() {
     Array.prototype.forEach.call(document.getElementsByClassName("linksCEI"), function(n) {
       n.style.color = "#00509A";
     });
+    //Contacto E Idioma
+    document.getElementsByClassName("navbar")[0].style.marginTop = "-1.6vw";
   } else {
     document.getElementById("logo").src = "/static/rsc/img/logoAzul.png";
-    document.getElementById("logo").style.height = "15vh";
-    document.getElementById("logo").style.width = "6vw";
+    document.getElementById("logo").style.height = "5vw";
+    document.getElementById("logo").style.width = "3.5vw";
+    document.getElementsByClassName("logo-nav")[0].style.paddingTop = "1.2vw";
+    //Contacto E Idioma
+    document.getElementsByClassName("navbar")[0].style.marginTop = "-1.5vw";
     // Nav
     document.getElementsByClassName("nav-container")[0].style.background = "rgb(255, 255, 255)";
     document.getElementById("tlf").src = "/static/rsc/img/phone.png";
