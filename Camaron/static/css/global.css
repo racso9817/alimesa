@@ -323,6 +323,34 @@ body > footer > b {
         transform: translate(0vw, 15vh);
         height: 5vh;
       }
+
+      .flotante {
+        background-color: white;
+          position: fixed;
+          width: 15vh;
+          text-align: center;
+          bottom: 56.5vh;
+          right: 6.5vh;
+          box-shadow: .2vw .2vw darkgray;
+          border-radius: 1vw;
+          font-size: 1vh;
+          z-index: 20;
+      }
+      
+      .whatsapp{
+        position: fixed;
+        bottom: 54.5vh;
+        right: 2vh;
+        box-shadow: .16vw .16vw darkgray;
+        width:4.5vh ;
+        height: 4.5vh;
+        color:white;
+        background-color: #25d366;
+        border-radius: 100%;
+        text-align: center;
+        font-size: 3vh;
+        z-index: 20;
+      }
         
 }
 
