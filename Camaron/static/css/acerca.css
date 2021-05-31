@@ -202,6 +202,7 @@ body {
 
 body>footer {
     display: block;
+    margin: 5vh 0 0 0;
 }
 
 /* Para contener el carrousel y que se elimine el espacio en blanco entre
@@ -379,7 +380,7 @@ button>.carousel-control-next-icon:hover {
         "IconoCartaCdV"
         "TxtCartaCdV";
     height: 22vh;
-    width: 11vw;
+    width: 10vw;
 }
 
 .IconoCartaCdV {
@@ -387,12 +388,12 @@ button>.carousel-control-next-icon:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 11vw;
+    width: 10vw;
     height: 15.63vh;
 }
 
 .IconoCartaCdV img {
-    width: 11vw;
+    width: 10vw;
     height: 11.5vh;
     object-fit: contain;
 }
@@ -403,7 +404,7 @@ button>.carousel-control-next-icon:hover {
     align-items:flex-start;
     justify-content: center;
     height: 6.36vh;
-    width: 11vw;
+    width: 10vw;
 }
 
 .TxtCartaCdV p {
@@ -411,6 +412,12 @@ button>.carousel-control-next-icon:hover {
     font-weight: 600;
     font-size: 1vw;
     text-align: center;
+}
+
+.flecha {
+    height: 5.5vh;
+    width: 1.7vw;
+    object-fit: contain;
 }
 
 .MercadosSubsection {
@@ -421,6 +428,8 @@ button>.carousel-control-next-icon:hover {
     grid-template-areas:
         "ContinentesWrapper MapasWrapper";
     width: 100vw;
+    height: 73vh;
+    margin: 0 0 2.5vh 0;
 }
 
 .ContinentesWrapper {
@@ -473,16 +482,24 @@ button>.carousel-control-next-icon:hover {
 }
 
 .headerMercado b {
-    font-size: 1.4vw;
+    font-size: 2.59vh;
     color: var(--blanco-nav);
     margin: 0vh 10% 0vh 10%;
 }
 
 .paisesMercado {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: column;
     gap: 0.7vh;
+    font-size: 1.6vh;
+}
+
+.shownMap {
+    width: 100%;
+    height: 73vh;
+    padding: 2.5vh 2.5vw 2.5vh 2.5vw;
+    object-fit: contain;
 }

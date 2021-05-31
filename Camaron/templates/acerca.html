@@ -12,11 +12,11 @@
 
 <script type="text/javascript">
     function letraAzul(x) {
-            x.style.color = "rgb(255, 255, 255)";        
+        x.style.color = "rgb(255, 255, 255)";
     }
 
     function letraNormal(x) {
-            x.style.color = "rgb(255, 255, 255)";
+        x.style.color = "rgb(255, 255, 255)";
     }
 </script>
 
@@ -76,11 +76,13 @@
         Franja no se necesita aca -->
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true" style="background-image: url({% static 'rsc\img\FLECHA_CADENA_DE_VALOR.png' %}); background-position: center; transform: rotate(180deg)"></span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"
+            style="background-image: url({% static 'rsc\img\FLECHA_CADENA_DE_VALOR.png' %}); background-position: center; transform: rotate(180deg)"></span>
         <span class="visually-hidden">Previous</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true" style="background-image: url({% static 'rsc\img\FLECHA_CADENA_DE_VALOR.png' %}); background-position: center;"></span>
+        <span class="carousel-control-next-icon" aria-hidden="true"
+            style="background-image: url({% static 'rsc\img\FLECHA_CADENA_DE_VALOR.png' %}); background-position: center;"></span>
         <span class="visually-hidden">Next</span>
     </button>
 </div>
@@ -96,60 +98,61 @@
         <div class="CartaIconoCdV">
             <div class="IconoCartaCdV">
                 <img src="{% static 'rsc\img\harvest.png' %}">
-                <img id="flecha" src="{% static 'rsc\img\FLECHA_CADENA_DE_VALOR.png' %}">         
             </div>
             <div class="TxtCartaCdV">
                 <p>Cosecha/Pesca</p>
             </div>
         </div>
+        <img class="flecha" src="{% static 'rsc\img\FLECHA_CADENA_DE_VALOR_RECORTADA.png' %}">
         <div class="CartaIconoCdV">
             <div class="IconoCartaCdV">
                 <img src="{% static 'rsc\img\TruckIco.png' %}">
-                <img id="flecha" src="{% static 'rsc\img\FLECHA_CADENA_DE_VALOR.png' %}">
             </div>
             <div class="TxtCartaCdV">
                 <p>Logística</p>
             </div>
         </div>
+        <img class="flecha" src="{% static 'rsc\img\FLECHA_CADENA_DE_VALOR_RECORTADA.png' %}">
         <div class="CartaIconoCdV">
             <div class="IconoCartaCdV">
                 <img src="{% static 'rsc\img\quality.png' %}">
-                <img id="flecha" src="{% static 'rsc\img\FLECHA_CADENA_DE_VALOR.png' %}">
             </div>
             <div class="TxtCartaCdV">
                 <p>Recepción y<br>control de calidad</p>
             </div>
         </div>
+        <img class="flecha" src="{% static 'rsc\img\FLECHA_CADENA_DE_VALOR_RECORTADA.png' %}">
         <div class="CartaIconoCdV">
             <div class="IconoCartaCdV">
                 <img src="{% static 'rsc\img\PlantaIco.png' %}">
-                <img id="flecha" src="{% static 'rsc\img\FLECHA_CADENA_DE_VALOR.png' %}">
+
             </div>
             <div class="TxtCartaCdV">
                 <p>Clasificación<br>y empaque</p>
             </div>
         </div>
+        <img class="flecha" src="{% static 'rsc\img\FLECHA_CADENA_DE_VALOR_RECORTADA.png' %}">
         <div class="CartaIconoCdV">
             <div class="IconoCartaCdV">
                 <img src="{% static 'rsc\img\ContainerIco.png' %}">
-                <img id="flecha" src="{% static 'rsc\img\FLECHA_CADENA_DE_VALOR.png' %}">
             </div>
             <div class="TxtCartaCdV">
                 <p>Logística</p>
             </div>
         </div>
+        <img class="flecha" src="{% static 'rsc\img\FLECHA_CADENA_DE_VALOR_RECORTADA.png' %}">
         <div class="CartaIconoCdV">
             <div class="IconoCartaCdV">
                 <img src="{% static 'rsc\img\BuqueIco.png' %}">
-                <img id="flecha" src="{% static 'rsc\img\FLECHA_CADENA_DE_VALOR.png' %}">
             </div>
             <div class="TxtCartaCdV">
                 <p>Exportación</p>
             </div>
         </div>
+        <img class="flecha" src="{% static 'rsc\img\FLECHA_CADENA_DE_VALOR_RECORTADA.png' %}">
         <div class="CartaIconoCdV">
             <div class="IconoCartaCdV">
-                <img src="{% static 'rsc\img\costumer.png' %}">                
+                <img src="{% static 'rsc\img\costumer.png' %}">
             </div>
             <div class="TxtCartaCdV">
                 <p>Destino</p>
@@ -164,85 +167,88 @@
             <p class="TextTituloMercados"><b>MERCADOS</b></p>
         </div>
         <div class="cardMercado">
-            <div class="headerMercado" id="header_America">
+            <div class="headerMercado" onClick="mostrarMapaPorContinente(this.id)" id="header_America">
                 <b>AMÉRICA</b>
             </div>
             <div class="paisesMercado" id="paises_America">
-                <p>TORONTO</p>
-                <p>CHICAGO</p>
-                <p>DULUTH</p>
-                <p>HOUSTON</p>
-                <p>LOS ÁNGELES</p>
-                <p>MIAMI</p>
-                <p>NEW YORK</p>
-                <p>NEW JERSEY</p>
-                <p>NORFOLK</p>
-                <p>NEWARK</p>
-                <p>OAKLAND</p>
-                <p>SAVANNAH</p>
-                <p>VERNON</p>
+                TORONTO<br>
+                CHICAGO<br>
+                DULUTH<br>
+                HOUSTON<br>
+                LOS ÁNGELES<br>
+                MIAMI<br>
+                NEW YORK<br>
+                NEW JERSEY<br>
+                NORFOLK<br>
+                NEWARK<br>
+                OAKLAND<br>
+                SAVANNAH<br>
+                VERNON<br>
             </div>
         </div>
         <div class="cardMercado">
-            <div class="headerMercado" id="header_Europa">
+            <div class="headerMercado" onClick="mostrarMapaPorContinente(this.id)" id="header_Europa">
                 <b>EUROPA</b>
             </div>
             <div class="paisesMercado" id="paises_Europa">
-                <p>DURRES</p>
-                <p>ALGECIRAS</p>
-                <p>BILBAO</p>
-                <p>CANARIAS</p>
-                <p>LAS PALMAS</p>
-                <p>VALENCIA</p>
-                <p>VIGO</p>
-                <p>MARSEILLE</p>
-                <p>LE HAVRE</p>
-                <p>PIRAEUS</p>
-                <p>THESSALONIKI</p>
-                <p>GENOVA</p>
-                <p>VENEZIA</p>
-                <p>SALERNO</p>
-                <p>ODESSA</p>
-                <p>FELIXTOWE</p>
-                <p>LONDON</p>
-                <p>SOUTHAMPTON</p>
+                DURRES<br>
+                ALGECIRAS<br>
+                BILBAO<br>
+                CANARIAS<br>
+                LAS PALMAS<br>
+                VALENCIA<br>
+                VIGO<br>
+                MARSEILLE<br>
+                LE HAVRE<br>
+                PIRAEUS<br>
+                THESSALONIKI<br>
+                GENOVA<br>
+                VENEZIA<br>
+                SALERNO<br>
+                ODESSA<br>
+                FELIXTOWE<br>
+                LONDON<br>
+                SOUTHAMPTON<br>
             </div>
         </div>
         <div class="cardMercado">
-            <div class="headerMercado" id="header_Asia">
+            <div class="headerMercado" onClick="mostrarMapaPorContinente(this.id)" id="header_Asia">
                 <b>ÁSIA</b>
             </div>
             <div class="paisesMercado" id="paises_Asia">
-                <p>BUSAN</p>
-                <p>DALIAN</p>
-                <p>NINGBO</p>
-                <p>QINGDAO</p>
-                <p>SHANGHAI</p>
-                <p>TIANJING</p>
-                <p>XINGANG</p>
-                <p>YINGKOU</p>
-                <p>ZHANJIANG</p>
-                <p>BEIRUT</p>
-                <p>KAOHSIUNG</p>
-                <p>JEBEL</p>
-                <p>SHARJAH</p>
+                BUSAN<br>
+                DALIAN<br>
+                NINGBO<br>
+                QINGDAO<br>
+                SHANGHAI<br>
+                TIANJING<br>
+                XINGANG<br>
+                YINGKOU<br>
+                ZHANJIANG<br>
+                BEIRUT<br>
+                KAOHSIUNG<br>
+                JEBEL<br>
+                SHARJAH<br>
             </div>
         </div>
         <div class="cardMercado">
-            <div class="headerMercado" id="header_Africa">
+            <div class="headerMercado" onClick="mostrarMapaPorContinente(this.id)" id="header_Africa">
                 <b>ÁFRICA</b>
             </div>
             <div class="paisesMercado" id="paises_Africa">
-                <p>PORT SAID</p>
-                <p>CAPETOWN</p>
+                PORT SAID<br>
+                CAPETOWN<br>
             </div>
         </div>
     </div>
-    <div class="MapasWrapper"></div>
+    <div class="MapasWrapper">
+        <img src="{% static 'rsc\img\Mapa_Clean.png' %}" class='shownMap' id='mercadosMap'>
+    </div>
 </div>
 
 {% endblock %}
 
 {% block scripts %}
 <script src="{% static 'rsc\js\prods.js' %}"></script>
+<script src="{% static 'rsc\js\acerca.js' %}"></script>
 {% endblock %}
