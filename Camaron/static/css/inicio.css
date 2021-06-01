@@ -230,19 +230,12 @@ el carrousel y el navbar */
     border-radius: 50%;
 }
 
-
-
-.carousel-caption {
-    background: var(--azul-nav);
-    border-radius: 5vw;
-}
-
 #carouselExampleInterval>div.carousel-inner>picture,
 #carouselExampleInterval>div.carousel-inner>picture>.Franja {
     position: relative;
     width: 100vw;
     height: 5.6vh;
-    top: 40vh;
+    top: 30vh;
     z-index: 1;
     object-fit: cover;
 }
@@ -256,7 +249,7 @@ el carrousel y el navbar */
         "tituloSubseccion"
         "dataProductos";
     position: absolute;
-    top: 100vh;
+    top: 80vh;
     left: 0vw;
     width: 100%;
     min-width: 100%;

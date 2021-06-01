@@ -29,7 +29,7 @@
             <picture>
                 <source media="(min-width: 770px)" srcset="{% static f.imagenWeb %}" class="d-block w-100" alt="...">
                 <source media="(min-width: 210px)" srcset="{% static f.imagenMov %}" class="d-block w-100" alt="...">
-                <img src="{% static f.imagenWeb %}" class="d-block w-100" alt="...">
+                <img src="{% static f.imagenWeb %}" class="d-block w-100" alt="..." style="height: 30vw;">
             </picture>
         </div>
         {% else %}
@@ -37,7 +37,7 @@
             <picture>
                 <source media="(min-width: 770px)" srcset="{% static f.imagenWeb %}" class="d-block w-100" alt="...">
                 <source media="(min-width: 210px)" srcset="{% static f.imagenMov %}" class="d-block w-100" alt="...">
-                <img src="{% static f.imagenWeb %}" class="d-block w-100" alt="...">
+                <img src="{% static f.imagenWeb %}" class="d-block w-100" alt="..." style="height: 30vw;">
             </picture>
         </div>
         {% endif %}
