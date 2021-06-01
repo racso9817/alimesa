@@ -87,7 +87,7 @@ body {
     font-size: 1vw;
     padding-left: 0.5vw;
     padding-right: 2vw;
-    transform: translate(0vw, -.1vw);
+    transform: translate(0vw, -3vw);
 }
 
 .contacto-nav > a:hover {
@@ -421,7 +421,7 @@ div.marcasSubsection>picture {
   .modal-content {
     margin: auto;
     display: block;
-    top: 6vw;
+    top: 1vw;
     width: 35vw;
     height: 35vw;
   }

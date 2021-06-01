@@ -66,7 +66,7 @@ style="top: calc((var(--CEIheight) + var(--LinksSeccionesHeight) + 5vh)
   </div>
   <div class="flexMarcas">
     {% for marca in marcas %}
-    <img class="imgMarca" id="myImg{{ forloop.counter }}" src="{% static marca.img %}" alt="Marca {{ forloop.counter}}">
+    <img class="imgMarca" id="myImg{{ forloop.counter }}" src="{% static marca.img %}" alt="">
     {% endfor %}
   </div>
 
