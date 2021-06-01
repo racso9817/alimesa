@@ -35,11 +35,10 @@ body > footer {
 
 body > footer > a > img {
     width: 7vw;
-    height: 15vh;
+    height: 14vh;
     object-fit: contain;
     margin: 2.5vh 0vw 2.5vh -10vw;
-    position: absolute;
-    transform: translate(-16vw, -9.8vh);
+    transform: translate(-5vw, 1vh);
 }
 
 body > footer > img {
@@ -47,13 +46,11 @@ body > footer > img {
     height: 8vh;
     object-fit: contain;
     margin: 2.5vh 1vw 2.5vh 0vw;  
-    position: absolute;
-    transform: translate(-32vw, 1.5vh); 
+    transform: translate(-10vw, 2vh); 
 }
 
 body > footer > b {
-    position: absolute;
-    transform: translate(-32.5vw, -4vh);
+    transform: translate(-5vw, -3vh);
     font-size: .6vw;
     color: white;
 }
@@ -136,8 +133,7 @@ body > footer > b {
     height: 5vh;
     object-fit: contain;
     margin: 2.5vh 0vw 2.5vh 5vw;
-    position: absolute;
-    transform: translate(6vw, -5vh);
+    transform: translate(18vw, 2vh);
   }
   
   .wcht > a > img {
@@ -145,8 +141,7 @@ body > footer > b {
     height: 5vh;
     object-fit: contain;
     margin: 2.5vh 0vw 2.5vh 0vw;
-    position: absolute;
-    transform: translate(17.5vw, -5vh);
+    transform: translate(17.5vw, 2vh);
   }
 
   .flotante {

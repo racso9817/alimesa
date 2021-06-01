@@ -66,16 +66,22 @@ style="top: calc((var(--CEIheight) + var(--LinksSeccionesHeight) + 5vh)
   </div>
   <div class="flexMarcas">
     {% for marca in marcas %}
-    <img class="imgMarca" src="{% static marca.img %}" alt="">
+    <img class="imgMarca" id="myImg{{ forloop.counter }}" src="{% static marca.img %}" alt="Marca {{ forloop.counter}}">
     {% endfor %}
   </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <img class="modal-content" id="img1">
+  <div id="caption"></div>
+</div>
+
 </div>
 <!-- Marcas -->
-
-<div class="footer">.</div>
 
 {% endblock %}
 
 {% block scripts %}
 <script src="{% static 'rsc\js\prods.js' %}"></script>
+<script src="{% static 'rsc\js\modals.js' %}"></script>
 {% endblock %}
