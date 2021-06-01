@@ -78,16 +78,16 @@ padding-left: 8vw;
 .contacto-nav > img {
 max-height: 1.5vh;
   padding-right: .5vw;
-  padding-bottom: .1vw;   
+  transform: translate(0, .5vw);
 }
 
 .contacto-nav > a {
   text-decoration: none;
   color: white;
-  font-size: .9vw;
+  font-size: 1vw;
   padding-left: 0.5vw;
   padding-right: 2vw;
-  transform: translate(0vw, -.4vw);
+  transform: translate(0vw, -.1vw);
 }
 
 .contacto-nav > a:hover {
@@ -101,6 +101,7 @@ padding-right: 6vw;
   display: flex;
   align-content: flex-end;
   justify-content: flex-end;
+  margin-top: .5vw;
 }
 
 .idioma-nav > a {
@@ -182,7 +183,6 @@ display: flex;
 }
 
 .TituloVideo {
-    margin-top: 20vh;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -195,7 +195,7 @@ display: flex;
     font-weight: bold;
     text-align: center;
     width: 100%;
-    margin: 2vh 0 2vh 0;
+    margin-top: -3vw;
 }
 
 .VideoBioSeg {
@@ -205,7 +205,7 @@ display: flex;
 
 .VideoBioSeg video {
     width: 100vw;
-    margin-top: -2vw;
+    margin-top: -5vw;
     padding: 0px;
 }
 

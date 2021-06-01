@@ -78,16 +78,16 @@ body {
 .contacto-nav > img {
 	max-height: 1.5vh;
     padding-right: .5vw;
-    padding-bottom: .1vw;   
+    transform: translate(0, .5vw);
 }
 
 .contacto-nav > a {
     text-decoration: none;
     color: white;
-    font-size: .9vw;
+    font-size: 1vw;
     padding-left: 0.5vw;
     padding-right: 2vw;
-    transform: translate(0vw, -.4vw);
+    transform: translate(0vw, -.1vw);
 }
 
 .contacto-nav > a:hover {
@@ -101,6 +101,7 @@ body {
     display: flex;
     align-content: flex-end;
     justify-content: flex-end;
+    margin-top: .5vw;
 }
 
 .idioma-nav > a {
@@ -183,7 +184,7 @@ body {
 
 
 body > footer {
-    top: 270vh;
+    top: 250vh;
 }
 
 /* Para contener el carrousel y que se elimine el espacio en blanco entre
@@ -295,6 +296,10 @@ el carrousel y el navbar */
     height: 100%;
 }
 
+.dataProductos>a{
+    text-decoration: none;
+}
+
 .cartaProducto {
     display: grid;
     grid-template-columns: 1fr;
@@ -303,25 +308,25 @@ el carrousel y el navbar */
     grid-template-areas:
         "fotoProducto"
         "siglasProducto";
-    width: 30vw;
-    margin: 0vw 1.25vw 0vw 1.25vw;
+    width: 20vw;
+    margin: -6vw 1.25vw 0vw 1.25vw;
     height: min-content;
     justify-items: center;
 }
 
 .fotoProducto {
     grid-area: fotoProducto;
-    min-height: 23vw;
-    max-height: 23vw;
-    min-width: 25vw;
-    max-width: 25vw;
+    min-height: 15vw;
+    max-height: 15vw;
+    min-width: 15vw;
+    max-width: 15vw;
     border-radius: 16px;
     box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 20%);
 }
 
 .fotoProducto img {
-    width: 100%;
-    height: 23vw;
+    width: 15vw;
+    height: 15vw;
     min-width: 100%;
     border-radius: 16px;
     object-fit: cover;
@@ -329,13 +334,13 @@ el carrousel y el navbar */
 
 .bVM {
     position: relative;
-    top: -2vw;
-    left: 8vw;
-    width: 9vw;
+    top: -1vw;
+    left: 20vw;
+    width: 2vw;
     height: min-content;
     text-align: center;
     font-size: calc(var(--sub-title-font-size) * 0.7);
-    border-radius: 20px;
+    border-radius: 50%;
     box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 30%);
 }
 
@@ -368,10 +373,10 @@ a.bVM:hover {
     visibility: hidden;
     opacity: 0;
     position: relative;
-    top: -23vw;
+    top: -15vw;
     width: 100%;
-    height: 23vw;
-    max-height: 23vw;
+    height: 15vw;
+    max-height: 15vw;
     border-radius: 16px;
 }
 
@@ -406,9 +411,10 @@ a.bVM:hover {
 }
 
 img.ProdIcon {
-    width: 4vw;
-    height: 4vw;
-    min-width: 6vw;
+    width: 2vw;
+    height: 2vw;
+    min-width: 2vw;
+    margin-top: .5vw;
     object-fit: contain;
 }
 
@@ -433,7 +439,7 @@ img.ProdIcon {
     font-size: 1.5vw;
     font-weight: bold;
     text-align: center;
-    padding: 1vw 0 0 0;
+    padding: .5vw 0 0 0;
 }
 
 .certificacionesSubsection {
@@ -489,9 +495,9 @@ div.certificacionesSubsection>picture {
 }
 
 .fotosCerts img {
-    width: 12vw;
-    height: 12vw;
-    min-width: 12vw;
+    width: 8vw;
+    height: 8vw;
+    min-width: 8vw;
     object-fit: contain;
     margin: 2.5vw 3.5vw 2.5vw 3.5vw;
     transition: transform .15s;

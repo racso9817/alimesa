@@ -33,7 +33,7 @@ function scrollFunction() {
     document.getElementById("logo").src = "/static/rsc/img/logoAzul.png";
     document.getElementById("logo").style.height = "6vw";
     document.getElementById("logo").style.width = "7.9vw";
-    document.getElementsByClassName("logo-nav")[0].style.paddingTop = "1.8vw";
+    document.getElementsByClassName("logo-nav")[0].style.paddingTop = "2.5vw";
     //Contacto E Idioma
     document.getElementsByClassName("navbar")[0].style.marginTop = "-2.75vw";
     // Nav

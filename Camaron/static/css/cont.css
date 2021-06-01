@@ -78,16 +78,16 @@ body {
 .contacto-nav > img {
 	max-height: 1.5vh;
     padding-right: .5vw;
-    padding-bottom: .1vw;   
+    transform: translate(0, .5vw);
 }
 
 .contacto-nav > a {
     text-decoration: none;
     color: white;
-    font-size: .9vw;
+    font-size: 1vw;
     padding-left: 0.5vw;
     padding-right: 2vw;
-    transform: translate(0vw, -.4vw);
+    transform: translate(0vw, -.1vw);
 }
 
 .contacto-nav > a:hover {
@@ -101,6 +101,7 @@ body {
     display: flex;
     align-content: flex-end;
     justify-content: flex-end;
+    margin-top: .5vw;
 }
 
 .idioma-nav > a {
@@ -194,6 +195,7 @@ body > footer {
     gap: 0px 0px;
     grid-template-areas:
         "contacto";
+    margin-bottom: 1vw;
 }
 
 .contacto {
@@ -332,8 +334,6 @@ button:focus {
 .boton {
     border: var(--azul-nav);
     background-color: var(--azul-nav);
-    position: absolute;
-    transform: translate(25vw, 22vh);
     color: white;
     border-radius: .5rem;
 }
@@ -398,8 +398,6 @@ select  { color: #757575; }
     .boton {
         border: var(--azul-nav);
         background-color: var(--azul-nav);
-        position: absolute;
-        transform: translate(22vw, 25vh);
         color: white;
         border-radius: .5rem;
     }
