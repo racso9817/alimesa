@@ -8,7 +8,7 @@ function scrollFunction() {
   const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
   // Cambiar color
   // MaxHeight del carouselExampleCaptions + 0.015
-  if (document.body.scrollTop > vh*0.5 || document.documentElement.scrollTop > vh*0.5) {
+  if (document.body.scrollTop > vh*0.6 || document.documentElement.scrollTop > vh*0.6) {
     // Logo
     document.getElementById("logo").src = "/static/rsc/img/LogoCamaronBlanco.png";
     document.getElementById("logo").style.height = "8vw";
@@ -28,14 +28,14 @@ function scrollFunction() {
       n.style.color = "#00509A";
     });
     //Contacto E Idioma
-    document.getElementsByClassName("navbar")[0].style.marginTop = "-3.3vw";
+    document.getElementsByClassName("navbar")[0].style.marginTop = "-3vw";
   } else {
     document.getElementById("logo").src = "/static/rsc/img/logoAzul.png";
     document.getElementById("logo").style.height = "6vw";
     document.getElementById("logo").style.width = "7.9vw";
     document.getElementsByClassName("logo-nav")[0].style.paddingTop = "2.5vw";
     //Contacto E Idioma
-    document.getElementsByClassName("navbar")[0].style.marginTop = "-2.75vw";
+    document.getElementsByClassName("navbar")[0].style.marginTop = "-2.2vw";
     // Nav
     document.getElementsByClassName("nav-container")[0].style.background = "rgb(255, 255, 255)";
     document.getElementById("tlf").src = "/static/rsc/img/phone.png";
