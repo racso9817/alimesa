@@ -87,7 +87,7 @@ body {
     font-size: 1vw;
     padding-left: 0.5vw;
     padding-right: 2vw;
-    transform: translate(0vw, -3vw);
+    transform: translate(0, .1vw);
 }
 
 .contacto-nav > a:hover {

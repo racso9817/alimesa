@@ -132,16 +132,15 @@ body > footer > b {
     width: 5.6vw;
     height: 5vh;
     object-fit: contain;
-    margin: 2.5vh 0vw 2.5vh 5vw;
-    transform: translate(18vw, 2vh);
+
+    transform: translate(18vw, 0vh);
   }
   
   .wcht > a > img {
     width: 5.6vw;
     height: 5vh;
     object-fit: contain;
-    margin: 2.5vh 0vw 2.5vh 0vw;
-    transform: translate(17.5vw, 2vh);
+    transform: translate(17.5vw, 0vh);
   }
 
   .flotante {
