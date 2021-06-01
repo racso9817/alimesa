@@ -16,4 +16,4 @@ Array.prototype.forEach.call(document.getElementsByClassName("opcionMenu"), func
 Array.prototype.forEach.call(document.getElementsByClassName("linksCEI"), function(n) {
   n.style.color = "#00509A";
 });
-document.getElementsByClassName("navbar")[0].style.marginTop = "-3.3vw";
+document.getElementsByClassName("navbar")[0].style.marginTop = "-3vw";

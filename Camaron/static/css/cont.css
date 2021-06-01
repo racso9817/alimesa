@@ -124,7 +124,7 @@ body {
   grid-template-areas:
     "inicio nosotros productos certs multi cont";
   grid-area: menu-nav;
-  padding-top: 3vh;
+  padding-top: 2vw;
   font-size: 1vw;
 }
 

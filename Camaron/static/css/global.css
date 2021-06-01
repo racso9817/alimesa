@@ -133,14 +133,14 @@ body > footer > b {
     height: 5vh;
     object-fit: contain;
 
-    transform: translate(18vw, 0vh);
+    transform: translate(15vw, 0vh);
   }
   
   .wcht > a > img {
     width: 5.6vw;
     height: 5vh;
     object-fit: contain;
-    transform: translate(17.5vw, 0vh);
+    transform: translate(13vw, 0vh);
   }
 
   .flotante {
