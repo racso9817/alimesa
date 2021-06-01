@@ -87,7 +87,7 @@ body {
     font-size: 1vw;
     padding-left: 0.5vw;
     padding-right: 2vw;
-    transform: translate(0vw, -.1vw);
+    transform: translate(0, .1vw);
 }
 
 .contacto-nav > a:hover {
@@ -200,7 +200,7 @@ body > footer {
 
 .contacto {
     display: grid;
-    grid-template-columns: .5fr 0.4fr;
+    grid-template-columns: .5fr .4fr;
     grid-template-rows: 0.2fr 1.2fr;
     gap: 0px 0px;
     grid-template-areas:
@@ -281,15 +281,6 @@ label[for="id_Pais"] {
 
 #id_Mensaje {
     width: 130%;
-}
-
-#id_Email {
-    margin-left: 1vw;
-}
-
-#id_Pais {
-    margin-left: 1vw;
-    width: 55%;
 }
 
 input:focus,
