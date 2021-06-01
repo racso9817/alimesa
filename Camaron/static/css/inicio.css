@@ -219,16 +219,13 @@ el carrousel y el navbar */
 }
 
 #carouselExampleInterval>div.carousel-indicators>button {
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-}
-
-#carouselExampleInterval>div.carousel-indicators>button {
     width: 10px;
     height: 10px;
     border-radius: 50%;
+    margin-top: 2.5vw;
 }
+
+
 
 #carouselExampleInterval>div.carousel-inner>picture,
 #carouselExampleInterval>div.carousel-inner>picture>.Franja {
