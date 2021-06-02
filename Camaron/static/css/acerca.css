@@ -368,6 +368,15 @@ button>.carousel-control-next-icon:hover {
     background: linear-gradient(180deg, rgba(0, 57, 132, 1) 0%, rgba(0, 79, 156, 1) 50%, rgba(0, 96, 180, 1) 100%);
 }
 
+.triangulo_inf {
+    width: 0;
+    height: 0;
+    border-left: 2vw solid transparent;
+    border-right: 2vw solid transparent;
+    border-top: 3vw solid #fff;
+    transform: translate(42.5vw, -8vw);
+}
+
 
 .CartaIconoCdV {
     display: grid;

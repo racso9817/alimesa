@@ -385,7 +385,7 @@ div.marcasSubsection>picture {
 .imgMarca {
     width: 10vw;
     height: 10vw;
-    margin: 2vh 3.33vw 2vh 3.33vw;
+    margin: 2vh 2vw 2vh 2vw;
     border-radius: 16px;
     /* box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 5%); */
     transition: transform .15s;
@@ -400,7 +400,15 @@ div.marcasSubsection>picture {
     transition: 0.3s;
   }
   
-  #myImg:hover {opacity: 0.7;}
+#myImg5, #myImg6 {
+    width: 12vw;
+    height: 12vw;
+}
+
+#myImg4 {
+    width: 9vw;
+    height: 18vh;
+}
   
   /* The Modal (background) */
   .modal {
@@ -424,21 +432,10 @@ div.marcasSubsection>picture {
     top: 1vw;
     width: 35vw;
     height: 35vw;
-    background: none;
+    background:none;
+    border: none;
   }
-  
-  /* Caption of Modal Image */
-  #caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 1vw 0;
-    height: 150px;
-  }
-  
+   
   /* Add Animation */
   .modal-content {  
     -webkit-animation-name: zoom;
