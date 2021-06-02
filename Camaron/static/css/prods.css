@@ -220,6 +220,7 @@ body > footer {
     grid-template-areas:
         "NomProd ."
         "FotosProd ProdData";
+    left: -5vw;
     width: 80vw;
     max-width: 80vw;
     text-align: center;
@@ -231,7 +232,7 @@ body > footer {
 .NomProd {
     grid-area: NomProd;
     color: var(--azul-titulos);
-    font-size: var(--sub-title-font-size);
+    font-size: 1vw;
     font-weight: bold;
     text-align: center;
     width: 100%;
@@ -246,10 +247,10 @@ body > footer {
 }
 
 .FotosProd img {
-    width: 10vw;
-    height: 10vw/*calc(var(--height-prod-dv) * (1.75 / 2) - 10vh)*/;
+    width: 11vw;
+    height: 11vw/*calc(var(--height-prod-dv) * (1.75 / 2) - 10vh)*/;
     object-fit: cover;
-    margin: 12vh 5vw 8vh 5vw;
+    margin: 3vh 5vw 8vh 5vw;
     border-radius: 16px;
     box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 20%);
 }
@@ -287,6 +288,7 @@ body > footer {
     width: 5vw;
     height: 5vw;
     object-fit: cover;
+    transform: translateY(-3.5vw);
 }
 
 .TituloTabla b {
@@ -323,7 +325,7 @@ body > footer {
     color: var(--blanco-nav);
     font-size: 0.8vw;
     font-weight: 600;
-    margin: 0%;
+    margin-top: -6vw;
     border-radius: 16px;
     width: calc((55vw / 3) / 1.6);
     height: 25vh;

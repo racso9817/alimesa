@@ -478,6 +478,7 @@ button>.carousel-control-next-icon:hover {
 }
 
 .headerMercado {
+    cursor: pointer;
     height: 5vh;
     width: 80%;
     margin: 1vh 10% 1vh 10%;
@@ -491,6 +492,7 @@ button>.carousel-control-next-icon:hover {
 }
 
 .headerMercado b {
+    cursor: pointer;
     font-size: 2.59vh;
     color: var(--blanco-nav);
     margin: 0vh 10% 0vh 10%;
