@@ -42,6 +42,7 @@ body>footer {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding-top: 2.5vh;
 }
 
 .TituloVideo p {
@@ -55,12 +56,10 @@ body>footer {
 
 .VideoBioSeg {
   width: 100vw;
-  height: min-content;
 }
 
 .VideoBioSeg video {
   width: 100vw;
-  margin-top: -6vw;
 }
 
 .Archivos {
@@ -69,6 +68,8 @@ body>footer {
   justify-content: center;
   align-items: center;
   margin: 5vh 0 5vh 0;
+  height: min-content;
+  height: calc(1.1 * 0.7072 * 15vw + 2.5vh);
 }
 
 .fileCard {
@@ -79,7 +80,9 @@ body>footer {
   grid-template-areas:
     "thumbArch"
     "tituloArch";
-
+  width: 20vw;
+  padding: 0 2.5vw 0 2.5vw;
+  height: calc(1.1 * 0.7072 * 15vw + 2.5vh);
 }
 
 .tituloArch {
@@ -92,8 +95,8 @@ body>footer {
 
 .tituloArch p {
   color: var(--azul-titulos);
-  font-size: var(--sub-title-font-size);
-  font-weight: bold;
+  font-size: calc(var(--sub-title-font-size) * 0.8);
+  font-weight: 600;
   text-align: center;
   width: 100%;
   margin: 0vh 0 0vh 0;
@@ -103,37 +106,29 @@ body>footer {
   grid-area: thumbArch;
 }
 
-.thumbArch img:hover {
-  visibility: visible;
-  background-color: var(--azul-nav);
-  opacity: 0.8;
-}
-
-
 .thumbArch img {
   width: 15vw;
-  height: 15vw;
+  height: calc(0.7072 * 15vw);
   object-fit: contain;
-  margin: 2.5vh 5vw 2.5vh 5vw;
 }
 
-.dwnldBtn {
-  grid-area: dwnldBtn;
+.BDownWrapper {
   display: flex;
-  flex-wrap: wrap;
+  position: relative;
   justify-content: center;
   align-items: center;
+  top: 0;
+  left: calc(15vw * (1 - 0.6969) * 0.5);
+  width: calc(15vw * 0.6969);
+  height: calc(0.7072 * 0.1555 * 15vw);
+  background-color: var(--azul-nav);
+  border-radius: 15px;
 }
 
-.btndwn {
-  position: relative;
-  display: none;
-  top: -10vw;
-  left: 8vw;
-  width: 9vw;
-  height: min-content;
+.BDown {
   text-align: center;
-  font-size: calc(var(--sub-title-font-size) * 0.7);
-  border-radius: 1vw;
-  background-color: var(--blanco-nav);
+  font-size: calc(var(--sub-title-font-size) * 0.6);
+  background-color: var(--azul-nav);
+  text-decoration: none;
+  color: var(--blanco-nav);
 }
