@@ -29,8 +29,7 @@
     <div class="fotosCerts">
         {% for cert in certs %}
         <a href="#" onclick="window.open('{% static cert.docCert %}', '_blank'); return false;">
-        <img id="cert{{ forloop.counter }}"
-        onmouseover="this.src = '{% static cert.imgCert %}'"
+        <img onmouseover="this.src = '{% static cert.imgCert %}'"
         onmouseout="this.src = '{% static cert.img %}'"
         src="{% static cert.img %}" alt=""></a>
         {% endfor %}
