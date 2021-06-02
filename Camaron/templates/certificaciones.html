@@ -9,15 +9,15 @@
 
 <script type="text/javascript">
     function letraAzul(x) {
-            x.style.color = "rgb(255, 255, 255)";        
+        x.style.color = "rgb(255, 255, 255)";
     }
 
     function letraNormal(x) {
-            x.style.color = "rgb(255, 255, 255)";
+        x.style.color = "rgb(255, 255, 255)";
     }
 
     function show(Id) {
-        document.getElementById(Id).style.display="inline";
+        document.getElementById(Id).style.display = "inline";
     }
 </script>
 
@@ -28,8 +28,11 @@
     </div>
     <div class="fotosCerts">
         {% for cert in certs %}
-        <img class="noMostrar" id="imgDoc{forloop.counter}}" src="{% static cert.imgCert %}">
-        <a href="#" onclick="window.open('{% static cert.docCert %}', '_blank', 'fullscreen=yes'); return false;" onmouseover="update('imgDoc{forloop.counter}}');" onmouseout="closeDoc('imgDoc{forloop.counter}}');"><img id="cert{{ forloop.counter }}" src="{% static cert.img %}" alt=""></a>
+        <a href="#" onclick="window.open('{% static cert.docCert %}', '_blank'); return false;">
+        <img id="cert{{ forloop.counter }}"
+        onmouseover="this.src = '{% static cert.imgCert %}'"
+        onmouseout="this.src = '{% static cert.img %}'"
+        src="{% static cert.img %}" alt=""></a>
         {% endfor %}
     </div>
 </div>
