@@ -313,7 +313,7 @@ body>footer>b {
     transform: translate(13vw, 0vh);
 }
 
-div.flotante {
+.flotante {
     background-color: white;
     position: fixed;
     z-index: 500;
@@ -344,7 +344,7 @@ div.flotante {
 .fa:hover,
 .fa-whatsapp:hover,
 .whatsapp-icon:hover,
-div.flotante {
+.flotante {
     display: inline-block;
     filter: brightness(1.30);
     text-decoration: none;
