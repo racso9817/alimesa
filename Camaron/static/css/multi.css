@@ -205,13 +205,13 @@ body>footer {
 
 .VideoBioSeg {
     width: 100vw;
+    top: 10vw;
     height: min-content;
 }
 
 .VideoBioSeg video {
     width: 100vw;
-    margin-top: -5vw;
-    padding: 0px;
+    margin-top: -1vw;
 }
 
 .Archivos {
