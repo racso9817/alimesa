@@ -3,7 +3,7 @@ from django.db.models import fields
 from django.forms import ModelForm, widgets
 from django import forms
 from django.core import validators
-from django.utils.translation import gettext_lazy as _
+from django.utils.translation import gettext_lazy as _, pgettext_lazy
 from django_countries.fields import CountryField
 
 # Create your models here.
@@ -39,6 +39,21 @@ class Producto(models.Model):
 
     def __str__(self):
         return 'Producto: ' + self.nombre
+
+    class Meta:
+        verbose_name = "producto"
+        verbose_name_plural = "productos"
+
+class ProductoCarousel(models.Model):
+    nombre = models.CharField(max_length=150)
+    siglas = models.CharField(max_length=30)
+    sizes = models.CharField(max_length=100)
+    packaging = models.CharField(max_length=100)
+    freezing = models.CharField(max_length=50)
+    img = models.ImageField(upload_to=siglas)
+    
+    def __str__(self):
+        return 'Carrusel de: ' + self.nombre
 
     class Meta:
         verbose_name = "producto"

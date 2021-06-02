@@ -220,7 +220,7 @@ body > footer {
     grid-template-areas:
         "NomProd ."
         "FotosProd ProdData";
-    left: -5vw;
+    left: -4vw;
     width: 80vw;
     max-width: 80vw;
     text-align: center;
@@ -257,7 +257,7 @@ body > footer {
 
 .ProdData {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, .3fr);
     grid-template-rows: 0.25fr 1.5fr;
     gap: 0px 0px;
     grid-template-areas:
@@ -327,7 +327,7 @@ body > footer {
     font-weight: 600;
     margin-top: -6vw;
     border-radius: 16px;
-    width: calc((55vw / 3) / 1.6);
+    width: 5vw;
     height: 25vh;
 }
 
