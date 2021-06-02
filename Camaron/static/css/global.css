@@ -26,7 +26,7 @@ body > footer {
     display: flex;
     flex-wrap: wrap;
     width: 100vw;
-    height: 20vh;
+    height: 15vh;
     justify-content: center;
     align-items:center;
     background: rgb(0, 99, 181);
@@ -37,15 +37,15 @@ body > footer > a > img {
     width: 7vw;
     height: 14vh;
     object-fit: contain;
-    margin: 2.5vh 0vw 2.5vh -10vw;
-    transform: translate(-5vw, 1vh);
+    margin: 0vh 0vw 0vh -10vw;
+    transform: translate(-5vw, .3vh);
 }
 
 body > footer > img {
     width: 6vw;
     height: 8vh;
     object-fit: contain;
-    margin: 2.5vh 1vw 2.5vh 0vw;  
+    margin: 0vh 1vw 0vh 0vw;  
     transform: translate(-10vw, 2vh); 
 }
 
@@ -66,7 +66,7 @@ body > footer > b {
     "tel1"
     "tel2";
     padding-right: 5vw;
-    font-size: .8vw;
+    font-size: .9vw;
 }
 
 .correo { grid-area: correo; }
@@ -145,22 +145,21 @@ body > footer > b {
 
   .flotante {
     background-color: white;
-      position: fixed;
+    position: fixed;
+    z-index: 500;
+    
       width: 14vw;
       text-align: center;
       bottom: 11vw;
       right: 6.4vw;
-      box-shadow: .2vw .2vw darkgray;
       border-radius: 1vw;
       font-size: .9vw;
-      z-index: 500;
   }
   
   .whatsapp{
     position: fixed;
     bottom: 10vw;
     right: 3vw;
-    box-shadow: .16vw .16vw darkgray;
     width:3.4vw ;
     height: 3.4vw;
     color:white;
@@ -170,7 +169,7 @@ body > footer > b {
     font-size: 30px;
     z-index: 500;
   }
-  .whatsapp:hover{
+  .whatsapp:hover, .fa:hover, .fa-whatsapp:hover, .whatsapp-icon:hover {
     filter: brightness(1.30);
     text-decoration: none;
     color: white;

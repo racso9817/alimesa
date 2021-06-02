@@ -67,8 +67,8 @@
     </div>
     <div class="dataProductos">
         {% for prod in prods %}
-        <a href="{% url 'productos' %}">
         <div class="cartaProducto">            
+            <a href="{% url 'productos' %}">
             <div class="fotoProducto">
                 <img src="{% static prod.img %}" alt="">
                 <div class="sizesFreezing">
@@ -82,16 +82,19 @@
                     </div>
                     <!--<a class="bVM" href="/productos#{{prod.siglas}}">+</a>-->
                 </div>
+            </a>
             </div>
             <div class="siglasProducto">
                 <p class="siglasProductoP">{{prod.siglas}}</p>
             </div>
         </div>
-        </a>
         {% endfor %}
     </div>
 </div>
 <!-- Productos -->
+
+<!-- Marcas -->
+<!-- Marcas -->
 
 <!-- Certificaciones -->
 <div class='certificacionesSubsection'>

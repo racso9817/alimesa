@@ -28,27 +28,8 @@
     </div>
     <div class="fotosCerts">
         {% for cert in certs %}
-        <img src="{% static cert.img %}" alt="">
-        <!--<img src="{% static cert.img %}" alt=""/>-->
-        {% endfor %}
-    </div>
-    <div class="docCerts">
-        <script type="text/javascript">
-            function showDoc(id) {
-                document.getElementById(id).style.display = "flex"
-            }
-        </script>
-        <script type="text/javascript">
-            function hideDoc(id) {
-                document.getElementById(id).style.display = "none"
-            }
-        </script>
-        {% for cert in certs %}
-        <div class="certsModal" id="modal-{{cert.className}}" onclick="hideDoc('modal-{{cert.className}}')"
-            role="button">
-            <embed loading=eager src="{% static cert.docCert %}">
-        </div>
-        <img src="{% static cert.imgCert %}" onclick="showDoc('modal-{{cert.className}}')" role="button">
+        <img class="noMostrar" id="imgDoc{forloop.counter}}" src="{% static cert.imgCert %}">
+        <a href="#" onclick="window.open('{% static cert.docCert %}', '_blank', 'fullscreen=yes'); return false;" onmouseover="update('imgDoc{forloop.counter}}');" onmouseout="closeDoc('imgDoc{forloop.counter}}');"><img id="cert{{ forloop.counter }}" src="{% static cert.img %}" alt=""></a>
         {% endfor %}
     </div>
 </div>
@@ -58,4 +39,5 @@
 
 {% block scripts %}
 <script src="{% static 'rsc\js\prods.js' %}"></script>
+<script src="{% static 'rsc\js\certs.js' %}"></script>
 {% endblock %}

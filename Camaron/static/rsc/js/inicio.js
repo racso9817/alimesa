@@ -28,7 +28,7 @@ function scrollFunction() {
       n.style.color = "#00509A";
     });
     //Contacto E Idioma
-    document.getElementsByClassName("navbar")[0].style.marginTop = "-3vw";
+    document.getElementsByClassName("navbar")[0].style.marginTop = "-2.8vw";
   } else {
     document.getElementById("logo").src = "/static/rsc/img/logoAzul.png";
     document.getElementById("logo").style.height = "6vw";

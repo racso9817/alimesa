@@ -497,9 +497,6 @@ div.certificacionesSubsection>picture {
     transform: scale(1.1);
 }
 
-.footer {
-    background: var(--azul-nav);
-}
 
 @media screen and (max-width:961px) {
 

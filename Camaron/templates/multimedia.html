@@ -26,14 +26,17 @@
     <div class="Archivos">
         {% for d in documents %}
         <div class="fileCard">
+            <div class="thumbArch">
+                <img src="{% static d.thumbnail %}">
+                <div class="contenedorBrochure">
+                    <a href="{% static d.pathfile %}"><button class="btndwn" type="button">DESCARGA</button></a>
+                </div>
+            </div>
             <div class="tituloArch">
                 <p>{{d.titulo}}</p>
             </div>
-            <div class="thumbArch">
-                <img src="{% static d.thumbnail %}">
-            </div>
             <div class="dwnldBtn">
-                <a href="{% static d.pathfile %}" download>DESCARGAR</a>
+                <!--<a href="{% static d.pathfile %}" download>DESCARGAR</a>-->
             </div>
         </div>
         {% endfor %}
