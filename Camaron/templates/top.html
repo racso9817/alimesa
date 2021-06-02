@@ -39,6 +39,29 @@
                             <a class="linksCEI" href="">官话</a>
                         </div>
                     </div>
+                    <div class="responsiveNav" id="topnav">
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                            <i class="fa fa-bars"></i>
+                        </a>
+                        <div class="inicioResponsive">
+                            <a href="{% url 'inicio' %}">INICIO</a>
+                        </div>
+                        <div class="acercaResponsive">
+                            <a href="{% url 'acerca' %}">NOSOTROS</a>
+                        </div>
+                        <div class="prodResponsive">
+                            <a href="{% url 'productos' %}">PRODUCTOS</a>
+                        </div>
+                        <div class="certResponsive">
+                            <a href="{% url 'certificaciones' %}">CERTIFICACIONES</a>
+                        </div>
+                        <div class="multiResponsive">
+                            <a href="{% url 'multimedia' %}">MULTIMEDIA</a>
+                        </div>
+                        <div class="contResponsive">
+                            <a href="{% url 'contacto' %}">CONTACTO</a>
+                        </div>
+                    </div>
                     <div class="menu-nav">
                         <div class="inicio cellOpcionMenu">
                             {% if 'inicio' in request.path %}
@@ -111,7 +134,7 @@
             </div>
         </div>
 
-        <div class="flotante">
+        <div class="flotante" style="display: none;">
             ¿Necesitas ayuda? <b>Contáctanos</b>
         </div>
         <a href="#" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
@@ -133,6 +156,15 @@
                     x.style.color = "var(--blanco-nav)";
                 } else {
                     x.style.color = "var(--azul-nav)";
+                }
+            }
+
+            function myFunction() {
+                var x = document.getElementById("topnav");
+                if (x.className === "responsiveNav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "responsiveNav";
                 }
             }
         </script>

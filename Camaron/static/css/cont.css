@@ -89,6 +89,7 @@ body>footer {
 
 .form {
     grid-area: form;
+    border: none;
 }
 
 .titinfo {
@@ -193,7 +194,7 @@ select {
 @media (max-width: 961px) {
 
     body>footer {
-        top: 115vh;
+        top: 105vh;
     }
 
     .form-inline input {
@@ -244,7 +245,7 @@ select {
     }
 
     .grid-container {
-        padding-top: 15vh;
+        padding-top: 7vh;
     }
 
     .titinfo {
