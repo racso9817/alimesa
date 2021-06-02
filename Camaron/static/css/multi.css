@@ -68,7 +68,6 @@ body>footer {
   justify-content: center;
   align-items: center;
   margin: 5vh 0 5vh 0;
-  height: min-content;
   height: calc(1.1 * 0.7072 * 15vw + 2.5vh);
 }
 
@@ -82,7 +81,7 @@ body>footer {
     "tituloArch";
   width: 20vw;
   padding: 0 2.5vw 0 2.5vw;
-  height: calc(1.1 * 0.7072 * 15vw + 2.5vh);
+  height: calc((1.1 * 0.7072 * 15vw) + 2.5vh);
 }
 
 .tituloArch {
@@ -104,31 +103,41 @@ body>footer {
 
 .thumbArch {
   grid-area: thumbArch;
+  height: calc(0.7072 * 15vw);
 }
 
 .thumbArch img {
   width: 15vw;
   height: calc(0.7072 * 15vw);
-  object-fit: contain;
+  object-fit: cover;
+}
+
+.thumbArch:hover .BDownWrapper {
+  display: flex;
 }
 
 .BDownWrapper {
-  display: flex;
+  display: none;
   position: relative;
   justify-content: center;
   align-items: center;
-  top: 0;
-  left: calc(15vw * (1 - 0.6969) * 0.5);
-  width: calc(15vw * 0.6969);
-  height: calc(0.7072 * 0.1555 * 15vw);
+  top: calc(-0.7072 * 15vw);
+  left: 0;
+  width: 15vw;
+  height: calc(0.7072 * 15vw);
   background-color: var(--azul-nav);
-  border-radius: 15px;
+  opacity: 0.9;
 }
 
 .BDown {
   text-align: center;
   font-size: calc(var(--sub-title-font-size) * 0.6);
-  background-color: var(--azul-nav);
+  background-color: var(--amarillo-btn);
   text-decoration: none;
-  color: var(--blanco-nav);
+  color: var(--azul-nav);
+  border-radius: 15px;
+  width: calc(15vw * 0.6969);
+  height: calc(0.7072 * 0.1555 * 15vw);
+  font-weight: 600;
+  opacity: 1;
 }
