@@ -29,7 +29,7 @@
     <div class="fotosCerts">
         {% for cert in certs %}
         <a href="#" onclick="window.open('{% static cert.docCert %}', '_blank'); return false;">
-        <img onmouseover="this.src = '{% static cert.imgCert %}'"
+        <img id="cert{forloop.counter}}" onmouseover="this.src = '{% static cert.imgCert %}'"
         onmouseout="this.src = '{% static cert.img %}'"
         src="{% static cert.img %}" alt=""></a>
         {% endfor %}
@@ -41,5 +41,4 @@
 
 {% block scripts %}
 <script src="{% static 'rsc\js\prods.js' %}"></script>
-<script src="{% static 'rsc\js\certs.js' %}"></script>
 {% endblock %}
