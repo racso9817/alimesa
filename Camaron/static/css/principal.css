@@ -121,7 +121,7 @@
     height: 8vh;
     width: 100vh;
   }
-  
+
   .contact {
     grid-area: 1 / 1 / 2 / 2;
     text-decoration: none;
@@ -141,10 +141,10 @@
     padding-left: 3vh;
   }
 
-  .contact > a {
+  .contact>a {
     padding-left: 1vh;
   }
-  
+
   .idioma {
     grid-area: 1 / 2 / 2 / 3;
     padding-right: 1vw;
@@ -152,23 +152,23 @@
     align-items: center;
     justify-content: right;
   }
-  
+
   .idioma>a {
     padding-right: 1vw;
   }
-  
+
   .linksCEI {
     color: var(--blanco-nav);
     text-decoration: none;
     padding-left: 1vh;
     width: 35vh;
   }
-  
+
   .linksCEI:hover {
     text-decoration: none;
     color: white;
   }
-  
+
   .fotosPrin {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -183,7 +183,7 @@
     background-size: cover;
     background-position: center;
   }
-  
+
   .camaron {
     grid-area: camaron;
     display: flex;
@@ -192,18 +192,18 @@
     margin-left: 25vh;
     height: 120vh;
   }
-  
+
   .camaron>a>img {
     width: 50vh;
     height: 50vh;
     object-fit: contain;
   }
-  
+
   .camaron>a:hover {
     transition: .1s;
     transform: scale(1.1);
   }
-  
+
   .pescado {
     grid-area: pescado;
     display: flex;
@@ -213,16 +213,16 @@
     transform: translate(-49vh, 130vh);
     height: 2vh;
   }
-  
+
   .pescado>a>img {
     width: 50vh;
     height: 50vh;
     object-fit: contain;
   }
-  
+
   .pescado>a:hover {
     transition: .1s;
     transform: scale(1.1);
-  } 
+  }
 
 }

@@ -22,116 +22,120 @@
     <section class="header">
         <div class="nav-container">
             <div class="navbar">
-              <div class="logo-nav">
-                  <a href="{% url 'inicio' %}"><img id="logo" src="{% static 'rsc\img\logoAzul.png'%}"></a>
-              </div>
-              <div class="options-nav">
-                <div class="contactosEidioma-nav">
-                  <div class="contacto-nav">
-                      <img id="tlf" src="{% static 'rsc\img\phone.png' %}">
-                      <a class="linksCEI" id="tlf" href='tel:59341622125'>(+593-4) 162 2125</a>
-                      <img id="mail" src="{% static 'rsc\img\mail.png' %}">
-                      <a class="linksCEI" href="mailto:sales@alimesa.com.ec">sales@alimesa.com.ec</a>
-                  </div>
-                  <div class="idioma-nav">
-                      <a class="linksCEI" href="">EN</a>
-                      <a class="linksCEI" href="">ES</a>
-                      <a class="linksCEI" href="">官话</a>
-                  </div>
+                <div class="logo-nav">
+                    <a href="{% url 'inicio' %}"><img id="logo" src="{% static 'rsc\img\logoAzul.png'%}"></a>
                 </div>
-                <div class="menu-nav">
-                  <div class="inicio">
-                      {% if 'inicio' in request.path %}                      
-                      <style>
-                          #inicio-nav {
-                              font-weight: bolder;
-                          }
-                      </style>
-                      {% endif %}
-                      <a class="opcionMenu" id="inicio-nav" href="{% url 'inicio' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">INICIO</a>
-                  </div>
-                  <div class="nosotros">
-                    {% if 'acerca' in request.path %}                      
-                    <style>
-                        #nosotros-nav {
-                            font-weight: bolder;
-                        }
-                    </style>
-                    {% endif %}
-                      <a class="opcionMenu" id="nosotros-nav" href="{% url 'acerca' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)" >NOSOTROS</a>
-                  </div>
-                  <div class="productos">
-                    {% if 'productos' in request.path %}                      
-                    <style>
-                        #prods-nav {
-                            font-weight: bolder;
-                        }
-                    </style>
-                    {% endif %}
-                      <a class="opcionMenu" id="prods-nav" href="{% url 'productos' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">PRODUCTOS</a>
-                  </div>
-                  <div class="certs">
-                    {% if 'certificaciones' in request.path %}                      
-                    <style>
-                        #certs-nav {
-                            font-weight: bolder;
-                        }
-                    </style>
-                    {% endif %}
-                      <a class="opcionMenu" id="certs-nav" href="{% url 'certificaciones' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">CERTIFICACIONES</a>
-                  </div>
-                  <div class="multi">
-                    {% if 'multimedia' in request.path %}                      
-                    <style>
-                        #multi-nav {
-                            font-weight: bolder;
-                        }
-                    </style>
-                    {% endif %}
-                      <a class="opcionMenu" id="multi-nav" href="{% url 'multimedia' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">MULTIMEDIA</a>
-                  </div>
-                  <div class="cont">
-                    {% if 'contacto' in request.path %}                      
-                    <style>
-                        #cont-nav {
-                            font-weight: bolder;
-                        }
-                    </style>
-                    {% endif %}
-                      <a class="opcionMenu" id="cont-nav" href="{% url 'contacto' %}" onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">CONTACTO</a>
-                  </div>
+                <div class="options-nav">
+                    <div class="contactosEidioma-nav">
+                        <div class="contacto-nav">
+                            <img id="tlf" src="{% static 'rsc\img\phone.png' %}">
+                            <a class="linksCEI" id="tlf" href='tel:59341622125'>(+593-4) 162 2125</a>
+                            <img id="mail" src="{% static 'rsc\img\mail.png' %}">
+                            <a class="linksCEI" href="mailto:sales@alimesa.com.ec">sales@alimesa.com.ec</a>
+                        </div>
+                        <div class="idioma-nav">
+                            <a class="linksCEI" href="">EN</a>
+                            <a class="linksCEI" href="">ES</a>
+                            <a class="linksCEI" href="">官话</a>
+                        </div>
+                    </div>
+                    <div class="menu-nav">
+                        <div class="inicio cellOpcionMenu">
+                            {% if 'inicio' in request.path %}
+                            <style>
+                                #inicio-nav {
+                                    font-weight: bolder;
+                                }
+                            </style>
+                            {% endif %}
+                            <a class="opcionMenu" id="inicio-nav" href="{% url 'inicio' %}"
+                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">INICIO</a>
+                        </div>
+                        <div class="nosotros cellOpcionMenu">
+                            {% if 'acerca' in request.path %}
+                            <style>
+                                #nosotros-nav {
+                                    font-weight: bolder;
+                                }
+                            </style>
+                            {% endif %}
+                            <a class="opcionMenu" id="nosotros-nav" href="{% url 'acerca' %}"
+                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">NOSOTROS</a>
+                        </div>
+                        <div class="productos cellOpcionMenu">
+                            {% if 'productos' in request.path %}
+                            <style>
+                                #prods-nav {
+                                    font-weight: bolder;
+                                }
+                            </style>
+                            {% endif %}
+                            <a class="opcionMenu" id="prods-nav" href="{% url 'productos' %}"
+                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">PRODUCTOS</a>
+                        </div>
+                        <div class="certs cellOpcionMenu">
+                            {% if 'certificaciones' in request.path %}
+                            <style>
+                                #certs-nav {
+                                    font-weight: bolder;
+                                }
+                            </style>
+                            {% endif %}
+                            <a class="opcionMenu" id="certs-nav" href="{% url 'certificaciones' %}"
+                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">CERTIFICACIONES</a>
+                        </div>
+                        <div class="multi cellOpcionMenu">
+                            {% if 'multimedia' in request.path %}
+                            <style>
+                                #multi-nav {
+                                    font-weight: bolder;
+                                }
+                            </style>
+                            {% endif %}
+                            <a class="opcionMenu" id="multi-nav" href="{% url 'multimedia' %}"
+                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">MULTIMEDIA</a>
+                        </div>
+                        <div class="cont cellOpcionMenu">
+                            {% if 'contacto' in request.path %}
+                            <style>
+                                #cont-nav {
+                                    font-weight: bolder;
+                                }
+                            </style>
+                            {% endif %}
+                            <a class="opcionMenu" id="cont-nav" href="{% url 'contacto' %}"
+                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">CONTACTO</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+        </div>
 
-            <div class="flotante">
-                ¿Necesitas ayuda? <b>Contáctanos</b>
-            </div>
-            <a href="#" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
-      
-          <script type="text/javascript">
-              const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-                const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
-      
-              function letraAzul(x) {
-                  if (document.body.scrollTop > vh*0.9 || document.documentElement.scrollTop > vh*0.9) {
-                      x.style.color = "rgb(255, 255, 255)";
-                  }
-                  else {
-                      x.style.color = "#0063B5";
-                  }
-              }
-      
-              function letraNormal(x) {
-                  if (document.body.scrollTop > vh*0.9 || document.documentElement.scrollTop > vh*0.9) {
-                      x.style.color = "rgb(255, 255, 255)";
-                  }
-                  else {
-                      x.style.color = "rgb(0, 0, 0)";
-                  }
-              }                  
-          </script>
+        <div class="flotante">
+            ¿Necesitas ayuda? <b>Contáctanos</b>
+        </div>
+        <a href="#" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+
+        <script type="text/javascript">
+            const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+            const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
+
+            function letraAzul(x) {
+                if (document.body.scrollTop > vh * 0.9 || document.documentElement.scrollTop > vh * 0.9) {
+                    x.style.color = "var(--blanco-nav)";
+                } else {
+                    x.style.color = "var(--azul-nav)";
+                }
+            }
+
+            function letraNormal(x) {
+                if (document.body.scrollTop > vh * 0.9 || document.documentElement.scrollTop > vh * 0.9) {
+                    x.style.color = "var(--blanco-nav)";
+                } else {
+                    x.style.color = "var(--azul-nav)";
+                }
+            }
+        </script>
     </section>
 
     <section class="Content">
@@ -156,19 +160,24 @@
                 <img class="icoFooter" src="{% static 'rsc\img\phone.png' %}">
                 <a class="textFooter" href='tel:59342162122'>(+593-4) 216 2122</a>
             </div>
-          </div>
-          <div class="dirFooter" style="display: flex; align-content: flex-start;">
+        </div>
+        <div class="dirFooter" style="display: flex; align-content: flex-start;">
             <img src="{% static 'rsc\img\direc.png' %}">
-            <a href="https://www.google.com/maps/place/Expotuna/@-2.1040475,-79.9372982,17z/data=!3m1!4b1!4m5!3m4!1s0x902d0d4f3b0b8387:0x96287a1035d8466c!8m2!3d-2.1040529!4d-79.9351095" target="_blank"><p style="display: flex; width: fit-content; margin: 0;">Km 15 ½ via Daule, Av. Rosavin<br>y Asbestos, MZ F6 - Solar 21<br>y 22 Guayaquil – Ecuador</p></a>
-          </div>
-          <div class="icoMsj">
+            <a href="https://www.google.com/maps/place/Expotuna/@-2.1040475,-79.9372982,17z/data=!3m1!4b1!4m5!3m4!1s0x902d0d4f3b0b8387:0x96287a1035d8466c!8m2!3d-2.1040529!4d-79.9351095"
+                target="_blank">
+                <p style="display: flex; width: fit-content; margin: 0;">Km 15 ½ via Daule, Av. Rosavin<br>y Asbestos,
+                    MZ F6 - Solar 21<br>y 22 Guayaquil – Ecuador</p>
+            </a>
+        </div>
+        <div class="icoMsj">
             <div class="wsp">
                 <img src="{% static 'rsc\img\WHATSAPP_ICONO_BL.png' %}">
             </div>
             <div class="wcht">
-                <a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FkIBAHJqVgThtbjLL7jkvzxA=wc>" target="_blank"><img src="{% static 'rsc\img\WECHAT_ICONO_BL.png' %}"></a>
+                <a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FkIBAHJqVgThtbjLL7jkvzxA=wc>"
+                    target="_blank"><img src="{% static 'rsc\img\WECHAT_ICONO_BL.png' %}"></a>
             </div>
-          </div>                            
+        </div>
     </footer>
 
 </body>

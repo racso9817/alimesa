@@ -12,11 +12,13 @@
     --CEIheight: 5vh;
     --LinksSeccionesHeight: 11.25vh;
     --transition-time: 0.2s;
-    --sub-title-font-size: 1.9vw;
+    --sub-title-font-size: 1.8vw;
     --height-prod-dv: calc(100vh - var(--LinksSeccionesHeight) - var(--CEIheight) - 5vh);
     --azul-sizes: #66A1D3;
     --azul-pack: #3382C4;
     --azul-freezing: #0063B5;
     --barra-form: #84D2F6;
     --amarillo-btn: #FFE100;
+
+    --height-navbar: 18vh;
 }
