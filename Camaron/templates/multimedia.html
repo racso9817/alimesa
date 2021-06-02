@@ -9,38 +9,35 @@
 
 <script type="text/javascript">
     function letraAzul(x) {
-            x.style.color = "rgb(255, 255, 255)";        
+        x.style.color = "rgb(255, 255, 255)";
     }
 
     function letraNormal(x) {
-            x.style.color = "rgb(255, 255, 255)";
+        x.style.color = "rgb(255, 255, 255)";
     }
 </script>
 
-    <div class="TituloVideo">
-        <p class="tituloVid">MEDIDAS DE BIOSEGURIDAD</p>
-    </div>
-    <div class="VideoBioSeg">
-        <video src="{% static 'rsc\vid\MULTIMEDIA_VIDEO_WEB.MP4' %}" width="768" height="576" muted controls autoplay></video>
-    </div>
-    <div class="Archivos">
-        {% for d in documents %}
-        <div class="fileCard">
-            <div class="thumbArch">
-                <img src="{% static d.thumbnail %}">
-                <div class="contenedorBrochure">
-                    <a href="{% static d.pathfile %}"><button class="btndwn" type="button">DESCARGA</button></a>
-                </div>
-            </div>
-            <div class="tituloArch">
-                <p>{{d.titulo}}</p>
-            </div>
-            <div class="dwnldBtn">
-                <!--<a href="{% static d.pathfile %}" download>DESCARGAR</a>-->
+<div class="TituloVideo">
+    <p class="tituloVid">MEDIDAS DE BIOSEGURIDAD</p>
+</div>
+<div class="VideoBioSeg">
+    <video src="{% static 'rsc\vid\MULTIMEDIA_VIDEO_WEB.MP4' %}" muted controls autoplay loop></video>
+</div>
+<div class="Archivos">
+    {% for d in documents %}
+    <div class="fileCard">
+        <div class="thumbArch">
+            <img src="{% static d.thumbnail %}">
+            <div class="BDownWrapper">
+                <a class="BDown" href="{% static d.filepath %}" download>DESCARGAR</a>
             </div>
         </div>
-        {% endfor %}
+        <div class="tituloArch">
+            <p>{{d.titulo}}</p>
+        </div>
     </div>
+    {% endfor %}
+</div>
 
 {% endblock %}
 
