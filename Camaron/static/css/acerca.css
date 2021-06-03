@@ -223,7 +223,7 @@ button>.carousel-control-next-icon:hover {
     border-left: 2vw solid transparent;
     border-right: 2vw solid transparent;
     border-top: 3vw solid #fff;
-    transform: translate(42.5vw, -9vw);
+    transform: translate(42.5vw, -9.01vw);
 }
 
 .CartaIconoCdV {
