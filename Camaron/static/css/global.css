@@ -1,9 +1,10 @@
-/* TODO: font-family: "Open Sans", sans-serif; */
 html {
     scroll-behavior: smooth;
 }
 
+
 /* Ocultar la barra ayuda luego con las animaciones */
+
 body::-webkit-scrollbar {
     display: none;
 }
@@ -15,6 +16,7 @@ body {
     scrollbar-width: none;
     font-family: "Open Sans", sans-serif;
 }
+
 
 /* */
 
@@ -33,8 +35,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "navbar";
+    grid-template-areas: "navbar";
     height: var(--height-navbar);
 }
 
@@ -43,8 +44,7 @@ body {
     grid-template-columns: 0.4fr 2fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "logo-nav options-nav";
+    grid-template-areas: "logo-nav options-nav";
     grid-area: navbar;
     height: var(--height-navbar);
     padding: 0;
@@ -66,9 +66,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: .4fr 1fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "contactosEidioma-nav"
-        "menu-nav";
+    grid-template-areas: "contactosEidioma-nav" "menu-nav";
     grid-area: options-nav;
 }
 
@@ -77,8 +75,7 @@ body {
     grid-template-columns: 1.5fr 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "contacto-nav idioma-nav";
+    grid-template-areas: "contacto-nav idioma-nav";
     grid-area: contactosEidioma-nav;
     border-radius: 0 0 0 calc(var(--height-navbar) * 0.3 / 1.4);
     height: calc(var(--height-navbar) * 0.4 / 1.4);
@@ -133,8 +130,7 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1.1fr 1fr 1fr;
     grid-template-rows: .2fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "inicio nosotros productos certs multi cont";
+    grid-template-areas: "inicio nosotros productos certs multi cont";
     grid-area: menu-nav;
     font-size: 1vw;
     height: calc(var(--height-navbar) * 1 / 1.4);
@@ -215,16 +211,12 @@ body>footer>b {
     color: white;
 }
 
-
 .info-contacto-footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "correo"
-        "tel1"
-        "tel2";
+    grid-template-areas: "correo" "tel1" "tel2";
     padding-right: 5vw;
     font-size: .9vw;
 }
@@ -285,8 +277,7 @@ body>footer>b {
     grid-template-columns: repeat(2, .5fr);
     grid-template-rows: 1fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "wsp wcht";
+    grid-template-areas: "wsp wcht";
     width: min-content;
 }
 
@@ -316,7 +307,6 @@ body>footer>b {
     background-color: white;
     position: fixed;
     z-index: 500;
-
     width: 14vw;
     text-align: center;
     bottom: 11vw;
@@ -353,11 +343,10 @@ body>footer>b {
 }
 
 
-
 /*MEDIA QUERY*/
-/*CELULARES*/
-@media (max-width: 961px) {
 
+
+/*@media (max-width: 961px) {
     .nav-container {
         position: fixed;
         top: 0%;
@@ -369,57 +358,46 @@ body>footer>b {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         gap: 0px 0px;
-        grid-template-areas:
-            "navbar";
+        grid-template-areas: "navbar";
         height: 8vh;
     }
-    
     .navbar {
         display: grid;
         grid-template-columns: 0.4fr 2fr;
         grid-template-rows: 1fr;
         gap: 0px 0px;
-        grid-template-areas:
-            "logo-nav options-nav";
+        grid-template-areas: "logo-nav options-nav";
         grid-area: navbar;
         height: 8vh;
         padding: 0;
     }
-    
     .logo-nav {
         grid-area: logo-nav;
         display: flex;
         align-content: center;
         justify-content: center;
     }
-    
     .logo-nav>a>img {
         object-fit: contain;
     }
-    
     .options-nav {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: .4fr 1fr;
         gap: 0px 0px;
-        grid-template-areas:
-            "contactosEidioma-nav"
-            "menu-nav";
+        grid-template-areas: "contactosEidioma-nav" "menu-nav";
         grid-area: options-nav;
     }
-    
     .contactosEidioma-nav {
         display: grid;
         grid-template-columns: 2fr 1fr;
         grid-template-rows: 1fr;
         gap: 0px 0px;
-        grid-template-areas:
-            "contacto-nav idioma-nav";
+        grid-template-areas: "contacto-nav idioma-nav";
         grid-area: contactosEidioma-nav;
         border-radius: 0 0 0 calc(var(--height-navbar) * 0.3 / 1.4);
         height: calc(var(--height-navbar) * 0.25 / 1.4);
     }
-    
     .contacto-nav {
         grid-area: contacto-nav;
         padding-left: 6vw;
@@ -428,22 +406,18 @@ body>footer>b {
         align-content: flex-start;
         justify-content: flex-start;
     }
-    
     .contacto-nav>img {
         max-height: 1vh;
         padding-right: .25vw;
     }
-    
     .contacto-nav>a {
         text-decoration: none;
         font-size: 1vh;
         padding: 0 .7vh 0 0.1vw;
     }
-    
     .contacto-nav>a:hover {
         text-decoration: none;
     }
-    
     .idioma-nav {
         grid-area: idioma-nav;
         text-align: center;
@@ -454,21 +428,17 @@ body>footer>b {
         align-content: flex-end;
         justify-content: flex-end;
     }
-    
     .idioma-nav>a {
         text-decoration: none;
         font-size: 1vh;
         padding-right: 2vw;
     }
-    
     .idioma-nav>a:hover {
         text-decoration: none;
     }
-    
     .menu-nav {
         display: none;
     }
-
     body>footer {
         position: absolute;
         display: flex;
@@ -480,7 +450,6 @@ body>footer>b {
         background: rgb(0, 99, 181);
         background: linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%);
     }
-
     body>footer>a>img {
         width: 20vw;
         height: 60vh;
@@ -489,7 +458,6 @@ body>footer>b {
         position: absolute;
         transform: translate(-16vw, -48vh);
     }
-
     body>footer>img {
         width: 12vw;
         height: 40vh;
@@ -498,67 +466,53 @@ body>footer>b {
         position: absolute;
         transform: translate(13vw, -16.5vh);
     }
-
     body>footer>b {
         position: absolute;
         transform: translate(12.9vw, -22.5vh);
         font-size: 2vw;
         color: white;
     }
-
-
     .info-contacto-footer {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 0px 0px;
-        grid-template-areas:
-            "correo"
-            "tel1"
-            "tel2";
+        grid-template-areas: "correo" "tel1" "tel2";
         padding-right: 0vw;
         font-size: 3vw;
         position: absolute;
         transform: translate(-9vw, -3vh);
     }
-
     .correo {
         grid-area: correo;
     }
-
     .tel1 {
         grid-area: tel1;
     }
-
     .tel2 {
         grid-area: tel2;
     }
-
     .icoFooter {
         width: 3vw;
         height: 6vh;
         object-fit: contain;
         margin: 0vh 1vw 0vh 2vw;
     }
-
     .textFooter,
     .textFooter:visited {
         text-decoration: none;
         color: white;
     }
-
     .textFooter:hover,
     .textFooter:active,
     .textFooter:focus {
         text-decoration: none;
         color: white;
     }
-
     .dirFooter {
         position: absolute;
         transform: translate(0vw, 10vh);
     }
-
     .dirFooter>img {
         filter: brightness(0) invert(1);
         width: 3vw;
@@ -569,36 +523,29 @@ body>footer>b {
         ;
         margin: 0vh 1vw 1vh 2vw;
     }
-
     .dirFooter>a {
         text-decoration: none;
         color: white;
         font-size: 3vw;
     }
-
     .dirFooter:hover>a {
         text-decoration: none;
         color: white;
     }
-
     .icoMsj {
         display: grid;
         grid-template-columns: repeat(2, .5fr);
         grid-template-rows: 1fr;
         gap: 0px 0px;
-        grid-template-areas:
-            "wsp wcht";
+        grid-template-areas: "wsp wcht";
         width: min-content;
     }
-
     .wsp {
         grid-area: wsp;
     }
-
     .wcht {
         grid-area: wcht;
     }
-
     .wsp>a>img {
         width: 10vw;
         height: 20vh;
@@ -607,7 +554,6 @@ body>footer>b {
         transform: translate(-15vw, 15vh);
         height: 5vh;
     }
-
     .wcht>a>img {
         width: 10vw;
         height: 20vh;
@@ -616,7 +562,6 @@ body>footer>b {
         transform: translate(0vw, 15vh);
         height: 5vh;
     }
-
     .flotante {
         background-color: white;
         position: fixed;
@@ -629,7 +574,6 @@ body>footer>b {
         font-size: 1vh;
         z-index: 20;
     }
-
     .whatsapp {
         position: fixed;
         bottom: 54.5vh;
@@ -644,13 +588,11 @@ body>footer>b {
         font-size: 3vh;
         z-index: 20;
     }
-
     .icon {
         transform: translate(35vh, .5vh);
         display: block;
         filter: brightness(0) invert(1);
     }
-
     .responsiveNav.responsive {
         position: relative;
     }
@@ -664,5 +606,308 @@ body>footer>b {
         display: block;
         text-align: left;
     }
+}/*
 
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+  ## Try 1920x1080
+*/
+
+@media (min-width: 1281px) {
+    /* CSS */
+}
+
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+    ## Try 1280x1024 / 1280x720 / 1280x850
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* CSS */
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+    ## Try 1024x1366 / 768x1024 
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS */
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+    ## Try 1024x1366 / 768x1024  pero horizontal
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    /* CSS */
+}
+
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+    ## Try 540x720
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+    ## INTENTAR CON CELULARES DE BAJA Y ALTA GAMA EN CHROME
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .nav-container {
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        max-width: 100vw;
+        z-index: 1000;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas: "navbar";
+        height: 8vh;
+    }
+    .navbar {
+        display: grid;
+        grid-template-columns: 0.4fr 2fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas: "logo-nav options-nav";
+        grid-area: navbar;
+        height: 8vh;
+        padding: 0;
+    }
+    .logo-nav {
+        grid-area: logo-nav;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+    }
+    .logo-nav>a>img {
+        object-fit: contain;
+    }
+    .options-nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .4fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas: "contactosEidioma-nav" "menu-nav";
+        grid-area: options-nav;
+    }
+    .contactosEidioma-nav {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas: "contacto-nav idioma-nav";
+        grid-area: contactosEidioma-nav;
+        border-radius: 0 0 0 calc(var(--height-navbar) * 0.3 / 1.4);
+        height: calc(var(--height-navbar) * 0.25 / 1.4);
+    }
+    .contacto-nav {
+        grid-area: contacto-nav;
+        padding-left: 6vw;
+        padding-top: 1vh;
+        display: flex;
+        align-content: flex-start;
+        justify-content: flex-start;
+    }
+    .contacto-nav>img {
+        max-height: 1vh;
+        padding-right: .25vw;
+    }
+    .contacto-nav>a {
+        text-decoration: none;
+        font-size: 1vh;
+        padding: 0 .7vh 0 0.1vw;
+    }
+    .contacto-nav>a:hover {
+        text-decoration: none;
+    }
+    .idioma-nav {
+        grid-area: idioma-nav;
+        text-align: center;
+        padding-right: .4vw;
+        padding-top: .7vh;
+        height: 1vh;
+        display: flex;
+        align-content: flex-end;
+        justify-content: flex-end;
+    }
+    .idioma-nav>a {
+        text-decoration: none;
+        font-size: 1vh;
+        padding-right: 2vw;
+    }
+    .idioma-nav>a:hover {
+        text-decoration: none;
+    }
+    .menu-nav {
+        display: none;
+    }
+    body>footer {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100vw;
+        height: 50vh;
+        justify-content: center;
+        align-items: center;
+        background: rgb(0, 99, 181);
+        background: linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%);
+    }
+    body>footer>a>img {
+        width: 20vw;
+        height: 60vh;
+        object-fit: contain;
+        margin: 0vh 0vw 2.5vh -10vw;
+        position: absolute;
+        transform: translate(-16vw, -48vh);
+    }
+    body>footer>img {
+        width: 12vw;
+        height: 40vh;
+        object-fit: contain;
+        margin: 0vh 1vw 2.5vh 0vw;
+        position: absolute;
+        transform: translate(13vw, -16.5vh);
+    }
+    body>footer>b {
+        position: absolute;
+        transform: translate(12.9vw, -22vh);
+        font-size: 2vw;
+        color: white;
+    }
+    .info-contacto-footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas: "correo" "tel1" "tel2";
+        padding-right: 0vw;
+        font-size: 3vw;
+        position: absolute;
+        transform: translate(-9vw, -3vh);
+    }
+    .correo {
+        grid-area: correo;
+    }
+    .tel1 {
+        grid-area: tel1;
+    }
+    .tel2 {
+        grid-area: tel2;
+    }
+    .icoFooter {
+        width: 3vw;
+        height: 6vh;
+        object-fit: contain;
+        margin: 0vh 1vw 0vh 2vw;
+    }
+    .textFooter,
+    .textFooter:visited {
+        text-decoration: none;
+        color: white;
+    }
+    .textFooter:hover,
+    .textFooter:active,
+    .textFooter:focus {
+        text-decoration: none;
+        color: white;
+    }
+    .dirFooter {
+        position: absolute;
+        transform: translate(0vw, 10vh);
+    }
+    .dirFooter>img {
+        filter: brightness(0) invert(1);
+        width: 3vw;
+        height: 6vh;
+        object-fit: contain;
+        position: absolute;
+        transform: translate(-7vw, -2vh);
+        ;
+        margin: 0vh 1vw 1vh 2vw;
+    }
+    .dirFooter>a {
+        text-decoration: none;
+        color: white;
+        font-size: 3vw;
+    }
+    .dirFooter:hover>a {
+        text-decoration: none;
+        color: white;
+    }
+    .icoMsj {
+        display: grid;
+        grid-template-columns: repeat(2, .5fr);
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-template-areas: "wsp wcht";
+        width: min-content;
+    }
+    .wsp {
+        grid-area: wsp;
+    }
+    .wcht {
+        grid-area: wcht;
+    }
+    .wsp>a>img {
+        width: 10vw;
+        height: 20vh;
+        object-fit: contain;
+        position: absolute;
+        transform: translate(-15vw, 15vh);
+        height: 5vh;
+    }
+    .wcht>a>img {
+        width: 10vw;
+        height: 20vh;
+        object-fit: contain;
+        position: absolute;
+        transform: translate(0vw, 15vh);
+        height: 5vh;
+    }
+    .flotante {
+        background-color: white;
+        position: fixed;
+        width: 17vh;
+        text-align: center;
+        bottom: 56.5vh;
+        right: 6.5vh;
+        box-shadow: .2vw .2vw darkgray;
+        border-radius: 1vw;
+        font-size: 1vh;
+        z-index: 20;
+    }
+    .whatsapp {
+        position: fixed;
+        bottom: 54.5vh;
+        right: 2vh;
+        box-shadow: .16vw .16vw darkgray;
+        width: 4.5vh;
+        height: 4.5vh;
+        color: white;
+        background-color: #25d366;
+        border-radius: 100%;
+        text-align: center;
+        font-size: 3vh;
+        z-index: 20;
+    }
 }

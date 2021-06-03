@@ -52,8 +52,10 @@ body>footer {
     margin: 2.5vh 0 0 0;
 }
 
+
 /* Para contener el carrousel y que se elimine el espacio en blanco entre
 el carrousel y el navbar */
+
 #carouselExampleInterval {
     width: 100vw;
     min-width: 100vw;
@@ -177,9 +179,7 @@ button>.carousel-control-next-icon:hover {
     grid-template-columns: 1fr;
     grid-template-rows: 2.5fr 7fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "TituloCdV"
-        "IconosCdV";
+    grid-template-areas: "TituloCdV" "IconosCdV";
     height: 55vh;
     width: 100vw;
     margin: 5vh 0 2.5vh 0;
@@ -226,15 +226,12 @@ button>.carousel-control-next-icon:hover {
     transform: translate(42.5vw, -8vw);
 }
 
-
 .CartaIconoCdV {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 27fr 11fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "IconoCartaCdV"
-        "TxtCartaCdV";
+    grid-template-areas: "IconoCartaCdV" "TxtCartaCdV";
     height: 22vh;
     width: 10vw;
 }
@@ -281,8 +278,7 @@ button>.carousel-control-next-icon:hover {
     grid-template-columns: 9.5fr 22fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "ContinentesWrapper MapasWrapper";
+    grid-template-areas: "ContinentesWrapper MapasWrapper";
     width: 100vw;
     height: 73vh;
     margin: 0 0 2.5vh 0;

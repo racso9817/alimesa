@@ -1,143 +1,141 @@
 body {
-  margin: 0;
+    margin: 0;
 }
 
 .nav-container {
-  background-color: white;
+    background-color: white;
 }
 
 .contactosEidioma-nav {
-  background: rgb(0, 99, 181);
-  background: linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%);
+    background: rgb(0, 99, 181);
+    background: linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%);
 }
 
 .contacto-nav>a {
-  color: white;
+    color: white;
 }
 
 .idioma-nav>a {
-  color: white;
+    color: white;
 }
 
 .idioma-nav>a:hover {
-  color: white;
+    color: white;
 }
 
 .opcionMenu {
-  color: var(--azul-nav);
+    color: var(--azul-nav);
 }
 
 .opcionMenu:hover {
-  color: var(--azul-titulos);
-  font-weight: 600;
+    color: var(--azul-titulos);
+    font-weight: 600;
 }
 
 body>footer {
-  display: block;
-  margin: 2.5vh 0 0 0;
+    display: block;
+    margin: 2.5vh 0 0 0;
 }
 
 .TituloVideo {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding-top: 2.5vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2.5vh;
 }
 
 .TituloVideo p {
-  color: var(--azul-titulos);
-  font-size: var(--sub-title-font-size);
-  font-weight: bold;
-  text-align: center;
-  width: 100%;
-  margin-top: .5vw;
+    color: var(--azul-titulos);
+    font-size: var(--sub-title-font-size);
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    margin-top: .5vw;
 }
 
 .VideoBioSeg {
-  width: 100vw;
+    width: 100vw;
 }
 
 .VideoBioSeg video {
-  width: 100vw;
+    width: 100vw;
 }
 
 .Archivos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 5vh 0 5vh 0;
-  height: calc(1.1 * 0.7072 * 15vw + 2.5vh);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 0 5vh 0;
+    height: calc(1.1 * 0.7072 * 15vw + 2.5vh);
 }
 
 .fileCard {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr .01fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "thumbArch"
-    "tituloArch";
-  width: 20vw;
-  padding: 0 2.5vw 0 2.5vw;
-  height: calc((1.1 * 0.7072 * 15vw) + 2.5vh);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr .01fr;
+    gap: 0px 0px;
+    grid-template-areas: "thumbArch" "tituloArch";
+    width: 20vw;
+    padding: 0 2.5vw 0 2.5vw;
+    height: calc((1.1 * 0.7072 * 15vw) + 2.5vh);
 }
 
 .tituloArch {
-  grid-area: tituloArch;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+    grid-area: tituloArch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .tituloArch p {
-  color: var(--azul-titulos);
-  font-size: calc(var(--sub-title-font-size) * 0.8);
-  font-weight: 600;
-  text-align: center;
-  width: 100%;
-  margin: 0vh 0 0vh 0;
+    color: var(--azul-titulos);
+    font-size: calc(var(--sub-title-font-size) * 0.8);
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    margin: 0vh 0 0vh 0;
 }
 
 .thumbArch {
-  grid-area: thumbArch;
-  height: calc(0.7072 * 15vw);
+    grid-area: thumbArch;
+    height: calc(0.7072 * 15vw);
 }
 
 .thumbArch img {
-  width: 15vw;
-  height: calc(0.7072 * 15vw);
-  object-fit: cover;
+    width: 15vw;
+    height: calc(0.7072 * 15vw);
+    object-fit: cover;
 }
 
 .thumbArch:hover .BDownWrapper {
-  display: flex;
+    display: flex;
 }
 
 .BDownWrapper {
-  display: none;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  top: calc(-0.7072 * 15vw);
-  left: 0;
-  width: 15vw;
-  height: calc(0.7072 * 15vw);
-  background-color: var(--azul-nav);
-  opacity: 0.9;
+    display: none;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: calc(-0.7072 * 15vw);
+    left: 0;
+    width: 15vw;
+    height: calc(0.7072 * 15vw);
+    background-color: var(--azul-nav);
+    opacity: 0.9;
 }
 
 .BDown {
-  text-align: center;
-  font-size: calc(var(--sub-title-font-size) * 0.6);
-  background-color: var(--amarillo-btn);
-  text-decoration: none;
-  color: var(--azul-nav);
-  border-radius: 15px;
-  width: calc(15vw * 0.6969);
-  height: calc(0.7072 * 0.1555 * 15vw);
-  font-weight: 600;
-  opacity: 1;
+    text-align: center;
+    font-size: calc(var(--sub-title-font-size) * 0.6);
+    background-color: var(--amarillo-btn);
+    text-decoration: none;
+    color: var(--azul-nav);
+    border-radius: 15px;
+    width: calc(15vw * 0.6969);
+    height: calc(0.7072 * 0.1555 * 15vw);
+    font-weight: 600;
+    opacity: 1;
 }
