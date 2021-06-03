@@ -342,6 +342,10 @@ body>footer>b {
     display: none;
 }
 
+.icon {
+    display: none;
+}
+
 
 /*MEDIA QUERY*/
 

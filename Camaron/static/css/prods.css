@@ -64,13 +64,11 @@ body>footer {
 .ProdDV {
     position: absolute;
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-columns: 0.1fr 0.5fr;
     grid-template-rows: 0.5fr 0fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "NomProd ."
-        "FotosProd ProdData";
-    left: -4vw;
+    grid-template-areas: "NomProd ." "FotosProd ProdData";
+    left: 15vw;
     width: 80vw;
     max-width: 80vw;
     text-align: center;
@@ -97,9 +95,9 @@ body>footer {
 }
 
 .FotosProd img {
-    width: 11vw;
+    width: 15vw;
     height: 11vw
-        /*calc(var(--height-prod-dv) * (1.75 / 2) - 10vh)*/
+    /*calc(var(--height-prod-dv) * (1.75 / 2) - 10vh)*/
     ;
     object-fit: cover;
     margin: 3vh 5vw 8vh 5vw;
@@ -109,12 +107,10 @@ body>footer {
 
 .ProdData {
     display: grid;
-    grid-template-columns: repeat(3, .3fr);
-    grid-template-rows: 0.25fr 1.5fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.25fr 2fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "TituloSizes TituloPack TituloFreezing"
-        "ValuesSizes ValuesPack ValuesFreezing";
+    grid-template-areas: "TituloSizes TituloPack TituloFreezing" "ValuesSizes ValuesPack ValuesFreezing";
     grid-area: ProdData;
 }
 
@@ -179,7 +175,7 @@ body>footer {
     font-weight: 600;
     margin-top: -6vw;
     border-radius: 16px;
-    width: 5vw;
+    width: 8vw;
     height: 25vh;
 }
 
@@ -188,9 +184,7 @@ body>footer {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 3.5fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "tituloMarcas"
-        "flexMarcas";
+    grid-template-areas: "tituloMarcas" "flexMarcas";
     position: relative;
     width: 100vw;
     background: rgb(96, 109, 120);
@@ -203,7 +197,7 @@ div.marcasSubsection>picture {
     height: 5.6vh;
     position: absolute;
     top: -1px;
-    z-index: 897;
+    z-index: 200;
     object-fit: contain;
 }
 
@@ -224,7 +218,6 @@ div.marcasSubsection>picture {
     width: 100%;
     margin-top: 25vh;
 }
-
 
 .flexMarcas {
     grid-area: flexMarcas;
@@ -270,7 +263,9 @@ div.marcasSubsection>picture {
     height: 18vh;
 }
 
+
 /* The Modal (background) */
+
 .modal {
     display: none;
     /* Hidden by default */
@@ -294,7 +289,9 @@ div.marcasSubsection>picture {
     /* Black w/ opacity */
 }
 
+
 /* Modal Content (image) */
+
 .modal-content {
     margin: auto;
     display: block;
@@ -305,7 +302,9 @@ div.marcasSubsection>picture {
     border: none;
 }
 
+
 /* Add Animation */
+
 .modal-content {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
@@ -317,7 +316,6 @@ div.marcasSubsection>picture {
     from {
         -webkit-transform: scale(0)
     }
-
     to {
         -webkit-transform: scale(1)
     }
@@ -327,13 +325,14 @@ div.marcasSubsection>picture {
     from {
         transform: scale(0)
     }
-
     to {
         transform: scale(1)
     }
 }
 
+
 /* 100% Image Width on Smaller Screens */
+
 @media only screen and (max-width: 700px) {
     .modal-content {
         width: 100%;

@@ -92,7 +92,7 @@ body>footer {
 
 .tituloArch p {
     color: var(--azul-titulos);
-    font-size: calc(var(--sub-title-font-size) * 0.8);
+    font-size: calc(var(--sub-title-font-size) * 0.65);
     font-weight: 600;
     text-align: center;
     width: 100%;
