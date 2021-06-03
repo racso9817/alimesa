@@ -9,6 +9,7 @@ def inicio(request):
     # Cambiar a filter el all de fotos cuando se agregue la seccion a carousel
     fotos = Carausel.objects.filter(section="INI")
     prods = Producto.objects.all()
+    marcas = Marca.objects.all()
     cont = 0
     for p in prods:
         cont += 1
@@ -18,7 +19,8 @@ def inicio(request):
     context = {
         'fotos': fotos,
         'prods': prods,
-        'certs': certs
+        'certs': certs,
+        'marcas': marcas,
     }
     return render(request, template, context)
 
