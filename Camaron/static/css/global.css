@@ -91,14 +91,14 @@ body {
 }
 
 .contacto-nav>img {
-    max-height: 2vh;
-    padding-right: .5vw;
+    max-height: 2.5vh;
+    padding-top: .2vw;
 }
 
 .contacto-nav>a {
     text-decoration: none;
     font-size: 1vw;
-    padding: 0 2vw 0 0.25vw;
+    padding: 0 2vw 0 .7vw;
 }
 
 .contacto-nav>a:hover {
