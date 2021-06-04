@@ -45,6 +45,7 @@ def productos(request):
         p.sizes = "\n".join(p.sizes.split("|"))
         p.freezing = "\n".join(p.freezing.split("|"))
         p.packaging = "\n".join(p.packaging.split("|"))
+        p.img = p.img.split("|")
         cont += 1
         pad += 1
     marcas = Marca.objects.all()
