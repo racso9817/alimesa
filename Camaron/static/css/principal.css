@@ -1,115 +1,4 @@
 .barraPrin {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  gap: 0px 0px;
-  background: rgb(0, 99, 181);
-  background: linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%);
-  position: absolute;
-  top: 0;
-  height: 5vh;
-  width: 100vw;
-}
-
-.contact {
-  grid-area: 1 / 1 / 2 / 2;
-  text-decoration: none;
-  padding-left: 0.5vw;
-  padding-right: 1vw;
-  display: flex;
-  align-items: center;
-  justify-content: left;
-}
-
-.contact img {
-  max-height: 2vh;
-  margin: 0 0.5vw 0 0.5vw;
-  padding: 0.2vh 0 0.2vh 0;
-  padding-left: 1.5vw;
-}
-
-.idioma {
-  grid-area: 1 / 2 / 2 / 3;
-  padding-right: 1vw;
-  display: none;
-  align-items: center;
-  justify-content: right;
-}
-
-.idioma>a {
-  padding-right: 1vw;
-}
-
-.linksCEI {
-  color: var(--blanco-nav);
-  text-decoration: none;
-  padding-left: .5vw;
-}
-
-.linksCEI:hover {
-  text-decoration: none;
-  color: white;
-}
-
-.fotosPrin {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 0.5fr;
-  gap: 0px 0px;
-  grid-template-areas:
-    "camaron pescado";
-  position: absolute;
-  top: 5vh;
-  height: 90vh;
-  width: 100vw;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.camaron {
-  grid-area: camaron;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 20vw;
-  height: 90vh;
-}
-
-.camaron>a>img {
-  width: 20vw;
-  height: 35vh;
-  object-fit: contain;
-}
-
-.camaron>a:hover {
-  transition: .1s;
-  transform: scale(1.1);
-}
-
-.pescado {
-  grid-area: pescado;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 20vw;
-  height: 90vh;
-}
-
-.pescado>a>img {
-  width: 21vw;
-  height: 38vh;
-  object-fit: contain;
-}
-
-.pescado>a:hover {
-  transition: .1s;
-  transform: scale(1.1);
-}
-
-@media (max-width: 961px) {
-
-  .barraPrin {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
@@ -118,111 +7,633 @@
     background: linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%);
     position: absolute;
     top: 0;
-    height: 8vh;
-    width: 100vh;
-  }
+    height: 5vh;
+    width: 100vw;
+}
 
-  .contact {
+.contact {
     grid-area: 1 / 1 / 2 / 2;
     text-decoration: none;
-    font-size: 4vh;
-    padding-left: .5vh;
-    padding-right: 0;
+    padding-left: 0.5vw;
+    padding-right: 1vw;
     display: flex;
     align-items: center;
     justify-content: left;
-    height: 8vh;
-  }
+}
 
-  .contact img {
-    max-height: 3vh;
-    margin: 0;
-    padding: 0;
-    padding-left: 3vh;
-  }
+.contact img {
+    max-height: 2vh;
+    margin: 0 0.5vw 0 0.5vw;
+    padding: 0.2vh 0 0.2vh 0;
+    padding-left: 1.5vw;
+}
 
-  .contact>a {
-    padding-left: 1vh;
-  }
-
-  .idioma {
+.idioma {
     grid-area: 1 / 2 / 2 / 3;
     padding-right: 1vw;
     display: none;
     align-items: center;
     justify-content: right;
-  }
+}
 
-  .idioma>a {
+.idioma>a {
     padding-right: 1vw;
-  }
+}
 
-  .linksCEI {
+.linksCEI {
     color: var(--blanco-nav);
     text-decoration: none;
-    padding-left: 1vh;
-    width: 35vh;
-  }
+    padding-left: .5vw;
+}
 
-  .linksCEI:hover {
+.linksCEI:hover {
     text-decoration: none;
     color: white;
-  }
+}
 
-  .fotosPrin {
+.fotosPrin {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 0.5fr;
     gap: 0px 0px;
-    grid-template-areas:
-      "camaron pescado";
+    grid-template-areas: "camaron pescado";
     position: absolute;
-    width: 100%;
-    height: 0;
+    top: 5vh;
+    height: 90vh;
+    width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-  }
+}
 
-  .camaron {
+.camaron {
     grid-area: camaron;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 25vh;
-    height: 120vh;
-  }
+    margin-left: 20vw;
+    height: 90vh;
+}
 
-  .camaron>a>img {
-    width: 50vh;
-    height: 50vh;
+.camaron>a>img {
+    width: 20vw;
+    height: 35vh;
     object-fit: contain;
-  }
+}
 
-  .camaron>a:hover {
+.camaron>a:hover {
     transition: .1s;
     transform: scale(1.1);
-  }
+}
 
-  .pescado {
+.pescado {
     grid-area: pescado;
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    transform: translate(-49vh, 130vh);
-    height: 2vh;
-  }
+    margin-right: 20vw;
+    height: 90vh;
+}
 
-  .pescado>a>img {
-    width: 50vh;
-    height: 50vh;
+.pescado>a>img {
+    width: 21vw;
+    height: 38vh;
     object-fit: contain;
-  }
+}
 
-  .pescado>a:hover {
+.pescado>a:hover {
     transition: .1s;
     transform: scale(1.1);
-  }
+}
 
+
+/* MEDIA QUERY */
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+  ## Try 1920x1080
+*/
+
+@media (min-width: 1281px) {
+    /* CSS */
+}
+
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+  ## Try 1280x1024 / 1280x720 / 1280x850
+*/
+
+
+/*@media (min-width: 1025px) and (max-width: 1280px) {
+    .barraPrin {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        background: rgb(0, 99, 181);
+        background: linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%);
+        position: absolute;
+        top: 0;
+        height: 10vh;
+        width: 100vw;
+    }
+    .contact {
+        grid-area: 1 / 1 / 2 / 2;
+        text-decoration: none;
+        font-size: 4vh;
+        padding-left: .5vh;
+        padding-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        height: 8vh;
+    }
+    .contact img {
+        max-height: 3vh;
+        margin: 0;
+        padding-left: 3vh;
+    }
+    .contact>a {
+        padding-left: 1vh;
+    }
+    .linksCEI {
+        color: var(--blanco-nav);
+        text-decoration: none;
+        padding-left: 1vh;
+        width: 50vh;
+    }
+    .linksCEI:hover {
+        text-decoration: none;
+        color: white;
+    }
+    .fotosPrin {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.5fr;
+        gap: 0px 0px;
+        grid-template-areas: "camaron pescado";
+        position: absolute;
+        width: 100%;
+        height: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .camaron {
+        grid-area: camaron;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20vh;
+        height: 86vh;
+    }
+    .camaron>a>img {
+        width: 40vh;
+        height: 40vh;
+        object-fit: contain;
+    }
+    .camaron>a:hover {
+        transition: .1s;
+        transform: scale(1.1);
+    }
+    .pescado {
+        grid-area: pescado;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        transform: translate(0vh, 42vh);
+        height: 2vh;
+    }
+    .pescado>a>img {
+        width: 40vh;
+        height: 50vh;
+        object-fit: contain;
+    }
+    .pescado>a:hover {
+        transition: .1s;
+        transform: scale(1.1);
+    }
+}*/
+
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+  ## Try 1024x1366 / 768x1024 
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .barraPrin {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        background: rgb(0, 99, 181);
+        background: linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%);
+        position: absolute;
+        top: 0;
+        height: 10vh;
+        width: 113vh;
+    }
+    .contact {
+        grid-area: 1 / 1 / 2 / 2;
+        text-decoration: none;
+        font-size: 4vh;
+        padding-left: .5vh;
+        padding-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        height: 8vh;
+    }
+    .contact img {
+        max-height: 3vh;
+        margin: 0;
+        padding-left: 3vh;
+    }
+    .contact>a {
+        padding-left: 1vh;
+    }
+    .linksCEI {
+        color: var(--blanco-nav);
+        text-decoration: none;
+        padding-left: 1vh;
+        width: 50vh;
+    }
+    .linksCEI:hover {
+        text-decoration: none;
+        color: white;
+    }
+    .fotosPrin {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.5fr;
+        gap: 0px 0px;
+        grid-template-areas: "camaron pescado";
+        position: absolute;
+        width: 100%;
+        height: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .camaron {
+        grid-area: camaron;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 33vh;
+        height: 86vh;
+    }
+    .camaron>a>img {
+        width: 50vh;
+        height: 50vh;
+        object-fit: contain;
+    }
+    .camaron>a:hover {
+        transition: .1s;
+        transform: scale(1.1);
+    }
+    .pescado {
+        grid-area: pescado;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        transform: translate(-49vh, 90vh);
+        height: 2vh;
+    }
+    .pescado>a>img {
+        width: 50vh;
+        height: 50vh;
+        object-fit: contain;
+    }
+    .pescado>a:hover {
+        transition: .1s;
+        transform: scale(1.1);
+    }
+}
+
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+  ## Try 1024x1366 / 768x1024  pero horizontal
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .barraPrin {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        background: rgb(0, 99, 181);
+        background: linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%);
+        position: absolute;
+        top: 0;
+        height: 10vh;
+        width: 100vw;
+    }
+    .contact {
+        grid-area: 1 / 1 / 2 / 2;
+        text-decoration: none;
+        font-size: 4vh;
+        padding-left: .5vh;
+        padding-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        height: 8vh;
+    }
+    .contact img {
+        max-height: 3vh;
+        margin: 0;
+        padding-left: 3vh;
+    }
+    .contact>a {
+        padding-left: 1vh;
+    }
+    .linksCEI {
+        color: var(--blanco-nav);
+        text-decoration: none;
+        padding-left: 1vh;
+        width: 50vh;
+    }
+    .linksCEI:hover {
+        text-decoration: none;
+        color: white;
+    }
+    .fotosPrin {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.5fr;
+        gap: 0px 0px;
+        grid-template-areas: "camaron pescado";
+        position: absolute;
+        width: 100%;
+        height: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .camaron {
+        grid-area: camaron;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20vh;
+        height: 86vh;
+    }
+    .camaron>a>img {
+        width: 40vh;
+        height: 40vh;
+        object-fit: contain;
+    }
+    .camaron>a:hover {
+        transition: .1s;
+        transform: scale(1.1);
+    }
+    .pescado {
+        grid-area: pescado;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        transform: translate(0vh, 44vh);
+        height: 2vh;
+    }
+    .pescado>a>img {
+        width: 40vh;
+        height: 50vh;
+        object-fit: contain;
+    }
+    .pescado>a:hover {
+        transition: .1s;
+        transform: scale(1.1);
+    }
+}
+
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+  ## Try 540x720
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .barraPrin {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        background: rgb(0, 99, 181);
+        background: linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%);
+        position: absolute;
+        top: 0;
+        height: 10vh;
+        width: 100vw;
+    }
+    .contact {
+        grid-area: 1 / 1 / 2 / 2;
+        text-decoration: none;
+        font-size: 4vh;
+        padding-left: .5vh;
+        padding-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        height: 8vh;
+    }
+    .contact img {
+        max-height: 3vh;
+        margin: 0;
+        padding: 0;
+        padding-left: 3vh;
+    }
+    .contact>a {
+        padding-left: 1vh;
+    }
+    .idioma {
+        grid-area: 1 / 2 / 2 / 3;
+        padding-right: 1vw;
+        display: none;
+        align-items: center;
+        justify-content: right;
+    }
+    .idioma>a {
+        padding-right: 1vw;
+    }
+    .linksCEI {
+        color: var(--blanco-nav);
+        text-decoration: none;
+        padding-left: 1vh;
+        width: 35vh;
+    }
+    .linksCEI:hover {
+        text-decoration: none;
+        color: white;
+    }
+    .fotosPrin {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.5fr;
+        gap: 0px 0px;
+        grid-template-areas: "camaron pescado";
+        position: absolute;
+        width: 100%;
+        height: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .camaron {
+        grid-area: camaron;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 25vh;
+        height: 86vh;
+    }
+    .camaron>a>img {
+        width: 50vh;
+        height: 50vh;
+        object-fit: contain;
+    }
+    .camaron>a:hover {
+        transition: .1s;
+        transform: scale(1.1);
+    }
+    .pescado {
+        grid-area: pescado;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        transform: translate(0vh, 45vh);
+        height: 2vh;
+    }
+    .pescado>a>img {
+        width: 50vh;
+        height: 50vh;
+        object-fit: contain;
+    }
+    .pescado>a:hover {
+        transition: .1s;
+        transform: scale(1.1);
+    }
+}
+
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+  ## INTENTAR CON CELULARES DE BAJA Y ALTA GAMA EN CHROME
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .barraPrin {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        background: rgb(0, 99, 181);
+        background: linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%);
+        position: absolute;
+        top: 0;
+        height: 8vh;
+        width: 100vh;
+    }
+    .contact {
+        grid-area: 1 / 1 / 2 / 2;
+        text-decoration: none;
+        font-size: 4vh;
+        padding-left: .5vh;
+        padding-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        height: 8vh;
+    }
+    .contact img {
+        max-height: 3vh;
+        margin: 0;
+        padding: 0;
+        padding-left: 3vh;
+    }
+    .contact>a {
+        padding-left: 1vh;
+    }
+    .idioma {
+        grid-area: 1 / 2 / 2 / 3;
+        padding-right: 1vw;
+        display: none;
+        align-items: center;
+        justify-content: right;
+    }
+    .idioma>a {
+        padding-right: 1vw;
+    }
+    .linksCEI {
+        color: var(--blanco-nav);
+        text-decoration: none;
+        padding-left: 1vh;
+        width: 35vh;
+    }
+    .linksCEI:hover {
+        text-decoration: none;
+        color: white;
+    }
+    .fotosPrin {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 0.5fr;
+        gap: 0px 0px;
+        grid-template-areas: "camaron pescado";
+        position: absolute;
+        width: 100%;
+        height: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .camaron {
+        grid-area: camaron;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 25vh;
+        height: 80vh;
+    }
+    .camaron>a>img {
+        width: 50vh;
+        height: 50vh;
+        object-fit: contain;
+    }
+    .camaron>a:hover {
+        transition: .1s;
+        transform: scale(1.1);
+    }
+    .pescado {
+        grid-area: pescado;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        transform: translate(-49vh, 100vh);
+        height: 2vh;
+    }
+    .pescado>a>img {
+        width: 50vh;
+        height: 50vh;
+        object-fit: contain;
+    }
+    .pescado>a:hover {
+        transition: .1s;
+        transform: scale(1.1);
+    }
 }
