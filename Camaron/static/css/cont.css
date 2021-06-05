@@ -41,8 +41,7 @@ body>footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "contacto";
+    grid-template-areas: "contacto";
     margin-bottom: 1vw;
 }
 
@@ -51,9 +50,7 @@ body>footer {
     grid-template-columns: .5fr .4fr;
     grid-template-rows: 0.2fr 1.2fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "titinfo titform"
-        "info form";
+    grid-template-areas: "titinfo titform" "info form";
     grid-area: contacto;
     margin-top: auto;
     padding-left: 2vw;
@@ -80,8 +77,8 @@ body>footer {
     padding-right: 1vw;
 }
 
-.info #mail {
-    max-height: 2.5vh;
+#mail2 {
+    max-height: 1.2vw;
     margin: auto;
     padding-bottom: 0.1vw;
     padding-left: 12vw;
@@ -188,80 +185,62 @@ select {
     color: #757575;
 }
 
-
-
-
 @media (max-width: 961px) {
-
     body>footer {
         top: 105vh;
     }
-
     .form-inline input {
         margin: 10px 0;
     }
-
     .form-inline {
         flex-direction: column;
         align-items: stretch;
     }
-
     .info {
         font-size: 70%;
         margin-top: -5vw;
     }
-
     .form {
         font-size: 70%;
         margin-top: -5vw;
     }
-
     .info img {
         max-height: 2vh;
         padding-left: 5vw;
     }
-
     .info #mail {
         max-height: 1.3vh;
         padding-left: 5vw;
     }
-
     #id_Nombre,
     #id_Email,
     #id_Telefono,
     #id_Pais {
         width: 30vw;
     }
-
     #id_Mensaje {
         width: 100%;
     }
-
     .boton {
         border: var(--azul-nav);
         background-color: var(--azul-nav);
         color: white;
         border-radius: .5rem;
     }
-
     .grid-container {
         padding-top: 7vh;
     }
-
     .titinfo {
         font-size: 3.5vw;
         padding-left: 5vw;
     }
-
     .titform {
         font-size: 3.5vw;
     }
-
     .contacto {
         grid-template-columns: 0.9fr 0.3fr;
         padding-left: 0;
     }
-
     #id_Nombre:placeholder-shown,
     #id_Email:placeholder-shown,
     #id_Telefono:placeholder-shown,
@@ -269,7 +248,6 @@ select {
     #id_Pais {
         font-size: 2.5vw;
     }
-
     .lct img {
         max-height: 2vh;
         margin-left: -7vw;
