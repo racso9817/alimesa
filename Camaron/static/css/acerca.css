@@ -223,7 +223,9 @@ button>.carousel-control-next-icon:hover {
     border-left: 2vw solid transparent;
     border-right: 2vw solid transparent;
     border-top: 3vw solid #fff;
-    transform: translate(42.5vw, -9.01vw);
+    position: relative;
+    left: calc((100vw - 4vw) / 2);
+    bottom: 17vw;
 }
 
 .CartaIconoCdV {
@@ -386,9 +388,6 @@ button>.carousel-control-next-icon:hover {
     .TituloNosotros>h1 {
         font-size: 3vh;
     }
-    .triangulo_inf {
-        transform: translate(42.5vw, -12vw);
-    }
     .MercadosSubsection {
         margin-top: -18vh;
     }
@@ -428,9 +427,6 @@ button>.carousel-control-next-icon:hover {
     }
     .TituloNosotros>h1 {
         font-size: 3vh;
-    }
-    .triangulo_inf {
-        transform: translate(42.5vw, -7vw);
     }
     .MercadosSubsection {
         margin-top: -18vh;
@@ -472,9 +468,6 @@ button>.carousel-control-next-icon:hover {
     .TituloNosotros>h1 {
         font-size: 4vh;
     }
-    .triangulo_inf {
-        transform: translate(42.5vw, -5.8vw);
-    }
     .MercadosSubsection {
         margin-top: -3vh;
     }
@@ -514,9 +507,6 @@ button>.carousel-control-next-icon:hover {
     }
     .TituloNosotros>h1 {
         font-size: 4vh;
-    }
-    .triangulo_inf {
-        transform: translate(42.5vw, -5.8vw);
     }
     .MercadosSubsection {
         margin-top: -3vh;

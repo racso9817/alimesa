@@ -89,10 +89,7 @@ el carrousel y el navbar */
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 2.25fr 1.25fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "tituloSubseccion"
-        "dataProductos"
-        "marcasSubsubsection";
+    grid-template-areas: "tituloSubseccion" "dataProductos" "marcasSubsubsection";
     position: absolute;
     top: 75vh;
     left: 0vw;
@@ -143,9 +140,7 @@ el carrousel y el navbar */
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 0.5fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "fotoProducto"
-        "siglasProducto";
+    grid-template-areas: "fotoProducto" "siglasProducto";
     width: 20vw;
     margin: 0 1.25vw 0vw 1.25vw;
     height: min-content;
@@ -285,9 +280,7 @@ img.ProdIcon {
     grid-template-columns: 1fr;
     grid-template-rows: 0.25fr 0.75fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "tituloMarcas"
-        "flexMarcas";
+    grid-template-areas: "tituloMarcas" "flexMarcas";
     width: 100vw;
     height: auto;
 }
@@ -333,9 +326,7 @@ img.ProdIcon {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 3fr;
     gap: 0px 0px;
-    grid-template-areas:
-        "tituloSubseccionCerts"
-        "fotosCerts";
+    grid-template-areas: "tituloSubseccionCerts" "fotosCerts";
     position: relative;
     top: 150vh;
     left: 0vw;
@@ -394,7 +385,6 @@ div.certificacionesSubsection>picture>.Franja {
 }
 
 @media screen and (max-width:961px) {
-
     /* Para contener el carrousel y que se elimine el espacio en blanco entre
     el carrousel y el navbar */
     #carouselExampleInterval {
@@ -405,7 +395,6 @@ div.certificacionesSubsection>picture>.Franja {
         min-width: 100%;
         max-height: 100vw;
     }
-
     /* Para estandarizar el tamaño de las imagenes */
     #carouselExampleInterval img {
         width: 100vw;
@@ -414,7 +403,6 @@ div.certificacionesSubsection>picture>.Franja {
         object-fit: cover;
         object-position: left;
     }
-
     .carousel-indicators {
         display: flex;
         flex-wrap: wrap;
@@ -423,21 +411,18 @@ div.certificacionesSubsection>picture>.Franja {
         align-content: center;
         width: 100%;
         height: 40px;
-        margin: 0 0 7.4vw 0;
+        margin: 2vw 0 0vw 0;
     }
-
     #carouselExampleInterval>div.carousel-indicators>button {
-        width: 12px;
-        height: 12px;
+        width: .6vw;
+        height: .6vw;
         border-radius: 50%;
     }
-
     #carouselExampleInterval>div.carousel-indicators>button.active {
-        width: 15px;
-        height: 15px;
+        width: 1vw;
+        height: 1vw;
         border-radius: 50%;
     }
-
     #carouselExampleInterval>div.carousel-inner>picture,
     #carouselExampleInterval>div.carousel-inner>picture>.Franja {
         position: relative;
@@ -447,7 +432,6 @@ div.certificacionesSubsection>picture>.Franja {
         z-index: 400;
         object-fit: cover;
     }
-
     .fotoProducto img {
         width: 90vw;
         height: 30vw;
@@ -455,7 +439,6 @@ div.certificacionesSubsection>picture>.Franja {
         border-radius: 16px;
         object-fit: cover;
     }
-
     .fotoProducto {
         grid-area: fotoProducto;
         min-height: 30vw;
@@ -465,7 +448,6 @@ div.certificacionesSubsection>picture>.Franja {
         border-radius: 16px;
         box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 20%);
     }
-
     .sizesFreezing {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

@@ -283,9 +283,9 @@ div.marcasSubsection>picture {
     /* Full height */
     overflow: auto;
     /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0, .2);
     /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, .2);
     /* Black w/ opacity */
 }
 
