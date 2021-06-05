@@ -206,13 +206,17 @@ body>footer>a>img {
 body>footer>img {
     width: 6vw;
     height: 8vh;
+    position: relative;
+    right: calc((15vw - 6vw)/2);
+    top: .3vw;
     object-fit: contain;
     margin: 0vh 1vw 0vh 0vw;
-    transform: translate(-10vw, 2vh);
 }
 
 body>footer>b {
-    transform: translate(-5vw, -3vh);
+    position: relative;
+    left: calc((7vw - 6vw)/2);
+    bottom: 2vw;
     font-size: .6vw;
     color: white;
 }

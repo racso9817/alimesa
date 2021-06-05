@@ -1,5 +1,10 @@
-{% extends 'top.html' %} {% load crispy_forms_tags %} {% load static%} {% block headExtend %}
-<link rel="stylesheet" type="text/css" href="{% static 'css\cont.css' %}" media="screen"> {% endblock %} {% block content %}
+{% extends 'top.html' %} 
+{% load crispy_forms_tags %} 
+{% load static%} 
+{% block headExtend %}
+<link rel="stylesheet" type="text/css" href="{% static 'css\cont.css' %}" media="screen">
+{% endblock %}
+{% block content %}
 
 <script type="text/javascript">
     function letraAzul(x) {
@@ -14,13 +19,15 @@
 <div class="grid-container">
     <div class="contacto">
         <div class="info">
-            <br><img id="mail2" src="{% static 'rsc\img\mailAzul.png' %}"><a href="mailto:sales@alimesa.com.ec">sales@alimesa.com.ec</a></br>
+            <br><img id="mail2" src="{% static 'rsc\img\mailAzul.png' %}"><a
+                href="mailto:sales@alimesa.com.ec">sales@alimesa.com.ec</a></br>
             <br><img src="{% static 'rsc\img\tlfAzul.png' %}"><a href='tel:59341622125'>(+593-4) 162 2125</a></br>
             <br><img src="{% static 'rsc\img\tlfAzul.png' %}"><a href='tel:59342162122'>(+593-4) 216 2122</a></br>
             <br>
             <div class="lct" style="display: flex; align-content: flex-start;">
                 <img style="padding-left: 12vw;" src="{% static 'rsc\img\direc.png' %}">
-                <p style="display: flex; width: fit-content; margin: 0;">Km 15 ½ via Daule, Av. Rosavin<br>y Asbestos, MZ F6 - Solar 21<br>y 22 Guayaquil – Ecuador</p>
+                <p style="display: flex; width: fit-content; margin: 0;">Km 15 ½ via Daule, Av. Rosavin<br>y Asbestos,
+                    MZ F6 - Solar 21<br>y 22 Guayaquil – Ecuador</p>
             </div>
             </br>
         </div>
@@ -43,9 +50,12 @@
 </div>
 
 <div>
-    <iframe id="iframemap" style="margin-top: 5vw;" src="https://maps.google.com/maps?q=Expotuna+Via+Daule&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%" height="450" frameborder="1" scrolling="no"></iframe>
+    <iframe id="iframemap" style="margin-top: 5vw;"
+        src="https://maps.google.com/maps?q=Expotuna+Via+Daule&amp;ie=UTF8&amp;iwloc=&amp;output=embed" width="100%"
+        height="450" frameborder="1" scrolling="no"></iframe>
 </div>
 
-{% endblock %} {% block scripts %}
+{% endblock %} 
+{% block scripts %}
 <script src="{% static 'rsc\js\prods.js' %}"></script>
 {% endblock %}
