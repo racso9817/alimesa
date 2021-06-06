@@ -33,7 +33,7 @@ body {
 }
 
 body>footer {
-    top: 300vh;
+    top: 250vh;
 }
 
 .tituloProductos {
@@ -64,16 +64,20 @@ body>footer {
 .ProdDV {
     position: absolute;
     display: grid;
-    grid-template-columns: .1fr 2fr;
-    grid-template-rows:     0fr 1fr;
+    grid-template-columns: 40fr 60fr;
+    grid-template-rows: 0.25fr 1.75fr;
     gap: 0px 0px;
-    grid-template-areas: "NomProd ." "FotosProd ProdData";
-    width: 80vw;
-    max-width: 80vw;
+    grid-template-areas:
+        "NomProd ProdData"
+        "FotosProd ProdData";
+    width: 45vw;
+    max-width: 55vw;
+    height: calc(var(--height-prod-dv) + 15vh);
+    max-height: calc(var(--height-prod-dv) + 15vh);
     text-align: center;
     /* Para los anchor */
     padding-top: 15vh;
-    margin: 0vw 10vw 0vw 10vw;
+    margin: -15vh 27.5vw 0vw 27.5vw;
 }
 
 .NomProd {
@@ -91,25 +95,30 @@ body>footer {
 
 .FotosProd {
     grid-area: FotosProd;
-    height: 11vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: calc(45vw * 0.4);
+    height: calc(var(--height-prod-dv) * (1.75 / 2));
 }
 
 .FotosProd img {
-    width: 15vw!important;
-    height: 11vw!important;
-    /*calc(var(--height-prod-dv) * (1.75 / 2) - 10vh)*/
+    width: calc(45vw * 0.4 - 5vw);
+    height: calc(var(--height-prod-dv) * (1.75 / 2) - 5vh);
     object-fit: cover;
-    margin: 3vw 10vw 8vw 10vw;
-    border-radius: 16px;
+    border-radius: 0.9vw;
+    margin-bottom: 1.45vh;
     box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 20%);
 }
 
 .ProdData {
     display: grid;
-    grid-template-columns: repeat(3, .2fr);
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0.2fr 0.8fr;
     gap: 0px 0px;
-    grid-template-areas: "TituloSizes TituloPack TituloFreezing" "ValuesSizes ValuesPack ValuesFreezing";
+    grid-template-areas:
+        "TituloSizes TituloPack TituloFreezing"
+        "ValuesSizes ValuesPack ValuesFreezing";
     grid-area: ProdData;
 }
 
@@ -129,23 +138,12 @@ body>footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    height: min-content;
 }
 
 .TituloTabla>img {
-    width: 5vw;
-    height: 5vw;
-    object-fit: cover;
-    position: relative;
-    bottom: 8vw;
-}
-
-.TituloTabla b {
-    color: var(--blanco-nav);
-    background-color: var(--azul-titulos);
-    padding: 0vh 2.5vw 0vh 2.5vw;
-    font-size: calc(var(--sub-title-font-size) / 1.6);
-    margin: 0%;
-    border-radius: 16px;
+    height: calc(var(--height-prod-dv) * 0.2);;
+    object-fit: contain;
 }
 
 .ValuesSizes {
@@ -173,11 +171,9 @@ body>footer {
     color: var(--blanco-nav);
     font-size: 0.8vw;
     font-weight: 600;
-    border-radius: 16px;
+    border-radius: 0.9vw;
     width: 8vw;
-    height: 25vh;
-    position: relative;
-    bottom: 15vw;
+    height: calc(var(--height-prod-dv) * (1.75 / 2) - 5vh); /* Misma que la foto */
 }
 
 .marcasSubsection {
@@ -185,7 +181,7 @@ body>footer {
     grid-template-columns: 1fr;
     grid-template-rows: 0.5fr 3.5fr;
     gap: 0px 0px;
-    grid-template-areas: "tituloMarcas" "flexMarcas";
+    grid-template-areas: "tituloMarcas""flexMarcas";
     position: relative;
     width: 100vw;
     background: rgb(96, 109, 120);
@@ -234,7 +230,7 @@ div.marcasSubsection>picture {
     width: 10vw;
     height: 10vw;
     margin: 2vh 2vw 2vh 2vw;
-    border-radius: 16px;
+    border-radius: 0.9vw;
     /* box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 5%); */
     transition: transform .15s;
 }
@@ -293,7 +289,7 @@ div.marcasSubsection>picture {
 
 /* Modal Content (image) */
 
-.modal-content {
+img.modal-content {
     margin: auto;
     display: block;
     top: 1vw;
@@ -301,6 +297,7 @@ div.marcasSubsection>picture {
     height: 35vw;
     background: none;
     border: none;
+    box-shadow: none;
 }
 
 
@@ -317,6 +314,7 @@ div.marcasSubsection>picture {
     from {
         -webkit-transform: scale(0)
     }
+
     to {
         -webkit-transform: scale(1)
     }
@@ -326,6 +324,7 @@ div.marcasSubsection>picture {
     from {
         transform: scale(0)
     }
+
     to {
         transform: scale(1)
     }

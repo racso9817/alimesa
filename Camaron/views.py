@@ -38,7 +38,7 @@ def certificaciones(request):
 def productos(request):
     template = "productos.html"
     prods = Producto.objects.all()
-    cont = -1
+    cont = 0
     pad = 0
     for p in prods:
         p.cont = max(cont, 0)
@@ -49,6 +49,7 @@ def productos(request):
         p.img = p.img.split("|")
         cont += 1
         pad += 1
+    cont -= 1
     marcas = Marca.objects.all()
     context = {
         'prods': prods,
