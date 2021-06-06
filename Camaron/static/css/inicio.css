@@ -69,7 +69,7 @@ el carrousel y el navbar */
 
 #carouselExampleInterval>div.carousel-indicators>button {
     width: 0.6vw;
-    height: 1vh;
+    height: .6vw;
     border-radius: 50%;
     margin: 2.5vw 0.2vw 0 0.2vw;
 }
@@ -96,7 +96,7 @@ el carrousel y el navbar */
     width: 100vw;
     min-width: 100vw;
     min-height: 90vh;
-    margin-top: 5vw;
+    margin-top: 3vw;
 }
 
 .tituloSubseccion {
@@ -343,6 +343,7 @@ img.ProdIcon {
     display: flex;
     grid-area: tituloSubseccionCerts;
     align-items: flex-end;
+    margin-top: 6vw;
 }
 
 div.certificacionesSubsection>picture>.Franja {
@@ -378,7 +379,7 @@ div.certificacionesSubsection>picture>.Franja {
     height: 8vw;
     min-width: 8vw;
     object-fit: contain;
-    margin: 2.5vw 3.5vw 2.5vw 3.5vw;
+    margin: 2.5vw 3.5vw 10vw 3.5vw;
     transition: transform .15s;
 }
 
@@ -414,11 +415,6 @@ div.certificacionesSubsection>picture>.Franja {
         width: 100%;
         height: 40px;
         margin: 2vw 0 0vw 0;
-    }
-    #carouselExampleInterval>div.carousel-indicators>button {
-        width: .6vw;
-        height: .6vw;
-        border-radius: 50%;
     }
     #carouselExampleInterval>div.carousel-indicators>button.active {
         width: 1vw;
