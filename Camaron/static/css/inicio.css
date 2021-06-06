@@ -87,7 +87,7 @@ el carrousel y el navbar */
 .productosSubsection {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 2.25fr 1.25fr;
+    grid-template-rows: .5fr 5fr 4fr;
     gap: 0px 0px;
     grid-template-areas: "tituloSubseccion" "dataProductos" "marcasSubsubsection";
     position: absolute;
@@ -278,7 +278,7 @@ img.ProdIcon {
     grid-area: marcasSubsubsection;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.25fr 0.75fr;
+    grid-template-rows: 0.25fr 0.9fr;
     gap: 0px 0px;
     grid-template-areas: "tituloMarcas" "flexMarcas";
     width: 100vw;
@@ -310,8 +310,8 @@ img.ProdIcon {
 }
 
 .flexMarcas img {
-    width: 10vw;
-    height: 17vh;
+    width: 12vw;
+    height: 25vh;
     object-fit: contain;
     margin: 0 1vw 0 1vw;
     cursor: pointer;
