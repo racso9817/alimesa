@@ -44,21 +44,6 @@ class Producto(models.Model):
         verbose_name = "producto"
         verbose_name_plural = "productos"
 
-class ProductoCarousel(models.Model):
-    nombre = models.CharField(max_length=150)
-    siglas = models.CharField(max_length=30)
-    sizes = models.CharField(max_length=100)
-    packaging = models.CharField(max_length=100)
-    freezing = models.CharField(max_length=50)
-    img = models.ImageField(upload_to=siglas)
-    
-    def __str__(self):
-        return 'Carrusel de: ' + self.nombre
-
-    class Meta:
-        verbose_name = "producto"
-        verbose_name_plural = "productos"
-
 
 class Marca(models.Model):
     nombre = models.CharField(max_length=150)

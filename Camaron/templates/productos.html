@@ -3,6 +3,9 @@
 
 {% block headExtend %}
 <link rel="stylesheet" type="text/css" href="{% static 'css\prods.css' %}" media="screen">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 {% endblock %}
 
 {% block content %}
@@ -30,12 +33,36 @@
   <div class="NomProd">{{prod.nombre}} ({{prod.siglas}})</div>
   <div class="FotosProd">
     <!-- Carrusel producto -->
+    <!--<div id="myCarousel" class="carousel slide" data-ride="carousel">
+      
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      
+    <div class="carousel-inner">
+      {% for f in prod.img %}
+      {% if forloop.first %}
+      <div class="item active">
+        <img src="{% static f %]" alt="...">
+      </div>
+      {% else %}
+      <div class="item">
+        <img src="{% static f %}" >
+      </div>
+      {% endif %}
+      {% endfor %}
+    </div>-->
+    
+
     <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         {% for f in prod.img %}
         {% if forloop.first %}
         <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="{{ forloop.counter0 }}"
-          class="active" aria-current="true" aria-label="Slide {{ forloop.counter }}"></button> {% else %}
+          class="active" aria-current="true" aria-label="Slide {{ forloop.counter }}"></button> 
+        {% else %}
         <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="{{ forloop.counter0 }}"
           aria-label="Slide {{ forloop.counter }}"></button>
         {% endif %}
