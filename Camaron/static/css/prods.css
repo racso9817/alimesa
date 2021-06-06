@@ -303,7 +303,7 @@ img.modal-content {
     box-shadow: none;
 }
 
-div.marcasSubsection>picture>.Franja {
+/*div.marcasSubsection>picture>.Franja {
     transform: scaleY(-1) scaleX(-2);
     width: 100vw;
     height: 5.6vh;
@@ -311,7 +311,7 @@ div.marcasSubsection>picture>.Franja {
     top: -1vw;
     z-index: 400;
     object-fit: cover;
-}
+}*/
 
 
 /* Add Animation */
