@@ -193,7 +193,7 @@ body>footer {
 .marcasSubsection {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.5fr 3.5fr;
+    grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas: "tituloMarcas""flexMarcas";
     position: relative;
@@ -218,7 +218,7 @@ div.marcasSubsection>picture {
     font-size: calc(var(--sub-title-font-size) * 0.75);
     text-align: center;
     width: 100%;
-    margin: 12vh 0 0 0;
+    margin: 16vh 0 0 0;
 }
 
 .tituloMarcas b {
@@ -236,13 +236,13 @@ div.marcasSubsection>picture {
     justify-content: center;
     align-items: center;
     width: 50vw;
-    margin: 5vh 25vw 0 25vw;
+    margin: -15vh 25vw 0 25vw;
 }
 
 .imgMarca {
-    width: 10vw;
-    height: 10vw;
-    margin: 0vh 2vw 0vh 2vw;
+    width: 13vw;
+    height: 13vw;
+    margin: 0vh 1vw 0vh 1vw;
     border-radius: 0.9vw;
     /* box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 5%); */
     transition: transform .15s;
@@ -262,16 +262,6 @@ div.marcasSubsection>picture {
     transition: 0.3s;
 }
 
-#myImg5,
-#myImg6 {
-    width: 12vw;
-    height: 12vw;
-}
-
-#myImg4 {
-    width: 9vw;
-    height: 18vh;
-}
 
 
 /* The Modal (background) */
@@ -311,6 +301,16 @@ img.modal-content {
     background: none;
     border: none;
     box-shadow: none;
+}
+
+div.marcasSubsection>picture>.Franja {
+    transform: scaleY(-1) scaleX(-2);
+    width: 100vw;
+    height: 5.6vh;
+    position: absolute;
+    top: -1vw;
+    z-index: 400;
+    object-fit: cover;
 }
 
 
