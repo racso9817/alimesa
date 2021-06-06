@@ -33,7 +33,7 @@ body {
 }
 
 body>footer {
-    top: 250vh;
+    top: 260vh;
 }
 
 .tituloProductos {
@@ -218,7 +218,7 @@ div.marcasSubsection>picture {
     font-size: calc(var(--sub-title-font-size) * 0.75);
     text-align: center;
     width: 100%;
-    margin: 7.5vh 0 0 0;
+    margin: 12vh 0 0 0;
 }
 
 .tituloMarcas b {
@@ -227,7 +227,6 @@ div.marcasSubsection>picture {
     font-weight: bold;
     text-align: center;
     width: 100%;
-    margin-top: 25vh;
 }
 
 .flexMarcas {
@@ -243,7 +242,7 @@ div.marcasSubsection>picture {
 .imgMarca {
     width: 10vw;
     height: 10vw;
-    margin: 2vh 2vw 2vh 2vw;
+    margin: 0vh 2vw 0vh 2vw;
     border-radius: 0.9vw;
     /* box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 5%); */
     transition: transform .15s;

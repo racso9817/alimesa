@@ -42,7 +42,6 @@ body>footer {
     grid-template-rows: 1fr;
     gap: 0px 0px;
     grid-template-areas: "contacto";
-    margin-bottom: 1vw;
 }
 
 .contacto {
@@ -52,7 +51,7 @@ body>footer {
     gap: 0px 0px;
     grid-template-areas: "titinfo titform" "info form";
     grid-area: contacto;
-    margin-top: auto;
+    margin-top: 2vw;
     padding-left: 2vw;
 }
 
