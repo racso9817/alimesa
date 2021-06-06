@@ -29,7 +29,7 @@ body {
 }
 
 body>footer {
-    top: 225vh;
+    top: 260vh;
 }
 
 
@@ -96,6 +96,7 @@ el carrousel y el navbar */
     width: 100vw;
     min-width: 100vw;
     min-height: 90vh;
+    margin-top: 5vw;
 }
 
 .tituloSubseccion {
@@ -278,7 +279,7 @@ img.ProdIcon {
     grid-area: marcasSubsubsection;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.25fr 0.9fr;
+    grid-template-rows: .25fr .75fr;
     gap: 0px 0px;
     grid-template-areas: "tituloMarcas" "flexMarcas";
     width: 100vw;
@@ -292,6 +293,7 @@ img.ProdIcon {
     align-items: center;
     justify-content: center;
     width: 100vw;
+    height: 8vw;
 }
 
 .tituloMarcas>p {
@@ -328,7 +330,7 @@ img.ProdIcon {
     gap: 0px 0px;
     grid-template-areas: "tituloSubseccionCerts" "fotosCerts";
     position: relative;
-    top: 150vh;
+    top: 180vh;
     left: 0vw;
     width: 100vw;
     min-width: 100vw;
