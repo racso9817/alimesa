@@ -105,6 +105,8 @@
   <div class="flexMarcas">
     {% for marca in marcas %}
     <img class="imgMarca" id="myImg{{ forloop.counter }}" src="{% static marca.img %}" alt="">
+    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
     {% endfor %}
   </div>
 
