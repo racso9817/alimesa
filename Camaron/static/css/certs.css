@@ -41,7 +41,9 @@ body>footer {
     grid-template-columns: 1fr;
     grid-template-rows: .2fr .5fr;
     gap: 0px 0px;
-    grid-template-areas: "tituloSubseccionCerts" "fotosCerts";
+    grid-template-areas: 
+        "tituloSubseccionCerts" 
+        "fotosCerts";
     position: absolute;
     top: 15vh;
     left: 0vw;
@@ -78,7 +80,7 @@ body>footer {
     width: 10vw;
     height: 10vw;
     object-fit: contain;
-    margin: 0.5vw 5vw 0.5vw 5vw;
+    margin: 0.5vw 3vw 0.5vw 3vw;
 }
 
 .fotosCerts img:hover {
