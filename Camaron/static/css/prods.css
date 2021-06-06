@@ -106,9 +106,23 @@ body>footer {
     width: calc(45vw * 0.4 - 5vw);
     height: calc(var(--height-prod-dv) * (1.75 / 2) - 5vh);
     object-fit: cover;
-    border-radius: 0.9vw;
+    border-radius: 1.5vw;
     margin-bottom: 1.45vh;
-    box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 20%);
+    box-shadow: 1vw 1vw 4vw 0 rgb(0 0 0 / 20%);
+}
+
+#carouselExampleInterval>div.carousel-indicators>button {
+    width: .6vw;
+    height: .6vw;
+    border-radius: 50%;
+    position: relative;
+    top: 2vw;
+    background-color: var(--azul-nav);
+}
+#carouselExampleInterval>div.carousel-indicators>button.active {
+    width: .7vw;
+    height: .7vw;
+    border-radius: 50%;
 }
 
 .ProdData {
@@ -171,7 +185,7 @@ body>footer {
     color: var(--blanco-nav);
     font-size: 0.8vw;
     font-weight: 600;
-    border-radius: 0.9vw;
+    border-radius: 1vw;
     width: 8vw;
     height: calc(var(--height-prod-dv) * (1.75 / 2) - 5vh); /* Misma que la foto */
 }
@@ -280,9 +294,9 @@ div.marcasSubsection>picture {
     /* Full height */
     overflow: auto;
     /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0, .2);
+    background-color: rgb(0, 0, 0, .5);
     /* Fallback color */
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgba(0, 0, 0, .5);
     /* Black w/ opacity */
 }
 
