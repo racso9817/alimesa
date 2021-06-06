@@ -124,6 +124,12 @@ label[for="id_Pais"] {
     display: none;
 }
 
+#id_Pais {
+    position: relative;
+    width: 14.7vw;
+    top: .2vw;
+}
+
 #id_Mensaje {
     width: 130%;
 }
