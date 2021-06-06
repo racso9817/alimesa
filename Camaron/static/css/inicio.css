@@ -72,6 +72,9 @@ el carrousel y el navbar */
     height: .6vw;
     border-radius: 50%;
     margin: 2.5vw 0.2vw 0 0.2vw;
+    background-color: #909090;
+    position: relative;
+    top: 2vw;
 }
 
 #carouselExampleInterval>div.carousel-inner>picture,
