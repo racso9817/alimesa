@@ -15,6 +15,7 @@ def inicio(request):
         cont += 1
         p.sizes = "\n".join(p.sizes.split("|"))
         p.freezing = "\n".join(p.freezing.split("|"))
+        p.img = p.img.split("|")[0]
     certs = Certificado.objects.all()
     context = {
         'fotos': fotos,
