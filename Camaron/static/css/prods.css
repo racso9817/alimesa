@@ -64,17 +64,16 @@ body>footer {
 .ProdDV {
     position: absolute;
     display: grid;
-    grid-template-columns: 0.1fr 0.5fr;
-    grid-template-rows: 0.5fr 0fr;
+    grid-template-columns: .1fr 2fr;
+    grid-template-rows:     0fr 1fr;
     gap: 0px 0px;
     grid-template-areas: "NomProd ." "FotosProd ProdData";
-    left: 15vw;
     width: 80vw;
     max-width: 80vw;
     text-align: center;
     /* Para los anchor */
     padding-top: 15vh;
-    margin: -15vh 10vw 0 10vw;
+    margin: 0vw 10vw 0vw 10vw;
 }
 
 .NomProd {
@@ -92,23 +91,23 @@ body>footer {
 
 .FotosProd {
     grid-area: FotosProd;
+    height: 11vw;
 }
 
 .FotosProd img {
-    width: 15vw;
-    height: 11vw
+    width: 15vw!important;
+    height: 11vw!important;
     /*calc(var(--height-prod-dv) * (1.75 / 2) - 10vh)*/
-    ;
     object-fit: cover;
-    margin: 3vh 5vw 8vh 5vw;
+    margin: 3vw 10vw 8vw 10vw;
     border-radius: 16px;
     box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 20%);
 }
 
 .ProdData {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.25fr 2fr;
+    grid-template-columns: repeat(3, .2fr);
+    grid-template-rows: 1fr 1fr;
     gap: 0px 0px;
     grid-template-areas: "TituloSizes TituloPack TituloFreezing" "ValuesSizes ValuesPack ValuesFreezing";
     grid-area: ProdData;
@@ -136,13 +135,14 @@ body>footer {
     width: 5vw;
     height: 5vw;
     object-fit: cover;
-    transform: translateY(-3.5vw);
+    position: relative;
+    bottom: 8vw;
 }
 
 .TituloTabla b {
     color: var(--blanco-nav);
     background-color: var(--azul-titulos);
-    padding: 1.5vh 2.5vw 1.5vh 2.5vw;
+    padding: 0vh 2.5vw 0vh 2.5vw;
     font-size: calc(var(--sub-title-font-size) / 1.6);
     margin: 0%;
     border-radius: 16px;
@@ -173,10 +173,11 @@ body>footer {
     color: var(--blanco-nav);
     font-size: 0.8vw;
     font-weight: 600;
-    margin-top: -6vw;
     border-radius: 16px;
     width: 8vw;
     height: 25vh;
+    position: relative;
+    bottom: 15vw;
 }
 
 .marcasSubsection {
