@@ -225,7 +225,7 @@ button>.carousel-control-next-icon:hover {
     border-top: 3vw solid #fff;
     position: relative;
     left: calc((100vw - 4vw) / 2);
-    bottom: 17vw;
+    top: -37vh;
 }
 
 .CartaIconoCdV {

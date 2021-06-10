@@ -47,6 +47,7 @@ def productos(request):
         p.freezing = "\n".join(p.freezing.split("|"))
         p.packaging = "\n".join(p.packaging.split("|"))
         p.img = p.img.split("|")
+        p.idAppend = p.nombre.replace(" ","-")
         cont += 1
         pad += 1
     cont -= 1

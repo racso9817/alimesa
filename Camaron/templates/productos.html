@@ -34,14 +34,14 @@
   <div class="NomProd">{{prod.nombre}} ({{prod.siglas}})</div>
   <div class="FotosProd">
     <!-- Carrusel producto -->
-    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleInterval{{prod.idAppend}}" class="carousel slide carruselProd" data-bs-ride="carousel">
       <div class="carousel-indicators">
         {% for f in prod.img %}
         {% if forloop.first %}
-        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="{{ forloop.counter0 }}"
+        <button type="button" data-bs-target="#carouselExampleInterval{{prod.idAppend}}" data-bs-slide-to="{{ forloop.counter0 }}"
           class="active" aria-current="true" aria-label="Slide {{ forloop.counter }}"></button>
         {% else %}
-        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="{{ forloop.counter0 }}"
+        <button type="button" data-bs-target="#carouselExampleInterval{{prod.idAppend}}" data-bs-slide-to="{{ forloop.counter0 }}"
           aria-label="Slide {{ forloop.counter }}"></button>
         {% endif %}
         {% endfor %}
@@ -93,7 +93,7 @@
   + (var(--height-prod-dv)) 
   + (((var(--height-prod-dv) + 4.5vh)) * {{ cont }})
   + 0vh);
-  min-height: calc((var(--height-prod-dv) * 0.6) + 10vh);">
+  min-height: calc((var(--height-prod-dv)) + 10vh);">
   <picture>
     <source media="(min-width: 770px)" srcset="{% static 'rsc\img\Franja_Web.png' %}" class="Franja" alt="...">
     <source media="(min-width: 210px)" srcset="{% static 'rsc\img\Franja_Movil.png' %}" class="Franja" alt="...">
