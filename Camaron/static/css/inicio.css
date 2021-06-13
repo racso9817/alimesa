@@ -390,78 +390,71 @@ div.certificacionesSubsection>picture>.Franja {
     transform: scale(1.1);
 }
 
-@media screen and (max-width:961px) {
-    /* Para contener el carrousel y que se elimine el espacio en blanco entre
-    el carrousel y el navbar */
-    #carouselExampleInterval {
-        position: absolute;
-        top: 15vh;
-        left: 0vw;
-        width: 100%;
-        min-width: 100%;
-        max-height: 100vw;
-    }
-    /* Para estandarizar el tamaño de las imagenes */
-    #carouselExampleInterval img {
-        width: 100vw;
-        min-width: 100vw;
-        height: 100vw;
-        object-fit: cover;
-        object-position: left;
-    }
-    .carousel-indicators {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        align-content: center;
-        width: 100%;
-        height: 40px;
-        margin: 2vw 0 0vw 0;
-    }
-    #carouselExampleInterval>div.carousel-indicators>button.active {
-        width: 1vw;
-        height: 1vw;
-        border-radius: 50%;
-    }
-    #carouselExampleInterval>div.carousel-inner>picture,
-    #carouselExampleInterval>div.carousel-inner>picture>.Franja {
-        position: relative;
-        width: 100vw;
-        height: 6.4vw;
-        top: 46.9vw;
-        z-index: 400;
-        object-fit: cover;
-    }
-    .fotoProducto img {
-        width: 90vw;
-        height: 30vw;
-        min-width: 100%;
-        border-radius: 16px;
-        object-fit: cover;
-    }
-    .fotoProducto {
-        grid-area: fotoProducto;
-        min-height: 30vw;
-        max-height: 30vw;
-        min-width: 90vw;
-        max-width: 90vw;
-        border-radius: 16px;
-        box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 20%);
-    }
-    .sizesFreezing {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        gap: 0px 0px;
-        grid-template-areas: "sizesProducto freezingProducto";
-        visibility: hidden;
-        opacity: 0;
-        position: relative;
-        top: -30vw;
-        width: 90vw;
-        height: 30vw;
-        max-height: 30vw;
-        border-radius: 16px;
-    }
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+  ## Try 1920x1080
+*/
+
+@media (min-width: 1281px) {
+    /* CSS */
+}
+
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+    ## Try 1280x1024 / 1280x720 / 1280x850
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* CSS */
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+    ## Try 1024x1366 / 768x1024 
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* CSS */
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+    ## Try 1024x1366 / 768x1024  pero horizontal
+  */
+
+@media (min-width: 813px) and (max-width: 1024px) and (orientation: landscape) {
+    /* CSS */
+}
+
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+    ## Try 540x720
+  */
+
+@media (min-width: 481px) and (max-width: 812px) {
+
+
+    
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+    ## INTENTAR CON CELULARES DE BAJA Y ALTA GAMA EN CHROME
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+
 }
