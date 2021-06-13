@@ -346,7 +346,7 @@
     }
     .contact>a {
         padding-left: 1vh;
-        padding-right: 1vh;
+        padding-right: 1vh; 
     }
     .idioma {
         grid-area: 1 / 2 / 2 / 3;
