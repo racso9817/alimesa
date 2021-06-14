@@ -361,8 +361,6 @@ body>footer>b {
 
 
 /*MEDIA QUERY*/
-
-
 /*@media (max-width: 961px) {
     .nav-container {
         position: fixed;
@@ -605,11 +603,6 @@ body>footer>b {
         font-size: 3vh;
         z-index: 20;
     }
-    .icon {
-        transform: translate(35vh, .5vh);
-        display: block;
-        filter: brightness(0) invert(1);
-    }
     .responsiveNav.responsive {
         position: relative;
     }
@@ -634,6 +627,8 @@ body>footer>b {
 
 @media (min-width: 1281px) {
     /* CSS */
+
+
 }
 
 
@@ -778,6 +773,11 @@ body>footer>b {
     .menu-nav {
         display: none;
     }
+    .icon {
+        transform: translate(35vh, .5vh);
+        display: block;
+        filter: brightness(0) invert(1);
+    }
     body>footer {
         position: absolute;
         display: flex;
@@ -802,12 +802,12 @@ body>footer>b {
         height: 40vh;
         object-fit: contain;
         margin: 0vh 1vw 2.5vh 0vw;
-        position: absolute;
-        transform: translate(13vw, -16.5vh);
+        right: 0;
+        top: -15vh;
     }
     body>footer>b {
-        position: absolute;
-        transform: translate(12.9vw, -22vh);
+        left: 10vh;
+        top: -20vh;
         font-size: 2vw;
         color: white;
     }
