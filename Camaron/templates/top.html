@@ -167,7 +167,7 @@
             const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
 
             function letraAzul(x) {
-                if (document.body.scrollTop > vh * 0.6 || document.documentElement.scrollTop > vh * 0.6) {
+                if (document.body.scrollTop > vh * 0.5 || document.documentElement.scrollTop > vh * 0.5) {
                     x.style.color = "var(--blanco-nav)";
                 } else {
                     x.style.color = "var(--azul-nav)";
@@ -175,7 +175,7 @@
             }
 
             function letraNormal(x) {
-                if (document.body.scrollTop > vh * 0.6 || document.documentElement.scrollTop > vh * 0.6) {
+                if (document.body.scrollTop > vh * 0.5 || document.documentElement.scrollTop > vh * 0.5) {
                     x.style.color = "var(--blanco-nav)";
                 } else {
                     x.style.color = "var(--azul-nav)";

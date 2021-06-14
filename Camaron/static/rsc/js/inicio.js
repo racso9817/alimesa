@@ -8,7 +8,7 @@ function scrollFunction() {
   const vh = Math.max(document.documentElement.clientHeight || 0, window.innerHeight || 0)
   // Cambiar color
   // MaxHeight del carouselExampleCaptions + 0.015
-  if (document.body.scrollTop > vh*0.6 || document.documentElement.scrollTop > vh*0.6) {
+  if (document.body.scrollTop > vh*0.5 || document.documentElement.scrollTop > vh*0.5) {
     // Logo
     document.getElementById("logo").src = "/static/rsc/img/LogoCamaronBlanco.png";
     document.getElementById("logo").style.height = "8vw";
