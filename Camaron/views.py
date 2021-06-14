@@ -1,8 +1,11 @@
+from django.utils.translation import gettext_lazy as _
+from django.utils.translation import get_language, activate
 from django.shortcuts import redirect, render
 from django.http import Http404
 from django.core.mail import send_mail
 from django.conf import settings
 from .models import *
+
 
 def inicio(request):
     template = "inicio.html"

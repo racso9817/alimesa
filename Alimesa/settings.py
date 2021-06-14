@@ -50,6 +50,7 @@ MIDDLEWARE = [
     'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -111,7 +112,19 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
-LANGUAGE_CODE = 'es-us'
+LANGUAGE_CODE = 'es'
+
+from django.utils.translation import gettext_lazy as _
+
+LANGUAGES = (
+    ('es', _('Español')),
+    ('en', _('Inglés')),
+    ('cn', _('Mandarín')),
+)
+
+LOCALE_PATHS = (
+    os.path.join(BASE_DIR, 'locale/'),
+)
 
 TIME_ZONE = 'America/Guayaquil'
 
