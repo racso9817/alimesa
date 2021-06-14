@@ -795,18 +795,18 @@ body>footer>b {
         object-fit: contain;
         margin: 0vh 0vw 2.5vh -10vw;
         position: absolute;
-        transform: translate(-16vw, -48vh);
+        transform: translate(-1vw, -47vh);
     }
     body>footer>img {
         width: 12vw;
         height: 40vh;
         object-fit: contain;
         margin: 0vh 1vw 2.5vh 0vw;
-        right: 0;
+        right: -5vh;
         top: -15vh;
     }
     body>footer>b {
-        left: 10vh;
+        left: 11vh;
         top: -20vh;
         font-size: 2vw;
         color: white;
@@ -875,7 +875,7 @@ body>footer>b {
         height: 20vh;
         object-fit: contain;
         position: absolute;
-        transform: translate(-15vw, 15vh);
+        transform: translate(-30vw, 15vh);
         height: 5vh;
     }
     .wcht>a>img {
@@ -883,7 +883,7 @@ body>footer>b {
         height: 20vh;
         object-fit: contain;
         position: absolute;
-        transform: translate(0vw, 15vh);
+        transform: translate(-10vw, 15vh);
         height: 5vh;
     }
 }

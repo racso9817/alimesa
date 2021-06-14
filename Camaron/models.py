@@ -106,5 +106,5 @@ class ContactoForm(ModelForm):
             'Email': forms.EmailInput(attrs={'placeholder':_('Email'),}),
             'Nombre': forms.TextInput(attrs={'placeholder':_('Nombre'),}),
             'Telefono': forms.TextInput(attrs={'placeholder':_('Telefono'),}),
-            'Mensaje': forms.Textarea(attrs={'placeholder':_('Email'),}),
+            'Mensaje': forms.Textarea(attrs={'placeholder':_('Mensaje'),}),
         }
