@@ -328,7 +328,7 @@ select {
 @media (min-width: 320px) and (max-width: 480px) {
 
     body>footer {
-        top: 150vh;
+        top: 130vh;
     }
     .form-inline input {
         margin: 10px 0;
