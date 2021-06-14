@@ -18,165 +18,165 @@ msgstr ""
 
 #: .\Alimesa\settings.py:120
 msgid "Español"
-msgstr ""
+msgstr "西班牙語"
 
 #: .\Alimesa\settings.py:121
 msgid "Inglés"
-msgstr ""
+msgstr "英語"
 
 #: .\Alimesa\settings.py:122
 msgid "Mandarín"
-msgstr ""
+msgstr "普通話"
 
 #: .\Camaron\models.py:94
 msgid "País"
-msgstr ""
+msgstr "國家"
 
 #: .\Camaron\models.py:106
 msgid "Email"
-msgstr ""
+msgstr "電子郵件"
 
 #: .\Camaron\models.py:107
 msgid "Nombre"
-msgstr ""
+msgstr "名稱"
 
 #: .\Camaron\models.py:108
 msgid "Telefono"
-msgstr ""
+msgstr "電話"
 
 #: .\Camaron\models.py:109
 msgid "Mensaje"
-msgstr ""
+msgstr "信息"
 
 #: .\Camaron\templates\acerca.html:25
 msgid "SOBRE NOSOTROS"
-msgstr ""
+msgstr "關於我們"
 
 #: .\Camaron\templates\acerca.html:93
 msgid "CADENA DE VALOR"
-msgstr ""
+msgstr "價值鏈"
 
 #: .\Camaron\templates\acerca.html:93
 msgid "Seguimos un riguroso proceso para asegurar nuestra excelente calidad"
-msgstr ""
+msgstr "我們遵循嚴格的流程，以確保我們的卓越品質"
 
 #: .\Camaron\templates\acerca.html:102
 msgid "Cosecha/Pesca"
-msgstr ""
+msgstr "收穫 / 釣魚"
 
 #: .\Camaron\templates\acerca.html:111 .\Camaron\templates\acerca.html:139
 msgid "Logística"
-msgstr ""
+msgstr "後勤"
 
 #: .\Camaron\templates\acerca.html:120
 msgid "Recepción y"
-msgstr ""
+msgstr "接待處和"
 
 #: .\Camaron\templates\acerca.html:120
 msgid "control de calidad"
-msgstr ""
+msgstr "質量保證"
 
 #: .\Camaron\templates\acerca.html:130
 msgid "Clasificación"
-msgstr ""
+msgstr "分類"
 
 #: .\Camaron\templates\acerca.html:130
 msgid "y empaque"
-msgstr ""
+msgstr "和包裝"
 
 #: .\Camaron\templates\acerca.html:148
 msgid "Exportación"
-msgstr ""
+msgstr "出口"
 
 #: .\Camaron\templates\acerca.html:157
 msgid "Destino"
-msgstr ""
+msgstr "目的地"
 
 #: .\Camaron\templates\acerca.html:166
 msgid "MERCADOS"
-msgstr ""
+msgstr "市場"
 
 #: .\Camaron\templates\acerca.html:170
 msgid "AMERICA"
-msgstr ""
+msgstr "美國"
 
 #: .\Camaron\templates\acerca.html:191
 msgid "EUROPA"
-msgstr ""
+msgstr "歐洲"
 
 #: .\Camaron\templates\acerca.html:217
 msgid "ASIA"
-msgstr ""
+msgstr "亞洲"
 
 #: .\Camaron\templates\acerca.html:238
 msgid "AFRICA"
-msgstr ""
+msgstr "非洲"
 
 #: .\Camaron\templates\certificaciones.html:29
 #: .\Camaron\templates\inicio.html:114
 msgid "CERTIFICACIONES INTERNACIONALES"
-msgstr ""
+msgstr "國際認證"
 
 #: .\Camaron\templates\contacto.html:44
 msgid "Enviar"
-msgstr ""
+msgstr "發送"
 
 #: .\Camaron\templates\contacto.html:48
 msgid "Información"
-msgstr ""
+msgstr "信息"
 
 #: .\Camaron\templates\contacto.html:51 .\Camaron\templates\top.html:140
 msgid "Contáctanos"
-msgstr ""
+msgstr "聯繫我們"
 
 #: .\Camaron\templates\inicio.html:64 .\Camaron\templates\productos.html:28
 msgid "NUESTROS PRODUCTOS"
-msgstr ""
+msgstr "我們的產品"
 
 #: .\Camaron\templates\inicio.html:64 .\Camaron\templates\productos.html:28
 msgid "Trabajamos bajo estrictos parametros de calidad."
-msgstr ""
+msgstr "我們在嚴格的質量參數下工作。"
 
 #: .\Camaron\templates\inicio.html:94 .\Camaron\templates\productos.html:104
 msgid "NUESTRAS MARCAS"
-msgstr ""
+msgstr "我們的品牌"
 
 #: .\Camaron\templates\multimedia.html:22
 msgid "MEDIDAS DE BIOSEGURIDAD"
-msgstr ""
+msgstr "生物安全措施"
 
 #: .\Camaron\templates\multimedia.html:33
 msgid "DESCARGAR"
-msgstr ""
+msgstr "去下載"
 
 #: .\Camaron\templates\productos.html:104
 msgid "Empaques diseñados según las necesidades de nuestros clientes"
-msgstr ""
+msgstr "根據客戶需求設計包裝"
 
 #: .\Camaron\templates\top.html:48 .\Camaron\templates\top.html:77
 msgid "INICIO"
-msgstr ""
+msgstr "開始"
 
 #: .\Camaron\templates\top.html:51 .\Camaron\templates\top.html:88
 msgid "NOSOTROS"
-msgstr ""
+msgstr "我們"
 
 #: .\Camaron\templates\top.html:54 .\Camaron\templates\top.html:99
 msgid "PRODUCTOS"
-msgstr ""
+msgstr "產品"
 
 #: .\Camaron\templates\top.html:57 .\Camaron\templates\top.html:110
 msgid "CERTIFICACIONES"
-msgstr ""
+msgstr "認證"
 
 #: .\Camaron\templates\top.html:60 .\Camaron\templates\top.html:121
 msgid "MULTIMEDIA"
-msgstr ""
+msgstr "多媒體"
 
 #: .\Camaron\templates\top.html:63 .\Camaron\templates\top.html:132
 msgid "CONTACTO"
-msgstr ""
+msgstr "接觸"
 
 #: .\Camaron\templates\top.html:140
 msgid "¿Necesitas ayuda?"
-msgstr ""
+msgstr "需要幫忙？"
