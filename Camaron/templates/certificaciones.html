@@ -1,12 +1,14 @@
 {% extends 'top.html' %}
 {% load static%}
+{% load i18n %}
+
 
 {% block headExtend %}
 <link rel="stylesheet" type="text/css" href="{% static 'css\certs.css' %}" media="screen">
 {% endblock %}
 
-{% block content %}
 
+{% block content %}
 <script type="text/javascript">
     function letraAzul(x) {
         x.style.color = "rgb(255, 255, 255)";
@@ -24,18 +26,19 @@
 <!-- Certificaciones -->
 <div class='certificacionesSubsection'>
     <div class="tituloSubseccionCerts">
-        <p class="tituloCerts">CERTIFICACIONES INTERNACIONALES</p>
+        <p class="tituloCerts">{% translate "CERTIFICACIONES INTERNACIONALES" %}</p>
     </div>
     <div class="fotosCerts">
         {% for cert in certs %}
-        <a href="#" onclick="window.open('{% static cert.docCert %}', '_blank'); return false;">
-        <img id="cert{forloop.counter}}" onmouseover="this.src = '{% static cert.imgCert %}'"
-        onmouseout="this.src = '{% static cert.img %}'"
-        src="{% static cert.img %}" alt=""></a>
+            <a href="#" onclick="window.open('{% static cert.docCert %}', '_blank'); return false;">
+            <img id="cert{forloop.counter}}" onmouseover="this.src = '{% static cert.imgCert %}'"
+            onmouseout="this.src = '{% static cert.img %}'"
+            src="{% static cert.img %}" alt=""></a>
         {% endfor %}
     </div>
 </div>
 <!-- Certificaciones -->
+
 {% endblock %}
 
 

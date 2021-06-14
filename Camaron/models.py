@@ -91,7 +91,7 @@ class Contacto(models.Model):
     Nombre = models.CharField(max_length=200)
     Email = models.EmailField()
     Telefono = models.CharField(max_length=13)
-    Pais = CountryField(blank_label='País')
+    Pais = CountryField(blank_label=_('País'))
     Mensaje = models.TextField()
 
     def __str__(self):
@@ -103,8 +103,8 @@ class ContactoForm(ModelForm):
         fields = '__all__'
 
         widgets = {
-            'Email': forms.EmailInput(attrs={'placeholder':'Email',}),
-            'Nombre': forms.TextInput(attrs={'placeholder':'Nombre',}),
-            'Telefono': forms.TextInput(attrs={'placeholder':'Telefono',}),
-            'Mensaje': forms.Textarea(attrs={'placeholder':'Mensaje',}),
+            'Email': forms.EmailInput(attrs={'placeholder':_('Email'),}),
+            'Nombre': forms.TextInput(attrs={'placeholder':_('Nombre'),}),
+            'Telefono': forms.TextInput(attrs={'placeholder':_('Telefono'),}),
+            'Mensaje': forms.Textarea(attrs={'placeholder':_('Email'),}),
         }

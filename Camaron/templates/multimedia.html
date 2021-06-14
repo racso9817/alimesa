@@ -1,5 +1,6 @@
 {% extends 'top.html' %}
 {% load static%}
+{% load i18n %}
 
 {% block headExtend %}
 <link rel="stylesheet" type="text/css" href="{% static 'css\multi.css' %}" media="screen">
@@ -18,7 +19,7 @@
 </script>
 
 <div class="TituloVideo">
-    <p class="tituloVid">MEDIDAS DE BIOSEGURIDAD</p>
+    <p class="tituloVid">{% translate "MEDIDAS DE BIOSEGURIDAD" %}</p>
 </div>
 <div class="VideoBioSeg">
     <video src="{% static 'rsc\vid\MULTIMEDIA_VIDEO_WEB.MP4' %}" muted controls autoplay loop></video>
@@ -29,7 +30,7 @@
         <div class="thumbArch">
             <img src="{% static d.thumbnail %}">
             <div class="BDownWrapper">
-                <a class="BDown" href="{% static d.filepath %}" download>DESCARGAR</a>
+                <a class="BDown" href="{% static d.filepath %}" download>{% translate "DESCARGAR" %}</a>
             </div>
         </div>
         <div class="tituloArch">

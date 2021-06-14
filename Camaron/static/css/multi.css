@@ -42,7 +42,7 @@ body>footer {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 8vh 0 4vh 0;
+    margin: 8vh 0 2vh 0;
 }
 
 .TituloVideo p {
@@ -51,6 +51,7 @@ body>footer {
     font-weight: bold;
     text-align: center;
     width: 100%;
+    margin-top: 3vh;
 }
 
 .VideoBioSeg {

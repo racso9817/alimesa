@@ -28,15 +28,17 @@ def inicio(request):
     }
     return render(request, template, context)
 
+
 def certificaciones(request):
     template = "certificaciones.html"
     certs = Certificado.objects.all()
     for c in certs:
-        c.className = c.nombre.replace(" ","-")
+        c.className = c.nombre.replace(" ", "-")
     context = {
         'certs': certs
     }
     return render(request, template, context)
+
 
 def productos(request):
     template = "productos.html"
@@ -50,7 +52,7 @@ def productos(request):
         p.freezing = "\n".join(p.freezing.split("|"))
         p.packaging = "\n".join(p.packaging.split("|"))
         p.img = p.img.split("|")
-        p.idAppend = p.nombre.replace(" ","-")
+        p.idAppend = p.nombre.replace(" ", "-")
         cont += 1
         pad += 1
     cont -= 1
@@ -61,6 +63,7 @@ def productos(request):
         'cont': cont,
     }
     return render(request, template, context)
+
 
 def productoPorSiglas(request, siglas=""):
     template = "productoPorSiglas.html"
@@ -82,6 +85,7 @@ def productoPorSiglas(request, siglas=""):
     }
     return render(request, template, context)
 
+
 def acerca(request):
     template = "acerca.html"
     fotos = Carausel.objects.filter(section="NOS")
@@ -90,6 +94,7 @@ def acerca(request):
     }
     return render(request, template, context)
 
+
 def multimedia(request):
     template = "multimedia.html"
     documents = ArchivoMultimedia.objects.all()
@@ -97,6 +102,7 @@ def multimedia(request):
         'documents': documents
     }
     return render(request, template, context)
+
 
 def contacto(request):
     template = "contacto.html"
@@ -107,13 +113,14 @@ def contacto(request):
         cel = request.POST['Telefono']
         pais = request.POST['Pais']
         nombre = request.POST['Nombre']
-        ct = Contacto(Nombre=nombre,Email=sender,Telefono=cel,Pais=pais,Mensaje=message)
+        ct = Contacto(Nombre=nombre, Email=sender,
+                      Telefono=cel, Pais=pais, Mensaje=message)
         if form.is_valid:
             send_mail(
                 'Mensaje de '+nombre,
                 message+'\n'+'Telefono: '+cel+'\n'+'Pais: '+ct.Pais.name+'\n'+'De: '+sender,
-                sender, 
-                ['oscaravilaa9817@gmail.com'], 
+                sender,
+                ['oscaravilaa9817@gmail.com'],
                 fail_silently=False)
             form.save()
             form.clean()
@@ -121,9 +128,10 @@ def contacto(request):
     else:
         form = ContactoForm()
     context = {
-        'form':form,
+        'form': form,
     }
     return render(request, template, context)
+
 
 def principal(request):
     template = 'principal.html'

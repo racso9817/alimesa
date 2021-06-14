@@ -1,11 +1,15 @@
 {% extends 'top.html' %} 
 {% load crispy_forms_tags %} 
 {% load static%} 
+{% load i18n %}
+
+
 {% block headExtend %}
 <link rel="stylesheet" type="text/css" href="{% static 'css\cont.css' %}" media="screen">
 {% endblock %}
-{% block content %}
 
+
+{% block content %}
 <script type="text/javascript">
     function letraAzul(x) {
         x.style.color = "rgb(255, 255, 255)";
@@ -37,14 +41,14 @@
                 <fieldset class="form-inline">
                     {{ form|crispy }}
                 </fieldset>
-                <button class="boton" type="submit">Enviar</button>
+                <button class="boton" type="submit">{% translate "Enviar" %}</button>
             </form>
         </div>
         <div class="titinfo">
-            <p><b>Información</b></p>
+            <p><b>{% translate "Información" %}</b></p>
         </div>
         <div class="titform">
-            <p><b>Contáctanos</b></p>
+            <p><b>{% translate "Contáctanos" %}</b></p>
         </div>
     </div>
 </div>
@@ -56,6 +60,8 @@
 </div>
 
 {% endblock %} 
+
+
 {% block scripts %}
 <script src="{% static 'rsc\js\prods.js' %}"></script>
 {% endblock %}

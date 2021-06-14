@@ -48,19 +48,19 @@
                             <a href="{% url 'inicio' %}">{% translate "INICIO" %}</a>
                         </div>
                         <div class="acercaResponsive">
-                            <a href="{% url 'acerca' %}">NOSOTROS</a>
+                            <a href="{% url 'acerca' %}">{% translate "NOSOTROS" %}</a>
                         </div>
                         <div class="prodResponsive">
-                            <a href="{% url 'productos' %}">PRODUCTOS</a>
+                            <a href="{% url 'productos' %}">{% translate "PRODUCTOS" %}</a>
                         </div>
                         <div class="certResponsive">
-                            <a href="{% url 'certificaciones' %}">CERTIFICACIONES</a>
+                            <a href="{% url 'certificaciones' %}">{% translate "CERTIFICACIONES" %}</a>
                         </div>
                         <div class="multiResponsive">
-                            <a href="{% url 'multimedia' %}">MULTIMEDIA</a>
+                            <a href="{% url 'multimedia' %}">{% translate "MULTIMEDIA" %}</a>
                         </div>
                         <div class="contResponsive">
-                            <a href="{% url 'contacto' %}">CONTACTO</a>
+                            <a href="{% url 'contacto' %}">{% translate "CONTACTO" %}</a>
                         </div>
                     </div>
                     <div class="menu-nav">
@@ -85,7 +85,7 @@
                             </style>
                             {% endif %}
                             <a class="opcionMenu" id="nosotros-nav" href="{% url 'acerca' %}"
-                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">NOSOTROS</a>
+                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">{% translate "NOSOTROS" %}</a>
                         </div>
                         <div class="productos cellOpcionMenu">
                             {% if 'productos' in request.path %}
@@ -96,7 +96,7 @@
                             </style>
                             {% endif %}
                             <a class="opcionMenu" id="prods-nav" href="{% url 'productos' %}"
-                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">PRODUCTOS</a>
+                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">{% translate "PRODUCTOS" %}</a>
                         </div>
                         <div class="certs cellOpcionMenu">
                             {% if 'certificaciones' in request.path %}
@@ -107,7 +107,7 @@
                             </style>
                             {% endif %}
                             <a class="opcionMenu" id="certs-nav" href="{% url 'certificaciones' %}"
-                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">CERTIFICACIONES</a>
+                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">{% translate "CERTIFICACIONES" %}</a>
                         </div>
                         <div class="multi cellOpcionMenu">
                             {% if 'multimedia' in request.path %}
@@ -118,7 +118,7 @@
                             </style>
                             {% endif %}
                             <a class="opcionMenu" id="multi-nav" href="{% url 'multimedia' %}"
-                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">MULTIMEDIA</a>
+                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">{% translate "MULTIMEDIA" %}</a>
                         </div>
                         <div class="cont cellOpcionMenu">
                             {% if 'contacto' in request.path %}
@@ -129,7 +129,7 @@
                             </style>
                             {% endif %}
                             <a class="opcionMenu" id="cont-nav" href="{% url 'contacto' %}"
-                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">CONTACTO</a>
+                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">{% translate "CONTACTO" %}</a>
                         </div>
                     </div>
                 </div>
@@ -137,7 +137,7 @@
         </div>
 
         <div class="flotante" style="display: none;">
-            ¿Necesitas ayuda? <b>Contáctanos</b>
+            {% translate "¿Necesitas ayuda?" %} <b>{% translate "Contáctanos" %}</b>
         </div>
         <a href="#" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
 
@@ -200,7 +200,6 @@
                 target="_blank">
                 <p style="display: flex; width: fit-content; margin: 0;">Km 15 ½ via Daule, Av. Rosavin<br>y Asbestos,
                     MZ F6 - Solar 21<br>y 22 Guayaquil – Ecuador</p>
-                <p>{{ request.path }}</p>
             </a>
         </div>
         <div class="icoMsj">

@@ -1,33 +1,44 @@
-{% extends 'top.html' %} {% load static%} {% block headExtend %}
+{% extends 'top.html' %}
+{% load static%}
+{% load i18n %}
+
+{% block headExtend %}
 <link rel="stylesheet" type="text/css" href="{% static 'css\inicio.css' %}" media="screen">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
 </script>
-{% endblock %} {% block content %}
+{% endblock %}
+
+{% block content %}
 <!-- Carousel -->
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-        {% for f in fotos %} {% if forloop.first %}
-        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="{{ forloop.counter0 }}" class="active" aria-current="true" aria-label="Slide {{ forloop.counter }}"></button> {% else %}
-        <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="{{ forloop.counter0 }}" aria-label="Slide {{ forloop.counter }}"></button> {% endif %} {% endfor %}
+        {% for f in fotos %}
+            {% if forloop.first %}
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="{{ forloop.counter0 }}" class="active" aria-current="true" aria-label="Slide {{ forloop.counter }}"></button> {% else %}
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="{{ forloop.counter0 }}" aria-label="Slide {{ forloop.counter }}"></button>
+            {% endif %}
+        {% endfor %}
     </div>
     <div class="carousel-inner">
-        {% for f in fotos %} {% if forloop.first %}
-        <div class="carousel-item active" data-bs-interval="5000">
-            <picture>
-                <source media="(min-width: 770px)" srcset="{% static f.imagenWeb %}" class="d-block w-100" alt="...">
-                <source media="(min-width: 210px)" srcset="{% static f.imagenMov %}" class="d-block w-100" alt="...">
-                <img src="{% static f.imagenWeb %}" class="d-block w-100" alt="...">
-            </picture>
-        </div>
-        {% else %}
-        <div class="carousel-item" data-bs-interval="5000">
-            <picture>
-                <source media="(min-width: 770px)" srcset="{% static f.imagenWeb %}" class="d-block w-100" alt="...">
-                <source media="(min-width: 210px)" srcset="{% static f.imagenMov %}" class="d-block w-100" alt="...">
-                <img src="{% static f.imagenWeb %}" class="d-block w-100" alt="...">
-            </picture>
-        </div>
-        {% endif %} {% endfor %}
+        {% for f in fotos %}
+            {% if forloop.first %}
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <picture>
+                        <source media="(min-width: 770px)" srcset="{% static f.imagenWeb %}" class="d-block w-100" alt="...">
+                        <source media="(min-width: 210px)" srcset="{% static f.imagenMov %}" class="d-block w-100" alt="...">
+                        <img src="{% static f.imagenWeb %}" class="d-block w-100" alt="...">
+                    </picture>
+                </div>
+            {% else %}
+                <div class="carousel-item" data-bs-interval="5000">
+                    <picture>
+                        <source media="(min-width: 770px)" srcset="{% static f.imagenWeb %}" class="d-block w-100" alt="...">
+                        <source media="(min-width: 210px)" srcset="{% static f.imagenMov %}" class="d-block w-100" alt="...">
+                        <img src="{% static f.imagenWeb %}" class="d-block w-100" alt="...">
+                    </picture>
+                </div>
+            {% endif %}
+        {% endfor %}
         <!--        <picture>
             <source media="(min-width: 770px)" srcset="{% static 'rsc\img\Franja_Web.png' %}" class="Franja" alt="...">
             <source media="(min-width: 210px)" srcset="{% static 'rsc\img\Franja_Movil.png' %}" class="Franja"
@@ -50,7 +61,7 @@
 <!-- Productos -->
 <div class="productosSubsection">
     <div class="tituloSubseccion">
-        <p class="tituloProductos"><b>NUESTROS PRODUCTOS</b><br>Trabajamos bajo estrictos parametros de calidad.</p>
+        <p class="tituloProductos"><b>{% translate "NUESTROS PRODUCTOS" %}</b><br>{% translate "Trabajamos bajo estrictos parametros de calidad." %}</p>
     </div>
     <div class="dataProductos">
         {% for prod in prods %}
@@ -80,7 +91,7 @@
     <div class="marcasSubsubsection">
         <div class="tituloMarcas">
             <p>
-                NUESTRAS MARCAS
+                {% translate "NUESTRAS MARCAS" %}
             </p>
         </div>
         <div class="flexMarcas">
@@ -100,7 +111,7 @@
         <img src="{% static 'rsc\img\Franja_Web.png' %}" class="Franja" alt="...">
     </picture>
     <div class="tituloSubseccionCerts">
-        <p class="tituloCerts">CERTIFICACIONES INTERNACIONALES</p>
+        <p class="tituloCerts">{% translate "CERTIFICACIONES INTERNACIONALES" %}</p>
     </div>
     <div class="fotosCerts">
         {% for cert in certs %}

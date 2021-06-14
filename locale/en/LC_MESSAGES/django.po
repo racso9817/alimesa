@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-13 21:18-0500\n"
+"POT-Creation-Date: 2021-06-14 10:21-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -29,10 +29,155 @@ msgstr "English"
 msgid "Mandarín"
 msgstr "Mandarin"
 
-#: .\Camaron\templates\top.html:45
+#: .\Camaron\models.py:94
+msgid "País"
+msgstr "Country"
+
+#: .\Camaron\models.py:106
+msgid "Email"
+msgstr "Mail"
+
+#: .\Camaron\models.py:107
+msgid "Nombre"
+msgstr "Name"
+
+#: .\Camaron\models.py:108
+msgid "Telefono"
+msgstr "Phone"
+
+#: .\Camaron\models.py:109
+msgid "Mensaje"
+msgstr "Message"
+
+#: .\Camaron\templates\acerca.html:25
+msgid "SOBRE NOSOTROS"
+msgstr "ABOUT US"
+
+#: .\Camaron\templates\acerca.html:93
+msgid "CADENA DE VALOR"
+msgstr "VALUE CHAIN"
+
+#: .\Camaron\templates\acerca.html:93
+msgid "Seguimos un riguroso proceso para asegurar nuestra excelente calidad"
+msgstr "We follow a strict process to ensure our excellent quality"
+
+#: .\Camaron\templates\acerca.html:102
+msgid "Cosecha/Pesca"
+msgstr "Harvest/Fishing"
+
+#: .\Camaron\templates\acerca.html:111 .\Camaron\templates\acerca.html:139
+msgid "Logística"
+msgstr "Logistics"
+
+#: .\Camaron\templates\acerca.html:120
+msgid "Recepción y"
+msgstr "Reception and"
+
+#: .\Camaron\templates\acerca.html:120
+msgid "control de calidad"
+msgstr "quality control"
+
+#: .\Camaron\templates\acerca.html:130
+msgid "Clasificación"
+msgstr "Classification"
+
+#: .\Camaron\templates\acerca.html:130
+msgid "y empaque"
+msgstr "and packaging"
+
+#: .\Camaron\templates\acerca.html:148
+msgid "Exportación"
+msgstr "Export"
+
+#: .\Camaron\templates\acerca.html:157
+msgid "Destino"
+msgstr "Destination"
+
+#: .\Camaron\templates\acerca.html:166
+msgid "MERCADOS"
+msgstr "MARKETS"
+
+#: .\Camaron\templates\acerca.html:170
+msgid "AMERICA"
+msgstr "AMERICA"
+
+#: .\Camaron\templates\acerca.html:191
+msgid "EUROPA"
+msgstr "EUROPE"
+
+#: .\Camaron\templates\acerca.html:217
+msgid "ASIA"
+msgstr "ASIA"
+
+#: .\Camaron\templates\acerca.html:238
+msgid "AFRICA"
+msgstr "AFRICA"
+
+#: .\Camaron\templates\certificaciones.html:29
+#: .\Camaron\templates\inicio.html:114
+msgid "CERTIFICACIONES INTERNACIONALES"
+msgstr "INTERNATIONAL CERTIFICATIONS"
+
+#: .\Camaron\templates\contacto.html:44
+msgid "Enviar"
+msgstr "Send"
+
+#: .\Camaron\templates\contacto.html:48
+msgid "Información"
+msgstr "Information"
+
+#: .\Camaron\templates\contacto.html:51 .\Camaron\templates\top.html:140
+msgid "Contáctanos"
+msgstr "Contact us"
+
+#: .\Camaron\templates\inicio.html:64 .\Camaron\templates\productos.html:28
+msgid "NUESTROS PRODUCTOS"
+msgstr "OUR PRODUCTS"
+
+#: .\Camaron\templates\inicio.html:64 .\Camaron\templates\productos.html:28
+msgid "Trabajamos bajo estrictos parametros de calidad."
+msgstr "We work under strict quality parameters."
+
+#: .\Camaron\templates\inicio.html:94 .\Camaron\templates\productos.html:104
+msgid "NUESTRAS MARCAS"
+msgstr "OUR BRANDS"
+
+#: .\Camaron\templates\multimedia.html:22
+msgid "MEDIDAS DE BIOSEGURIDAD"
+msgstr "BIOSAFETY MEASURES"
+
+#: .\Camaron\templates\multimedia.html:33
+msgid "DESCARGAR"
+msgstr "DOWNLOAD"
+
+#: .\Camaron\templates\productos.html:104
+msgid "Empaques diseñados según las necesidades de nuestros clientes"
+msgstr "Packaging catered to the needs of our clients"
+
+#: .\Camaron\templates\top.html:48 .\Camaron\templates\top.html:77
 msgid "INICIO"
 msgstr "HOME"
 
-#: .\Camaron\views.py:14
-msgid "Mensaje de prueba"
-msgstr "Test Message"
+#: .\Camaron\templates\top.html:51 .\Camaron\templates\top.html:88
+msgid "NOSOTROS"
+msgstr "ABOUT US"
+
+#: .\Camaron\templates\top.html:54 .\Camaron\templates\top.html:99
+msgid "PRODUCTOS"
+msgstr "PRODUCTS"
+
+#: .\Camaron\templates\top.html:57 .\Camaron\templates\top.html:110
+msgid "CERTIFICACIONES"
+msgstr "CERTIFICATIONS"
+
+#: .\Camaron\templates\top.html:60 .\Camaron\templates\top.html:121
+msgid "MULTIMEDIA"
+msgstr "MULTIMEDIA"
+
+#: .\Camaron\templates\top.html:63 .\Camaron\templates\top.html:132
+msgid "CONTACTO"
+msgstr "CONTACT"
+
+#: .\Camaron\templates\top.html:140
+msgid "¿Necesitas ayuda?"
+msgstr "Need help?"
