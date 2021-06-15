@@ -494,7 +494,7 @@ button>.carousel-control-next-icon:hover {
 
 @media (min-width: 320px) and (max-width: 480px) {
     .IconosCdV {
-        height: 40vh;
+        height: 100vh;        
     }
     .CadenaValorSubsection {
         margin-top: -1vh;
@@ -513,7 +513,7 @@ button>.carousel-control-next-icon:hover {
         margin-top: 15vh;
     }
     .MercadosSubsection {
-        margin-top: -1vh;
+        margin-top: 55vh;
         grid-template-columns: 10fr .1fr;
     }
     .TextTituloMercados {
@@ -526,7 +526,7 @@ button>.carousel-control-next-icon:hover {
         font-size: 2vh;
     }
     body>footer {
-        top: 230vh;
+        top: 300vh;
     }
     button>.carousel-control-next-icon {
         height: 5vh;
@@ -537,8 +537,13 @@ button>.carousel-control-next-icon:hover {
         height: 5vh;
         width: 5vh;
     }
+    .CartaIconoCdV {
+        height: 25vh;
+        width: 55vh;
+    }
     .IconoCartaCdV {
-        width: 30vh;
+        height: 25vh;
+        width: 55vh;
     }
     .IconoCartaCdV img {
         width: 30vh;
@@ -563,6 +568,6 @@ button>.carousel-control-next-icon:hover {
         border-top: 12vw solid #fff;
         position: relative;
         left: calc((100vw - 12vw) / 2);
-        top: -41vh;
+        top: -100.5vh;
     }
 }
