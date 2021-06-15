@@ -205,6 +205,44 @@ body>footer {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-
+    .TituloVideo p {
+        font-size: 2vh;
+    }
+    video {
+        height: auto;
+        width: 100%;
+    }
+    .VideoBioSeg {
+        height: auto;
+        width: 100%;
+    }
+    .Archivos {
+        margin: 5vh 0vh 60vh 0vh;
+    }
+    .fileCard {
+        width: 30vh;
+        height: 20vh;
+        margin: 2vh 0 5vh 0;
+    }
+    .thumbArch {
+        height: 20vh;
+    }
+    .thumbArch img {
+        width: 30vh;
+        height: 20vh;
+    }
+    .tituloArch p {
+        font-size: 1.5vh;
+    }
+    .BDownWrapper {
+        width: 30vh;
+        height: 20vh;
+        top: -20vh;
+    }
+    .BDown {
+        font-size: 1.5vh;
+        width: 15vh;
+        height: 2vh;
+    }
 
 }
