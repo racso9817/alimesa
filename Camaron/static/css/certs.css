@@ -191,5 +191,9 @@ body>footer {
     body>footer {
         top: 100vh;
     }
+    .fotosCerts img:hover {
+        transition: 0s;
+        transform: scale(1.6);
+    }
 
 }

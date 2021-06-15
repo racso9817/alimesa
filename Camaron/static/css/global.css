@@ -795,11 +795,11 @@ body>footer>b {
     }
     body>footer>a>img {
         width: 20vw;
-        height: 60vh;
+        height: 10vh;
         object-fit: contain;
         margin: 0vh 0vw 2.5vh -10vw;
         position: absolute;
-        transform: translate(-1vw, -47vh);
+        transform: translate(-1vw, -22vh);
     }
     body>footer>img {
         width: 12vw;
@@ -825,6 +825,13 @@ body>footer>b {
         font-size: 3vw;
         position: absolute;
         transform: translate(-9vw, -3vh);
+        margin-top: 8vh;
+    }
+    .tel1 {
+        margin-top: -3vh;
+    }
+    .tel2 {
+        margin-top: -6vh;
     }
     .icoFooter {
         width: 3vw;
@@ -853,7 +860,7 @@ body>footer>b {
         height: 6vh;
         object-fit: contain;
         position: absolute;
-        transform: translate(-7vw, -2vh);
+        transform: translate(-7vw, -9vh);
         ;
         margin: 0vh 1vw 1vh 2vw;
     }
@@ -861,6 +868,7 @@ body>footer>b {
         text-decoration: none;
         color: white;
         font-size: 3vw;
+        margin-top: -7vh;
     }
     .dirFooter:hover>a {
         text-decoration: none;
