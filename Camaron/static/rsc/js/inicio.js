@@ -10,9 +10,22 @@ function scrollFunction() {
   // MaxHeight del carouselExampleCaptions + 0.015
   if (document.body.scrollTop > vh*0.5 || document.documentElement.scrollTop > vh*0.5) {
     // Logo
-    document.getElementById("logo").src = "/static/rsc/img/LogoCamaronBlanco.png";
-    document.getElementById("logo").style.height = "8vw";
-    document.getElementById("logo").style.width = "7vw";
+    //MEDIA QUERIES
+    const x = window.matchMedia("(max-width: 480px)")
+
+    if (x.matches) { // If media query matches
+      // Logo
+      document.getElementById("logo").src = "/static/rsc/img/LogoCamaronBlanco.png";
+      document.getElementById("logo").style.height = "7vh";
+      document.getElementById("logo").style.width = "7vh";
+      document.getElementById("logo").style.marginTop = "-5vh";
+    }
+    else {
+      // Logo
+      document.getElementById("logo").src = "/static/rsc/img/LogoCamaronBlanco.png";
+      document.getElementById("logo").style.height = "8vw";
+      document.getElementById("logo").style.width = "7vw";
+    }
     // Nav
     document.getElementsByClassName("nav-container")[0].style.background = "linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%)";
     document.getElementsByClassName("contactosEidioma-nav")[0].style.background = "rgb(255, 255, 255)";
@@ -27,9 +40,23 @@ function scrollFunction() {
       n.style.color = "#00509A";
     });
   } else {
-    document.getElementById("logo").src = "/static/rsc/img/logoAzul.png";
-    document.getElementById("logo").style.height = "6vw";
-    document.getElementById("logo").style.width = "7.9vw";
+    //Logo
+    //MEDIA QUERIES
+    const x = window.matchMedia("(max-width: 480px)")
+
+    if (x.matches) { // If media query matches
+      // Logo
+      document.getElementById("logo").src = "/static/rsc/img/logoAzul.png";
+      document.getElementById("logo").style.height = "7vh";
+      document.getElementById("logo").style.width = "7vh";
+      document.getElementById("logo").style.marginTop = "-5vh";
+    }
+    else {
+      // Logo
+      document.getElementById("logo").src = "/static/rsc/img/logoAzul.png";
+      document.getElementById("logo").style.height = "6vw";
+      document.getElementById("logo").style.width = "7.9vw";
+    }
     //document.getElementsByClassName("logo-nav")[0].style.paddingTop = "2vw";
     // Nav
     document.getElementsByClassName("nav-container")[0].style.background = "white";

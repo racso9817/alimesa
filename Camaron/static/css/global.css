@@ -693,7 +693,7 @@ body>footer>b {
         grid-template-rows: 1fr;
         gap: 0px 0px;
         grid-template-areas: "navbar";
-        height: 8vh;
+        height: calc(var(--height-navbar) / 2);
     }
     .navbar {
         display: grid;
@@ -702,7 +702,7 @@ body>footer>b {
         gap: 0px 0px;
         grid-template-areas: "logo-nav options-nav";
         grid-area: navbar;
-        height: 8vh;
+        height: calc(var(--height-navbar) / 2);
         padding: 0;
     }
     .logo-nav {
@@ -744,6 +744,11 @@ body>footer>b {
         max-height: 1vh;
         padding-right: .25vw;
     }
+    #mail{
+        height: 5vh;
+        width: 1vh;
+        padding-top: .3vh;
+    }
     .contacto-nav>a {
         text-decoration: none;
         font-size: 1vh;
@@ -770,13 +775,12 @@ body>footer>b {
     .idioma-nav>a:hover {
         text-decoration: none;
     }
-    .menu-nav {
-        display: none;
+    .menu-nav{
+        height: calc(var(--height-navbar) * .5);
     }
-    .icon {
-        transform: translate(35vh, .5vh);
-        display: block;
-        filter: brightness(0) invert(1);
+    .cellOpcionMenu {
+        height: calc(var(--height-navbar) * .3);
+        font-size: .7vh;
     }
     body>footer {
         position: absolute;
