@@ -500,27 +500,69 @@ button>.carousel-control-next-icon:hover {
         margin-top: -1vh;
     }
     .TextTituloCdV>b {
-        font-size: 4vh;
+        font-size: 2vh;
     }
     .TextTituloCdV {
-        font-size: 3vh;
+        font-size: 1.5vh;
     }
     .TituloNosotros>h1 {
-        font-size: 4vh;
+        font-size: 2vh;
+    }
+    .TituloNosotros {
+        height: 1vh;
+        margin-top: 15vh;
     }
     .MercadosSubsection {
-        margin-top: -3vh;
-    }
-    .MapasWrapper {
-        height: 70vh;
+        margin-top: -1vh;
+        grid-template-columns: 10fr .1fr;
     }
     .TextTituloMercados {
-        font-size: 4vh;
+        font-size: 2vh;
+    }
+    .headerMercado b {
+        font-size: 2vh;
     }
     .TextCarNos {
-        font-size: 3vh;
+        font-size: 2vh;
     }
     body>footer {
         top: 230vh;
+    }
+    button>.carousel-control-next-icon {
+        height: 5vh;
+        width: 5vh;
+        margin-left: 8vh;
+    }
+    button>.carousel-control-prev-icon {
+        height: 5vh;
+        width: 5vh;
+    }
+    .IconoCartaCdV {
+        width: 30vh;
+    }
+    .IconoCartaCdV img {
+        width: 30vh;
+        height: 25vh;
+    }
+    .flecha {
+        transform: rotate(90deg);
+        height: 8vh;
+        width: 8vh;
+    }
+    .TxtCartaCdV p {
+        font-size: 1.5vh;
+    }
+    .MapasWrapper {
+        display: none;
+    }
+    .triangulo_inf {
+        width: 0;
+        height: 0;
+        border-left: 10vw solid transparent;
+        border-right: 10vw solid transparent;
+        border-top: 12vw solid #fff;
+        position: relative;
+        left: calc((100vw - 12vw) / 2);
+        top: -41vh;
     }
 }

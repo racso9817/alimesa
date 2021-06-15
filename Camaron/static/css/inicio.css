@@ -533,10 +533,10 @@ div.certificacionesSubsection>picture>.Franja {
     }
     .fotosCerts img {
         width: 30vh;
-        height: 12vh;
+        height: 10vh;
     }
     #cert2 {
-        height: 5vh;
+        height: 15vh;
     }
     #cert3, #cert4 {
         height: 15vh;

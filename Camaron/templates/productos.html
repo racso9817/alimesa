@@ -28,7 +28,7 @@
   <p class="textoTituloProductos"><b>{% translate "NUESTROS PRODUCTOS" %}</b><br>{% translate "Trabajamos bajo estrictos parametros de calidad." %}</p>
 </div>
 {% for prod in prods %}
-<div class="ProdDV" id="{{prod.siglas}}" style="top: calc((var(--height-navbar) + 1vh) 
+<div class="ProdDV prod{{forloop.counter}}" id="{{prod.siglas}}" style="top: calc((var(--height-navbar) + 1vh) 
   + ((var(--height-prod-dv) * 1) * {{prod.cont}})
   + ((var(--height-prod-dv) * 0.1) * {{prod.pad}} * {{prod.cont}})
   + 15vh);">

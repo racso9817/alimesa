@@ -305,17 +305,6 @@ img.modal-content {
     box-shadow: none;
 }
 
-/*div.marcasSubsection>picture>.Franja {
-    transform: scaleY(-1) scaleX(-2);
-    width: 100vw;
-    height: 5.6vh;
-    position: absolute;
-    top: -1vw;
-    z-index: 400;
-    object-fit: cover;
-}*/
-
-
 /* Add Animation */
 
 .modal-content {
@@ -398,8 +387,15 @@ img.modal-content {
 
 @media (min-width: 481px) and (max-width: 812px) {
 
-
-    
+    div.marcasSubsection>picture {
+        transform: scaleY(-1) scaleX(-2);
+        width: 0vh;
+        height: .1vh;
+        position: absolute;
+        top: -1vw;
+        z-index: 400;
+        object-fit: cover;
+    }
 }
 
 
@@ -411,6 +407,77 @@ img.modal-content {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-
+    div.marcasSubsection>picture {
+        transform: scaleY(-1) scaleX(-2);
+        width: 30.8vh;
+        height: .1vh;
+        position: absolute;
+        top: 3vh;
+        z-index: 400;
+        object-fit: cover;
+    }
+    .textoTituloProductos b {
+        font-size: 2vh;
+    }
+    .textoTituloProductos {
+        font-size: 1.5vh;
+    }
+    .tituloProductos {
+        height: 2vh;
+    }
+    .DataTabla {
+        height: 12vh;
+        font-size: .8vh;
+    }
+    .ValueCell {
+        height: 15vh;
+    }
+    .NomProd {
+        font-size: 1.5vh;
+    }
+    .FotosProd img {
+        width: 12vh;
+        height: 12vh;
+    }
+    .FotosProd {
+        height: 16vh;
+        width: 15vh;
+    }
+    .ProdDV {
+        margin: -15vh 5vh 0vw 5vh;
+    }
+    #HOSO.ProdDV{
+        top: 20vh!important;
+    }
+    #HLSO.ProdDV{
+        top: 50vh!important;
+    }
+    .prod3{
+        top: 80vh!important;
+    }
+    .marcasSubsection {
+        top: 100vh!important;
+    }
+    .tituloMarcas b {
+        font-size: 2vh;
+    }
+    .tituloMarcas {
+        font-size: 1.5vh;
+        margin-top: 10vh;
+    }
+    .flexMarcas {
+        margin: -25vh 25vw 0 25vw;
+    }
+    .imgMarca {
+        width: 30vh;
+        height: 20vh;
+    }
+    .TituloTabla>img {
+        height: 6vh;
+    }
+    img.modal-content {
+        height: 50vh;
+        width: 45vh;
+    }
 
 }
