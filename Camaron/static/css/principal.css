@@ -436,13 +436,13 @@
         position: absolute;
         top: 0;
         height: 8vh;
-        width: 100vh;
+        width: auto;
     }
     .contact {
         grid-area: 1 / 1 / 2 / 2;
         text-decoration: none;
-        font-size: 4vh;
-        padding-left: .5vh;
+        font-size: 3.5vh;
+        padding-left: 0vh;
         padding-right: 0;
         display: flex;
         align-items: center;
@@ -453,7 +453,7 @@
         max-height: 3vh;
         margin: 0;
         padding: 0;
-        padding-left: 3vh;
+        padding-left: 2vh;
     }
     .contact>a {
         padding-left: 1vh;
@@ -496,7 +496,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 25vh;
+        margin-left: 15vh;
         height: 80vh;
     }
     .camaron>a>img {
@@ -514,7 +514,7 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        transform: translate(-49vh, 100vh);
+        transform: translate(-50vh, 100vh);
         height: 2vh;
     }
     .pescado>a>img {
