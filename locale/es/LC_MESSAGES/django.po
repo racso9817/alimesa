@@ -43,7 +43,7 @@ msgstr "Nombre"
 
 #: .\Camaron\models.py:108
 msgid "Telefono"
-msgstr "Telefono"
+msgstr "Teléfono"
 
 #: .\Camaron\models.py:109
 msgid "Mensaje"
@@ -136,7 +136,7 @@ msgstr "NUESTROS PRODUCTOS"
 
 #: .\Camaron\templates\inicio.html:64 .\Camaron\templates\productos.html:28
 msgid "Trabajamos bajo estrictos parametros de calidad."
-msgstr "Trabajamos bajo estrictos parametros de calidad."
+msgstr "Trabajamos bajo estrictos parámetros de calidad."
 
 #: .\Camaron\templates\inicio.html:94 .\Camaron\templates\productos.html:104
 msgid "NUESTRAS MARCAS"
