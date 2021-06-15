@@ -88,11 +88,6 @@ body>footer {
     transform: scale(2);
 }
 
-#cert2 {
-    width: 13vw;
-    height: 13vw;
-}
-
 .noMostrar {
     display: none;
     width: 5vw;
