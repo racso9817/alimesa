@@ -3,7 +3,7 @@
         "model": "Camaron.carausel",
         "pk": 1,
         "fields": {
-            "imagenWeb": "rsc/img/Foto1_Web_ConTexto.png",
+            "imagenWeb": "rsc/img/CARRUSEL_INICIO_FOTO1_ESP.png",
             "imagenMov": "rsc/img/Foto1_Movil_ConTexto.png",
             "title": "CUMPLIMOS LAS EXIGENCIAS DE LOS MERCADOS INTERNACIONALES",
             "sub_title": "⠀",
@@ -14,7 +14,7 @@
         "model": "Camaron.carausel",
         "pk": 2,
         "fields": {
-            "imagenWeb": "rsc/img/Foto2_Web_ConTexto.png",
+            "imagenWeb": "rsc/img/CARRUSEL_INICIO_FOTO2_ESP.png",
             "imagenMov": "rsc/img/Foto2_Movil_ConTexto.png",
             "title": "MÁS DE 40 AÑOS DE EXPERIENCIA EN LA PRODUCCIÓN DE MARISCOS CONGELADOS",
             "sub_title": "⠀",
@@ -25,7 +25,7 @@
         "model": "Camaron.carausel",
         "pk": 3,
         "fields": {
-            "imagenWeb": "rsc/img/Foto3_Web_ConTexto.png",
+            "imagenWeb": "rsc/img/CARRUSEL_INICIO_FOTO3_ESP.png",
             "imagenMov": "rsc/img/Foto3_Movil_ConTexto.png",
             "title": "GARANTIZAMOS LA CALIDAD, SABOR Y FRESCURA DEL VANNAMEI ECUATORIANO",
             "sub_title": "⠀",
@@ -36,7 +36,7 @@
         "model": "Camaron.carausel",
         "pk": 4,
         "fields": {
-            "imagenWeb": "rsc/img/Foto4_Web_ConTexto.png",
+            "imagenWeb": "rsc/img/CARRUSEL_INICIO_FOTO4_ESP.png",
             "imagenMov": "rsc/img/Foto4_Movil_ConTexto.png",
             "title": "CALIFICADOS PARA BRINDAR PRODUCTOS DE PRIMERA",
             "sub_title": "⠀",
@@ -85,7 +85,7 @@
             "sizes": "20/30|30/40|40/50|50/60|60/70|70/80",
             "packaging": "2.00 Kg|1.00 Kg|500 g|400 g",
             "freezing": "Bloque|(Semi IQF)",
-            "img": "rsc/img/HOSO.jpg"
+            "img": "rsc/img/HOSO.jpg|rsc/img/HOSO.jpg|rsc/img/HOSO.jpg"
         }
     },
     {
@@ -97,7 +97,7 @@
             "sizes": "16/20|21/25|26/30|31/35|36/40|41/50|51/60|61/70|71/90",
             "packaging": "2.00 Kg|1.00 Kg|500 g|400 g",
             "freezing": "Bloque|(Semi IQF)",
-            "img": "rsc/img/HLSO.jpg"
+            "img": "rsc/img/HLSO.jpg|rsc/img/HLSO.jpg|rsc/img/HLSO.jpg"
         }
     },
     {
@@ -108,8 +108,8 @@
             "siglas": "P&DTOFF",
             "sizes": "16/20|21/25|26/30|31/40|41/50|51/60|61/70|71/90",
             "packaging": "2.00 Kg|1.00 Kg|500 g|400 g",
-            "freezing": "Bloque|(Semi IQF)",
-            "img": "rsc/img/VALUE_ADDED.png"
+            "freezing": "Bloque|IQF",
+            "img": "rsc/img/VALUE_ADDED.png|rsc/img/VALUE_ADDED.png|rsc/img/VALUE_ADDED.png"
         }
     },
     {
@@ -263,6 +263,17 @@
             "Telefono": "2147942866",
             "Pais": "AR",
             "Mensaje": "l"
+        }
+    },
+    {
+        "model": "Camaron.contacto",
+        "pk": 4,
+        "fields": {
+            "Nombre": "Oscar",
+            "Email": "oscaravilaa9817@gmail.com",
+            "Telefono": "593984633803",
+            "Pais": "EC",
+            "Mensaje": "Hola mucho gusto"
         }
     },
     {
