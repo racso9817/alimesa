@@ -409,7 +409,7 @@ img.modal-content {
 
     div.marcasSubsection>picture {
         transform: scaleY(-1) scaleX(-2);
-        width: 30.8vh;
+        width: 32vh;
         height: .1vh;
         position: absolute;
         top: 3vh;
@@ -466,11 +466,11 @@ img.modal-content {
         margin-top: 10vh;
     }
     .flexMarcas {
-        margin: -25vh 25vw 0 25vw;
+        margin: -50vh 25vw 0 25vw;
     }
     .imgMarca {
         width: 30vh;
-        height: 20vh;
+        height: 30vh;
     }
     .TituloTabla>img {
         height: 6vh;
@@ -478,6 +478,9 @@ img.modal-content {
     img.modal-content {
         height: 50vh;
         width: 45vh;
+    }
+    body>footer {
+        top: 320vh;
     }
 
 }
