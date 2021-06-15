@@ -164,6 +164,32 @@ body>footer {
 
 @media (min-width: 320px) and (max-width: 480px) {
 
-
+    .tituloSubseccionCerts {
+        margin-top: 10vh;
+        height: 1vh;
+    }
+    .tituloCerts {
+        font-size: 2vh;
+    }
+    .certificacionesSubsection {
+        top: 5vh;
+    }
+    .fotosCerts img {
+        width: 30vh;
+        height: 12vh;
+        object-fit: contain;
+        margin: 3vh 3vw 3vh 3vw;
+    }
+    #cert2 {
+        width: 30vh;
+        height: 5vh;
+    }
+    #cert3, #cert4 {
+        width: 30vh;
+        height: 15vh;
+    }
+    body>footer {
+        top: 100vh;
+    }
 
 }

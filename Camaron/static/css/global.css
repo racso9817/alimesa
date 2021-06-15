@@ -803,7 +803,7 @@ body>footer>b {
     }
     body>footer>img {
         width: 12vw;
-        height: 40vh;
+        height: 10vh;
         object-fit: contain;
         margin: 0vh 1vw 2.5vh 0vw;
         right: -5vh;
