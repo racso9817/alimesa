@@ -4,9 +4,10 @@
         "pk": 1,
         "fields": {
             "imagenWeb": "rsc/img/CARRUSEL_INICIO_FOTO1_ESP.png",
-            "imagenMov": "rsc/img/Foto1_Movil_ConTexto.png",
+            "imagenMov": "rsc/img/CARRUSEL_MOVIL_INICIO_FOTO1_ESP.png",
             "title": "CUMPLIMOS LAS EXIGENCIAS DE LOS MERCADOS INTERNACIONALES",
-            "sub_title": "⠀",
+            "title_en": "",
+            "title_cn": "",
             "section": "INI"
         }
     },
@@ -15,9 +16,10 @@
         "pk": 2,
         "fields": {
             "imagenWeb": "rsc/img/CARRUSEL_INICIO_FOTO2_ESP.png",
-            "imagenMov": "rsc/img/Foto2_Movil_ConTexto.png",
+            "imagenMov": "rsc/img/CARRUSEL_MOVIL_INICIO_FOTO2_ESP.png",
             "title": "MÁS DE 40 AÑOS DE EXPERIENCIA EN LA PRODUCCIÓN DE MARISCOS CONGELADOS",
-            "sub_title": "⠀",
+            "title_en": "",
+            "title_cn": "",
             "section": "INI"
         }
     },
@@ -26,9 +28,10 @@
         "pk": 3,
         "fields": {
             "imagenWeb": "rsc/img/CARRUSEL_INICIO_FOTO3_ESP.png",
-            "imagenMov": "rsc/img/Foto3_Movil_ConTexto.png",
+            "imagenMov": "rsc/img/CARRUSEL_MOVIL_INICIO_FOTO3_ESP.png",
             "title": "GARANTIZAMOS LA CALIDAD, SABOR Y FRESCURA DEL VANNAMEI ECUATORIANO",
-            "sub_title": "⠀",
+            "title_en": "",
+            "title_cn": "",
             "section": "INI"
         }
     },
@@ -37,9 +40,10 @@
         "pk": 4,
         "fields": {
             "imagenWeb": "rsc/img/CARRUSEL_INICIO_FOTO4_ESP.png",
-            "imagenMov": "rsc/img/Foto4_Movil_ConTexto.png",
+            "imagenMov": "rsc/img/CARRUSEL_MOVIL_INICIO_FOTO4_ESP.png",
             "title": "CALIFICADOS PARA BRINDAR PRODUCTOS DE PRIMERA",
-            "sub_title": "⠀",
+            "title_en": "",
+            "title_cn": "",
             "section": "INI"
         }
     },
@@ -50,7 +54,8 @@
             "imagenWeb": "rsc/img/Foto1_Web.png",
             "imagenMov": "rsc/img/Foto1_Movil.png",
             "title": "Expotuna S.A. es una procesadora\ny comercializadora de pescados\ny mariscos congelados, que inició\nsus actividades en el año 2015.",
-            "sub_title": "⠀",
+            "title_en": "Expotuna S.A. is a processor\nand marketer of frozen fish and\nseafood, which began its activities\nin 2015.",
+            "title_cn": "Expotuna S.A. 是一家冷冻鱼和海\n鲜加工商和销售商n\n于 2015 年开始经营。",
             "section": "NOS"
         }
     },
@@ -61,7 +66,8 @@
             "imagenWeb": "rsc/img/Foto2_Web.png",
             "imagenMov": "rsc/img/Foto2_Movil.png",
             "title": "Localizada estratégicamente en\nGuayaquil, ciudad que posee una\ngran ventaja geográfica por\nubicarse a pocas horas de dos\nimportantes puertos del País\ncomo lo son Guayaquil y Manta,\nesto permite un abastecimiento\nconstante de productos frescos.",
-            "sub_title": "⠀",
+            "title_en": "Strategically located in\nGuayaquil, a city that has a great\ngeographical advantage because\nit is located a few hours from\ntwo important ports in the\ncountry such as Guayaquil and\nManta, this allows a constant\nsupply of fresh products.",
+            "title_cn": "位于瓜亚基尔的战略位置，\n该城市具有巨大的地理优势，\n因为它距离瓜亚基尔和曼塔等\n该国两个重要港口仅几小时路程，\n因此可以源源不断地供\n应新鲜产品。",
             "section": "NOS"
         }
     },
@@ -72,7 +78,8 @@
             "imagenWeb": "rsc/img/Foto3_Web.png",
             "imagenMov": "rsc/img/Foto3_Movil.png",
             "title": "El equipo técnico de control de\ncalidad realiza un seguimiento\ny análisis constante de todos y\ncada uno de los procesos de\nproducción las 24 horas del día,\n365 días al año para garantizar\nsiempre la máxima calidad.",
-            "sub_title": "⠀",
+            "title_en": "The technical quality control\nteam constantly monitors and\nanalyzes each and every one of the\nproduction processes 24 hours\na day, 365 days a year to always\nguarantee the highest quality.",
+            "title_cn": "技术质量控制团队一年 365 天、\n一天 24 小时不间断地监控和分析每\n一个生产过程，以始终保证最高质量。",
             "section": "NOS"
         }
     },
@@ -173,7 +180,7 @@
             "nombre": "Farmed Responsibly asc",
             "img": "rsc/img/asc.png",
             "hoverText": "Farmed Resposibly",
-            "origin": "https://www.asc-aqua.org/what-we-do/our-standards/farm-standards/the-shrimp-standard/",
+            "origin": "https: //www.asc-aqua.org/what-we-do/our-standards/farm-standards/the-shrimp-standard/",
             "imgCert": "rsc/docs/ASC_thumb.png",
             "docCert": "rsc/docs/ASC_doc.pdf"
         }
@@ -183,7 +190,7 @@
         "pk": 2,
         "fields": {
             "nombre": "BRCGS Food Safety",
-            "img": "rsc/img/brcgs_food_logo_cmyk.jpg",
+            "img": "rsc/img/BCR.png",
             "hoverText": "BRCGS Food Safety",
             "origin": "https://www.brcgs.com/our-standards/food-safety/",
             "imgCert": "rsc/docs/BRC - EXPOTUNA S.A. - CU 831684.jpg",
@@ -263,17 +270,6 @@
             "Telefono": "2147942866",
             "Pais": "AR",
             "Mensaje": "l"
-        }
-    },
-    {
-        "model": "Camaron.contacto",
-        "pk": 4,
-        "fields": {
-            "Nombre": "Oscar",
-            "Email": "oscaravilaa9817@gmail.com",
-            "Telefono": "593984633803",
-            "Pais": "EC",
-            "Mensaje": "Hola mucho gusto"
         }
     },
     {

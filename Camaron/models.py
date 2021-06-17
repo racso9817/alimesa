@@ -13,7 +13,8 @@ class Carausel(models.Model):
     imagenWeb = models.CharField(max_length=150)
     imagenMov = models.CharField(max_length=150, default="")
     title = models.CharField(max_length=500, default="")
-    sub_title = models.CharField(max_length=100, default="")
+    title_en = models.CharField(max_length=500, default="")
+    title_cn = models.CharField(max_length=500, default="")
 
     SECTION_CHOICES = [
         ('INI', 'inicio'),

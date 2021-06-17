@@ -11,6 +11,15 @@ def inicio(request):
     template = "inicio.html"
     # Cambiar a filter el all de fotos cuando se agregue la seccion a carousel
     fotos = Carausel.objects.filter(section="INI")
+    lang = get_language()
+    if lang != "es":
+        for f in fotos:
+            if lang == "en":
+                f.title = f.title_en
+            else:
+                f.title = f.title_cn
+            f.imagenWeb = f.imagenWeb.replace("ESP", "ENG")
+            f.imagenMov = f.imagenMov.replace("ESP", "ENG")
     prods = Producto.objects.all()
     marcas = Marca.objects.all()
     cont = 0
@@ -61,6 +70,9 @@ def productos(request):
         'prods': prods,
         'marcas': marcas,
         'cont': cont,
+        'SizesIco': "rsc/img/" + "ES"*int(get_language() == 'es') + "SizesWTIco.png",
+        'PackIco': "rsc/img/" + "ES"*int(get_language() == 'es') + "PackWTIco.png",
+        'FreezingIco': "rsc/img/" + "ES"*int(get_language() == 'es') + "FreezingWTIco.png",
     }
     return render(request, template, context)
 
@@ -89,6 +101,13 @@ def productoPorSiglas(request, siglas=""):
 def acerca(request):
     template = "acerca.html"
     fotos = Carausel.objects.filter(section="NOS")
+    lang = get_language()
+    if lang != "es":
+        for f in fotos:
+            if lang == "en":
+                f.title = f.title_en
+            else:
+                f.title = f.title_cn
     context = {
         'fotos': fotos,
     }
