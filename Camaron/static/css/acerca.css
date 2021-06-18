@@ -533,12 +533,14 @@ button>.carousel-control-next-icon:hover {
         min-width: 100vw;
         flex-direction: row;
         flex-wrap: wrap;
+        padding-top: 2vh;
     }
 
     .CadenaValorSubsection {
         /*margin-top: -1vh;*/
-        grid-template-rows: 1fr 7fr;
-        min-height: 100vh;
+        grid-template-rows: 5fr 95fr;
+        min-height: 140vh;
+        height: 148.44vh;
     }
 
     .TextTituloCdV>b {
@@ -546,39 +548,34 @@ button>.carousel-control-next-icon:hover {
     }
 
     .TextTituloCdV {
-        font-size: 1.5vh;
+        font-size: 1.4vh;
     }
 
     .CartaIconoCdV {
-        height: 21.25vh;
-        width: 37vw;
-        margin: 0 5vw 0 5vw;
+        height: 16.5vh;
+        width: 40vw;
+        margin: 0 30vw 0 30vw;
+        grid-template-rows: 5fr 1fr;
     }
 
     .IconoCartaCdV {
-        height: calc(21vh * (27 / 38));
-        width: 37vw;
+        height: 100%;
+        width: 40vw;
     }
 
-    .TxtCartaCdV{
-        width: 37vw;
+    .TxtCartaCdV {
+        width: 40vw;
     }
 
-    /* Flechas hacia abajo */
-    div.IconosCdV > img:nth-child(4),
-    div.IconosCdV > img:nth-child(8),
-    div.IconosCdV > img:nth-child(12) {
+    .flecha {
         transform: rotate(90deg);
         /* Caso especial */
         height: 8vw;
         width: 100vw;
-        /*height: 100vw;
-        width: 5vh;*/
     }
 
-    .flecha {
-        height: fit-content;
-        width: 6vw;
+    .TxtCartaCdV {
+        height: 100%;
     }
 
     .TxtCartaCdV p {
@@ -586,7 +583,7 @@ button>.carousel-control-next-icon:hover {
     }
 
     .IconoCartaCdV>img {
-        width: 30vh;
+        width: 35vw;
     }
 
     .TituloNosotros>h1 {
@@ -599,7 +596,6 @@ button>.carousel-control-next-icon:hover {
     }
 
     .MercadosSubsection {
-        margin-top: 55vh;
         grid-template-columns: 10fr .1fr;
     }
 
@@ -611,12 +607,39 @@ button>.carousel-control-next-icon:hover {
         font-size: 2vh;
     }
 
+    .carousel-item>.wrapperItem>picture,
+    .carousel-item>.wrapperItem>picture>img {
+        object-fit: cover;
+        width: 50vw;
+        height: 56vh;
+        max-height: 56vh;
+        margin: 0;
+        padding: 0%;
+    }
+
+    .WrapperTextCarNos {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50vw;
+        margin: 0;
+        padding: 0%;
+    }
+
     .TextCarNos {
-        font-size: 2vh;
+        margin: 0;
+        padding: 0%;
+        text-align: center;
+        font-size: 1.5vw;
+        font-weight: 400;
+    }
+
+    .TextCarNos {
+        font-size: 1.4vh;
     }
 
     body>footer {
-        top: 300vh;
+        top: 310vh;
     }
 
     button>.carousel-control-next-icon {
@@ -641,9 +664,9 @@ button>.carousel-control-next-icon:hover {
         border-left: 6vw solid transparent;
         border-right: 6vw solid transparent;
         /* el tamaño es la altura */
-        border-top: 3.5vh solid #fff;
+        border-top: 3vh solid #fff;
         position: relative;
         left: calc(50vw - ((6vw + 6vw) / 2));
-        top: -97vh;
+        top: -141.55vh;
     }
 }
