@@ -116,7 +116,7 @@
   ## Try 1024x1366 / 768x1024 
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
     .barraPrin {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -474,13 +474,13 @@
         position: absolute;
         top: 0;
         height: 8vh;
-        width: 100vw;
+        width: 138vw;
     }
 
     .contact {
         grid-area: 1 / 1 / 2 / 2;
         text-decoration: none;
-        font-size: 3.5vh;
+        font-size: 4vw;
         padding-left: 0vh;
         padding-right: 0;
         display: flex;
@@ -490,7 +490,7 @@
     }
 
     .contact img {
-        max-height: 3vh;
+        max-height: 2vh;
         margin: 0;
         padding: 0;
         padding-left: 2vh;
@@ -498,18 +498,6 @@
 
     .contact>a {
         padding-left: 1vh;
-    }
-
-    .idioma {
-        grid-area: 1 / 2 / 2 / 3;
-        padding-right: 1vw;
-        display: none;
-        align-items: center;
-        justify-content: right;
-    }
-
-    .idioma>a {
-        padding-right: 1vw;
     }
 
     .linksCEI {
@@ -543,13 +531,13 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 15vh;
+        margin-left: 12vh;
         height: 80vh;
     }
 
     .camaron>a>img {
-        width: 50vw;
-        height: 50vh;
+        width: 80vw;
+        height: 100vh;
         object-fit: contain;
     }
 
@@ -564,13 +552,13 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        transform: translate(-50vh, 100vh);
+        transform: translate(-37vh, 80vh);
         height: 2vh;
     }
 
     .pescado>a>img {
-        width: 50vw;
-        height: 50vh;
+        width: 80vw;
+        height: 100vh;
         object-fit: contain;
     }
 
