@@ -523,7 +523,6 @@
         gap: 0px 0px;
         grid-template-areas: "camaron pescado";
         position: absolute;
-        width: 100%;
         height: 0;
         background-repeat: no-repeat;
         background-size: cover;
