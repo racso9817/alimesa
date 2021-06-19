@@ -198,7 +198,9 @@ select {
 */
 
 @media (min-width: 1281px) {
-    /* CSS */
+    .contacto {
+        margin-top: 10vh;
+    }
 }
 
 
@@ -209,7 +211,7 @@ select {
   */
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-    /* CSS */
+    
 }
 
 
@@ -231,7 +233,9 @@ select {
   */
 
 @media (min-width: 813px) and (max-width: 1024px) and (orientation: landscape) {
-    /* CSS */
+    .contacto {
+        margin-top: 10vh;
+    }
 }
 
 

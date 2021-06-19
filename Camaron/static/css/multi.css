@@ -147,7 +147,9 @@ body>footer {
 */
 
 @media (min-width: 1281px) {
-    /* CSS */
+    .TituloVideo p {
+        margin-top: 10vh;
+    }
 }
 
 /* 
@@ -165,7 +167,11 @@ body>footer {
     ## Try 1024x1366 / 768x1024  pero horizontal
   */
 
-@media (min-width: 813px) and (max-width: 1024px) and (orientation: landscape) {}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    .TituloVideo p {
+        margin-top: 10vh;
+    }
+}
 
 
 /* 

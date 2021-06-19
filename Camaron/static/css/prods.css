@@ -106,9 +106,9 @@ body>footer {
     width: calc(45vw * 0.4 - 5vw);
     height: calc(var(--height-prod-dv) * (1.75 / 2) - 5vh);
     object-fit: cover;
-    border-radius: 1.5vw;
     margin-bottom: 1.45vh;
-    box-shadow: .5vw .5vw 2vw 0 rgb(0 0 0 / 20%);
+    border-radius: 16px;
+    box-shadow: 6px 6px 20px 0 rgb(0 0 0 / 20%);
 }
 
 .carruselProd>div.carousel-indicators>button {
