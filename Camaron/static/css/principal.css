@@ -495,9 +495,13 @@
         padding: 0;
         padding-left: 2vh;
     }
+    #mail {
+        padding-left: 8vh;
+    }
 
     .contact>a {
         padding-left: 1vh;
+        width: 40vw;
     }
 
     .linksCEI {
@@ -537,7 +541,7 @@
 
     .camaron>a>img {
         width: 80vw;
-        height: 100vh;
+        height: 50vh;
         object-fit: contain;
     }
 
@@ -552,13 +556,13 @@
         justify-content: center;
         align-items: center;
         position: absolute;
-        transform: translate(-37vh, 80vh);
+        transform: translate(-40vh, 80vh);
         height: 2vh;
     }
 
     .pescado>a>img {
         width: 80vw;
-        height: 100vh;
+        height: 50vh;
         object-fit: contain;
     }
 
