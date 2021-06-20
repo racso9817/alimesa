@@ -160,7 +160,13 @@
         <div class="flotante" style="display: none;">
             {% translate "¿Necesitas ayuda?" %} <b>{% translate "Contáctanos" %}</b>
         </div>
+        {% if 'es' in request.path or 'en' in request.path %}
         <a href="#" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+        {% endif %}
+        {% if 'cn' in request.path %}
+        <a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FkIBAHJqVgThtbjLL7jkvzxA=wc>"
+            target="_blank"><img class="wechat" src="{% static 'rsc/img/WECHAT_ICONO_BL.png' %}"></a>
+        {% endif %}
 
         <script type="text/javascript">
             const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)

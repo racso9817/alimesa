@@ -1,6 +1,7 @@
 {% extends 'top.html' %}
 {% load static%}
 {% load i18n %}
+{% load custom_tags %}
 
 {% block headExtend %}
 <link rel="stylesheet" type="text/css" href="{% static 'css\inicio.css' %}" media="screen">
@@ -14,7 +15,8 @@
     <div class="carousel-indicators">
         {% for f in fotos %}
             {% if forloop.first %}
-                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="{{ forloop.counter0 }}" class="active" aria-current="true" aria-label="Slide {{ forloop.counter }}"></button> {% else %}
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="{{ forloop.counter0 }}" class="active" aria-current="true" aria-label="Slide {{ forloop.counter }}"></button> 
+                {% else %}
                 <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="{{ forloop.counter0 }}" aria-label="Slide {{ forloop.counter }}"></button>
             {% endif %}
         {% endfor %}
@@ -66,7 +68,7 @@
     <div class="dataProductos">
         {% for prod in prods %}
         <div class="cartaProducto">
-            <a href="{% url 'productos' %}">
+            <a href="{% anchor 'productos' prod.siglas %}">
                 <div class="fotoProducto">
                     <img src="{% static prod.img %}" alt="">
                     <div class="sizesFreezing">
@@ -96,7 +98,7 @@
         </div>
         <div class="flexMarcas">
             {% for marca in marcas %}
-            <a href="{% url 'productos' %}"><img class="imgMarca" src="{% static marca.img %}" alt=""></a>
+            <a href="{% anchor 'productos' 'seccionMarcas' %}"><img class="imgMarca" src="{% static marca.img %}" alt=""></a>
             {% endfor %}
         </div>
     </div>

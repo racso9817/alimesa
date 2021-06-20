@@ -68,6 +68,14 @@
         {% endif %}
         {% endfor %}
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval{{prod.idAppend}}" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval{{prod.idAppend}}" data-bs-slide="next">
+        <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
     </div>
     <!-- Carrusel producto -->
   </div>
@@ -90,7 +98,7 @@
 <!-- Productos -->
 
 <!-- Marcas -->
-<div class="marcasSubsection" style="top: calc((var(--height-navbar) + 6vh) 
+<div class="marcasSubsection" id="seccionMarcas" style="top: calc((var(--height-navbar) + 6vh) 
   + (var(--height-prod-dv)) 
   + (((var(--height-prod-dv) + 4.5vh)) * {{ cont }})
   + 0vh);
