@@ -365,6 +365,82 @@ img.modal-content {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     /* CSS */
+    div.marcasSubsection>picture {
+        transform: scaleY(-1) scaleX(-2);
+        width: 67vw;
+        height: .1vh;
+        position: absolute;
+        top: 3vh;
+        z-index: 400;
+        object-fit: cover;
+    }
+    .textoTituloProductos b {
+        font-size: 4vw;
+    }
+    .textoTituloProductos {
+        font-size: 2.5vw;
+    }
+    .tituloProductos {
+        height: 2vh;
+    }
+    .DataTabla {
+        height: 12vh;
+        font-size: .8vh;
+    }
+    .ValueCell {
+        height: 15vh;
+    }
+    .NomProd {
+        font-size: 1.5vh;
+    }
+    .FotosProd img {
+        width: 12vh;
+        height: 12vh;
+        box-shadow: none;   
+    }
+    .FotosProd {
+        height: 16vh;
+        width: 15vh;
+    }
+    .ProdDV {
+        margin: -15vh 20vh 0vw 20vh;
+    }
+    #HOSO.ProdDV{
+        top: 20vh!important;
+    }
+    #HLSO.ProdDV{
+        top: 50vh!important;
+    }
+    .prod3{
+        top: 80vh!important;
+    }
+    .marcasSubsection {
+        top: 100vh!important;
+    }
+    .tituloMarcas b {
+        font-size: 4vw;
+    }
+    .tituloMarcas {
+        font-size: 2.5vw;
+        margin-top: 10vh;
+    }
+    .flexMarcas {
+        margin: -26vh 25vw 0 25vw;
+    }
+    .imgMarca {
+        width: 20vh;
+        height: 20vh;
+    }
+    .TituloTabla>img {
+        height: 6vh;
+    }
+    img.modal-content {
+        height: 50vh;
+        width: 45vh;
+    }
+    body>footer {
+        top: 260vh;
+    }
 }
 
 

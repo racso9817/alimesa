@@ -124,6 +124,37 @@ body>footer {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     /* CSS */
+    .tituloSubseccionCerts {
+        margin-top: 10vh;
+        height: 1vh;
+    }
+    .tituloCerts {
+        font-size: 4vw;
+    }
+    .certificacionesSubsection {
+        top: 5vh;
+    }
+    .fotosCerts img {
+        width: 50vh;
+        height: 10vh;
+        object-fit: contain;
+        margin: 3vh 3vw 3vh 3vw;
+    }
+    #cert2 {
+        width: 50vh;
+        height: 15vh;
+    }
+    #cert3, #cert4 {
+        width: 40vh;
+        height: 15vh;
+    }
+    body>footer {
+        top: 120vh;
+    }
+    .fotosCerts img:hover {
+        transition: 0s;
+        transform: scale(1.6);
+    }
 }
 
 

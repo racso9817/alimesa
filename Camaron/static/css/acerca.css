@@ -379,41 +379,42 @@ button>.carousel-control-next-icon:hover {
         height: 20vh;
 
     }
-
     .CadenaValorSubsection {
         margin-top: -4vh;
     }
-
     .TextTituloCdV>b {
         font-size: 3vh;
     }
-
     .TextTituloCdV {
         font-size: 2vh;
     }
-
+    .TituloNosotros {
+        margin: 14vh 0 2.5vh 0;
+    }
     .TituloNosotros>h1 {
         font-size: 3vh;
     }
-
     .MercadosSubsection {
         margin-top: -18vh;
     }
-
     .MapasWrapper {
         height: 30vh;
     }
-
     .TextTituloMercados {
         font-size: 3vh;
     }
-
     .TextCarNos {
         font-size: 2vh;
     }
-
     body>footer {
         top: 200vh;
+    }
+    .triangulo_inf {
+        border-left: 4vw solid transparent;
+        border-right: 4vw solid transparent;
+        /* cada tamaño es la altura */
+        border-top: 3vh solid #fff;
+        top: -39vh;
     }
 }
 
