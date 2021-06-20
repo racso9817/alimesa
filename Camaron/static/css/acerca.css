@@ -374,7 +374,7 @@ button>.carousel-control-next-icon:hover {
     ## Try 1024x1366 / 768x1024 
   */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     .IconosCdV {
         height: 20vh;
 
@@ -424,9 +424,9 @@ button>.carousel-control-next-icon:hover {
     ## Try 1024x1366 / 768x1024  pero horizontal
   */
 
-@media (min-width: 813px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .IconosCdV {
-        height: 20vh;
+        height: 30vh;
     }
 
     .CadenaValorSubsection {
@@ -434,19 +434,19 @@ button>.carousel-control-next-icon:hover {
     }
 
     .TextTituloCdV>b {
-        font-size: 3vh;
+        font-size: 2.5vw;
     }
 
     .TextTituloCdV {
-        font-size: 2vh;
+        font-size: 2.5vw;
     }
 
     .TituloNosotros>h1 {
-        font-size: 3vh;
+        font-size: 2.5vw;
     }
 
     .MercadosSubsection {
-        margin-top: -18vh;
+        margin-top: -5vh;
     }
 
     .MapasWrapper {
@@ -454,15 +454,17 @@ button>.carousel-control-next-icon:hover {
     }
 
     .TextTituloMercados {
-        font-size: 3vh;
+        font-size: 2.5vw;
     }
 
     .TextCarNos {
         font-size: 3vh;
     }
-
+    .triangulo_inf {
+        top: calc((8vh - 80vh)/2);
+    }
     body>footer {
-        top: 200vh;
+        top: 230vh;
     }
 }
 
@@ -473,7 +475,7 @@ button>.carousel-control-next-icon:hover {
     ## Try 540x720
   */
 
-@media (min-width: 481px) and (max-width: 812px) {
+@media (min-width: 481px) and (max-width: 767px) {
     .IconosCdV {
         height: 30vh;
     }

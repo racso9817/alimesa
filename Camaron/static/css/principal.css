@@ -226,7 +226,7 @@
   ## Try 1024x1366 / 768x1024  pero horizontal
 */
 
-@media (min-width: 813px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .barraPrin {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -336,7 +336,7 @@
   ## Try 540x720
 */
 
-@media (min-width: 481px) and (max-width: 812px) {
+@media (min-width: 481px) and (max-width: 767px) {
     .barraPrin {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

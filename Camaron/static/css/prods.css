@@ -363,7 +363,7 @@ img.modal-content {
     ## Try 1024x1366 / 768x1024 
   */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     /* CSS */
 }
 
@@ -374,8 +374,26 @@ img.modal-content {
     ## Try 1024x1366 / 768x1024  pero horizontal
   */
 
-@media (min-width: 813px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     /* CSS */
+    .tituloProductos {
+        height: 18vh;
+    }
+    .textoTituloProductos b {
+        font-size: 2.5vw;
+    }
+    .textoTituloProductos {
+        font-size: 2vw;
+    }
+    .tituloMarcas b {
+        font-size: 2.5vw;
+    }
+    .tituloMarcas {
+        font-size: 2vw;
+    }
+    .FotosProd img {
+        box-shadow: none;
+    }
 }
 
 
@@ -385,7 +403,7 @@ img.modal-content {
     ## Try 540x720
   */
 
-@media (min-width: 481px) and (max-width: 812px) {
+@media (min-width: 481px) and (max-width: 767px) {
 
     div.marcasSubsection>picture {
         transform: scaleY(-1) scaleX(-2);
@@ -409,7 +427,7 @@ img.modal-content {
 
     div.marcasSubsection>picture {
         transform: scaleY(-1) scaleX(-2);
-        width: 32vh;
+        width: 67vw;
         height: .1vh;
         position: absolute;
         top: 3vh;
@@ -438,6 +456,7 @@ img.modal-content {
     .FotosProd img {
         width: 12vh;
         height: 12vh;
+        box-shadow: none;   
     }
     .FotosProd {
         height: 16vh;
@@ -466,11 +485,11 @@ img.modal-content {
         margin-top: 10vh;
     }
     .flexMarcas {
-        margin: -50vh 25vw 0 25vw;
+        margin: -26vh 25vw 0 25vw;
     }
     .imgMarca {
-        width: 30vh;
-        height: 30vh;
+        width: 20vh;
+        height: 20vh;
     }
     .TituloTabla>img {
         height: 6vh;
@@ -480,7 +499,7 @@ img.modal-content {
         width: 45vh;
     }
     body>footer {
-        top: 320vh;
+        top: 260vh;
     }
 
 }

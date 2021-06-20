@@ -197,11 +197,7 @@ select {
   ## Try 1920x1080
 */
 
-@media (min-width: 1281px) {
-    .contacto {
-        margin-top: 10vh;
-    }
-}
+@media (min-width: 1281px) {}
 
 
 /* 
@@ -210,9 +206,7 @@ select {
     ## Try 1280x1024 / 1280x720 / 1280x850
   */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
-    
-}
+@media (min-width: 1025px) and (max-width: 1280px) {}
 
 
 /* 
@@ -221,7 +215,7 @@ select {
     ## Try 1024x1366 / 768x1024 
   */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     /* CSS */
 }
 
@@ -232,9 +226,71 @@ select {
     ## Try 1024x1366 / 768x1024  pero horizontal
   */
 
-@media (min-width: 813px) and (max-width: 1024px) and (orientation: landscape) {
-    .contacto {
-        margin-top: 10vh;
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    body>footer {
+        top: 275vh;
+    }
+    .form-inline input {
+        margin: 5px 0;
+    }
+    .form-inline {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .info {
+        font-size: 70%;
+        margin-top: -5vw;
+    }
+    .form {
+        margin-top: -5vw;
+    }
+    .info img {
+        max-height: 4vh;
+        padding-left: 5vw;
+    }
+    .info #mail2 {
+        max-height: 3vh;
+        padding-left: 5vw;
+    }
+    .lct img {
+        max-height: 4vh;
+        margin-left: -7vw;
+        padding-bottom: 0.1vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    #id_Nombre,
+    #id_Email,
+    #id_Telefono,
+    #id_Pais {
+        width: 30vw;
+    }
+    #id_Mensaje {
+        width: 100%;
+    }
+    #id_Nombre:placeholder-shown,
+    #id_Email:placeholder-shown,
+    #id_Telefono:placeholder-shown,
+    #id_Mensaje:placeholder-shown,
+    #id_Pais {
+        font-size: 1.5vw;
+    }
+    .boton {
+        border: var(--azul-nav);
+        background-color: var(--azul-nav);
+        color: white;
+        border-radius: .5rem;
+    }
+    .grid-container {
+        padding-top: 3vh;
+    }
+    .titinfo {
+        font-size: 2.5vw;
+        padding-left: 5vw;
+    }
+    .titform {
+        font-size: 2.5vw;
+        margin-bottom: 8vh
     }
 }
 
@@ -245,7 +301,7 @@ select {
     ## Try 540x720
   */
 
-@media (min-width: 481px) and (max-width: 812px) {
+@media (min-width: 481px) and (max-width: 767px) and (orientation: landscape) {
 
     body>footer {
         top: 275vh;
@@ -319,7 +375,6 @@ select {
         padding-left: 2vw;
         padding-right: 2vw;
     }
-    
 }
 
 

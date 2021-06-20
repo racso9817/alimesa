@@ -424,7 +424,7 @@ div.certificacionesSubsection>picture>.Franja {
     ## Try 1024x1366 / 768x1024 
   */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
     /* CSS */
 }
 
@@ -435,8 +435,20 @@ div.certificacionesSubsection>picture>.Franja {
     ## Try 1024x1366 / 768x1024  pero horizontal
   */
 
-@media (min-width: 813px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     /* CSS */
+    .tituloProductos b {
+        font-size: 2.5vw;
+    }
+    .tituloProductos {
+        font-size: 2vw;
+    }
+    .tituloMarcas p {
+        font-size: 2.5vw;
+    }
+    .tituloCerts {
+        font-size: 2.5vw;
+    }
 }
 
 
@@ -446,11 +458,7 @@ div.certificacionesSubsection>picture>.Franja {
     ## Try 540x720
   */
 
-@media (min-width: 481px) and (max-width: 812px) {
-
-
-    
-}
+@media (min-width: 481px) and (max-width: 767px) {}
 
 
 /* 
@@ -541,8 +549,13 @@ div.certificacionesSubsection>picture>.Franja {
         width: 30vh;
         height: 10vh;
     }
+    #cert1 {
+        height: 15vh;
+        width: 23vh;
+    }
     #cert2 {
         height: 15vh;
+        width: 27vh;
     }
     #cert3, #cert4 {
         height: 15vh;
