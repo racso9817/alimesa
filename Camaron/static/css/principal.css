@@ -461,6 +461,7 @@
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+
     .barraPrin {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
