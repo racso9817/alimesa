@@ -76,8 +76,8 @@ body>footer {
     max-height: calc(var(--height-prod-dv) + 15vh);
     text-align: center;
     /* Para los anchor */
-    padding-top: 15vh;
-    margin: -15vh 27.5vw 0vw 27.5vw;
+    padding-top: var(--anchor-padding);
+    margin: var(--anchor-margin) 27.5vw 0vw 27.5vw;
 }
 
 .NomProd {
@@ -102,13 +102,23 @@ body>footer {
     height: calc(var(--height-prod-dv) * (1.75 / 2));
 }
 
+.carousel-inner {
+    width: calc(45vw * 0.4);
+    max-width: calc(45vw * 0.4);
+}
+
 .FotosProd img {
     width: calc(45vw * 0.4 - 5vw);
+    max-width: calc(45vw * 0.4 - 5vw);
+    margin: 0 2vw 1.45vh 2vw;
     height: calc(var(--height-prod-dv) * (1.75 / 2) - 5vh);
     object-fit: cover;
-    margin-bottom: 1.45vh;
     border-radius: 16px;
-    box-shadow: 6px 6px 20px 0 rgb(0 0 0 / 20%);
+    box-shadow: 3px 3px 10px 0 rgb(0 0 0 / 20%);
+}
+
+.carruselProd>div.carousel-indicators {
+    align-items: center;
 }
 
 .carruselProd>div.carousel-indicators>button {
@@ -116,9 +126,10 @@ body>footer {
     height: .6vw;
     border-radius: 50%;
     position: relative;
-    top: 2vw;
+    top: 1.25vh;
     background-color: var(--azul-nav);
 }
+
 .carruselProd>div.carousel-indicators>button.active {
     width: .7vw;
     height: .7vw;
@@ -156,7 +167,7 @@ body>footer {
 }
 
 .TituloTabla>img {
-    height: calc(var(--height-prod-dv) * 0.2);;
+    height: calc(var(--height-prod-dv) * 0.2);
     object-fit: contain;
 }
 
@@ -187,7 +198,8 @@ body>footer {
     font-weight: 600;
     border-radius: 1vw;
     width: 8vw;
-    height: calc(var(--height-prod-dv) * (1.75 / 2) - 5vh); /* Misma que la foto */
+    height: calc(var(--height-prod-dv) * (1.75 / 2) - 5vh);
+    /* Misma que la foto */
 }
 
 .marcasSubsection {
@@ -247,24 +259,29 @@ div.marcasSubsection>picture {
     margin: 0vh 1vw 0vh 1vw;
     border-radius: 0.9vw;
     /* box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 5%); */
-    transition: transform .15s;
+    transition: transform .2s;
+    cursor: pointer;
 }
 
 .imgMarca:hover {
     transform: scale(1.1);
 }
 
-#myImg1,
-#myImg2,
-#myImg3,
-#myImg4,
-#myImg5,
-#myImg6 {
-    cursor: pointer;
-    transition: 0.3s;
+.modalButtonWrapper {
+    height: min-content;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-
+#nextMarca,
+#prevMarca {
+    height: 5vw;
+    width: 5vw;
+    object-fit: cover;
+    z-index: 1051;
+}
 
 /* The Modal (background) */
 
@@ -334,36 +351,14 @@ img.modal-content {
     }
 }
 
-
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-  ## Try 1920x1080
-*/
-
-@media (min-width: 1281px) {
-    /* CSS */
-}
-
-
-/* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-    ## Try 1280x1024 / 1280x720 / 1280x850
-  */
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-    /* CSS */
-}
-
-
 /* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
     ## Try 1024x1366 / 768x1024 
   */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 1025px) and (orientation: portrait) {
+
     /* CSS */
     div.marcasSubsection>picture {
         transform: scaleY(-1) scaleX(-2);
@@ -374,70 +369,92 @@ img.modal-content {
         z-index: 400;
         object-fit: cover;
     }
+
     .textoTituloProductos b {
         font-size: 4vw;
     }
+
     .textoTituloProductos {
         font-size: 2.5vw;
     }
+
     .tituloProductos {
         height: 2vh;
     }
+
     .DataTabla {
         height: 12vh;
         font-size: .8vh;
     }
+
     .ValueCell {
         height: 15vh;
     }
+
     .NomProd {
         font-size: 1.5vh;
     }
+
     .FotosProd img {
         width: 12vh;
         height: 12vh;
-        box-shadow: none;   
+        box-shadow: none;
     }
+
     .FotosProd {
         height: 16vh;
         width: 15vh;
     }
+
     .ProdDV {
-        margin: -15vh 20vh 0vw 20vh;
+        /* Para los anchor */
+        padding-top: var(--anchor-padding);
+        margin: var(--anchor-margin) 20vh 0vw 20vh;
     }
-    #HOSO.ProdDV{
-        top: 20vh!important;
+
+    #HOSO.ProdDV {
+        top: 20vh !important;
     }
-    #HLSO.ProdDV{
-        top: 50vh!important;
+
+    #HLSO.ProdDV {
+        top: 50vh !important;
     }
-    .prod3{
-        top: 80vh!important;
+
+    .prod3 {
+        top: 80vh !important;
     }
+
     .marcasSubsection {
-        top: 100vh!important;
+        top: 100vh !important;
     }
+
     .tituloMarcas b {
         font-size: 4vw;
     }
+
     .tituloMarcas {
         font-size: 2.5vw;
         margin-top: 10vh;
     }
+
     .flexMarcas {
         margin: -26vh 25vw 0 25vw;
     }
+
     .imgMarca {
         width: 20vh;
         height: 20vh;
     }
+
     .TituloTabla>img {
         height: 6vh;
     }
+
     img.modal-content {
         height: 50vh;
         width: 45vh;
     }
+
     body>footer {
         top: 260vh;
     }
@@ -450,23 +467,29 @@ img.modal-content {
     ## Try 1024x1366 / 768x1024  pero horizontal
   */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1025px) and (orientation: landscape) {
+
     /* CSS */
     .tituloProductos {
         height: 18vh;
     }
+
     .textoTituloProductos b {
         font-size: 2.5vw;
     }
+
     .textoTituloProductos {
         font-size: 2vw;
     }
+
     .tituloMarcas b {
         font-size: 2.5vw;
     }
+
     .tituloMarcas {
         font-size: 2vw;
     }
+
     .FotosProd img {
         box-shadow: none;
     }
@@ -510,70 +533,92 @@ img.modal-content {
         z-index: 400;
         object-fit: cover;
     }
+
     .textoTituloProductos b {
         font-size: 2vh;
     }
+
     .textoTituloProductos {
         font-size: 1.5vh;
     }
+
     .tituloProductos {
         height: 2vh;
     }
+
     .DataTabla {
         height: 12vh;
         font-size: .8vh;
     }
+
     .ValueCell {
         height: 15vh;
     }
+
     .NomProd {
         font-size: 1.5vh;
     }
+
     .FotosProd img {
         width: 12vh;
         height: 12vh;
-        box-shadow: none;   
+        box-shadow: none;
     }
+
     .FotosProd {
         height: 16vh;
         width: 15vh;
     }
+
     .ProdDV {
-        margin: -15vh 5vh 0vw 5vh;
+        /* Para los anchor */
+        padding-top: var(--anchor-padding);
+        margin: var(--anchor-margin) 5vh 0vw 5vh;
     }
-    #HOSO.ProdDV{
-        top: 20vh!important;
+
+    #HOSO.ProdDV {
+        top: 20vh !important;
     }
-    #HLSO.ProdDV{
-        top: 50vh!important;
+
+    #HLSO.ProdDV {
+        top: 50vh !important;
     }
-    .prod3{
-        top: 80vh!important;
+
+    .prod3 {
+        top: 80vh !important;
     }
+
     .marcasSubsection {
-        top: 100vh!important;
+        top: 100vh !important;
     }
+
     .tituloMarcas b {
         font-size: 2vh;
     }
+
     .tituloMarcas {
         font-size: 1.5vh;
         margin-top: 10vh;
     }
+
     .flexMarcas {
         margin: -26vh 25vw 0 25vw;
     }
+
     .imgMarca {
         width: 20vh;
         height: 20vh;
     }
+
     .TituloTabla>img {
         height: 6vh;
     }
+
     img.modal-content {
         height: 50vh;
         width: 45vh;
     }
+
     body>footer {
         top: 260vh;
     }

@@ -116,7 +116,7 @@
   ## Try 1024x1366 / 768x1024 
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+@media (min-width: 768px) and (max-width: 1025px) and (orientation: portrait){
     .barraPrin {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -226,7 +226,7 @@
   ## Try 1024x1366 / 768x1024  pero horizontal
 */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1025px) and (orientation: landscape) {
     .barraPrin {
         display: grid;
         grid-template-columns: repeat(2, 1fr);

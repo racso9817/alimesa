@@ -95,34 +95,12 @@ body>footer {
 }
 
 /* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-  ## Try 1920x1080
-*/
-
-@media (min-width: 1281px) {
-    /* CSS */
-}
-
-
-/* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-    ## Try 1280x1024 / 1280x720 / 1280x850
-  */
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-    /* CSS */
-}
-
-
-/* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
     ## Try 1024x1366 / 768x1024 
   */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 1025px) and (orientation: portrait) {
     /* CSS */
     .tituloSubseccionCerts {
         margin-top: 10vh;
@@ -164,7 +142,7 @@ body>footer {
     ## Try 1024x1366 / 768x1024  pero horizontal
   */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1025px) and (orientation: landscape) {
     /* CSS */
     .tituloCerts {
         font-size: 2.5vw;

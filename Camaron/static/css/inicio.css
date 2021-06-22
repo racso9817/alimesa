@@ -92,7 +92,7 @@ el carrousel y el navbar */
     grid-template-columns: 1fr;
     grid-template-rows: .5fr 5fr 4fr;
     gap: 0px 0px;
-    grid-template-areas: "tituloSubseccion" "dataProductos" "marcasSubsubsection";
+    grid-template-areas: "tituloSubseccion""dataProductos""marcasSubsubsection";
     position: absolute;
     top: 75vh;
     left: 0vw;
@@ -144,7 +144,7 @@ el carrousel y el navbar */
     grid-template-columns: 1fr;
     grid-template-rows: 4fr 0.5fr;
     gap: 0px 0px;
-    grid-template-areas: "fotoProducto" "siglasProducto";
+    grid-template-areas: "fotoProducto""siglasProducto";
     width: 20vw;
     margin: 0 1.25vw 0vw 1.25vw;
     height: min-content;
@@ -284,7 +284,7 @@ img.ProdIcon {
     grid-template-columns: 1fr;
     grid-template-rows: .25fr .75fr;
     gap: 0px 0px;
-    grid-template-areas: "tituloMarcas" "flexMarcas";
+    grid-template-areas: "tituloMarcas""flexMarcas";
     width: 100vw;
     height: auto;
 }
@@ -331,7 +331,7 @@ img.ProdIcon {
     grid-template-columns: 1fr;
     grid-template-rows: 2fr 3fr;
     gap: 0px 0px;
-    grid-template-areas: "tituloSubseccionCerts" "fotosCerts";
+    grid-template-areas: "tituloSubseccionCerts""fotosCerts";
     position: relative;
     top: 180vh;
     left: 0vw;
@@ -385,9 +385,11 @@ div.certificacionesSubsection>picture>.Franja {
     margin: 2.5vw 3.5vw 10vw 3.5vw;
     transition: transform .15s;
 }
+
 #cert1 {
     width: 12vw;
 }
+
 #cert2 {
     width: 6vw;
 }
@@ -397,34 +399,12 @@ div.certificacionesSubsection>picture>.Franja {
 }
 
 /* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-  ## Try 1920x1080
-*/
-
-@media (min-width: 1281px) {
-    /* CSS */
-}
-
-
-/* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-    ## Try 1280x1024 / 1280x720 / 1280x850
-  */
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-    /* CSS */
-}
-
-
-/* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
     ## Try 1024x1366 / 768x1024 
   */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 1025px) and (orientation: portrait) {
     /* CSS */
     /* Para contener el carrousel y que se elimine el espacio en blanco entre
     el carrousel y el navbar */
@@ -433,88 +413,112 @@ div.certificacionesSubsection>picture>.Franja {
         position: absolute;
         top: calc(var(--height-navbar)*.5);
     }
+
     body>footer {
         top: 330vh;
     }
+
     .productosSubsection {
         margin-top: 0vh;
     }
+
     .tituloSubseccion {
         height: 0vh;
     }
+
     .tituloProductos b {
         font-size: 4vw;
     }
+
     .tituloProductos {
         font-size: 2.5vw;
     }
+
     .dataProductos {
         height: 50vh;
     }
+
     .cartaProducto {
         width: 25vh;
         margin: 2vh 1.25vw 0vh 1.25vw;
     }
+
     .fotoProducto {
         min-width: 15vh;
         max-width: 15vh;
         min-height: 15vh;
         max-height: 15vh;
     }
+
     .fotoProducto img {
         width: 15vh;
         height: 15vh;
     }
+
     .sizesFreezing {
         top: -15vh;
         height: 15vh;
         max-height: 15vh;
     }
+
     .sizesFreezing p {
         font-size: .8vh;
     }
+
     img.ProdIcon {
         height: 2vh;
         width: 2vh;
     }
+
     .siglasProductoP {
         font-size: 2.5vw;
     }
+
     .tituloMarcas {
         height: 5vh;
         margin-top: -10vh;
     }
+
     .tituloMarcas p {
         font-size: 4vw;
     }
+
     .flexMarcas img {
         width: 30vh;
         height: 20vh;
     }
+
     .certificacionesSubsection {
         top: 220vh;
         height: 80vh;
     }
+
     .tituloSubseccionCerts {
         margin-top: 0;
         height: 20vh;
     }
+
     .tituloCerts {
         font-size: 4vw;
     }
+
     .fotosCerts img {
         width: 30vh;
         height: 10vh;
     }
+
     #cert1 {
         height: 12vh;
         width: 30vh;
     }
+
     #cert2 {
         height: 15vh;
         width: 35vh;
     }
-    #cert3, #cert4 {
+
+    #cert3,
+    #cert4 {
         height: 15vh;
     }
 }
@@ -526,17 +530,21 @@ div.certificacionesSubsection>picture>.Franja {
     ## Try 1024x1366 / 768x1024  pero horizontal
   */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1025px) and (orientation: landscape) {
+
     /* CSS */
     .tituloProductos b {
         font-size: 2.5vw;
     }
+
     .tituloProductos {
         font-size: 2vw;
     }
+
     .tituloMarcas p {
         font-size: 2.5vw;
     }
+
     .tituloCerts {
         font-size: 2.5vw;
     }
@@ -567,88 +575,112 @@ div.certificacionesSubsection>picture>.Franja {
         position: absolute;
         top: calc(var(--height-navbar)*.5);
     }
+
     body>footer {
         top: 390vh;
     }
+
     .productosSubsection {
         margin-top: 0vh;
     }
+
     .tituloSubseccion {
         height: 0vh;
     }
+
     .tituloProductos b {
         font-size: 2vh;
     }
+
     .tituloProductos {
         font-size: 1.5vh;
     }
+
     .dataProductos {
         height: 50vh;
     }
+
     .cartaProducto {
         width: 25vh;
         margin: 2vh 1.25vw 0vh 1.25vw;
     }
+
     .fotoProducto {
         min-width: 15vh;
         max-width: 15vh;
         min-height: 15vh;
         max-height: 15vh;
     }
+
     .fotoProducto img {
         width: 15vh;
         height: 15vh;
     }
+
     .sizesFreezing {
         top: -15vh;
         height: 15vh;
         max-height: 15vh;
     }
+
     .sizesFreezing p {
         font-size: .8vh;
     }
+
     img.ProdIcon {
         height: 2vh;
         width: 2vh;
     }
+
     .siglasProductoP {
         font-size: 1.5vh;
     }
+
     .tituloMarcas {
         height: 5vh;
         margin-top: -40vh;
     }
+
     .tituloMarcas p {
         font-size: 2vh;
     }
+
     .flexMarcas img {
         width: 30vh;
         height: 20vh;
     }
+
     .certificacionesSubsection {
         top: 280vh;
         height: 100vh;
     }
+
     .tituloSubseccionCerts {
         margin-top: 0;
         height: 20vh;
     }
+
     .tituloCerts {
         font-size: 2vh;
     }
+
     .fotosCerts img {
         width: 30vh;
         height: 10vh;
     }
+
     #cert1 {
         height: 15vh;
         width: 23vh;
     }
+
     #cert2 {
         height: 15vh;
         width: 27vh;
     }
-    #cert3, #cert4 {
+
+    #cert3,
+    #cert4 {
         height: 15vh;
     }
 

@@ -25,7 +25,9 @@
 
 <!-- Productos -->
 <div class="tituloProductos">
-  <p class="textoTituloProductos"><b>{% translate "NUESTROS PRODUCTOS" %}</b><br>{% translate "Trabajamos bajo estrictos parametros de calidad." %}</p>
+  <p class="textoTituloProductos">
+    <b>{% translate "NUESTROS PRODUCTOS" %}</b><br>{% translate "Trabajamos bajo estrictos parametros de calidad." %}
+  </p>
 </div>
 {% for prod in prods %}
 <div class="ProdDV prod{{forloop.counter}}" id="{{prod.siglas}}" style="top: calc((var(--height-navbar) + 1vh) 
@@ -39,11 +41,12 @@
       <div class="carousel-indicators">
         {% for f in prod.img %}
         {% if forloop.first %}
-        <button type="button" data-bs-target="#carouselExampleInterval{{prod.idAppend}}" data-bs-slide-to="{{ forloop.counter0 }}"
-          class="active" aria-current="true" aria-label="Slide {{ forloop.counter }}"></button>
-        {% else %}
-        <button type="button" data-bs-target="#carouselExampleInterval{{prod.idAppend}}" data-bs-slide-to="{{ forloop.counter0 }}"
+        <button type="button" data-bs-target="#carouselExampleInterval{{prod.idAppend}}"
+          data-bs-slide-to="{{ forloop.counter0 }}" class="active" aria-current="true"
           aria-label="Slide {{ forloop.counter }}"></button>
+        {% else %}
+        <button type="button" data-bs-target="#carouselExampleInterval{{prod.idAppend}}"
+          data-bs-slide-to="{{ forloop.counter0 }}" aria-label="Slide {{ forloop.counter }}"></button>
         {% endif %}
         {% endfor %}
       </div>
@@ -68,14 +71,16 @@
         {% endif %}
         {% endfor %}
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval{{prod.idAppend}}" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval{{prod.idAppend}}"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon visually-hidden" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval{{prod.idAppend}}" data-bs-slide="next">
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval{{prod.idAppend}}"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon visually-hidden" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
-    </button>
+      </button>
     </div>
     <!-- Carrusel producto -->
   </div>
@@ -109,28 +114,29 @@
     <img src="{% static 'rsc\img\Franja_Web.png' %}" class="Franja" alt="...">
   </picture>
   <div class="tituloMarcas">
-    <p><b>{% translate "NUESTRAS MARCAS" %}</b><br>{% translate "Empaques diseñados según las necesidades de nuestros clientes" %}</br></p>
+    <p>
+      <b>{% translate "NUESTRAS MARCAS" %}</b><br>{% translate "Empaques diseñados según las necesidades de nuestros clientes" %}</br>
+    </p>
   </div>
   <div class="flexMarcas">
     {% for marca in marcas %}
     <img class="imgMarca" id="myImg{{ forloop.counter }}" src="{% static marca.img %}" alt="">
-    <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
     {% endfor %}
   </div>
 
   <!-- The Modal -->
   <div id="myModal" class="modal">
     <img class="modal-content" id="img1">
-    <div id="caption"></div>
+    <div class="modalButtonWrapper" id="caption">
+      <img id="prevMarca" style="transform: rotate(180deg);" src="{% static 'rsc\img\ICONOS ALIMESA-24.png' %}">
+      <img id="nextMarca" src="{% static 'rsc\img\ICONOS ALIMESA-24.png' %}">
+    </div>
   </div>
+  <!-- Marcas -->
 
-</div>
-<!-- Marcas -->
+  {% endblock %}
 
-{% endblock %}
-
-{% block scripts %}
-<script src="{% static 'rsc\js\prods.js' %}"></script>
-<script src="{% static 'rsc\js\modals.js' %}"></script>
-{% endblock %}
+  {% block scripts %}
+  <script src="{% static 'rsc\js\prods.js' %}"></script>
+  <script src="{% static 'rsc\js\modals.js' %}"></script>
+  {% endblock %}

@@ -192,30 +192,12 @@ select {
 
 
 /* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-  ## Try 1920x1080
-*/
-
-@media (min-width: 1281px) {}
-
-
-/* 
-    ##Device = Laptops, Desktops
-    ##Screen = B/w 1025px to 1280px
-    ## Try 1280x1024 / 1280x720 / 1280x850
-  */
-
-@media (min-width: 1025px) and (max-width: 1280px) {}
-
-
-/* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
     ## Try 1024x1366 / 768x1024 
   */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 1025px) and (orientation: portrait) {
     /* CSS */
     body>footer {
         top: 130vh;
@@ -295,7 +277,7 @@ select {
     ## Try 1024x1366 / 768x1024  pero horizontal
   */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1025px) and (orientation: landscape) {
     body>footer {
         top: 275vh;
     }

@@ -374,7 +374,7 @@ button>.carousel-control-next-icon:hover {
     ## Try 1024x1366 / 768x1024 
   */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 1025px) and (orientation: portrait) {
     .IconosCdV {
         height: 20vh;
 
@@ -425,7 +425,7 @@ button>.carousel-control-next-icon:hover {
     ## Try 1024x1366 / 768x1024  pero horizontal
   */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1025px) and (orientation: landscape) {
     .IconosCdV {
         height: 30vh;
     }

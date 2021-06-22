@@ -141,20 +141,12 @@ body>footer {
 }
 
 /* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-  ## Try 1920x1080
-*/
-
-@media (min-width: 1281px) {}
-
-/* 
     ##Device = Tablets, Ipads (portrait)
     ##Screen = B/w 768px to 1024px
     ## Try 1024x1366 / 768x1024 
   */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
+@media (min-width: 768px) and (max-width: 1025px) and (orientation: portrait) {
     .TituloVideo p {
         font-size: 4vw;
     }
@@ -173,7 +165,7 @@ body>footer {
     ## Try 1024x1366 / 768x1024  pero horizontal
   */
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media (min-width: 768px) and (max-width: 1025px) and (orientation: landscape) {
     .TituloVideo p {
         margin-top: 10vh;
         font-size: 2.5vw;

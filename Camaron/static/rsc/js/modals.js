@@ -1,49 +1,47 @@
 // Get the modal
 var modal = document.getElementById("myModal");
 
-// function openModal() {
-//   modal.style.display = 'block';
-// }
-
-// var slideIndex = 1;
-// showSlides(slideIndex);
-
-// function plusSlides(n) {
-//   showSlides(slideIndex += n);
-// }
-
-// function currentSlide(n) {
-//   showSlides(slideIndex = n);
-// }
-
-// function showSlides(n) {
-//   var i;
-//   var slides = document.getElementsByClassName("imgMarca");
-//   if (n > slides.length) {slideIndex = 1}
-//   if (n < 1) {slideIndex = slides.length}
-//   for (i = 0; i < slides.length; i++) {
-//       slides[i].style.display = "none";
-//   }
-//   slides[slideIndex-1].style.display = "block";
-// }
-
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementsByClassName("imgMarca");
+var images = document.getElementsByClassName("imgMarca");
 var modalImg = document.getElementById("img1");
 
-for (var i = 0; i < img.length; i++) {
-  var images = img[i]
-  images.onclick = function () {
-    modal.style.display = "block";
-    modalImg.src = this.src;
+var prevMarca = document.getElementById("prevMarca")
+var nextMarca = document.getElementById("nextMarca")
+
+function asignModals(j) {
+
+  modal.style.display = "block";
+  console.log(images)
+  console.log("j = " + j)
+  console.log(images[j])
+  modalImg.src = images[j].src;
+
+  prevMarca.onclick = function (event) {
+    asignModals((j - 1) % images.length);
+    event.stopPropagation();
+  }
+
+  nextMarca.onclick = function (event) {
+    asignModals((j + 1) % images.length);
+    event.stopPropagation();
   }
 }
 
-// Get the <span> element that closes the modal
- var span = document.getElementsByClassName("modal")[0];
+function createModalOnClicks() {
+  for (let i = 0; i < images.length; i++) {
+    let img = images[i]
+    img.onclick = function () {
+      asignModals(i)
+    }
+  }
 
+  // Get the <span> element that closes the modal
+  let span = document.getElementsByClassName("modal")[0];
 
- span.onclick = function () {
-   modal.style.display = "none";
- }
+  span.onclick = function () {
+    modal.style.display = "none";
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+  createModalOnClicks();
+})
