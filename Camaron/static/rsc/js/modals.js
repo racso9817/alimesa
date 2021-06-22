@@ -10,18 +10,17 @@ var nextMarca = document.getElementById("nextMarca")
 function asignModals(j) {
 
   modal.style.display = "block";
-  console.log(images)
   console.log("j = " + j)
   console.log(images[j])
   modalImg.src = images[j].src;
 
   prevMarca.onclick = function (event) {
-    asignModals((j - 1) % images.length);
+    asignModals((j + 4) % (images.length - 1));
     event.stopPropagation();
   }
 
   nextMarca.onclick = function (event) {
-    asignModals((j + 1) % images.length);
+    asignModals((j + 6) % (images.length - 1));
     event.stopPropagation();
   }
 }
