@@ -136,6 +136,11 @@ body>footer {
     border-radius: 50%;
 }
 
+.carousel-control-next,
+.carousel-control-prev {
+    width: 30%;
+}
+
 .ProdData {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -217,11 +222,13 @@ body>footer {
 div.marcasSubsection>picture {
     transform: scaleY(-1) scaleX(-1);
     width: 100vw;
-    height: 5.6vh;
+    height: min-content;
     position: absolute;
     top: -1px;
     z-index: 200;
     object-fit: contain;
+    display: flex;
+    align-items: flex-start;
 }
 
 .tituloMarcas {
@@ -282,6 +289,7 @@ div.marcasSubsection>picture {
     object-fit: cover;
     z-index: 1051;
 }
+
 #nextMarca:hover,
 #prevMarca:hover {
     cursor: pointer;
@@ -363,27 +371,22 @@ img.modal-content {
 
 @media (min-width: 768px) and (max-width: 1025px) and (orientation: portrait) {
 
-    /* CSS */
-    div.marcasSubsection>picture {
-        transform: scaleY(-1) scaleX(-2);
-        width: 67vw;
-        height: .1vh;
-        position: absolute;
-        top: 3vh;
-        z-index: 400;
-        object-fit: cover;
-    }
+    #seccionMarcas > picture > img {
+        width: 100vw;
 
+    }
+    
     .textoTituloProductos b {
-        font-size: 4vw;
+        font-size: 3vh;
     }
 
     .textoTituloProductos {
-        font-size: 2.5vw;
+        font-size: 2vh;
     }
 
     .tituloProductos {
-        height: 2vh;
+        top: 10vh;
+        height: min-content;
     }
 
     .DataTabla {
@@ -411,9 +414,10 @@ img.modal-content {
     }
 
     .ProdDV {
+        width: 55vw;
         /* Para los anchor */
         padding-top: var(--anchor-padding);
-        margin: var(--anchor-margin) 20vh 0vw 20vh;
+        margin: var(--anchor-margin) 22.5vw 0vw 22.5vw;
     }
 
     #HOSO.ProdDV {
@@ -429,20 +433,17 @@ img.modal-content {
     }
 
     .marcasSubsection {
+        grid-template-rows: 0.5fr 2.75fr;
         top: 100vh !important;
     }
 
     .tituloMarcas b {
-        font-size: 4vw;
+        font-size: 3vh;
     }
 
     .tituloMarcas {
-        font-size: 2.5vw;
+        font-size: 2vh;
         margin-top: 10vh;
-    }
-
-    .flexMarcas {
-        margin: -26vh 25vw 0 25vw;
     }
 
     .imgMarca {
@@ -550,34 +551,13 @@ img.modal-content {
         height: 2vh;
     }
 
-    .DataTabla {
-        height: 12vh;
-        font-size: .8vh;
-    }
-
-    .ValueCell {
-        height: 15vh;
-    }
-
-    .NomProd {
-        font-size: 1.5vh;
-    }
-
-    .FotosProd img {
-        width: 12vh;
-        height: 12vh;
-        box-shadow: none;
-    }
-
-    .FotosProd {
-        height: 16vh;
-        width: 15vh;
-    }
-
     .ProdDV {
+        grid-template-columns: 45fr 55fr;
+        width: 80vw;
+        max-width: 90vw;
         /* Para los anchor */
         padding-top: var(--anchor-padding);
-        margin: var(--anchor-margin) 5vh 0vw 5vh;
+        margin: var(--anchor-margin) 10vw 0vw 10vw;
     }
 
     #HOSO.ProdDV {
@@ -588,8 +568,63 @@ img.modal-content {
         top: 50vh !important;
     }
 
+    /* No es una buena práctica */
     .prod3 {
         top: 80vh !important;
+    }
+
+    /* */
+
+    .DataTabla {
+        width: 90%;
+        height: 14vh;
+        font-size: .95vh;
+    }
+
+    .ValueCell {
+        height: 17vh;
+        width: 100%;
+    }
+
+    .NomProd {
+        font-size: 1.25vh;
+    }
+
+    .FotosProd {
+        height: 17.5vh;
+        width: 32vw;
+    }
+
+    .carousel {
+        width: 32vw;
+    }
+
+    div.carousel-inner {
+        width: 32vw;
+        max-width: 32vw;
+    }
+
+    .FotosProd img {
+        width: 30vw;
+        max-width: 30vw;
+        height: 14vh;
+        margin-bottom: 0.25vh;
+        box-shadow: none;
+    }
+
+    div.carousel-indicators {
+        left: 25%;
+        margin: 0;
+    }
+
+    .carruselProd>div.carousel-indicators>button.active {
+        width: 0.7vh;
+        height: 0.7vh;
+    }
+
+    .carruselProd>div.carousel-indicators>button {
+        width: 0.6vh;
+        height: 0.6vh;
     }
 
     .marcasSubsection {
