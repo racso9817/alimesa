@@ -282,6 +282,10 @@ div.marcasSubsection>picture {
     object-fit: cover;
     z-index: 1051;
 }
+#nextMarca:hover,
+#prevMarca:hover {
+    cursor: pointer;
+}
 
 /* The Modal (background) */
 
