@@ -10,8 +10,6 @@ var nextMarca = document.getElementById("nextMarca")
 function asignModals(j) {
 
   modal.style.display = "block";
-  console.log("j = " + j)
-  console.log(images[j])
   modalImg.src = images[j].src;
 
   prevMarca.onclick = function (event) {
