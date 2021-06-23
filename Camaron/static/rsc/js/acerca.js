@@ -43,3 +43,15 @@ function mostrarMapaPorContinente(selectedContinentId) {
         mapImg.src = "/static/rsc/img/Mapa_Clean.png";
     }
 }
+
+function fixTriangle(){
+    let iconos = document.querySelector('.IconosCdV')
+    let triangulo = document.querySelector('.triangulo_inf')
+
+    console.log(iconos.offsetHeight)
+    triangulo.style.top = (-1 * iconos.offsetHeight) + "px";
+}
+
+document.addEventListener('DOMContentLoaded', function () {
+    fixTriangle();
+})
