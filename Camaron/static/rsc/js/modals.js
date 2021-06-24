@@ -13,12 +13,12 @@ function asignModals(j) {
   modalImg.src = images[j].src;
 
   prevMarca.onclick = function (event) {
-    asignModals((j + 4) % (images.length - 1));
+    asignModals((j - 1 + images.length) % (images.length));
     event.stopPropagation();
   }
 
   nextMarca.onclick = function (event) {
-    asignModals((j + 6) % (images.length - 1));
+    asignModals((j + 1 + images.length) % (images.length));
     event.stopPropagation();
   }
 }
