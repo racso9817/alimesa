@@ -49,9 +49,13 @@ function fixTriangle(){
     let triangulo = document.querySelector('.triangulo_inf')
 
     console.log(iconos.offsetHeight)
-    triangulo.style.top = (-1 * iconos.offsetHeight) + "px";
+    triangulo.style.top = ((-1 * iconos.offsetHeight) - 1) + "px";
 }
 
 document.addEventListener('DOMContentLoaded', function () {
     fixTriangle();
 })
+
+window.addEventListener('resize', () => {
+    fixTriangle();
+});
