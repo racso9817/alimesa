@@ -432,6 +432,27 @@ img.modal-content {
         top: 80vh !important;
     }
 
+    .modalButtonWrapper {
+        height: min-content;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #nextMarca,
+    #prevMarca {
+        height: 7vh;
+        width: 7vh;
+        object-fit: cover;
+        z-index: 1051;
+    }
+    
+    #nextMarca:hover,
+    #prevMarca:hover {
+        cursor: pointer;
+    }
+
     .marcasSubsection {
         grid-template-rows: 0.5fr 2.75fr;
         top: 100vh !important;
@@ -508,6 +529,27 @@ img.modal-content {
   */
 
 @media (min-width: 481px) and (max-width: 767px) {
+
+    .modalButtonWrapper {
+        height: min-content;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #nextMarca,
+    #prevMarca {
+        height: 7vh;
+        width: 7vh;
+        object-fit: cover;
+        z-index: 1051;
+    }
+    
+    #nextMarca:hover,
+    #prevMarca:hover {
+        cursor: pointer;
+    }
 
     div.marcasSubsection>picture {
         transform: scaleY(-1) scaleX(-2);
@@ -625,6 +667,27 @@ img.modal-content {
     .carruselProd>div.carousel-indicators>button {
         width: 0.6vh;
         height: 0.6vh;
+    }
+
+    .modalButtonWrapper {
+        height: min-content;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #nextMarca,
+    #prevMarca {
+        height: 7vh;
+        width: 7vh;
+        object-fit: cover;
+        z-index: 1051;
+    }
+    
+    #nextMarca:hover,
+    #prevMarca:hover {
+        cursor: pointer;
     }
 
     .marcasSubsection {
