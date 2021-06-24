@@ -13,6 +13,7 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'css\variables.css' %}" media="screen">
     <link rel="stylesheet" type="text/css" href="{% static 'css\principal.css' %}" media="screen">
+    <script src="{% static 'rsc\js\top.js' %}"></script>
 </head>
 
 <body>
@@ -24,9 +25,30 @@
             <a class="linksCEI" href="mailto:sales@alimesa.com.ec">sales@alimesa.com.ec</a>
         </div>
         <div class="idioma">
-            <a class="linksCEI" href="">EN</a>
-            <a class="linksCEI" href="">ES</a>
-            <a class="linksCEI" style="padding-right: 1vw;" href="">官话</a>
+            {% if 'en' in request.path %}
+            <style>
+                .EN {
+                    font-weight: bolder;
+                }
+            </style>
+            {% endif %}
+            <a id="langSwitch_en" class="linksCEI langSwitch EN" href="">EN</a>
+            {% if 'es' in request.path %}
+            <style>
+                .ES {
+                    font-weight: bolder;
+                }
+            </style>
+            {% endif %}
+            <a id="langSwitch_es" class="linksCEI langSwitch ES" href="">ES</a>
+            {% if 'cn' in request.path %}
+            <style>
+                .CN {
+                    font-weight: bolder;
+                }
+            </style>
+            {% endif %}
+            <a id="langSwitch_cn" class="linksCEI langSwitch CN" href="">官话</a>
         </div>
     </div>
     <div class="fotosPrin" style="background-image: url('{% static 'rsc\img\FondoCamaronPeces.png' %}'); ">

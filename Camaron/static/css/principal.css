@@ -116,47 +116,66 @@
   ## Try 1024x1366 / 768x1024 
 */
 
-@media (min-width: 768px) and (max-width: 1025px) and (orientation: portrait){
+@media (min-width: 768px) and (max-width: 1025px) and (orientation: portrait) {
     .barraPrin {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "contact"
+            "langsel";
         gap: 0px 0px;
         background: rgb(0, 99, 181);
         background: linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%);
-        position: absolute;
+        position: fixed;
         top: 0;
-        height: 10vh;
-        width: 113vh;
+        height: 8vh;
+        width: 100vw;
     }
 
     .contact {
-        grid-area: 1 / 1 / 2 / 2;
+        grid-area: contact;
         text-decoration: none;
-        font-size: 4vh;
-        padding-left: .5vh;
+        font-size: 1.75vh;
+        padding-left: 0vh;
         padding-right: 0;
         display: flex;
         align-items: center;
-        justify-content: left;
-        height: 8vh;
+        justify-content: center;
+        height: 4vh;
+        width: 100vw;
     }
 
     .contact img {
-        max-height: 3vh;
+        max-height: 1.8vh;
         margin: 0;
-        padding-left: 3vh;
+        padding: 0;
+        padding-left: 1.8vh;
+    }
+
+    #mail {
+        padding-left: 2vw;
     }
 
     .contact>a {
         padding-left: 1vh;
+        width: 40vw;
     }
 
-    .linksCEI {
-        color: var(--blanco-nav);
+    .idioma {
+        grid-area: langsel;
         text-decoration: none;
-        padding-left: 1vh;
-        width: 50vh;
+        font-size: 1.75vh;
+        padding-left: 0vh;
+        padding-right: 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 4vh;
+    }
+
+    .idioma>a {
+        width: auto;
     }
 
     .linksCEI:hover {
@@ -166,53 +185,46 @@
 
     .fotosPrin {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 0.5fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 0px 0px;
-        grid-template-areas: "camaron pescado";
-        position: absolute;
-        height: 0;
+        grid-template-areas:
+            "camaron"
+            "pescado";
+        position: fixed;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        top: 8vh;
+        height: 80vh;
+        max-height: 80vh;
     }
 
     .camaron {
         grid-area: camaron;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 33vh;
-        height: 86vh;
-    }
-
-    .camaron>a>img {
-        width: 50vh;
-        height: 50vh;
-        object-fit: contain;
-    }
-
-    .camaron>a:hover {
-        transition: .1s;
-        transform: scale(1.1);
     }
 
     .pescado {
         grid-area: pescado;
+    }
+
+    .pescado,
+    .camaron {
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        transform: translate(-49vh, 90vh);
-        height: 2vh;
+        margin: 0;
+        height: 45vh;
     }
 
-    .pescado>a>img {
-        width: 50vh;
-        height: 50vh;
+    .pescado>a>img,
+    .camaron>a>img {
+        width: 80vw;
+        height: 40vh;
         object-fit: contain;
     }
 
+    .camaron>a:hover,
     .pescado>a:hover {
         transition: .1s;
         transform: scale(1.1);
@@ -339,58 +351,63 @@
 @media (min-width: 481px) and (max-width: 767px) {
     .barraPrin {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "contact"
+            "langsel";
         gap: 0px 0px;
         background: rgb(0, 99, 181);
         background: linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%);
-        position: absolute;
+        position: fixed;
         top: 0;
-        height: 10vh;
+        height: 8vh;
         width: 100vw;
     }
 
     .contact {
-        grid-area: 1 / 1 / 2 / 2;
+        grid-area: contact;
         text-decoration: none;
-        font-size: 4vh;
-        padding-left: 1vh;
+        font-size: 1.75vh;
+        padding-left: 0vh;
         padding-right: 0;
         display: flex;
         align-items: center;
-        justify-content: left;
-        height: 8vh;
+        justify-content: center;
+        height: 4vh;
+        width: 100vw;
     }
 
     .contact img {
-        max-height: 3vh;
+        max-height: 1.8vh;
         margin: 0;
         padding: 0;
-        padding-left: 3vh;
+        padding-left: 1.8vh;
+    }
+
+    #mail {
+        padding-left: 2vw;
     }
 
     .contact>a {
         padding-left: 1vh;
-        padding-right: 1vh;
+        width: 40vw;
     }
 
     .idioma {
-        grid-area: 1 / 2 / 2 / 3;
+        grid-area: langsel;
+        text-decoration: none;
+        font-size: 1.75vh;
+        padding-left: 0vh;
         padding-right: 1vw;
-        display: none;
+        display: flex;
         align-items: center;
-        justify-content: right;
+        justify-content: flex-end;
+        height: 4vh;
     }
 
     .idioma>a {
-        padding-right: 1vw;
-    }
-
-    .linksCEI {
-        color: var(--blanco-nav);
-        text-decoration: none;
-        padding-left: 1vh;
-        width: 35vh;
+        width: auto;
     }
 
     .linksCEI:hover {
@@ -400,53 +417,46 @@
 
     .fotosPrin {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 0.5fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 0px 0px;
-        grid-template-areas: "camaron pescado";
-        position: absolute;
-        height: 0;
+        grid-template-areas:
+            "camaron"
+            "pescado";
+        position: fixed;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        top: 8vh;
+        height: 80vh;
+        max-height: 80vh;
     }
 
     .camaron {
         grid-area: camaron;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 25vh;
-        height: 86vh;
-    }
-
-    .camaron>a>img {
-        width: 50vh;
-        height: 50vh;
-        object-fit: contain;
-    }
-
-    .camaron>a:hover {
-        transition: .1s;
-        transform: scale(1.1);
     }
 
     .pescado {
         grid-area: pescado;
+    }
+
+    .pescado,
+    .camaron {
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        transform: translate(0vh, 45vh);
-        height: 2vh;
+        margin: 0;
+        height: 45vh;
     }
 
-    .pescado>a>img {
-        width: 50vh;
-        height: 50vh;
+    .pescado>a>img,
+    .camaron>a>img {
+        width: 80vw;
+        height: 40vh;
         object-fit: contain;
     }
 
+    .camaron>a:hover,
     .pescado>a:hover {
         transition: .1s;
         transform: scale(1.1);
@@ -464,37 +474,42 @@
 
     .barraPrin {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "contact"
+            "langsel";
         gap: 0px 0px;
         background: rgb(0, 99, 181);
         background: linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%);
-        position: absolute;
+        position: fixed;
         top: 0;
         height: 8vh;
-        width: 136vw;
+        width: 100vw;
     }
 
     .contact {
-        grid-area: 1 / 1 / 2 / 2;
+        grid-area: contact;
         text-decoration: none;
-        font-size: 4vw;
+        font-size: 1.75vh;
         padding-left: 0vh;
         padding-right: 0;
         display: flex;
         align-items: center;
-        justify-content: left;
-        height: 8vh;
+        justify-content: center;
+        height: 4vh;
+        width: 100vw;
     }
 
     .contact img {
-        max-height: 2vh;
+        max-height: 1.8vh;
         margin: 0;
         padding: 0;
-        padding-left: 2vh;
+        padding-left: 1.8vh;
     }
+
     #mail {
-        padding-left: 8vh;
+        padding-left: 2vw;
     }
 
     .contact>a {
@@ -502,11 +517,20 @@
         width: 40vw;
     }
 
-    .linksCEI {
-        color: var(--blanco-nav);
+    .idioma {
+        grid-area: langsel;
         text-decoration: none;
-        padding-left: 1vh;
-        width: 35vw;
+        font-size: 1.75vh;
+        padding-left: 0vh;
+        padding-right: 1vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 4vh;
+    }
+
+    .idioma>a {
+        width: auto;
     }
 
     .linksCEI:hover {
@@ -516,53 +540,46 @@
 
     .fotosPrin {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 0.5fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 1fr;
         gap: 0px 0px;
-        grid-template-areas: "camaron pescado";
-        position: absolute;
-        height: 0;
+        grid-template-areas:
+            "camaron"
+            "pescado";
+        position: fixed;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
+        top: 8vh;
+        height: 80vh;
+        max-height: 80vh;
     }
 
     .camaron {
         grid-area: camaron;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 12vh;
-        height: 80vh;
-    }
-
-    .camaron>a>img {
-        width: 80vw;
-        height: 50vh;
-        object-fit: contain;
-    }
-
-    .camaron>a:hover {
-        transition: .1s;
-        transform: scale(1.1);
     }
 
     .pescado {
         grid-area: pescado;
+    }
+
+    .pescado,
+    .camaron {
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        transform: translate(-40vh, 80vh);
-        height: 2vh;
+        margin: 0;
+        height: 45vh;
     }
 
-    .pescado>a>img {
+    .pescado>a>img,
+    .camaron>a>img {
         width: 80vw;
-        height: 50vh;
+        height: 40vh;
         object-fit: contain;
     }
 
+    .camaron>a:hover,
     .pescado>a:hover {
         transition: .1s;
         transform: scale(1.1);

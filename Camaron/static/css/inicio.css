@@ -577,7 +577,7 @@ div.certificacionesSubsection>picture>.Franja {
     }
 
     body>footer {
-        top: 430vh;
+        top: 375vh;
     }
 
     .productosSubsection {
@@ -597,11 +597,11 @@ div.certificacionesSubsection>picture>.Franja {
     }
 
     .dataProductos {
-        height: 80vh;
+        height: min-content;
     }
 
     .cartaProducto {
-        width: 25vh;
+        width: 75vw;
         margin: 2vh 1.25vw 0vh 1.25vw;
     }
 
@@ -637,9 +637,12 @@ div.certificacionesSubsection>picture>.Franja {
         font-size: 2vh;
     }
 
+    .productosSubsection > div.marcasSubsubsection {
+        margin-top: 2.5vh;
+    }
+
     .tituloMarcas {
         height: 5vh;
-        margin-top: -25vh;
     }
 
     .tituloMarcas p {
@@ -647,12 +650,12 @@ div.certificacionesSubsection>picture>.Franja {
     }
 
     .flexMarcas img {
-        width: 30vh;
+        width: 40vw;
         height: 20vh;
     }
 
     .certificacionesSubsection {
-        top: 320vh;
+        top: 250vh;
         height: 100vh;
     }
 

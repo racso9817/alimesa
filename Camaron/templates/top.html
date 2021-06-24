@@ -106,7 +106,8 @@
                             </style>
                             {% endif %}
                             <a class="opcionMenu" id="nosotros-nav" href="{% url 'acerca' %}"
-                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">{% translate "NOSOTROS" %}</a>
+                                onmouseover="letraAzul(this)"
+                                onmouseout="letraNormal(this)">{% translate "NOSOTROS" %}</a>
                         </div>
                         <div class="productos cellOpcionMenu">
                             {% if 'productos' in request.path %}
@@ -117,7 +118,8 @@
                             </style>
                             {% endif %}
                             <a class="opcionMenu" id="prods-nav" href="{% url 'productos' %}"
-                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">{% translate "PRODUCTOS" %}</a>
+                                onmouseover="letraAzul(this)"
+                                onmouseout="letraNormal(this)">{% translate "PRODUCTOS" %}</a>
                         </div>
                         <div class="certs cellOpcionMenu">
                             {% if 'certificaciones' in request.path %}
@@ -128,7 +130,8 @@
                             </style>
                             {% endif %}
                             <a class="opcionMenu" id="certs-nav" href="{% url 'certificaciones' %}"
-                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">{% translate "CERTIFICACIONES" %}</a>
+                                onmouseover="letraAzul(this)"
+                                onmouseout="letraNormal(this)">{% translate "CERTIFICACIONES" %}</a>
                         </div>
                         <div class="multi cellOpcionMenu">
                             {% if 'multimedia' in request.path %}
@@ -139,7 +142,8 @@
                             </style>
                             {% endif %}
                             <a class="opcionMenu" id="multi-nav" href="{% url 'multimedia' %}"
-                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">{% translate "MULTIMEDIA" %}</a>
+                                onmouseover="letraAzul(this)"
+                                onmouseout="letraNormal(this)">{% translate "MULTIMEDIA" %}</a>
                         </div>
                         <div class="cont cellOpcionMenu">
                             {% if 'contacto' in request.path %}
@@ -150,7 +154,8 @@
                             </style>
                             {% endif %}
                             <a class="opcionMenu" id="cont-nav" href="{% url 'contacto' %}"
-                                onmouseover="letraAzul(this)" onmouseout="letraNormal(this)">{% translate "CONTACTO" %}</a>
+                                onmouseover="letraAzul(this)"
+                                onmouseout="letraNormal(this)">{% translate "CONTACTO" %}</a>
                         </div>
                     </div>
                 </div>
@@ -165,8 +170,8 @@
         {% endif %}
         {% if 'cn' in request.path %}
         <!-- <a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FkIBAHJqVgThtbjLL7jkvzxA=wc>" -->
-            <a href="weixin://dl/chat?JLSMEC"
-            target="_blank"><img class="wechat" src="{% static 'rsc/img/WECHAT_ICONO_BL.png' %}"></a>
+        <a href="weixin://dl/chat?JLSMEC" target="_blank"><img class="wechat"
+                src="{% static 'rsc/img/WECHAT_ICONO_BL.png' %}"></a>
         {% endif %}
 
         <script type="text/javascript">
@@ -236,8 +241,8 @@
             </div>
             <div class="wcht">
                 <!-- <a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FkIBAHJqVgThtbjLL7jkvzxA=wc>" -->
-                    <a href="weixin://dl/chat?JLSMEC"
-                    target="_blank"><img src="{% static 'rsc\img\WECHAT_ICONO_BL.png' %}"></a>
+                <a href="weixin://dl/chat?JLSMEC" target="_blank"><img
+                        src="{% static 'rsc\img\WECHAT_ICONO_BL.png' %}"></a>
             </div>
         </div>
     </footer>

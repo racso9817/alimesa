@@ -24,6 +24,9 @@
     --height-navbar: 18vh;
 
     /* Para los anchors */
-    --anchor-margin: calc(0px - (var(--height-navbar) + 1vh));
-    --anchor-padding: calc(var(--height-navbar) + 1vh);
+    /* --anchor-margin: calc(0px - (var(--height-navbar) + 1vh));
+    --anchor-padding: calc(var(--height-navbar) + 1vh); */
+
+    --anchor-margin: -49vh;
+    --anchor-padding: 49vh;
 }
