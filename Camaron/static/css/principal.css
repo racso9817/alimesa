@@ -246,62 +246,61 @@
 @media (min-width: 768px) and (max-width: 1025px) and (orientation: landscape) {
     .barraPrin {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
             "contact langsel";
         gap: 0px 0px;
-        background: rgb(0, 99, 181);
         background: linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%);
-        position: absolute;
+        position: fixed;
         top: 0;
-        height: 10vh;
+        height: 8vh;
         width: 100vw;
     }
 
     .contact {
         grid-area: contact;
         text-decoration: none;
-        font-size: 4vh;
-        padding-left: .5vh;
+        font-size: 1.75vh;
+        padding-left: 0vh;
         padding-right: 0;
         display: flex;
         align-items: center;
-        justify-content: left;
-        height: 8vh;
+        justify-content: center;
+        height: 4vh;
+        width: 100vw;
     }
 
     .contact img {
-        max-height: 3vh;
+        max-height: 1.8vh;
         margin: 0;
-        padding-left: 3vh;
+        padding: 0;
+        padding-left: 1.8vh;
+    }
+
+    #mail {
+        padding-left: 2vw;
     }
 
     .contact>a {
         padding-left: 1vh;
+        width: 40vw;
     }
 
     .idioma {
         grid-area: langsel;
         text-decoration: none;
-        font-size: 3vh;
+        font-size: 1.75vh;
         padding-left: 0vh;
         padding-right: 1vw;
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        height: 8vh;
+        height: 4vh;
     }
 
     .idioma>a {
         width: auto;
-    }
-
-    .linksCEI {
-        color: var(--blanco-nav);
-        text-decoration: none;
-        padding-left: 1vh;
-        width: 50vh;
     }
 
     .linksCEI:hover {
@@ -311,53 +310,45 @@
 
     .fotosPrin {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 0.5fr;
+        grid-template-columns: repeat(2, 0.5fr);
+        grid-template-rows: 1fr;
         gap: 0px 0px;
-        grid-template-areas: "camaron pescado";
-        position: absolute;
-        height: 0;
+        grid-template-areas:
+            "camaron pescado";
+        position: fixed;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: center;
+        top: 8vh;
+        height: 80vh;
+        max-height: 80vh;
     }
 
     .camaron {
         grid-area: camaron;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 20vh;
-        height: 86vh;
-    }
-
-    .camaron>a>img {
-        width: 40vh;
-        height: 40vh;
-        object-fit: contain;
-    }
-
-    .camaron>a:hover {
-        transition: .1s;
-        transform: scale(1.1);
     }
 
     .pescado {
         grid-area: pescado;
+    }
+
+    .pescado,
+    .camaron {
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        transform: translate(0vh, 44vh);
-        height: 2vh;
+        margin: 0;
+        height: 30vh;
     }
 
-    .pescado>a>img {
-        width: 40vh;
-        height: 50vh;
+    .pescado>a>img,
+    .camaron>a>img {
+        width: 60vw;
+        height: 30vh;
         object-fit: contain;
     }
 
+    .camaron>a:hover,
     .pescado>a:hover {
         transition: .1s;
         transform: scale(1.1);
@@ -374,62 +365,61 @@
 @media (min-width: 481px) and (max-width: 767px) {
     .barraPrin {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-areas:
             "contact langsel";
         gap: 0px 0px;
-        background: rgb(0, 99, 181);
         background: linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%);
-        position: absolute;
+        position: fixed;
         top: 0;
-        height: 10vh;
+        height: 8vh;
         width: 100vw;
     }
 
     .contact {
         grid-area: contact;
         text-decoration: none;
-        font-size: 4vh;
-        padding-left: .5vh;
+        font-size: 1.75vh;
+        padding-left: 0vh;
         padding-right: 0;
         display: flex;
         align-items: center;
-        justify-content: left;
-        height: 8vh;
+        justify-content: center;
+        height: 4vh;
+        width: 100vw;
     }
 
     .contact img {
-        max-height: 3vh;
+        max-height: 1.8vh;
         margin: 0;
-        padding-left: 3vh;
+        padding: 0;
+        padding-left: 1.8vh;
+    }
+
+    #mail {
+        padding-left: 2vw;
     }
 
     .contact>a {
         padding-left: 1vh;
+        width: 40vw;
     }
 
     .idioma {
         grid-area: langsel;
         text-decoration: none;
-        font-size: 3vh;
+        font-size: 1.75vh;
         padding-left: 0vh;
         padding-right: 1vw;
         display: flex;
         align-items: center;
         justify-content: flex-end;
-        height: 8vh;
+        height: 4vh;
     }
 
     .idioma>a {
         width: auto;
-    }
-
-    .linksCEI {
-        color: var(--blanco-nav);
-        text-decoration: none;
-        padding-left: 1vh;
-        width: 50vh;
     }
 
     .linksCEI:hover {
@@ -439,53 +429,45 @@
 
     .fotosPrin {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 0.5fr;
+        grid-template-columns: repeat(2, 0.5fr);
+        grid-template-rows: 1fr;
         gap: 0px 0px;
-        grid-template-areas: "camaron pescado";
-        position: absolute;
-        height: 0;
+        grid-template-areas:
+            "camaron pescado";
+        position: fixed;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: center;
+        top: 8vh;
+        height: 80vh;
+        max-height: 80vh;
     }
 
     .camaron {
         grid-area: camaron;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: 20vh;
-        height: 86vh;
-    }
-
-    .camaron>a>img {
-        width: 40vh;
-        height: 40vh;
-        object-fit: contain;
-    }
-
-    .camaron>a:hover {
-        transition: .1s;
-        transform: scale(1.1);
     }
 
     .pescado {
         grid-area: pescado;
+    }
+
+    .pescado,
+    .camaron {
         display: flex;
         justify-content: center;
         align-items: center;
-        position: absolute;
-        transform: translate(0vh, 44vh);
-        height: 2vh;
+        margin: 0;
+        height: 30vh;
     }
 
-    .pescado>a>img {
-        width: 40vh;
-        height: 50vh;
+    .pescado>a>img,
+    .camaron>a>img {
+        width: 60vw;
+        height: 30vh;
         object-fit: contain;
     }
 
+    .camaron>a:hover,
     .pescado>a:hover {
         transition: .1s;
         transform: scale(1.1);
