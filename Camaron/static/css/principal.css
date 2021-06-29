@@ -260,9 +260,9 @@
     }
 
     .contact {
-        grid-area: 1 / 1 / 2 / 2;
+        grid-area: contact;
         text-decoration: none;
-        font-size: 4vh;
+        font-size: 8vh;
         padding-left: .5vh;
         padding-right: 0;
         display: flex;
@@ -284,7 +284,7 @@
     .idioma {
         grid-area: langsel;
         text-decoration: none;
-        font-size: 3vh;
+        font-size: 6vh;
         padding-left: 0vh;
         padding-right: 1vw;
         display: flex;
