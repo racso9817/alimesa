@@ -61,29 +61,6 @@
                             <a id="langSwitch_cn" class="linksCEI langSwitch CN" href="">官话</a>
                         </div>
                     </div>
-                    <!-- <a href="javascript:void(0);" class="icon">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                    <div class="responsiveNav" id="topnav">
-                        <div class="inicioResponsive">
-                            <a href="{% url 'inicio' %}">{% translate "INICIO" %}</a>
-                        </div>
-                        <div class="acercaResponsive">
-                            <a href="{% url 'acerca' %}">{% translate "NOSOTROS" %}</a>
-                        </div>
-                        <div class="prodResponsive">
-                            <a href="{% url 'productos' %}">{% translate "PRODUCTOS" %}</a>
-                        </div>
-                        <div class="certResponsive">
-                            <a href="{% url 'certificaciones' %}">{% translate "CERTIFICACIONES" %}</a>
-                        </div>
-                        <div class="multiResponsive">
-                            <a href="{% url 'multimedia' %}">{% translate "MULTIMEDIA" %}</a>
-                        </div>
-                        <div class="contResponsive">
-                            <a href="{% url 'contacto' %}">{% translate "CONTACTO" %}</a>
-                        </div>
-                    </div> -->
                     <div class="menu-nav">
                         <div class="inicio cellOpcionMenu">
                             {% if 'inicio' in request.path %}
@@ -166,12 +143,14 @@
             {% translate "¿Necesitas ayuda?" %} <b>{% translate "Contáctanos" %}</b>
         </div>
         {% if 'es' in request.path or 'en' in request.path %}
-        <a href="#" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+            <a href="https://wa.link/2mugo3" class="whatsapp" target="_blank"> 
+                <i class="fa fa-whatsapp whatsapp-icon"></i>
+            </a>
         {% endif %}
         {% if 'cn' in request.path %}
-        <!-- <a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FkIBAHJqVgThtbjLL7jkvzxA=wc>" -->
-        <a href="weixin://dl/chat?JLSMEC" target="_blank"><img class="wechat"
-                src="{% static 'rsc/img/WECHAT_ICONO_BL.png' %}"></a>
+            <a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FkIBAHJqVgThtbjLL7jkvzxA=wc>" target="_blank">
+               <img class="wechat" src="{% static 'rsc/img/WECHAT_ICONO_BL.png' %}">
+            </a>
         {% endif %}
 
         <script type="text/javascript">
@@ -206,7 +185,8 @@
     </section>
 
     <section class="Content">
-        {% block content %} {% endblock %}
+        {% block content %} 
+        {% endblock %}
     </section>
 
     <footer>
@@ -237,12 +217,14 @@
         </div>
         <div class="icoMsj">
             <div class="wsp">
-                <a href="#" target="_blank"><img src="{% static 'rsc\img\WHATSAPP_ICONO_BL.png' %}"></a>
+                <a href="https://wa.link/2mugo3" target="_blank">
+                    <img src="{% static 'rsc\img\WHATSAPP_ICONO_BL.png' %}">
+                </a>
             </div>
             <div class="wcht">
-                <!-- <a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FkIBAHJqVgThtbjLL7jkvzxA=wc>" -->
-                <a href="weixin://dl/chat?JLSMEC" target="_blank"><img
-                        src="{% static 'rsc\img\WECHAT_ICONO_BL.png' %}"></a>
+                <a href="https://msng.link/o/?https%3A%2F%2Fu.wechat.com%2FkIBAHJqVgThtbjLL7jkvzxA=wc>" target="_blank">
+                    <img src="{% static 'rsc\img\WECHAT_ICONO_BL.png' %}">
+                </a>
             </div>
         </div>
     </footer>
