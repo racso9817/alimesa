@@ -203,22 +203,22 @@ body>footer>a>img {
     transform: translate(-5vw, .3vh);
 }
 
-body>footer>img {
-    width: 6vw;
-    height: 8vh;
+.codigoqr {
     position: relative;
-    right: calc((15vw - 6vw)/2);
-    top: .3vw;
-    object-fit: contain;
-    margin: 0vh 1vw 0vh 0vw;
+    right: calc((15vw - 8vw)/2);
 }
 
-body>footer>b {
+.imgqr {
+    width: 4vw;
+    height: 8vh;
+    object-fit: contain;
+}
+
+.textcontact {
     position: relative;
-    left: calc((7vw - 6vw)/2);
-    bottom: 2vw;
     font-size: .6vw;
     color: white;
+    top: 4px;
 }
 
 .info-contacto-footer {
@@ -490,6 +490,23 @@ body>footer>b {
     .dirFooter>a, .textFooter {
         font-size: 1.3vw;
     }
+    .codigoqr {
+        position: relative;
+        right: calc((15vw - 8vw)/2);
+    }
+    
+    .imgqr {
+        width: 4vw;
+        height: 3vh;
+        object-fit: contain;
+    }
+    
+    .textcontact {
+        position: relative;
+        font-size: .6vw;
+        color: white;
+        top: 4px;
+    }
 }
 
 
@@ -508,6 +525,23 @@ body>footer>b {
         font-size: 1vw;
         color: white;
     }
+    .codigoqr {
+        position: relative;
+        right: calc((15vw - 8vw)/2);
+    }
+    
+    .imgqr {
+        width: 4vw;
+        height: 6vh;
+        object-fit: contain;
+    }
+    
+    .textcontact {
+        position: relative;
+        font-size: .6vw;
+        color: white;
+        top: 4px;
+    }
 }
 
 
@@ -517,7 +551,25 @@ body>footer>b {
     ## Try 540x720
   */
 
-@media (min-width: 481px) and (max-width: 767px) {}
+@media (min-width: 481px) and (max-width: 767px) {
+    .codigoqr {
+        position: relative;
+        right: calc((15vw - 8vw)/2);
+    }
+    
+    .imgqr {
+        width: 4vw;
+        height: 5vh;
+        object-fit: contain;
+    }
+    
+    .textcontact {
+        position: relative;
+        font-size: .6vw;
+        color: white;
+        top: 4px;
+    }
+}
 
 
 /* 
@@ -647,19 +699,23 @@ body>footer>b {
         position: absolute;
         transform: translate(-1vw, -22vh);
     }
-    body>footer>img {
-        width: 12vw;
-        height: 10vh;
-        object-fit: contain;
-        margin: 0vh 1vw 2.5vh 0vw;
-        right: -5vh;
-        top: -15vh;
+    .codigoqr {
+        position: relative;
+        right: calc((15vw - 40vw)/2);
+        top: -18vh;
     }
-    body>footer>b {
-        left: 11.5vh;
-        top: -20vh;
+    
+    .imgqr {
+        width: 12vw;
+        height: 6vh;
+        object-fit: contain;
+    }
+    
+    .textcontact {
+        position: relative;
         font-size: 2vw;
         color: white;
+        top: 4px;
     }
     .info-contacto-footer {
         display: grid;
