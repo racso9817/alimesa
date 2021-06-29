@@ -2,6 +2,8 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
+    grid-template-areas:
+            "contact langsel";
     gap: 0px 0px;
     background: rgb(0, 99, 181);
     background: linear-gradient(180deg, rgba(0, 99, 181, 1) 0%, rgba(0, 79, 157, 1) 50%, rgba(0, 55, 130, 1) 100%);
@@ -12,7 +14,7 @@
 }
 
 .contact {
-    grid-area: 1 / 1 / 2 / 2;
+    grid-area: contact;
     text-decoration: none;
     padding-left: 0.5vw;
     padding-right: 1vw;
@@ -29,15 +31,18 @@
 }
 
 .idioma {
-    grid-area: 1 / 2 / 2 / 3;
+    grid-area: langsel;
+    text-decoration: none;
+    padding-left: 0vh;
     padding-right: 1vw;
-    display: none;
+    display: flex;
     align-items: center;
-    justify-content: right;
+    justify-content: flex-end;
+    height: 4vh;
 }
 
 .idioma>a {
-    padding-right: 1vw;
+    width: auto;
 }
 
 .linksCEI {
@@ -239,9 +244,6 @@
 */
 
 @media (min-width: 768px) and (max-width: 1025px) and (orientation: landscape) {
-    html {
-        background-image: url("/static/rsc/img/FondoCamaronPeces.png");
-    }
     .barraPrin {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
