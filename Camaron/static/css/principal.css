@@ -316,7 +316,7 @@
         position: absolute;
         height: 0;
         background-repeat: no-repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: center;
     }
 
