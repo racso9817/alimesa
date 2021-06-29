@@ -239,6 +239,9 @@
 */
 
 @media (min-width: 768px) and (max-width: 1025px) and (orientation: landscape) {
+    html {
+        background-image: url("/static/rsc/img/FondoCamaronPeces.png");
+    }
     .barraPrin {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
