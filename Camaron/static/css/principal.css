@@ -315,10 +315,10 @@
         grid-template-rows: 0.5fr;
         gap: 0px 0px;
         grid-template-areas: "camaron pescado";
-        
+        position: absolute;
         height: 0;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
     }
 
@@ -443,10 +443,10 @@
         grid-template-rows: 0.5fr;
         gap: 0px 0px;
         grid-template-areas: "camaron pescado";
-        
+        position: absolute;
         height: 0;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         background-position: center;
     }
 
