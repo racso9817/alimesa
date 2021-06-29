@@ -206,10 +206,6 @@ body>footer>a>img {
 .codigoqr {
     position: relative;
     right: calc((15vw - 8vw)/2);
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
 }
 
 .imgqr {
@@ -222,8 +218,7 @@ body>footer>a>img {
     position: relative;
     font-size: .6vw;
     color: white;
-    left: calc(8vw / 2);
-    bottom: 2vh;
+    top: 4px;
 }
 
 .info-contacto-footer {
@@ -510,8 +505,7 @@ body>footer>a>img {
         position: relative;
         font-size: .6vw;
         color: white;
-        left: calc(8vw / 2);
-        bottom: .8vh;
+        top: 4px;
     }
 }
 
@@ -546,8 +540,7 @@ body>footer>a>img {
         position: relative;
         font-size: .6vw;
         color: white;
-        left: calc(8vw / 2);
-        bottom: 1.5vh;
+        top: 4px;
     }
 }
 
@@ -574,8 +567,7 @@ body>footer>a>img {
         position: relative;
         font-size: .6vw;
         color: white;
-        left: calc(8vw / 2);
-        bottom: 1vh;
+        top: 4px;
     }
 }
 
@@ -723,8 +715,7 @@ body>footer>a>img {
         position: relative;
         font-size: 2vw;
         color: white;
-        left: calc(24vw / 2);
-        bottom: 1vh;
+        top: 4px;
     }
     .info-contacto-footer {
         display: grid;

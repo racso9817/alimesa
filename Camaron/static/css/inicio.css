@@ -548,14 +548,6 @@ div.certificacionesSubsection>picture>.Franja {
     .tituloCerts {
         font-size: 2.5vw;
     }
-
-    .certificacionesSubsection {
-        top: 195vh;
-    }
-
-    body>footer {
-        top: 280vh;
-    }
 }
 
 
