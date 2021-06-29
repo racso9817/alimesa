@@ -316,7 +316,7 @@
         position: absolute;
         height: 0;
         background-repeat: no-repeat;
-        background-size: auto;
+        background-size: 800px 300px;
         background-position: center;
     }
 
