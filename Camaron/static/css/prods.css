@@ -268,6 +268,7 @@ div.marcasSubsection>picture {
     /* box-shadow: 10px 10px 16px 0 rgb(0 0 0 / 5%); */
     transition: transform .2s;
     cursor: pointer;
+    object-fit: contain;
 }
 
 .imgMarca:hover {
@@ -332,6 +333,7 @@ img.modal-content {
     background: none;
     border: none;
     box-shadow: none;
+    object-fit: contain;
 }
 
 /* Add Animation */
@@ -470,6 +472,7 @@ img.modal-content {
     .imgMarca {
         width: 20vh;
         height: 20vh;
+        object-fit: contain;
     }
 
     .TituloTabla>img {
@@ -479,6 +482,7 @@ img.modal-content {
     img.modal-content {
         height: 50vh;
         width: 45vh;
+        object-fit: contain;
     }
 
     body>footer {
@@ -710,6 +714,7 @@ img.modal-content {
     .imgMarca {
         width: 20vh;
         height: 20vh;
+        object-fit: contain;
     }
 
     .TituloTabla>img {
@@ -719,6 +724,7 @@ img.modal-content {
     img.modal-content {
         height: 50vh;
         width: 45vh;
+        object-fit: contain;
     }
 
     body>footer {

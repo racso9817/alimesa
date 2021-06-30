@@ -123,15 +123,6 @@
         "model": "Camaron.marca",
         "pk": 1,
         "fields": {
-            "nombre": "Alimesa Tide",
-            "img": "rsc/img/Caja1.png",
-            "hoverText": "Alimesa Tide"
-        }
-    },
-    {
-        "model": "Camaron.marca",
-        "pk": 2,
-        "fields": {
             "nombre": "Alimesa",
             "img": "rsc/img/Caja2.png",
             "hoverText": "Alimesa"
@@ -139,7 +130,7 @@
     },
     {
         "model": "Camaron.marca",
-        "pk": 3,
+        "pk": 2,
         "fields": {
             "nombre": "San Mateo Premium Shrimp",
             "img": "rsc/img/CajaPrem1.png",
@@ -148,7 +139,7 @@
     },
     {
         "model": "Camaron.marca",
-        "pk": 4,
+        "pk": 3,
         "fields": {
             "nombre": "Vannagold",
             "img": "rsc/img/CajaPrem2.png",
@@ -157,7 +148,7 @@
     },
     {
         "model": "Camaron.marca",
-        "pk": 5,
+        "pk": 4,
         "fields": {
             "nombre": "Alimesa Gama Típica",
             "img": "rsc/img/Funda1.png",
@@ -166,7 +157,7 @@
     },
     {
         "model": "Camaron.marca",
-        "pk": 6,
+        "pk": 5,
         "fields": {
             "nombre": "CAMARON 4LB",
             "img": "rsc/img/Funda2.png",
