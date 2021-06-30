@@ -1,6 +1,5 @@
 var nombrepath = location.pathname;
 var patharray = nombrepath.split('/');
-console.log(nombrepath);
 if(patharray[1]=='en'){
     document.getElementById("langSwitch_en").style.fontWeight = "bolder";
 }
