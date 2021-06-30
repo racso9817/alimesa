@@ -55,7 +55,7 @@
             "imagenMov": "rsc/img/Foto1_Movil.png",
             "title": "Expotuna S.A. es una procesadora\ny comercializadora de pescados\ny mariscos congelados, que inició\nsus actividades en el año 2015.",
             "title_en": "Expotuna S.A. is a processor\nand marketer of frozen fish and\nseafood, which began its activities\nin 2015.",
-            "title_cn": "Expotuna S.A. 是一家冷冻鱼和海\n鲜加工商和销售商n\n于 2015 年开始经营。",
+            "title_cn": "Expotuna S.A. 是一家冷冻鱼和海\n鲜加工 商和销售商n\n于 2015 年开始经营。",
             "section": "NOS"
         }
     },
@@ -92,7 +92,7 @@
             "sizes": "20/30|30/40|40/50|50/60|60/70|70/80",
             "packaging": "2.00 Kg|1.00 Kg|500 g|400 g",
             "freezing": "Bloque|(Semi IQF)",
-            "img": "rsc/img/HOSO.jpg|rsc/img/HOSO.jpg|rsc/img/HOSO.jpg"
+            "img": "rsc/img/ALIMESA 2021 1.png|rsc/img/ALIMESA 2021 37.png|rsc/img/ALIMESA 2021 13.jpg"
         }
     },
     {
@@ -104,7 +104,7 @@
             "sizes": "16/20|21/25|26/30|31/35|36/40|41/50|51/60|61/70|71/90",
             "packaging": "2.00 Kg|1.00 Kg|500 g|400 g",
             "freezing": "Bloque|(Semi IQF)",
-            "img": "rsc/img/HLSO.jpg|rsc/img/HLSO.jpg|rsc/img/HLSO.jpg"
+            "img": "rsc/img/ALIMESA 2021 4.png|rsc/img/ALIMESA 2021 76.jpg|rsc/img/ALIMESA 2021 24.jpg"
         }
     },
     {
@@ -116,7 +116,7 @@
             "sizes": "16/20|21/25|26/30|31/40|41/50|51/60|61/70|71/90",
             "packaging": "2.00 Kg|1.00 Kg|500 g|400 g",
             "freezing": "Bloque|IQF",
-            "img": "rsc/img/VALUE_ADDED.png|rsc/img/VALUE_ADDED.png|rsc/img/VALUE_ADDED.png"
+            "img": "rsc/img/ALIMESA 2021 37.jpg|rsc/img/ALIMESA 2021 61.jpg|rsc/img/ALIMESA 2021 32.jpg"
         }
     },
     {
