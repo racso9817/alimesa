@@ -35,29 +35,8 @@
                             <a class="linksCEI" href="mailto:sales@alimesa.com.ec">sales@alimesa.com.ec</a>
                         </div>
                         <div class="idioma-nav">
-                            {% if 'en' in request.path %}
-                            <style>
-                                .EN {
-                                    font-weight: bolder;
-                                }
-                            </style>
-                            {% endif %}
                             <a id="langSwitch_en" class="linksCEI langSwitch EN" href="">EN</a>
-                            {% if 'es' in request.path %}
-                            <style>
-                                .ES {
-                                    font-weight: bolder;
-                                }
-                            </style>
-                            {% endif %}
                             <a id="langSwitch_es" class="linksCEI langSwitch ES" href="">ES</a>
-                            {% if 'cn' in request.path %}
-                            <style>
-                                .CN {
-                                    font-weight: bolder;
-                                }
-                            </style>
-                            {% endif %}
                             <a id="langSwitch_cn" class="linksCEI langSwitch CN" href="">官话</a>
                         </div>
                     </div>
@@ -233,6 +212,7 @@
 </body>
 
 <script src="{% static 'rsc\js\top.js' %}"></script>
+<script src="{% static 'rsc\js\langbold.js' %}"></script>
 {% block scripts %}
 {% endblock %}
 
