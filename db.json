@@ -216,7 +216,7 @@
         "model": "Camaron.archivomultimedia",
         "pk": 1,
         "fields": {
-            "titulo": "BROCHURE",
+            "titulo": "BROCHURE FOTOS",
             "thumbnail": "/rsc/docs/Brochure_thumb.png",
             "filepath": "/rsc/docs/ALIMESA - VANNAMEI.pdf"
         }
@@ -225,7 +225,7 @@
         "model": "Camaron.archivomultimedia",
         "pk": 2,
         "fields": {
-            "titulo": "BROCHURE FOTOS",
+            "titulo": "BROCHURE",
             "thumbnail": "/rsc/docs/BrochureFotos_thumb.png",
             "filepath": "/rsc/docs/BROCHURE TEMPLATE.pdf"
         }
@@ -234,9 +234,18 @@
         "model": "Camaron.archivomultimedia",
         "pk": 3,
         "fields": {
-            "titulo": "PREMIUM BROCHURE",
+            "titulo": "PREMIUM BRANDS",
             "thumbnail": "/rsc/docs/Brochure3Thumb.png",
             "filepath": "/rsc/docs/Alimesa Premium Brochure.pdf"
+        }
+    },
+    {
+        "model": "Camaron.archivomultimedia",
+        "pk": 4,
+        "fields": {
+            "titulo": "ALIMESA BRAND",
+            "thumbnail": "/rsc/docs/Brochure4Thumb.png",
+            "filepath": "/rsc/docs/Alimesa Brochure_Caja Azul Web.pdf"
         }
     },
     {
