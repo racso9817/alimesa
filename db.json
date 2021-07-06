@@ -116,7 +116,7 @@
             "sizes": "16/20|21/25|26/30|31/40|41/50|51/60|61/70|71/90",
             "packaging": "2.00 Kg|1.00 Kg|500 g|400 g",
             "freezing": "Bloque|IQF",
-            "img": "rsc/img/ALIMESA 2021 37.jpg|rsc/img/ALIMESA 2021 61.jpg|rsc/img/ALIMESA 2021 32.jpg"
+            "img": "rsc/img/ALIMESA 2021 37.jpg|rsc/img/ALIMESA 2021 61.jpg|rsc/img/ALIMESA 2021 32.png"
         }
     },
     {
@@ -216,7 +216,7 @@
         "model": "Camaron.archivomultimedia",
         "pk": 1,
         "fields": {
-            "titulo": "BROCHURE",
+            "titulo": "BROCHURE FOTOS",
             "thumbnail": "/rsc/docs/Brochure_thumb.png",
             "filepath": "/rsc/docs/ALIMESA - VANNAMEI.pdf"
         }
@@ -225,9 +225,27 @@
         "model": "Camaron.archivomultimedia",
         "pk": 2,
         "fields": {
-            "titulo": "BROCHURE FOTOS",
+            "titulo": "BROCHURE",
             "thumbnail": "/rsc/docs/BrochureFotos_thumb.png",
             "filepath": "/rsc/docs/BROCHURE TEMPLATE.pdf"
+        }
+    },
+    {
+        "model": "Camaron.archivomultimedia",
+        "pk": 3,
+        "fields": {
+            "titulo": "PREMIUM BRANDS",
+            "thumbnail": "/rsc/docs/Brochure3Thumb.png",
+            "filepath": "/rsc/docs/Alimesa Premium Brochure.pdf"
+        }
+    },
+    {
+        "model": "Camaron.archivomultimedia",
+        "pk": 4,
+        "fields": {
+            "titulo": "ALIMESA BRAND",
+            "thumbnail": "/rsc/docs/Brochure4Thumb.png",
+            "filepath": "/rsc/docs/Alimesa Brochure_Caja Azul Web.pdf"
         }
     },
     {
