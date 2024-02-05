@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'u)0onm*+z3vlad4izjn%duhyttt75@8lltsi=z4+r_e!ujbb&6'
+SECRET_KEY = ''
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -144,13 +144,13 @@ STATIC_URL = '/static/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
 
-GOOGLE_MAPS_API_KEY = 'AIzaSyAMJdBDHkC1aAvibC08ml_Q_HKW8bx7mDs'
-EASY_MAPS_GOOGLE_KEY = 'AIzaSyAMJdBDHkC1aAvibC08ml_Q_HKW8bx7mDs'
+GOOGLE_MAPS_API_KEY = ''
+EASY_MAPS_GOOGLE_KEY = ''
 EASY_MAPS_CENTER = (-2.1027643,-79.9374007)
 
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = 'oscaravilaa9817@gmail.com'
-EMAIL_HOST_PASSWORD = 'Oscar18!'
+EMAIL_HOST_USER = ''
+EMAIL_HOST_PASSWORD = ''
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
